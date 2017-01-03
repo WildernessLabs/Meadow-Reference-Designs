@@ -1,0 +1,23 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    CREATE SYMBOL                                                    )
+(                                                                     )
+(    Drawing          : cc3100mod.dra                                 )
+(    Software Version : 16.6S016                                      )
+(    Date/Time        : Thu Nov 24 11:26:15 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Create Symbol of type: PACKAGE
+    Directory = G:/per/my docs/orcad/pcbdesignmodifications/netduino_wifi/allegro/exported_library
+    Name      = cc3100mod.psm
+    User      = saqib
+    Machine   = SAQIB-PC
+
+
+Create symbol started.
+ 
+
+Create symbol completed.
+

@@ -1,0 +1,93 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : Netduino3Wifi_7b.brd                          )
+(    Software Version : 16.6S016                                      )
+(    Date/Time        : Mon Dec 05 11:22:13 2016                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------
+
+RIPUP_ETCH FALSE;
+RIPUP_DELETE_FIRST_SEGMENT FALSE;
+RIPUP_RETAIN_BONDWIRE FALSE;
+RIPUP_SYMBOLS ALWAYS;
+Missing symbol has error FALSE;
+SCHEMATIC_DIRECTORY 'G:\PER\MY DOCS\ORCAD\PCBDESIGNMODIFICATIONS\NETDUINO_WIFI\allegro';
+BOARD_DIRECTORY 'G:/per/my docs/orcad/pcbdesignmodifications';
+OLD_BOARD_NAME 'G:/per/my docs/orcad/pcbdesignmodifications/Netduino3Wifi_7b.brd';
+NEW_BOARD_NAME 'G:/per/my docs/orcad/pcbdesignmodifications/Netduino3Wifi_7C.brd';
+
+CmdLine: netrev.exe -y 1 -i G:\PER\MY DOCS\ORCAD\PCBDESIGNMODIFICATIONS\NETDUINO_WIFI\allegro G:\per\my docs\orcad\pcbdesignmodifications\Netduino3Wifi_7b.brd G:\per\my docs\orcad\pcbdesignmodifications\Netduino3Wifi_7C.brd
+
+------ Preparing to read pst files ------
+
+Starting to read G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstchip.dat 
+   Finished reading G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstchip.dat (00:00:00.04)
+Starting to read G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstxprt.dat 
+   Finished reading G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstxprt.dat (00:00:00.00)
+Starting to read G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstxnet.dat 
+   Finished reading G:/PER/MY DOCS/ORCAD/PCBDESIGNMODIFICATIONS/NETDUINO_WIFI/allegro/pstxnet.dat (00:00:00.01)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/SPB_16.6/share/local/pcb/modules 
+           D:/my docs/orcad/28V_line_with_scp/main/28V_FCL/allegro 
+           D:/my docs/orcad/28V_line_with_scp/main/28V_CCL/allegro 
+
+PSMPATH =  G:/per/MY LIBRARY/footprints/ 
+           . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_16.6/share/local/pcb/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+
+PADPATH =  G:/per/MY LIBRARY/footprints/ 
+           . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_16.6/share/local/pcb/padstacks 
+           C:/Cadence/SPB_16.6/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_16.6/share/pcb/allegrolib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Dec 5 11:22:13 2016
+   DESIGN NAME : 'SA'
+   PACKAGING ON Sep 14 2013 00:32:48
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:02:25
+elapsed time  0:00:01
+
