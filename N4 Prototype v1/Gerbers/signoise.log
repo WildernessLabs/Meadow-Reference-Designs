@@ -1,0 +1,7 @@
+INFO: Loaded existing interconnect file 'E:\Users\saqib\Desktop\Netduino-Meadow-Reference-Designs-master\Netduino-Meadow-Reference-Designs-master\N4 Prototype v1\Board Design\GERBERS\interconn.iml'
+INFO: Loaded existing interconnect file 'C:\Cadence\SPB_16.6\share\pcb\signal\cds_interconn.iml'
+INFO: Finished loading SigNoise interconnect libraries
+INFO: Field Solver bem2d for STL_0S_1R_126
+INFO: Executing command: bem2d 0 "E:/Users/saqib/AppData/Local/Temp/#Taaaaac01300.in" 0.00127
+INFO: Field Solver bem2d for STL_0S_1R_127
+INFO: Executing command: bem2d 0 "E:/Users/saqib/AppData/Local/Temp/#Taaaaad01300.in" 0.00127

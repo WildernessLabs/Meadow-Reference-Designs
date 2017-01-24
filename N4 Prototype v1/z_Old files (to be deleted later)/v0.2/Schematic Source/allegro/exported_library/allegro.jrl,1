@@ -1,0 +1,16 @@
+\t (00:00:56) allegro 16.6 S016 (v16-6-112BA) Windows 32
+\t (00:00:56)     Journal start - Thu Nov 24 11:26:01 2016
+\t (00:00:56)         Host=SAQIB-PC User=saqib Pid=7180 CPUs=4
+\t (00:00:56) 
+\d (00:00:56) Database opened: G:/per/my docs/orcad/pcbdesignmodifications/netduino_wifi/allegro/exported_library/cc3100mod.dra
+\i (00:00:56) generaledit 
+\i (00:01:06) opencd 'G:/per/my docs/orcad/pcbdesignmodifications/Netduino3Wifi_2.brd' 
+\e (00:01:06) Do you want to save the changes you made to cc3100mod.dra?
+\i (00:01:09) fillin yes 
+\t (00:01:10) Symbol 'cc3100mod.psm' created.
+\t (00:01:10) Opening existing design...
+\i (00:01:10) trapsize 2257
+\i (00:01:10) trapsize 2207
+\i (00:01:10) trapsize 2257
+\i (00:01:10) trapsize 2257
+\t (00:01:10)     Journal end - Thu Nov 24 11:26:16 2016
