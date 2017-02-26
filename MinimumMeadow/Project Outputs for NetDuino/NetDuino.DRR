@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: NetDuino.PcbDoc   2/26/2017  2:14:05 AM
+---------------------------------------------------------------------------
+
+Layer Pair : 1:Top Layer to 4:Bottom Layer
+ASCII RoundHoles File : NetDuino-RoundHoles.TXT
+ASCII SlotHoles File : NetDuino-SlotHoles.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        8mil (0.2032mm)          Round          182              25.90 Inch (657.93 mm)
+T2        24mil (0.6096mm)         Slot           2                284.07 Inch (7215.42 mm)
+T3        28mil (0.7112mm)         Slot           2                283.82 Inch (7209.10 mm)
+T4        35.43mil (0.89992mm)     Round          16               5.43 Inch (137.92 mm)
+T5        43.31mil (1.10007mm)     Round          2                0.20 Inch (5.08 mm)
+T6        125.98mil (3.19989mm)    Round          4                5.47 Inch (139.00 mm)
+---------------------------------------------------------------------------
+Totals                                            208              604.90 Inch (15364.46 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01
