@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [MeadowMinimum.PrjPcb]
+   Generated File[MeadowMinimum-RoundHoles-Plated.TXT]
+   Generated File[MeadowMinimum-SlotHoles-Plated.TXT]
+   Generated File[MeadowMinimum.DRL]
+   Generated File[MeadowMinimum.LDP]
+   Generated File[MeadowMinimum.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 6:14:15 PM On 6/3/2017

@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: F:\Freelance\NETDUINO_MEADOW\MeadowMinimum.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=meadowminimum-roundholes-plated.txt|DrillLayers=gtl,gp1,gp2,gbl
+LayersSetName=Top_Bot_Plated_Slot_Holes|DrillFile=meadowminimum-slotholes-plated.txt|DrillLayers=gtl,gp1,gp2,gbl
