@@ -1,0 +1,609 @@
+EESchema Schematic File Version 2
+LIBS:wildernessLabs-rescue
+LIBS:device
+LIBS:stm32
+LIBS:power
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:FLASH QSPI-SchDoc-cache
+LIBS:Power-SchDoc-cache
+LIBS:Power-SchDoc-rescue
+LIBS:SRAM-SchDoc-cache
+LIBS:STM32F7-SchDoc-cache
+LIBS:USB_OTG_FS-SchDoc-cache
+LIBS:wildernessLabs-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 20
+Title "MinimumMeadow"
+Date "2017-04-27"
+Rev "B"
+Comp "Wilderness Labs"
+Comment1 "Designer: S. Johnson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1500 7250 900  700 
+U 58FD0B24
+F0 "Power" 60
+F1 "Power-SchDoc.sch" 60
+$EndSheet
+$Sheet
+S 1250 2050 1300 1400
+U 58FD5F82
+F0 "USB_CON" 60
+F1 "USB_OTG_FS.sch" 60
+F2 "OTG_FS_OverCurrent" O R 2550 2900 60 
+F3 "OTG_FS_PowerSwitchOn" B R 2550 2300 60 
+F4 "OTG_FS_N" B R 2550 2400 60 
+F5 "OTG_FS_P" B R 2550 2500 60 
+F6 "OTG_FS_ID" B R 2550 2600 60 
+F7 "OTG_FS_VBUS" O R 2550 2800 60 
+F8 "USB_COM_TX" O R 2550 3300 60 
+F9 "USB_COM_RX" I R 2550 3200 60 
+$EndSheet
+$Sheet
+S 4550 1850 2600 1700
+U 58FD0188
+F0 "MCU" 60
+F1 "STM32_MCU.sch" 60
+F2 "OTG_FS_OVERCURRENT" I L 4550 2900 60 
+F3 "OTG_FS_PWRSWON" B L 4550 2000 60 
+F4 "OTG_FS_VBUS" B L 4550 2800 60 
+F5 "OTG_FS_ID" B L 4550 2300 60 
+F6 "OTG_FS_N" B L 4550 2100 60 
+F7 "OTG_FS_P" B L 4550 2200 60 
+F8 "CS_RAM[1..16]" O R 7150 3100 60 
+F9 "MCU_TX" O L 4550 3200 60 
+F10 "MCU_RX" I L 4550 3300 60 
+F11 "QSPI_SCK" O R 7150 2900 60 
+F12 "QSPI1_D[0..3]" B R 7150 3300 60 
+$EndSheet
+Wire Wire Line
+	2550 2300 3000 2300
+Wire Wire Line
+	3000 2300 3000 2000
+Wire Wire Line
+	3000 2000 4550 2000
+Wire Wire Line
+	2550 2400 3100 2400
+Wire Wire Line
+	3100 2400 3100 2100
+Wire Wire Line
+	3100 2100 4550 2100
+Wire Wire Line
+	2550 2500 3200 2500
+Wire Wire Line
+	3200 2500 3200 2200
+Wire Wire Line
+	3200 2200 4550 2200
+Wire Wire Line
+	2550 2600 3300 2600
+Wire Wire Line
+	3300 2600 3300 2300
+Wire Wire Line
+	3300 2300 4550 2300
+Wire Wire Line
+	2550 3200 4550 3200
+Wire Wire Line
+	4550 3300 2550 3300
+Wire Wire Line
+	2550 2800 4550 2800
+Wire Wire Line
+	2550 2900 4550 2900
+$Sheet
+S 10350 700  700  400 
+U 5904DDE4
+F0 "SRAM1" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 800 60 
+F3 "SRAM_CLK" I L 10350 900 60 
+F4 "SRAM_D[0..3]" B L 10350 1000 60 
+$EndSheet
+Wire Bus Line
+	7150 3300 8700 3300
+Wire Bus Line
+	8700 3300 8700 1000
+Wire Bus Line
+	8700 1000 10350 1000
+$Sheet
+S 10350 1500 700  400 
+U 59050452
+F0 "SRAM2" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 1600 60 
+F3 "SRAM_CLK" I L 10350 1700 60 
+F4 "SRAM_D[0..3]" B L 10350 1800 60 
+$EndSheet
+$Sheet
+S 10350 2350 700  400 
+U 590505FE
+F0 "SRAM3" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 2450 60 
+F3 "SRAM_CLK" I L 10350 2550 60 
+F4 "SRAM_D[0..3]" B L 10350 2650 60 
+$EndSheet
+$Sheet
+S 10350 3100 700  400 
+U 590507B9
+F0 "SRAM4" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 3200 60 
+F3 "SRAM_CLK" I L 10350 3300 60 
+F4 "SRAM_D[0..3]" B L 10350 3400 60 
+$EndSheet
+$Sheet
+S 10350 4700 700  400 
+U 59051046
+F0 "SRAM5" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 4800 60 
+F3 "SRAM_CLK" I L 10350 4900 60 
+F4 "SRAM_D[0..3]" B L 10350 5000 60 
+$EndSheet
+$Sheet
+S 10350 5500 700  400 
+U 5905104B
+F0 "SRAM6" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 5600 60 
+F3 "SRAM_CLK" I L 10350 5700 60 
+F4 "SRAM_D[0..3]" B L 10350 5800 60 
+$EndSheet
+$Sheet
+S 10350 6350 700  400 
+U 59051050
+F0 "SRAM7" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 6450 60 
+F3 "SRAM_CLK" I L 10350 6550 60 
+F4 "SRAM_D[0..3]" B L 10350 6650 60 
+$EndSheet
+$Sheet
+S 10350 7200 700  400 
+U 59051055
+F0 "SRAM8" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 10350 7300 60 
+F3 "SRAM_CLK" I L 10350 7400 60 
+F4 "SRAM_D[0..3]" B L 10350 7500 60 
+$EndSheet
+$Sheet
+S 12750 800  700  400 
+U 59051C0C
+F0 "SRAM9" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 900 60 
+F3 "SRAM_CLK" I L 12750 1000 60 
+F4 "SRAM_D[0..3]" B L 12750 1100 60 
+$EndSheet
+$Sheet
+S 12750 1600 700  400 
+U 59051C11
+F0 "SRAM10" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 1700 60 
+F3 "SRAM_CLK" I L 12750 1800 60 
+F4 "SRAM_D[0..3]" B L 12750 1900 60 
+$EndSheet
+$Sheet
+S 12750 2450 700  400 
+U 59051C16
+F0 "SRAM11" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 2550 60 
+F3 "SRAM_CLK" I L 12750 2650 60 
+F4 "SRAM_D[0..3]" B L 12750 2750 60 
+$EndSheet
+$Sheet
+S 12750 3300 700  400 
+U 59051C1B
+F0 "SRAM12" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 3400 60 
+F3 "SRAM_CLK" I L 12750 3500 60 
+F4 "SRAM_D[0..3]" B L 12750 3600 60 
+$EndSheet
+$Sheet
+S 12750 4800 700  400 
+U 59051C20
+F0 "SRAM13" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 4900 60 
+F3 "SRAM_CLK" I L 12750 5000 60 
+F4 "SRAM_D[0..3]" B L 12750 5100 60 
+$EndSheet
+$Sheet
+S 12750 5600 700  400 
+U 59051C25
+F0 "SRAM14" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 5700 60 
+F3 "SRAM_CLK" I L 12750 5800 60 
+F4 "SRAM_D[0..3]" B L 12750 5900 60 
+$EndSheet
+$Sheet
+S 12750 6450 700  400 
+U 59051C2A
+F0 "SRAM15" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 6550 60 
+F3 "SRAM_CLK" I L 12750 6650 60 
+F4 "SRAM_D[0..3]" B L 12750 6750 60 
+$EndSheet
+$Sheet
+S 12750 7300 700  400 
+U 59051C2F
+F0 "SRAM16" 60
+F1 "SRAM.sch" 60
+F2 "~SRAM_CS" I L 12750 7400 60 
+F3 "SRAM_CLK" I L 12750 7500 60 
+F4 "SRAM_D[0..3]" B L 12750 7600 60 
+$EndSheet
+Wire Wire Line
+	7150 2900 7700 2900
+Wire Wire Line
+	7700 2900 7700 900 
+Wire Wire Line
+	7700 900  10350 900 
+Wire Wire Line
+	10050 900  10050 7400
+Wire Wire Line
+	10050 1700 10350 1700
+Connection ~ 10050 900 
+Wire Wire Line
+	10050 2550 10350 2550
+Connection ~ 10050 1700
+Connection ~ 10050 2550
+Wire Wire Line
+	10050 4900 10350 4900
+Wire Wire Line
+	10050 5700 10350 5700
+Connection ~ 10050 4900
+Wire Wire Line
+	10050 6550 10350 6550
+Connection ~ 10050 5700
+Wire Wire Line
+	10050 7400 10350 7400
+Connection ~ 10050 6550
+Wire Wire Line
+	12000 4100 10050 4100
+Wire Wire Line
+	12000 1000 12000 7500
+Connection ~ 10050 4100
+Wire Wire Line
+	12000 1000 12750 1000
+Wire Wire Line
+	12000 1800 12750 1800
+Connection ~ 12000 1800
+Wire Wire Line
+	12750 2650 12000 2650
+Connection ~ 12000 2650
+Wire Wire Line
+	12750 3500 12000 3500
+Connection ~ 12000 3500
+Wire Wire Line
+	12000 5000 12750 5000
+Connection ~ 12000 4100
+Wire Wire Line
+	12000 5800 12750 5800
+Connection ~ 12000 5000
+Wire Wire Line
+	12000 6650 12750 6650
+Connection ~ 12000 5800
+Wire Wire Line
+	12000 7500 12750 7500
+Connection ~ 12000 6650
+Wire Bus Line
+	8700 1800 10350 1800
+Wire Bus Line
+	10350 2650 8700 2650
+Wire Bus Line
+	8700 3250 8700 7500
+Wire Bus Line
+	8700 5000 10350 5000
+Wire Bus Line
+	8700 5800 10350 5800
+Wire Bus Line
+	8700 6650 10350 6650
+Wire Bus Line
+	8700 7500 10350 7500
+Wire Bus Line
+	12750 1100 11300 1100
+Wire Bus Line
+	11300 1100 11300 7600
+Wire Bus Line
+	11300 3900 8700 3900
+Wire Bus Line
+	11300 7600 12750 7600
+Wire Bus Line
+	12750 1900 11300 1900
+Wire Bus Line
+	12750 2750 11300 2750
+Wire Bus Line
+	12750 3600 11300 3600
+Wire Bus Line
+	12750 5100 11300 5100
+Wire Bus Line
+	12750 5900 11300 5900
+Wire Bus Line
+	12750 6750 11300 6750
+Wire Bus Line
+	8200 600  8200 8100
+Wire Bus Line
+	8200 8100 11600 8100
+Wire Bus Line
+	11600 8100 11600 600 
+Wire Bus Line
+	7150 3100 8200 3100
+Wire Wire Line
+	10350 800  8300 800 
+Wire Wire Line
+	10350 1600 8300 1600
+Wire Wire Line
+	10350 2450 8300 2450
+Wire Wire Line
+	10350 3300 10050 3300
+Connection ~ 10050 3300
+Wire Wire Line
+	10350 3200 8300 3200
+Wire Wire Line
+	10350 4800 8300 4800
+Wire Wire Line
+	10350 5600 8300 5600
+Wire Wire Line
+	10350 6450 8300 6450
+Wire Wire Line
+	10350 7300 8300 7300
+Wire Wire Line
+	11700 900  12750 900 
+Wire Wire Line
+	11700 1700 12750 1700
+Wire Wire Line
+	11700 2550 12750 2550
+Wire Wire Line
+	11700 3400 12750 3400
+Wire Wire Line
+	11700 4900 12750 4900
+Wire Wire Line
+	11700 6550 12750 6550
+Wire Wire Line
+	11700 7400 12750 7400
+Entry Wire Line
+	8200 700  8300 800 
+Entry Wire Line
+	8200 1500 8300 1600
+Entry Wire Line
+	8200 2350 8300 2450
+Entry Wire Line
+	8200 3100 8300 3200
+Entry Wire Line
+	8200 4700 8300 4800
+Entry Wire Line
+	8200 5500 8300 5600
+Entry Wire Line
+	8200 6350 8300 6450
+Entry Wire Line
+	8200 7200 8300 7300
+Entry Wire Line
+	11600 800  11700 900 
+Entry Wire Line
+	11600 1600 11700 1700
+Entry Wire Line
+	11600 2450 11700 2550
+Entry Wire Line
+	11600 3300 11700 3400
+Entry Wire Line
+	11600 4800 11700 4900
+Entry Wire Line
+	11600 6450 11700 6550
+Entry Wire Line
+	11600 7300 11700 7400
+Wire Wire Line
+	11700 5700 12750 5700
+Entry Wire Line
+	11600 5600 11700 5700
+Text Label 9100 800  0    60   ~ 0
+CS_RAM1
+Text Label 9150 1600 0    60   ~ 0
+CS_RAM2
+Text Label 9150 2450 0    60   ~ 0
+CS_RAM3
+Text Label 9200 3200 0    60   ~ 0
+CS_RAM4
+Text Label 9150 4800 0    60   ~ 0
+CS_RAM5
+Text Label 9150 5600 0    60   ~ 0
+CS_RAM6
+Text Label 9150 6450 0    60   ~ 0
+CS_RAM7
+Text Label 9150 7300 0    60   ~ 0
+CS_RAM8
+Text Label 12100 900  0    60   ~ 0
+CS_RAM9
+Text Label 12100 1700 0    60   ~ 0
+CS_RAM10
+Text Label 12050 2550 0    60   ~ 0
+CS_RAM11
+Text Label 12100 3400 0    60   ~ 0
+CS_RAM12
+Text Label 12100 4900 0    60   ~ 0
+CS_RAM13
+Text Label 12050 5700 0    60   ~ 0
+CS_RAM14
+Text Label 12100 6550 0    60   ~ 0
+CS_RAM15
+Text Label 12100 7400 0    60   ~ 0
+CS_RAM16
+Text Label 9350 8100 0    60   ~ 0
+CS_RAM[1..16]
+Wire Bus Line
+	8700 3400 10350 3400
+Text Label 7750 900  0    60   ~ 0
+QSPI_SCK
+Text Label 9050 3400 0    60   ~ 0
+QSPI1[0..3]
+Connection ~ 8700 3300
+Connection ~ 8700 2650
+Connection ~ 8700 1800
+Connection ~ 8700 1000
+Connection ~ 8700 3900
+Connection ~ 8700 5000
+Connection ~ 8700 5800
+Connection ~ 8200 3100
+Connection ~ 8700 7500
+Connection ~ 8700 6650
+Connection ~ 8200 8100
+Connection ~ 11600 8100
+Connection ~ 11300 5900
+Connection ~ 11300 6750
+Connection ~ 11300 7600
+Connection ~ 11300 5100
+Connection ~ 11300 3900
+Connection ~ 11300 3600
+Connection ~ 11300 1100
+Connection ~ 11300 1900
+Connection ~ 11300 2750
+Connection ~ 8700 3400
+$Comp
+L Mounting_Hole_PAD MK1
+U 1 1 590529FA
+P 3800 8400
+F 0 "MK1" H 3800 8650 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 3800 8575 50  0000 C CNN
+F 2 "footprints:MH_3.2MMD" H 3800 8400 60  0001 C CNN
+F 3 "" H 3800 8400 60  0001 C CNN
+F 4 "Value" H 3800 8400 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3800 8400 60  0001 C CNN "Part Number"
+F 6 "DNI" H 3800 8400 60  0001 C CNN "DNI"
+	1    3800 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK2
+U 1 1 59053166
+P 3800 9000
+F 0 "MK2" H 3800 9250 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 3800 9175 50  0000 C CNN
+F 2 "footprints:MH_3.2MMD" H 3800 9000 60  0001 C CNN
+F 3 "" H 3800 9000 60  0001 C CNN
+F 4 "Value" H 3800 9000 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 3800 9000 60  0001 C CNN "Part Number"
+F 6 "DNI" H 3800 9000 60  0001 C CNN "DNI"
+	1    3800 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK3
+U 1 1 59053341
+P 4600 8400
+F 0 "MK3" H 4600 8650 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 4600 8575 50  0000 C CNN
+F 2 "footprints:MH_3.2MMD" H 4600 8400 60  0001 C CNN
+F 3 "" H 4600 8400 60  0001 C CNN
+F 4 "Value" H 4600 8400 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4600 8400 60  0001 C CNN "Part Number"
+F 6 "DNI" H 4600 8400 60  0001 C CNN "DNI"
+	1    4600 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole_PAD MK4
+U 1 1 590534FD
+P 4600 9000
+F 0 "MK4" H 4600 9250 50  0000 C CNN
+F 1 "Mounting_Hole_PAD" H 4600 9175 50  0000 C CNN
+F 2 "footprints:MH_3.2MMD" H 4600 9000 60  0001 C CNN
+F 3 "" H 4600 9000 60  0001 C CNN
+F 4 "Value" H 4600 9000 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 4600 9000 60  0001 C CNN "Part Number"
+F 6 "DNI" H 4600 9000 60  0001 C CNN "DNI"
+	1    4600 9000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
