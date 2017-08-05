@@ -1,4 +1,4 @@
-update=Thursday, June 15, 2017 'PMt' 07:46:19 PM
+update=Saturday, August 05, 2017 'PMt' 04:58:10 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=/Users/sheldon/kicad-library-master
@@ -115,13 +125,4 @@ LibName83=Xicor
 LibName84=zetex
 LibName85=Zilog
 LibName86=Power-SchDoc-cache
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName87=MinimumMeadow_RevC-cache
