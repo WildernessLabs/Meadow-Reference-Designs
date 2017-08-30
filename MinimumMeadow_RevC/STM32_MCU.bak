@@ -2079,9 +2079,9 @@ Wire Wire Line
 	9700 2050 9700 2400
 Connection ~ 9700 2400
 Wire Wire Line
-	9900 7000 10450 7000
+	9900 7000 10650 7000
 Wire Wire Line
-	9900 7100 10450 7100
+	9900 7100 10650 7100
 Wire Wire Line
 	5950 2400 5800 2400
 Wire Wire Line
@@ -2457,4 +2457,24 @@ NoConn ~ 10650 6700
 NoConn ~ 10650 6800
 NoConn ~ 10650 6200
 NoConn ~ 10650 5600
+Text GLabel 7700 2850 0    60   Output ~ 0
+PH0
+Wire Wire Line
+	7700 2850 7850 2850
+Wire Wire Line
+	7850 2850 7850 2400
+Connection ~ 7850 2400
+Text GLabel 10850 2400 2    60   Output ~ 0
+PH1
+Text GLabel 10650 7000 2    60   Input ~ 0
+PH0
+Text GLabel 10650 7100 2    60   Input ~ 0
+PH1
+NoConn ~ 5300 8050
+NoConn ~ 5300 8150
+NoConn ~ 5300 8250
+NoConn ~ 10650 6000
+NoConn ~ 10800 3150
+NoConn ~ 8800 1800
+NoConn ~ 1450 7150
 $EndSCHEMATC
