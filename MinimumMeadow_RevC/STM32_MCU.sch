@@ -1634,8 +1634,6 @@ Entry Wire Line
 Entry Wire Line
 	10650 5500 10750 5400
 Entry Wire Line
-	10650 5600 10750 5500
-Entry Wire Line
 	10650 5700 10750 5600
 Entry Wire Line
 	10650 5800 10750 5700
@@ -2081,9 +2079,9 @@ Wire Wire Line
 	9700 2050 9700 2400
 Connection ~ 9700 2400
 Wire Wire Line
-	9900 7000 10450 7000
+	9900 7000 10650 7000
 Wire Wire Line
-	9900 7100 10450 7100
+	9900 7100 10650 7100
 Wire Wire Line
 	5950 2400 5800 2400
 Wire Wire Line
@@ -2446,4 +2444,34 @@ Wire Wire Line
 	11000 6100 11800 6100
 Text Label 14100 1150 2    60   ~ 0
 QSPI_SCK
+NoConn ~ 7350 5500
+NoConn ~ 7350 5600
+NoConn ~ 7350 5700
+NoConn ~ 7350 5800
+NoConn ~ 7350 5900
+NoConn ~ 10650 6300
+NoConn ~ 10650 6400
+NoConn ~ 10650 6500
+NoConn ~ 10650 6600
+NoConn ~ 10650 6700
+NoConn ~ 10650 6800
+NoConn ~ 10650 6200
+NoConn ~ 10650 5600
+Text GLabel 7700 2850 0    60   Output ~ 0
+PH0
+Wire Wire Line
+	7700 2850 7850 2850
+Wire Wire Line
+	7850 2850 7850 2400
+Connection ~ 7850 2400
+Text GLabel 10850 2400 2    60   Output ~ 0
+PH1
+Text GLabel 10650 7000 2    60   Input ~ 0
+PH0
+Text GLabel 10650 7100 2    60   Input ~ 0
+PH1
+NoConn ~ 5300 8050
+NoConn ~ 5300 8150
+NoConn ~ 5300 8250
+NoConn ~ 10650 6000
 $EndSCHEMATC
