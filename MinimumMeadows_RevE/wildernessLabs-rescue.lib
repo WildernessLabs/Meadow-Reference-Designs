@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# BAT60JFILM-RESCUE-wildernessLabs
+#
+DEF BAT60JFILM-RESCUE-wildernessLabs D 0 40 Y Y 1 F N
+F0 "D" 100 -100 60 H V L BNN
+F1 "BAT60JFILM-RESCUE-wildernessLabs" 100 -200 60 H V L BNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 10 100 0 100 -200 N
+P 4 0 1 10 0 -200 100 -100 0 0 0 -200 F
+X A 1 -200 -100 200 R 1 1 0 1 P
+X K 2 300 -100 200 L 1 1 0 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
