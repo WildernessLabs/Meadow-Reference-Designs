@@ -1,4 +1,4 @@
-update=Monday, November 27, 2017 'PMt' 09:00:10 PM
+update=Wednesday, January 10, 2018 'PMt' 07:57:00 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=/Users/sheldon/kicad-library-master
@@ -127,3 +117,13 @@ LibName85=Zilog
 LibName86=Power-SchDoc-cache
 LibName87=MinimumMeadow_RevC-cache
 LibName88=library/DM3AT-SF-PEJM5/DM3AT-SF-PEJM5
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

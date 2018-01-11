@@ -94,7 +94,7 @@ encoding utf-8
 Sheet 1 8
 Title "MinimumMeadow"
 Date "06/08/2017"
-Rev "D"
+Rev "E"
 Comp "Wilderness Labs"
 Comment1 "Designer: S. Johnson"
 Comment2 ""
@@ -455,4 +455,6 @@ Wire Wire Line
 	7100 4800 10850 4800
 Wire Wire Line
 	7100 4900 10850 4900
+NoConn ~ 2500 3800
+NoConn ~ 2500 4350
 $EndSCHEMATC

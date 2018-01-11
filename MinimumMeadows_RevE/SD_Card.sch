@@ -94,7 +94,7 @@ encoding utf-8
 Sheet 7 8
 Title ""
 Date ""
-Rev ""
+Rev "E"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -253,8 +253,8 @@ U 1 1 5A1D308F
 P 1950 2400
 F 0 "Q1" V 2300 2350 50  0000 L CNN
 F 1 "Q_PMOS_GSD" V 2350 2050 50  0001 L CNN
-F 2 "" H 2150 2500 50  0001 C CNN
-F 3 "" H 1950 2400 50  0001 C CNN
+F 2 "SI1315DL-T1-GE3" V 2200 2400 60  0000 C CNN
+F 3 "http://www.vishay.com/docs/67193/si1315dl.pdf" H 1950 2400 50  0001 C CNN
 F 4 "Vishay" V 1850 2650 60  0001 C CNN "Manufacturer"
 F 5 "SI1315DL-T1-GE3" V 2200 2400 60  0000 C CNN "Part Number"
 	1    1950 2400

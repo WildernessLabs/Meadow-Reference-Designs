@@ -94,7 +94,7 @@ encoding utf-8
 Sheet 4 8
 Title "MinimumMeadow"
 Date "06/08/2017"
-Rev "D"
+Rev "E"
 Comp "Wilderness Labs"
 Comment1 "Designer: S. Johnson"
 Comment2 ""
@@ -2056,7 +2056,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 2500 6850 2500
 Wire Wire Line
-	6850 2050 6850 2500
+	6850 2500 6850 2050
 Wire Wire Line
 	5800 2050 7200 2050
 Wire Wire Line
@@ -2450,35 +2450,6 @@ Text HLabel 2250 7150 0    60   Output ~ 0
 WIFI_EN
 Text HLabel 2250 5450 0    60   Output ~ 0
 ~WIFI_RESET
-$Comp
-L R R31
-U 1 1 5A1D1034
-P 15050 3750
-F 0 "R31" H 15200 3850 50  0000 C CNN
-F 1 "10K" H 15200 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 14980 3750 50  0001 C CNN
-F 3 "" H 15050 3750 50  0000 C CNN
-F 4 "Value" H 15050 3750 60  0001 C CNN "Test something"
-F 5 "Value" H 15050 3750 60  0001 C CNN "Fieldname"
-F 6 "CRCW060310K0FKEAHP" V 15050 3750 60  0001 C CNN "Part Number"
-F 7 "Vishay Dale" V 15050 3750 60  0001 C CNN "Manufacturer"
-	1    15050 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C3
-U 1 1 5A1D13D7
-P 15400 3750
-F 0 "C3" H 15425 3850 50  0000 L CNN
-F 1 "100nF" H 15425 3650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 15438 3600 50  0001 C CNN
-F 3 "" H 15400 3750 50  0000 C CNN
-F 4 "AVX COrp" H 15400 3750 60  0001 C CNN "Manufacturer"
-F 5 "0603ZC104KAT2A" H 15400 3750 60  0001 C CNN "Part Number"
-F 6 "10V" H 15500 3550 60  0000 C CNN "Voltage"
-	1    15400 3750
-	1    0    0    -1  
-$EndComp
 Wire Bus Line
 	5550 5950 5550 6350
 Wire Bus Line
@@ -2532,7 +2503,6 @@ Text HLabel 2250 8050 0    60   BiDi ~ 0
 I2C2_SDA
 Text HLabel 2250 7950 0    60   BiDi ~ 0
 I2C2_SCL
-NoConn ~ 2250 7850
 Text HLabel 10550 6200 2    60   BiDi ~ 0
 D0
 Text HLabel 10550 6300 2    60   BiDi ~ 0
@@ -2555,4 +2525,9 @@ Text HLabel 4650 6650 2    60   BiDi ~ 0
 D9
 Text HLabel 4650 6750 2    60   BiDi ~ 0
 D13
+NoConn ~ 2250 7650
+Text HLabel 2250 7750 0    60   Input ~ 0
+CAN1_RX
+Text HLabel 2250 7850 0    60   Output ~ 0
+CAN1_TX
 $EndSCHEMATC
