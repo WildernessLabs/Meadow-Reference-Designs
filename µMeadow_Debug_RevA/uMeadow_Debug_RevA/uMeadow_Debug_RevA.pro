@@ -1,4 +1,4 @@
-update=Thursday, February 22, 2018 'PMt' 04:04:08 PM
+update=Monday, March 12, 2018 'PMt' 07:25:54 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/Users/sheldon/Downloads/exports (1)/KiCAD/KiCAD/symbols
+LibName31=/Users/sheldon/Downloads/exports (1)/symbols
