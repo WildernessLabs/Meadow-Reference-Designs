@@ -1,0 +1,1257 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Management
+LIBS:Oscillators
+LIBS:switches
+LIBS:onsemi
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:diode
+LIBS:rfcom
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:elec-unifil
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:nxp
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:stm32
+LIBS:uMeadow_Debug_RevA-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 2 5
+Title "uMeadow_Debug"
+Date "03/16/2018"
+Rev "A"
+Comp "Wilderness Labs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F77XAXY U?
+U 1 1 5AADEB8C
+P 2900 1000
+F 0 "U?" H 4000 1400 60  0000 C CNN
+F 1 "STM32F77XAXY" H 4000 1300 60  0000 C CNN
+F 2 "footprints:WLCSP-180" H 4000 1400 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 4000 1400 60  0001 C CNN
+F 4 "ST MICRO" H 2900 1000 60  0001 C CNN "Manufacturer"
+F 5 "STM32F779AIY" H 4000 -2250 60  0000 C CNN "Part Number"
+	1    2900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F77XAXY U?
+U 2 1 5AADEC09
+P 2300 5700
+F 0 "U?" H 3400 6100 60  0000 C CNN
+F 1 "STM32F77XAXY" H 3400 6000 60  0000 C CNN
+F 2 "footprints:WLCSP-180" H 3400 6100 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 3400 6100 60  0001 C CNN
+F 4 "ST MICRO" H 2300 5700 60  0001 C CNN "Manufacturer"
+F 5 "STM32F779AIY" H 3400 2450 60  0000 C CNN "Part Number"
+	2    2300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F77XAXY U?
+U 3 1 5AADEC83
+P 6600 5800
+F 0 "U?" H 7700 6200 60  0000 C CNN
+F 1 "STM32F77XAXY" H 7700 6100 60  0000 C CNN
+F 2 "footprints:WLCSP-180" H 7700 6200 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 7700 6200 60  0001 C CNN
+F 4 "ST MICRO" H 6600 5800 60  0001 C CNN "Manufacturer"
+F 5 "STM32F779AIY" H 7700 2550 60  0000 C CNN "Part Number"
+	3    6600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F77XAXY U?
+U 4 1 5AADECD2
+P 10200 5950
+F 0 "U?" H 11300 6350 60  0000 C CNN
+F 1 "STM32F77XAXY" H 11300 6250 60  0000 C CNN
+F 2 "footprints:WLCSP-180" H 11300 6350 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 11300 6350 60  0001 C CNN
+F 4 "ST MICRO" H 10200 5950 60  0001 C CNN "Manufacturer"
+F 5 "STM32F779AIY" H 11300 2700 60  0000 C CNN "Part Number"
+	4    10200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1300 5200 1300
+Wire Wire Line
+	5200 1300 6150 1300
+Wire Wire Line
+	6150 1300 6550 1300
+Wire Wire Line
+	6550 1300 7000 1300
+Wire Wire Line
+	7000 1300 7450 1300
+Wire Wire Line
+	7450 1300 7950 1300
+Wire Wire Line
+	7950 1300 8400 1300
+Wire Wire Line
+	8400 1300 8850 1300
+Wire Wire Line
+	8850 1300 9250 1300
+Wire Wire Line
+	9250 1300 9700 1300
+Wire Wire Line
+	9700 1300 9900 1300
+Wire Wire Line
+	9900 1300 10150 1300
+Wire Wire Line
+	10150 1300 10600 1300
+Wire Wire Line
+	10600 1300 11000 1300
+Wire Wire Line
+	11000 1300 11450 1300
+Wire Wire Line
+	11450 1300 11900 1300
+Wire Wire Line
+	11900 1300 12400 1300
+Wire Wire Line
+	12400 1300 12850 1300
+Wire Wire Line
+	12850 1300 13300 1300
+Wire Wire Line
+	13300 1300 13700 1300
+Wire Wire Line
+	13700 1300 14150 1300
+Wire Wire Line
+	14150 1300 14550 1300
+Wire Wire Line
+	14550 1300 14600 1300
+Connection ~ 6150 1300
+Connection ~ 6550 1300
+Connection ~ 7000 1300
+Connection ~ 7450 1300
+Connection ~ 7950 1300
+Connection ~ 8400 1300
+Connection ~ 8850 1300
+Wire Wire Line
+	5200 2000 5100 2000
+Wire Wire Line
+	5200 1300 5200 1400
+Wire Wire Line
+	5200 1400 5200 1500
+Wire Wire Line
+	5200 1500 5200 1600
+Wire Wire Line
+	5200 1600 5200 1700
+Wire Wire Line
+	5200 1700 5200 1800
+Wire Wire Line
+	5200 1800 5200 1900
+Wire Wire Line
+	5200 1900 5200 2000
+Wire Wire Line
+	5200 2000 5200 2100
+Wire Wire Line
+	5200 2100 5200 2200
+Wire Wire Line
+	5200 1900 5100 1900
+Wire Wire Line
+	5100 1800 5200 1800
+Connection ~ 5200 1900
+Wire Wire Line
+	5200 1700 5100 1700
+Connection ~ 5200 1800
+Wire Wire Line
+	5200 1600 5100 1600
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1500 5100 1500
+Connection ~ 5200 1600
+Wire Wire Line
+	5200 1400 5100 1400
+Connection ~ 5200 1500
+Connection ~ 5200 1300
+Connection ~ 5200 1400
+Wire Wire Line
+	6150 1600 6150 1700
+Wire Wire Line
+	6150 1700 6550 1700
+Wire Wire Line
+	6550 1700 7000 1700
+Wire Wire Line
+	7000 1700 7450 1700
+Wire Wire Line
+	7450 1700 7700 1700
+Wire Wire Line
+	7700 1700 7950 1700
+Wire Wire Line
+	7950 1700 8400 1700
+Wire Wire Line
+	8400 1700 8850 1700
+Wire Wire Line
+	8850 1700 9250 1700
+Wire Wire Line
+	9250 1700 9700 1700
+Wire Wire Line
+	9700 1700 10150 1700
+Wire Wire Line
+	10150 1700 10600 1700
+Wire Wire Line
+	10600 1700 11000 1700
+Wire Wire Line
+	11000 1700 11450 1700
+Wire Wire Line
+	11450 1700 11900 1700
+Wire Wire Line
+	11900 1700 12150 1700
+Wire Wire Line
+	12150 1700 12400 1700
+Wire Wire Line
+	12400 1700 12850 1700
+Wire Wire Line
+	12850 1700 13300 1700
+Wire Wire Line
+	13300 1700 13700 1700
+Wire Wire Line
+	13700 1700 14150 1700
+Wire Wire Line
+	14150 1700 14600 1700
+Wire Wire Line
+	6550 1700 6550 1600
+Wire Wire Line
+	7000 1700 7000 1600
+Connection ~ 6550 1700
+Wire Wire Line
+	7450 1700 7450 1600
+Connection ~ 7000 1700
+Wire Wire Line
+	7950 1700 7950 1600
+Connection ~ 7450 1700
+Wire Wire Line
+	8400 1700 8400 1600
+Connection ~ 7950 1700
+Wire Wire Line
+	8850 1700 8850 1600
+Connection ~ 8400 1700
+Wire Wire Line
+	9250 1700 9250 1600
+Connection ~ 8850 1700
+Wire Wire Line
+	7700 1700 7700 1800
+Connection ~ 7700 1700
+$Comp
+L GND #PWR?
+U 1 1 5AADF4E7
+P 7700 1800
+F 0 "#PWR?" H 7700 1550 50  0001 C CNN
+F 1 "GND" H 7700 1650 50  0000 C CNN
+F 2 "" H 7700 1800 50  0000 C CNN
+F 3 "" H 7700 1800 50  0000 C CNN
+	1    7700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AADF543
+P 2300 2250
+F 0 "#PWR?" H 2300 2000 50  0001 C CNN
+F 1 "GND" H 2300 2100 50  0000 C CNN
+F 2 "" H 2300 2250 50  0000 C CNN
+F 3 "" H 2300 2250 50  0000 C CNN
+	1    2300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1400 2850 1400
+Wire Wire Line
+	2850 1400 2900 1400
+Wire Wire Line
+	2300 1400 2300 2250
+Wire Wire Line
+	2850 1400 2850 1500
+Wire Wire Line
+	2850 1500 2850 1600
+Wire Wire Line
+	2850 1600 2850 1700
+Wire Wire Line
+	2850 1700 2850 1800
+Wire Wire Line
+	2850 1800 2850 1900
+Wire Wire Line
+	2850 1900 2850 2000
+Wire Wire Line
+	2850 2000 2850 2100
+Wire Wire Line
+	2850 2100 2850 2200
+Wire Wire Line
+	2850 2200 2850 2300
+Wire Wire Line
+	2850 2300 2850 2400
+Wire Wire Line
+	2850 2400 2850 2500
+Wire Wire Line
+	2850 2500 2850 2700
+Wire Wire Line
+	2850 1500 2900 1500
+Connection ~ 2850 1400
+Wire Wire Line
+	2850 1600 2900 1600
+Connection ~ 2850 1500
+Wire Wire Line
+	2850 1700 2900 1700
+Connection ~ 2850 1600
+Wire Wire Line
+	2850 1800 2900 1800
+Connection ~ 2850 1700
+Wire Wire Line
+	2850 1900 2900 1900
+Connection ~ 2850 1800
+Wire Wire Line
+	2850 2000 2900 2000
+Connection ~ 2850 1900
+Wire Wire Line
+	2850 2100 2900 2100
+Connection ~ 2850 2000
+Wire Wire Line
+	2850 2200 2900 2200
+Connection ~ 2850 2100
+Wire Wire Line
+	2850 2300 2900 2300
+Connection ~ 2850 2200
+Wire Wire Line
+	2850 2400 2900 2400
+Connection ~ 2850 2300
+Wire Wire Line
+	2850 2500 2900 2500
+Connection ~ 2850 2400
+$Comp
+L C C?
+U 1 1 5AAF9EE2
+P 1500 1200
+F 0 "C?" H 1525 1300 50  0000 L CNN
+F 1 "0.1uF" H 1525 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1538 1050 50  0001 C CNN
+F 3 "" H 1500 1200 50  0001 C CNN
+F 4 "Kemet" H 1500 1200 60  0001 C CNN "Manufacturer"
+F 5 "C0402C104M8RACTU" H 1500 1200 60  0001 C CNN "Part Number"
+F 6 "Murata" H 1500 1200 60  0001 C CNN "Manufacturer 2"
+F 7 "GCM155R71A104KA55D" H 1500 1200 60  0001 C CNN "Part Number 2"
+F 8 "10V" H 1700 1200 60  0000 C CNN "Voltage"
+	1    1500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AAF9F75
+P 1050 1200
+F 0 "C?" H 1075 1300 50  0000 L CNN
+F 1 "0.1uF" H 1075 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1088 1050 50  0001 C CNN
+F 3 "" H 1050 1200 50  0001 C CNN
+F 4 "Kemet" H 1050 1200 60  0001 C CNN "Manufacturer"
+F 5 "C0402C104M8RACTU" H 1050 1200 60  0001 C CNN "Part Number"
+F 6 "Murata" H 1050 1200 60  0001 C CNN "Manufacturer 2"
+F 7 "GCM155R71A104KA55D" H 1050 1200 60  0001 C CNN "Part Number 2"
+F 8 "10V" H 1250 1200 60  0000 C CNN "Voltage"
+	1    1050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1050 1050 1000
+Wire Wire Line
+	650  1000 1050 1000
+Wire Wire Line
+	1050 1000 1500 1000
+Wire Wire Line
+	1500 1000 1800 1000
+Wire Wire Line
+	1800 1000 2750 1000
+Wire Wire Line
+	2750 1000 2900 1000
+Wire Wire Line
+	1500 1050 1500 1000
+Connection ~ 1500 1000
+Wire Wire Line
+	2900 1100 2750 1100
+Wire Wire Line
+	2750 1100 2750 1000
+Connection ~ 2750 1000
+Wire Wire Line
+	6550 2300 6550 2200
+Wire Wire Line
+	6550 2200 5200 2200
+Wire Wire Line
+	5200 2200 5100 2200
+Wire Wire Line
+	2300 3050 2300 3000
+Wire Wire Line
+	1800 3000 1950 3000
+Wire Wire Line
+	1950 3000 2300 3000
+Wire Wire Line
+	2300 3000 2900 3000
+Wire Wire Line
+	2900 3100 2900 3500
+Wire Wire Line
+	2900 3500 2300 3500
+Wire Wire Line
+	2300 3500 2300 3400
+Wire Wire Line
+	2300 3400 2300 3350
+$Comp
+L GND #PWR?
+U 1 1 5AAFA37D
+P 2300 3500
+F 0 "#PWR?" H 2300 3250 50  0001 C CNN
+F 1 "GND" H 2300 3350 50  0000 C CNN
+F 2 "" H 2300 3500 50  0000 C CNN
+F 3 "" H 2300 3500 50  0000 C CNN
+	1    2300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AAFA3ED
+P 5700 2700
+F 0 "C?" H 5725 2800 50  0000 L CNN
+F 1 "2.2 uF" H 5725 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5738 2550 50  0001 C CNN
+F 3 "" H 5700 2700 50  0001 C CNN
+F 4 "Taiyo Yuden" H 5700 2700 60  0001 C CNN "Manufacturer"
+F 5 "JMK105BJ225MV-F" H 5700 2700 60  0001 C CNN "Part Number"
+F 6 "Kemet" H 5700 2700 60  0001 C CNN "Manufacturer 2"
+F 7 "C0402C225M8PACTU" H 5700 2700 60  0001 C CNN "Part Number 2"
+F 8 "6.3V" H 5900 2700 60  0000 C CNN "Voltage"
+F 9 "20%" H 5700 2700 60  0001 C CNN "Tolerance"
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AAFA667
+P 6150 2700
+F 0 "C?" H 6175 2800 50  0000 L CNN
+F 1 "2.2 uF" H 6175 2600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6188 2550 50  0001 C CNN
+F 3 "" H 6150 2700 50  0001 C CNN
+F 4 "Taiyo Yuden" H 6150 2700 60  0001 C CNN "Manufacturer"
+F 5 "JMK105BJ225MV-F" H 6150 2700 60  0001 C CNN "Part Number"
+F 6 "Kemet" H 6150 2700 60  0001 C CNN "Manufacturer 2"
+F 7 "C0402C225M8PACTU" H 6150 2700 60  0001 C CNN "Part Number 2"
+F 8 "6.3V" H 6350 2700 60  0000 C CNN "Voltage"
+F 9 "20%" H 6150 2700 60  0001 C CNN "Tolerance"
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2400 6150 2400
+Wire Wire Line
+	6150 2400 6150 2550
+Wire Wire Line
+	5100 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 2550
+Wire Wire Line
+	5700 2850 5700 3050
+Wire Wire Line
+	5700 3050 5900 3050
+Wire Wire Line
+	5900 3050 6150 3050
+Wire Wire Line
+	6150 3050 6550 3050
+Wire Wire Line
+	6550 3050 7050 3050
+Wire Wire Line
+	6150 3050 6150 2850
+$Comp
+L GND #PWR?
+U 1 1 5AAFA84E
+P 5900 3150
+F 0 "#PWR?" H 5900 2900 50  0001 C CNN
+F 1 "GND" H 5900 3000 50  0000 C CNN
+F 2 "" H 5900 3150 50  0000 C CNN
+F 3 "" H 5900 3150 50  0000 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3150 5900 3050
+Connection ~ 5900 3050
+$Comp
+L C C?
+U 1 1 5AAFA937
+P 5700 1050
+F 0 "C?" H 5725 1150 50  0000 L CNN
+F 1 "2.2 uF" H 5725 950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5738 900 50  0001 C CNN
+F 3 "" H 5700 1050 50  0001 C CNN
+F 4 "Taiyo Yuden" H 5700 1050 60  0001 C CNN "Manufacturer"
+F 5 "JMK105BJ225MV-F" H 5700 1050 60  0001 C CNN "Part Number"
+F 6 "Kemet" H 5700 1050 60  0001 C CNN "Manufacturer 2"
+F 7 "C0402C225M8PACTU" H 5700 1050 60  0001 C CNN "Part Number 2"
+F 8 "6.3V" H 5900 1050 60  0000 C CNN "Voltage"
+F 9 "20%" H 5700 1050 60  0001 C CNN "Tolerance"
+	1    5700 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 900  5700 800 
+Wire Wire Line
+	5700 800  5100 800 
+Wire Wire Line
+	5100 800  5100 1000
+Wire Wire Line
+	5100 1000 5100 1100
+Connection ~ 5100 1000
+$Comp
+L GND #PWR?
+U 1 1 5AAFAD1F
+P 5700 1400
+F 0 "#PWR?" H 5700 1150 50  0001 C CNN
+F 1 "GND" H 5700 1250 50  0000 C CNN
+F 2 "" H 5700 1400 50  0000 C CNN
+F 3 "" H 5700 1400 50  0000 C CNN
+	1    5700 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1400 5700 1200
+Wire Wire Line
+	2850 2700 2900 2700
+Connection ~ 2850 2500
+Connection ~ 9250 1300
+Connection ~ 9700 1300
+Wire Wire Line
+	10150 1700 10150 1600
+Connection ~ 9250 1700
+Wire Wire Line
+	9700 1700 9700 1600
+Connection ~ 9700 1700
+Wire Wire Line
+	6150 1300 6550 1300
+Wire Wire Line
+	6550 1300 7000 1300
+Wire Wire Line
+	7000 1300 7450 1300
+Wire Wire Line
+	7450 1300 7950 1300
+Wire Wire Line
+	7950 1300 8400 1300
+Wire Wire Line
+	8400 1300 8850 1300
+Wire Wire Line
+	8850 1300 9250 1300
+Wire Wire Line
+	9250 1300 9700 1300
+Wire Wire Line
+	6550 1700 7000 1700
+Wire Wire Line
+	7000 1700 7450 1700
+Wire Wire Line
+	7450 1700 7700 1700
+Wire Wire Line
+	7700 1700 7950 1700
+Wire Wire Line
+	7950 1700 8400 1700
+Wire Wire Line
+	8400 1700 8850 1700
+Wire Wire Line
+	8850 1700 9250 1700
+Wire Wire Line
+	9250 1700 9700 1700
+$Comp
+L GND #PWR?
+U 1 1 5AAFBB32
+P 7700 1800
+F 0 "#PWR?" H 7700 1550 50  0001 C CNN
+F 1 "GND" H 7700 1650 50  0000 C CNN
+F 2 "" H 7700 1800 50  0000 C CNN
+F 3 "" H 7700 1800 50  0000 C CNN
+	1    7700 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 10600 1300
+Connection ~ 11000 1300
+Connection ~ 11450 1300
+Connection ~ 11900 1300
+Connection ~ 12400 1300
+Connection ~ 12850 1300
+Connection ~ 13300 1300
+Wire Wire Line
+	10600 1700 10600 1600
+Wire Wire Line
+	11000 1700 11000 1600
+Wire Wire Line
+	11450 1700 11450 1600
+Connection ~ 11000 1700
+Wire Wire Line
+	11900 1700 11900 1600
+Connection ~ 11450 1700
+Wire Wire Line
+	12400 1700 12400 1600
+Connection ~ 11900 1700
+Wire Wire Line
+	12850 1700 12850 1600
+Connection ~ 12400 1700
+Wire Wire Line
+	13300 1700 13300 1600
+Connection ~ 12850 1700
+Wire Wire Line
+	13700 1700 13700 1600
+Connection ~ 13300 1700
+Wire Wire Line
+	12150 1700 12150 1800
+Connection ~ 12150 1700
+$Comp
+L GND #PWR?
+U 1 1 5AAFD064
+P 12150 1800
+F 0 "#PWR?" H 12150 1550 50  0001 C CNN
+F 1 "GND" H 12150 1650 50  0000 C CNN
+F 2 "" H 12150 1800 50  0000 C CNN
+F 3 "" H 12150 1800 50  0000 C CNN
+	1    12150 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 13700 1300
+Connection ~ 14150 1300
+Wire Wire Line
+	14600 1700 14600 1600
+Connection ~ 13700 1700
+Wire Wire Line
+	14150 1700 14150 1600
+Connection ~ 14150 1700
+Wire Wire Line
+	11000 1700 11450 1700
+Wire Wire Line
+	11450 1700 11900 1700
+Wire Wire Line
+	11900 1700 12150 1700
+Wire Wire Line
+	12150 1700 12400 1700
+Wire Wire Line
+	12400 1700 12850 1700
+Wire Wire Line
+	12850 1700 13300 1700
+Wire Wire Line
+	13300 1700 13700 1700
+Wire Wire Line
+	13700 1700 14150 1700
+$Comp
+L GND #PWR?
+U 1 1 5AAFD101
+P 12150 1800
+F 0 "#PWR?" H 12150 1550 50  0001 C CNN
+F 1 "GND" H 12150 1650 50  0000 C CNN
+F 2 "" H 12150 1800 50  0000 C CNN
+F 3 "" H 12150 1800 50  0000 C CNN
+	1    12150 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 1300
+Connection ~ 10600 1700
+Connection ~ 10150 1700
+$Comp
+L C C?
+U 1 1 5AAFEE2B
+P 650 1200
+F 0 "C?" H 675 1300 50  0000 L CNN
+F 1 "1 uF" H 675 1100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 688 1050 50  0001 C CNN
+F 3 "" H 650 1200 50  0001 C CNN
+F 4 "Taiyo Yuden" H 650 1200 60  0001 C CNN "Manufacturer"
+F 5 "LMK105C6105MV-F" H 650 1200 60  0001 C CNN "Part Number"
+F 6 "10V" H 850 1200 60  0000 C CNN "Voltage"
+F 7 "20%" H 650 1200 60  0001 C CNN "Tolerance"
+	1    650  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AAFF32C
+P 1800 3200
+F 0 "C?" H 1825 3300 50  0000 L CNN
+F 1 "1 uF" H 1825 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1838 3050 50  0001 C CNN
+F 3 "" H 1800 3200 50  0001 C CNN
+F 4 "Taiyo Yuden" H 1800 3200 60  0001 C CNN "Manufacturer"
+F 5 "LMK105C6105MV-F" H 1800 3200 60  0001 C CNN "Part Number"
+F 6 "10V" H 2000 3200 60  0000 C CNN "Voltage"
+F 7 "20%" H 1800 3200 60  0001 C CNN "Tolerance"
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  1050 650  1000
+Connection ~ 1050 1000
+Wire Wire Line
+	650  1350 650  1450
+Wire Wire Line
+	650  1450 1050 1450
+Wire Wire Line
+	1050 1450 1200 1450
+Wire Wire Line
+	1200 1450 1500 1450
+Wire Wire Line
+	1050 1450 1050 1350
+Wire Wire Line
+	1500 1450 1500 1350
+Connection ~ 1050 1450
+$Comp
+L GND #PWR?
+U 1 1 5AAFF754
+P 1200 1550
+F 0 "#PWR?" H 1200 1300 50  0001 C CNN
+F 1 "GND" H 1200 1400 50  0000 C CNN
+F 2 "" H 1200 1550 50  0000 C CNN
+F 3 "" H 1200 1550 50  0000 C CNN
+	1    1200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1550 1200 1450
+Connection ~ 1200 1450
+Wire Wire Line
+	1800 3050 1800 3000
+Connection ~ 2300 3000
+Wire Wire Line
+	1800 3350 1800 3400
+Wire Wire Line
+	1800 3400 2300 3400
+Connection ~ 2300 3400
+Wire Wire Line
+	6550 3050 6550 2600
+Connection ~ 6150 3050
+Wire Wire Line
+	5100 2100 5200 2100
+Wire Wire Line
+	5200 2100 7050 2100
+Connection ~ 5200 2000
+$Comp
+L C C?
+U 1 1 5AB0218D
+P 7050 2350
+F 0 "C?" H 7075 2450 50  0000 L CNN
+F 1 "1 uF" H 7075 2250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7088 2200 50  0001 C CNN
+F 3 "" H 7050 2350 50  0001 C CNN
+F 4 "Taiyo Yuden" H 7050 2350 60  0001 C CNN "Manufacturer"
+F 5 "LMK105C6105MV-F" H 7050 2350 60  0001 C CNN "Part Number"
+F 6 "10V" H 7250 2350 60  0000 C CNN "Voltage"
+F 7 "20%" H 7050 2350 60  0001 C CNN "Tolerance"
+	1    7050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2100 7050 2200
+Connection ~ 5200 2100
+Wire Wire Line
+	7050 3050 7050 2500
+Connection ~ 6550 3050
+Connection ~ 5200 2200
+$Comp
+L VCC #PWR?
+U 1 1 5AB0338A
+P 9900 1150
+F 0 "#PWR?" H 9900 1000 50  0001 C CNN
+F 1 "VCC" H 9900 1300 50  0000 C CNN
+F 2 "" H 9900 1150 50  0000 C CNN
+F 3 "" H 9900 1150 50  0000 C CNN
+	1    9900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5AB035C4
+P 1800 900
+F 0 "#PWR?" H 1800 750 50  0001 C CNN
+F 1 "VCC" H 1800 1050 50  0000 C CNN
+F 2 "" H 1800 900 50  0000 C CNN
+F 3 "" H 1800 900 50  0000 C CNN
+	1    1800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 5AB03759
+P 1950 2900
+F 0 "#PWR?" H 1950 2750 50  0001 C CNN
+F 1 "VCC" H 1950 3050 50  0000 C CNN
+F 2 "" H 1950 2900 50  0000 C CNN
+F 3 "" H 1950 2900 50  0000 C CNN
+	1    1950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2900 1950 3000
+Connection ~ 1950 3000
+Wire Wire Line
+	1800 900  1800 1000
+Connection ~ 1800 1000
+Wire Wire Line
+	9900 1150 9900 1300
+Connection ~ 9900 1300
+Text Label 5250 800  0    60   ~ 0
+1V2DSI
+$Comp
+L C C?
+U 1 1 5AB17492
+P 9300 3200
+F 0 "C?" H 9325 3300 50  0000 L CNN
+F 1 "0.1uF" H 9325 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 9338 3050 50  0001 C CNN
+F 3 "" H 9300 3200 50  0000 C CNN
+F 4 "Murata Electronics North America" H 9300 3200 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 9300 3200 60  0001 C CNN "Part Number"
+F 6 "10V" H 9400 3000 60  0000 C CNN "Voltage"
+F 7 "0201" H 9200 3100 40  0000 C CNN "Package"
+F 8 "20%" H 9300 3200 60  0001 C CNN "Tolerance"
+	1    9300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3050 9300 2700
+Wire Wire Line
+	9300 3350 9300 3550
+$Comp
+L GND #PWR?
+U 1 1 5AB1749B
+P 9300 3550
+F 0 "#PWR?" H 9300 3300 50  0001 C CNN
+F 1 "GND" H 9300 3400 50  0000 C CNN
+F 2 "" H 9300 3550 50  0000 C CNN
+F 3 "" H 9300 3550 50  0000 C CNN
+	1    9300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17890
+P 6150 1450
+F 0 "C?" H 6175 1550 50  0000 L CNN
+F 1 "0.1uF" H 6175 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 6188 1300 50  0001 C CNN
+F 3 "" H 6150 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 6150 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 6150 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 6250 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 6050 1350 40  0000 C CNN "Package"
+F 8 "20%" H 6150 1450 60  0001 C CNN "Tolerance"
+	1    6150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17927
+P 6550 1450
+F 0 "C?" H 6575 1550 50  0000 L CNN
+F 1 "0.1uF" H 6575 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 6588 1300 50  0001 C CNN
+F 3 "" H 6550 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 6550 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 6550 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 6650 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 6450 1350 40  0000 C CNN "Package"
+F 8 "20%" H 6550 1450 60  0001 C CNN "Tolerance"
+	1    6550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB1797A
+P 7000 1450
+F 0 "C?" H 7025 1550 50  0000 L CNN
+F 1 "0.1uF" H 7025 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 7038 1300 50  0001 C CNN
+F 3 "" H 7000 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 7000 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 7000 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 7100 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 6900 1350 40  0000 C CNN "Package"
+F 8 "20%" H 7000 1450 60  0001 C CNN "Tolerance"
+	1    7000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17A1E
+P 7450 1450
+F 0 "C?" H 7475 1550 50  0000 L CNN
+F 1 "0.1uF" H 7475 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 7488 1300 50  0001 C CNN
+F 3 "" H 7450 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 7450 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 7450 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 7550 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 7350 1350 40  0000 C CNN "Package"
+F 8 "20%" H 7450 1450 60  0001 C CNN "Tolerance"
+	1    7450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17A29
+P 7950 1450
+F 0 "C?" H 7975 1550 50  0000 L CNN
+F 1 "0.1uF" H 7975 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 7988 1300 50  0001 C CNN
+F 3 "" H 7950 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 7950 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 7950 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 8050 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 7850 1350 40  0000 C CNN "Package"
+F 8 "20%" H 7950 1450 60  0001 C CNN "Tolerance"
+	1    7950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17AB4
+P 8400 1450
+F 0 "C?" H 8425 1550 50  0000 L CNN
+F 1 "0.1uF" H 8425 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 8438 1300 50  0001 C CNN
+F 3 "" H 8400 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 8400 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 8400 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 8500 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 8300 1350 40  0000 C CNN "Package"
+F 8 "20%" H 8400 1450 60  0001 C CNN "Tolerance"
+	1    8400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17B14
+P 8850 1450
+F 0 "C?" H 8875 1550 50  0000 L CNN
+F 1 "0.1uF" H 8875 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 8888 1300 50  0001 C CNN
+F 3 "" H 8850 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 8850 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 8850 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 8950 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 8750 1350 40  0000 C CNN "Package"
+F 8 "20%" H 8850 1450 60  0001 C CNN "Tolerance"
+	1    8850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17B76
+P 9250 1450
+F 0 "C?" H 9275 1550 50  0000 L CNN
+F 1 "0.1uF" H 9275 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 9288 1300 50  0001 C CNN
+F 3 "" H 9250 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 9250 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 9250 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 9350 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 9150 1350 40  0000 C CNN "Package"
+F 8 "20%" H 9250 1450 60  0001 C CNN "Tolerance"
+	1    9250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17BD9
+P 9700 1450
+F 0 "C?" H 9725 1550 50  0000 L CNN
+F 1 "0.1uF" H 9725 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 9738 1300 50  0001 C CNN
+F 3 "" H 9700 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 9700 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 9700 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 9800 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 9600 1350 40  0000 C CNN "Package"
+F 8 "20%" H 9700 1450 60  0001 C CNN "Tolerance"
+	1    9700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17C42
+P 10150 1450
+F 0 "C?" H 10175 1550 50  0000 L CNN
+F 1 "0.1uF" H 10175 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 10188 1300 50  0001 C CNN
+F 3 "" H 10150 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 10150 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 10150 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 10250 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 10050 1350 40  0000 C CNN "Package"
+F 8 "20%" H 10150 1450 60  0001 C CNN "Tolerance"
+	1    10150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17D2D
+P 10600 1450
+F 0 "C?" H 10625 1550 50  0000 L CNN
+F 1 "0.1uF" H 10625 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 10638 1300 50  0001 C CNN
+F 3 "" H 10600 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 10600 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 10600 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 10700 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 10500 1350 40  0000 C CNN "Package"
+F 8 "20%" H 10600 1450 60  0001 C CNN "Tolerance"
+	1    10600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17E79
+P 11000 1450
+F 0 "C?" H 11025 1550 50  0000 L CNN
+F 1 "0.1uF" H 11025 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 11038 1300 50  0001 C CNN
+F 3 "" H 11000 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 11000 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 11000 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 11100 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 10900 1350 40  0000 C CNN "Package"
+F 8 "20%" H 11000 1450 60  0001 C CNN "Tolerance"
+	1    11000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17EE6
+P 11450 1450
+F 0 "C?" H 11475 1550 50  0000 L CNN
+F 1 "0.1uF" H 11475 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 11488 1300 50  0001 C CNN
+F 3 "" H 11450 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 11450 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 11450 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 11550 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 11350 1350 40  0000 C CNN "Package"
+F 8 "20%" H 11450 1450 60  0001 C CNN "Tolerance"
+	1    11450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB17F92
+P 11900 1450
+F 0 "C?" H 11925 1550 50  0000 L CNN
+F 1 "0.1uF" H 11925 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 11938 1300 50  0001 C CNN
+F 3 "" H 11900 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 11900 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 11900 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 12000 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 11800 1350 40  0000 C CNN "Package"
+F 8 "20%" H 11900 1450 60  0001 C CNN "Tolerance"
+	1    11900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB18008
+P 12400 1450
+F 0 "C?" H 12425 1550 50  0000 L CNN
+F 1 "0.1uF" H 12425 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 12438 1300 50  0001 C CNN
+F 3 "" H 12400 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 12400 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 12400 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 12500 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 12300 1350 40  0000 C CNN "Package"
+F 8 "20%" H 12400 1450 60  0001 C CNN "Tolerance"
+	1    12400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB18084
+P 12850 1450
+F 0 "C?" H 12875 1550 50  0000 L CNN
+F 1 "0.1uF" H 12875 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 12888 1300 50  0001 C CNN
+F 3 "" H 12850 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 12850 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 12850 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 12950 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 12750 1350 40  0000 C CNN "Package"
+F 8 "20%" H 12850 1450 60  0001 C CNN "Tolerance"
+	1    12850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB18102
+P 13300 1450
+F 0 "C?" H 13325 1550 50  0000 L CNN
+F 1 "0.1uF" H 13325 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 13338 1300 50  0001 C CNN
+F 3 "" H 13300 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 13300 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 13300 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 13400 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 13200 1350 40  0000 C CNN "Package"
+F 8 "20%" H 13300 1450 60  0001 C CNN "Tolerance"
+	1    13300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB18201
+P 13700 1450
+F 0 "C?" H 13725 1550 50  0000 L CNN
+F 1 "0.1uF" H 13725 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 13738 1300 50  0001 C CNN
+F 3 "" H 13700 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 13700 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 13700 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 13800 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 13600 1350 40  0000 C CNN "Package"
+F 8 "20%" H 13700 1450 60  0001 C CNN "Tolerance"
+	1    13700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB18284
+P 14150 1450
+F 0 "C?" H 14175 1550 50  0000 L CNN
+F 1 "0.1uF" H 14175 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 14188 1300 50  0001 C CNN
+F 3 "" H 14150 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 14150 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 14150 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 14250 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 14050 1350 40  0000 C CNN "Package"
+F 8 "20%" H 14150 1450 60  0001 C CNN "Tolerance"
+	1    14150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB1830A
+P 14600 1450
+F 0 "C?" H 14625 1550 50  0000 L CNN
+F 1 "0.1uF" H 14625 1350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 14638 1300 50  0001 C CNN
+F 3 "" H 14600 1450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 14600 1450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 14600 1450 60  0001 C CNN "Part Number"
+F 6 "10V" H 14700 1250 60  0000 C CNN "Voltage"
+F 7 "0201" H 14500 1350 40  0000 C CNN "Package"
+F 8 "20%" H 14600 1450 60  0001 C CNN "Tolerance"
+	1    14600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB186B8
+P 6550 2450
+F 0 "C?" H 6575 2550 50  0000 L CNN
+F 1 "0.1uF" H 6575 2350 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 6588 2300 50  0001 C CNN
+F 3 "" H 6550 2450 50  0000 C CNN
+F 4 "Murata Electronics North America" H 6550 2450 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 6550 2450 60  0001 C CNN "Part Number"
+F 6 "10V" H 6650 2250 60  0000 C CNN "Voltage"
+F 7 "0201" H 6450 2350 40  0000 C CNN "Package"
+F 8 "20%" H 6550 2450 60  0001 C CNN "Tolerance"
+	1    6550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB188EE
+P 2300 3200
+F 0 "C?" H 2325 3300 50  0000 L CNN
+F 1 "0.1uF" H 2325 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 2338 3050 50  0001 C CNN
+F 3 "" H 2300 3200 50  0000 C CNN
+F 4 "Murata Electronics North America" H 2300 3200 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 2300 3200 60  0001 C CNN "Part Number"
+F 6 "10V" H 2400 3000 60  0000 C CNN "Voltage"
+F 7 "0201" H 2200 3100 40  0000 C CNN "Package"
+F 8 "20%" H 2300 3200 60  0001 C CNN "Tolerance"
+	1    2300 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

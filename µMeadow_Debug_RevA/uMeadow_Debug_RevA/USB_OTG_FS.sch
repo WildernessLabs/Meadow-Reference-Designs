@@ -1,0 +1,1015 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Power_Management
+LIBS:Oscillators
+LIBS:switches
+LIBS:onsemi
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:diode
+LIBS:rfcom
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:elec-unifil
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:nxp
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:stm32
+LIBS:uMeadow_Debug_RevA-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 4 5
+Title "MinimumMeadow"
+Date "06/08/2017"
+Rev "E"
+Comp "Wilderness Labs"
+Comment1 "Designer: S. Johnson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 8800 2700 2    60   Output ~ 0
+OTG_FS_OverCurrent
+$Comp
+L R R9
+U 1 1 58FD7C47
+P 6600 1800
+F 0 "R9" V 6680 1800 50  0000 C CNN
+F 1 "620" V 6600 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6530 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 6600 1800 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-PB3B6200V" V 6600 1800 60  0001 C CNN "Part Number"
+F 6 "0603" H 6750 1700 40  0000 C CNN "Package"
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L STMPS2141STR U3
+U 1 1 58FD7FB9
+P 4700 2600
+F 0 "U3" H 4700 2600 60  0000 L BNN
+F 1 "STMPS2141STR" H 4700 2100 60  0000 L BNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4700 2600 60  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf" H 4700 2600 60  0001 C CNN
+F 4 "STMicroelectronics" H 4700 2600 60  0001 C CNN "Manufacturer"
+F 5 "STMPS2141STR" H 5050 2050 60  0000 C CNN "Part Number"
+	1    4700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2700 7800 2700
+Wire Wire Line
+	6000 2700 6000 2350
+Wire Wire Line
+	6600 2550 6600 2700
+Connection ~ 6000 2700
+$Comp
+L LED D4
+U 1 1 58FD83E8
+P 6600 2400
+F 0 "D4" V 6650 2250 50  0000 C CNN
+F 1 "LED-RED" V 6550 2150 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 6600 2400 50  0001 C CNN
+F 3 "" H 6600 2400 50  0000 C CNN
+F 4 "Vishay Semiconductor Opto Division" H 6600 2400 60  0001 C CNN "Manufacturer"
+F 5 "VLMS1300-GS08" H 6600 2400 60  0001 C CNN "Part Number"
+F 6 "Value" H 6600 2400 60  0001 C CNN "Test something"
+F 7 "Value" H 6600 2400 60  0001 C CNN "Fieldname"
+	1    6600 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 2250 6600 1950
+Wire Wire Line
+	6600 1550 6600 1650
+Wire Wire Line
+	6000 1550 6600 1550
+Wire Wire Line
+	6000 1550 6000 2050
+$Comp
+L +3.3V #PWR08
+U 1 1 58FD915A
+P 6300 1450
+F 0 "#PWR08" H 6300 1300 50  0001 C CNN
+F 1 "+3.3V" H 6300 1590 50  0000 C CNN
+F 2 "" H 6300 1450 50  0000 C CNN
+F 3 "" H 6300 1450 50  0000 C CNN
+	1    6300 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1450 6300 1550
+Connection ~ 6300 1550
+Connection ~ 6600 2700
+Wire Wire Line
+	8100 2700 8800 2700
+$Comp
+L GND #PWR09
+U 1 1 58FD984C
+P 4000 3000
+F 0 "#PWR09" H 4000 2750 50  0001 C CNN
+F 1 "GND" H 4000 2850 50  0000 C CNN
+F 2 "" H 4000 3000 50  0000 C CNN
+F 3 "" H 4000 3000 50  0000 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 4000 2700
+Wire Wire Line
+	4000 2700 4000 3000
+Wire Wire Line
+	4400 2800 3550 2800
+Wire Wire Line
+	3550 2800 3550 2350
+$Comp
+L +5V #PWR010
+U 1 1 58FD9943
+P 3550 2350
+F 0 "#PWR010" H 3550 2200 50  0001 C CNN
+F 1 "+5V" H 3550 2490 50  0000 C CNN
+F 2 "" H 3550 2350 50  0000 C CNN
+F 3 "" H 3550 2350 50  0000 C CNN
+	1    3550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58FDA261
+P 2650 2900
+F 0 "R2" V 2730 2900 50  0000 C CNN
+F 1 "0R" V 2650 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2580 2900 50  0001 C CNN
+F 3 "" H 2650 2900 50  0000 C CNN
+F 4 "Panasonic" V 2650 2900 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-2GE0R00X" V 2650 2900 60  0001 C CNN "Part Number"
+F 6 "0402" V 2800 2900 40  0000 C CNN "Package"
+	1    2650 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2900 2050 2900
+Text HLabel 2050 2900 0    60   BiDi ~ 0
+OTG_FS_PowerSwitchOn
+Wire Wire Line
+	3100 2400 3100 2900
+$Comp
+L +3.3V #PWR011
+U 1 1 58FDABCA
+P 3100 1900
+F 0 "#PWR011" H 3100 1750 50  0001 C CNN
+F 1 "+3.3V" H 3100 2040 50  0000 C CNN
+F 2 "" H 3100 1900 50  0000 C CNN
+F 3 "" H 3100 1900 50  0000 C CNN
+	1    3100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2100 3100 1900
+Wire Wire Line
+	2800 2900 4400 2900
+Connection ~ 3100 2900
+$Comp
+L USB_OTG P3
+U 1 1 58FDB4A0
+P 8100 4400
+F 0 "P3" H 8425 4275 50  0000 C CNN
+F 1 "USB_OTG" V 8200 4850 50  0000 C CNN
+F 2 "footprints:Molex_0475900001" H 8050 4300 50  0001 C CNN
+F 3 "http://www.molex.com/pdm_docs/sd/475900001_sd.pdf" V 8050 4300 50  0001 C CNN
+F 4 "Molex" H 8100 4400 60  0001 C CNN "Manufacturer"
+F 5 "475900001" V 8300 4900 60  0000 C CNN "Part Number"
+F 6 "Value" H 8100 4400 60  0001 C CNN "Test something"
+F 7 "Value" H 8100 4400 60  0001 C CNN "Fieldname"
+	1    8100 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 2800 11750 2800
+$Comp
+L GND #PWR012
+U 1 1 58FDB98F
+P 7650 5100
+F 0 "#PWR012" H 7650 4850 50  0001 C CNN
+F 1 "GND" H 7650 4950 50  0000 C CNN
+F 2 "" H 7650 5100 50  0000 C CNN
+F 3 "" H 7650 5100 50  0000 C CNN
+	1    7650 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4600 7650 5100
+Wire Wire Line
+	7650 4600 7800 4600
+Wire Wire Line
+	7750 4950 7650 4950
+Connection ~ 7650 4950
+Wire Wire Line
+	8050 4950 8200 4950
+Wire Wire Line
+	8200 4950 8200 4800
+Text Notes 9750 4800 2    60   ~ 0
+Should not short shield to GND\n
+Text Notes 7400 2350 2    100  ~ 0
+"FAULT"\n
+Wire Wire Line
+	5750 4300 7800 4300
+Wire Wire Line
+	6000 4400 7800 4400
+Text Label 6650 4300 2    60   ~ 0
+USB_FS1_N
+Text Label 6600 4400 2    60   ~ 0
+USB_FS1_P
+Text Notes 7350 4800 2    60   ~ 0
+DIFF PAIR 90 OHM\nSINGLE END > 45 OHM
+$Comp
+L R R4
+U 1 1 58FEDC0E
+P 5200 5050
+F 0 "R4" V 5280 5050 50  0000 C CNN
+F 1 "0R" V 5200 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5130 5050 50  0001 C CNN
+F 3 "" H 5200 5050 50  0000 C CNN
+F 4 "Panasonic" V 5200 5050 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GN0R00C" V 5200 5050 60  0001 C CNN "Part Number"
+F 6 "0201" V 5150 4850 40  0000 C CNN "Package"
+	1    5200 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5250 6000 4400
+Wire Wire Line
+	5350 5250 6000 5250
+Wire Wire Line
+	5350 5050 5750 5050
+Wire Wire Line
+	5750 5050 5750 4300
+Wire Wire Line
+	3500 5050 5050 5050
+Text HLabel 3500 5050 0    60   BiDi ~ 0
+OTG_FS_N
+Text HLabel 3500 5250 0    60   BiDi ~ 0
+OTG_FS_P
+Wire Wire Line
+	3500 5250 5050 5250
+Text Label 4150 5050 2    60   ~ 0
+OTG_FS_N
+Text Label 4150 5250 2    60   ~ 0
+OTG_FS_P
+Text Notes 4800 5200 2    60   ~ 0
+DIFF PAIR
+Wire Wire Line
+	5350 5550 6200 5550
+Wire Wire Line
+	6200 5550 6200 4500
+Wire Wire Line
+	6200 4500 7800 4500
+Text HLabel 3500 5550 0    60   BiDi ~ 0
+OTG_FS_ID
+Wire Wire Line
+	3500 5550 5050 5550
+Text HLabel 12200 2800 2    60   Output ~ 0
+OTG_FS_VBUS
+Wire Wire Line
+	12050 2800 12200 2800
+Wire Wire Line
+	7500 2800 7500 4200
+Wire Wire Line
+	7500 4200 7800 4200
+Connection ~ 7500 2800
+$Comp
+L C C12
+U 1 1 58FEE911
+P 6050 3150
+F 0 "C12" H 6075 3250 50  0000 L CNN
+F 1 "4.7uf" H 6075 3050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6088 3000 50  0001 C CNN
+F 3 "" H 6050 3150 50  0000 C CNN
+F 4 "Murata Electronics North America" H 6050 3150 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R61A475KE15D" H 6050 3150 60  0001 C CNN "Part Number"
+F 6 "10V" H 6150 2950 60  0000 C CNN "Voltage"
+	1    6050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3000 6050 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	6050 3300 6050 3500
+$Comp
+L GND #PWR013
+U 1 1 58FEE9FC
+P 6050 3500
+F 0 "#PWR013" H 6050 3250 50  0001 C CNN
+F 1 "GND" H 6050 3350 50  0000 C CNN
+F 2 "" H 6050 3500 50  0000 C CNN
+F 3 "" H 6050 3500 50  0000 C CNN
+	1    6050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 58FEED8F
+P 11900 2450
+F 0 "R15" V 11980 2450 50  0000 C CNN
+F 1 "0R" V 11900 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 11830 2450 50  0001 C CNN
+F 3 "" H 11900 2450 50  0000 C CNN
+F 4 "Vishay Dale" V 11900 2450 60  0001 C CNN "Manufacturer"
+F 5 "CRCW06030000Z0EA" V 11900 2450 60  0001 C CNN "Part Number"
+F 6 "0603" V 11950 2650 40  0000 C CNN "Package"
+	1    11900 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11750 2450 11450 2450
+Wire Wire Line
+	11450 2450 11450 2800
+Connection ~ 11450 2800
+Wire Wire Line
+	12050 2450 12550 2450
+Wire Wire Line
+	12550 2450 12550 2100
+$Comp
+L FT230XS U5
+U 1 1 58FEF7CA
+P 7200 9250
+F 0 "U5" H 6650 9850 50  0000 L CNN
+F 1 "FT230XS" H 7500 9850 50  0000 L CNN
+F 2 "Housings_SSOP:SSOP-16_3.9x4.9mm_Pitch0.635mm" H 7200 9250 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf" H 7200 9250 50  0001 C CNN
+F 4 "FTDI" H 7200 9250 60  0001 C CNN "Manufacturer"
+F 5 "FT230XS-R" H 7200 9250 60  0000 C CNN "Part Number"
+	1    7200 9250
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 8850 2    60   Output ~ 0
+USB_COM_TX
+Text HLabel 9900 8950 2    60   Input ~ 0
+USB_COM_RX
+Wire Wire Line
+	7900 8850 9900 8850
+Wire Wire Line
+	7900 8950 9900 8950
+Wire Wire Line
+	6500 8850 5650 8850
+Wire Wire Line
+	5650 8050 5650 9450
+Wire Wire Line
+	5650 8050 7300 8050
+Wire Wire Line
+	7300 8050 7300 8550
+Wire Wire Line
+	7100 8350 7100 8550
+Wire Wire Line
+	1850 8350 7100 8350
+$Comp
+L C C11
+U 1 1 58FEFDC6
+P 5150 7650
+F 0 "C11" H 5175 7750 50  0000 L CNN
+F 1 "1.0uf" H 5175 7550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5188 7500 50  0001 C CNN
+F 3 "" H 5150 7650 50  0000 C CNN
+F 4 "Murata Electronics North America" H 5150 7650 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R61C105KA93D" H 5150 7650 60  0001 C CNN "Part Number"
+F 6 "16V" H 5250 7450 60  0000 C CNN "Voltage"
+	1    5150 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7500 5150 7250
+Wire Wire Line
+	5150 7250 6150 7250
+Wire Wire Line
+	6150 7250 6150 8050
+Connection ~ 6150 8050
+Text Label 7050 8050 2    60   ~ 0
++3V3_USB_COM
+$Comp
+L GND #PWR015
+U 1 1 58FEFFF1
+P 7200 10300
+F 0 "#PWR015" H 7200 10050 50  0001 C CNN
+F 1 "GND" H 7200 10150 50  0000 C CNN
+F 2 "" H 7200 10300 50  0000 C CNN
+F 3 "" H 7200 10300 50  0000 C CNN
+	1    7200 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 10300 7300 10300
+Wire Wire Line
+	7300 10300 7300 9950
+Wire Wire Line
+	7100 10300 7100 9950
+Connection ~ 7200 10300
+$Comp
+L GND #PWR016
+U 1 1 58FF01A0
+P 5150 7950
+F 0 "#PWR016" H 5150 7700 50  0001 C CNN
+F 1 "GND" H 5150 7800 50  0000 C CNN
+F 2 "" H 5150 7950 50  0000 C CNN
+F 3 "" H 5150 7950 50  0000 C CNN
+	1    5150 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 7950 5150 7800
+Wire Wire Line
+	1650 9150 6500 9150
+Wire Wire Line
+	1650 9250 6500 9250
+Text Label 5350 9250 2    60   ~ 0
+USB_COM_D_P
+Text Label 5300 9150 2    60   ~ 0
+USB_COM_D_N
+NoConn ~ 7900 9150
+NoConn ~ 7900 9050
+NoConn ~ 7900 9350
+NoConn ~ 7900 9650
+$Comp
+L R R8
+U 1 1 58FF05F5
+P 6050 9450
+F 0 "R8" H 6200 9550 50  0000 C CNN
+F 1 "10K" V 6200 9400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 9450 50  0001 C CNN
+F 3 "" H 6050 9450 50  0000 C CNN
+F 4 "Value" H 6050 9450 60  0001 C CNN "Test something"
+F 5 "Value" H 6050 9450 60  0001 C CNN "Fieldname"
+F 6 "CRCW060310K0FKEAHP" V 6050 9450 60  0001 C CNN "Part Number"
+F 7 "Vishay Dale" V 6050 9450 60  0001 C CNN "Manufacturer"
+	1    6050 9450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 9450 6500 9450
+Wire Wire Line
+	5650 9450 5900 9450
+Connection ~ 5650 8850
+Text Label 5250 8350 2    60   ~ 0
++5V_USB_COM
+Wire Wire Line
+	1850 8350 1850 9050
+Wire Wire Line
+	1650 9450 2350 9450
+Wire Wire Line
+	1850 9450 1850 10150
+$Comp
+L GND #PWR017
+U 1 1 58FF0F6C
+P 1850 10150
+F 0 "#PWR017" H 1850 9900 50  0001 C CNN
+F 1 "GND" H 1850 10000 50  0000 C CNN
+F 2 "" H 1850 10150 50  0000 C CNN
+F 3 "" H 1850 10150 50  0000 C CNN
+	1    1850 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58FF1024
+P 1500 9750
+F 0 "R1" V 1580 9750 50  0000 C CNN
+F 1 "0R" V 1500 9750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1430 9750 50  0001 C CNN
+F 3 "" H 1500 9750 50  0000 C CNN
+F 4 "Value" H 1500 9750 60  0001 C CNN "Test something"
+F 5 "Value" H 1500 9750 60  0001 C CNN "Fieldname"
+F 6 "CRCW06030000Z0EA" V 1500 9750 60  0001 C CNN "Part Number"
+F 7 "Vishay Dale" V 1500 9750 60  0001 C CNN "Manufacturer"
+F 8 "DNI" V 1650 9750 60  0000 C CNN "DNI"
+	1    1500 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 9650 1250 9750
+Wire Wire Line
+	1250 9750 1350 9750
+Wire Wire Line
+	1650 9750 1850 9750
+Connection ~ 1850 9750
+$Comp
+L USB_OTG P2
+U 1 1 58FF095B
+P 1350 9250
+F 0 "P2" H 1675 9125 50  0000 C CNN
+F 1 "USB_MICRO_B" H 1350 9450 50  0000 C CNN
+F 2 "Connectors:USB_Micro-B_10103594-0001LF" V 1300 9150 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent//fci/drawing/10103594.pdf" V 1300 9150 50  0001 C CNN
+F 4 "Amphenol FCI" H 1350 9250 60  0001 C CNN "Manufacturer"
+F 5 "10103594-0001LF" V 1000 9550 60  0000 C CNN "Part Number"
+	1    1350 9250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1850 9050 1650 9050
+$Comp
+L C C10
+U 1 1 58FF15FB
+P 2350 8750
+F 0 "C10" H 2375 8850 50  0000 L CNN
+F 1 "1.0uf" H 2375 8650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2388 8600 50  0001 C CNN
+F 3 "" H 2350 8750 50  0000 C CNN
+F 4 "Murata Electronics North America" H 2350 8750 60  0001 C CNN "Manufacturer"
+F 5 "GRM188R61C105KA93D" H 2350 8750 60  0001 C CNN "Part Number"
+F 6 "16V" H 2450 8550 60  0000 C CNN "Voltage"
+	1    2350 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 8600 2350 8350
+Connection ~ 2350 8350
+Wire Wire Line
+	2350 9450 2350 8900
+Connection ~ 1850 9450
+$Comp
+L LED D5
+U 1 1 58FF18CC
+P 9050 9450
+F 0 "D5" H 9050 9700 50  0000 C CNN
+F 1 "LED-GREEN" H 9050 9600 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9050 9450 50  0001 C CNN
+F 3 "" H 9050 9450 50  0000 C CNN
+F 4 "Vishay Semiconductor Opto Division" H 9050 9450 60  0001 C CNN "Manufacturer"
+F 5 "VLMTG1300-GS08" H 9050 9450 60  0001 C CNN "Part Number"
+F 6 "Value" H 9050 9450 60  0001 C CNN "Test something"
+F 7 "Value" H 9050 9450 60  0001 C CNN "Fieldname"
+	1    9050 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D6
+U 1 1 58FF1BB0
+P 9050 9800
+F 0 "D6" H 9050 10050 50  0000 C CNN
+F 1 "LED-GREEN" H 9050 9950 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 9050 9800 50  0001 C CNN
+F 3 "" H 9050 9800 50  0000 C CNN
+F 4 "Vishay Semiconductor Opto Division" H 9050 9800 60  0001 C CNN "Manufacturer"
+F 5 "VLMTG1300-GS08" H 9050 9800 60  0001 C CNN "Part Number"
+F 6 "Value" H 9050 9800 60  0001 C CNN "Test something"
+F 7 "Value" H 9050 9800 60  0001 C CNN "Fieldname"
+	1    9050 9800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7900 9450 8900 9450
+Wire Wire Line
+	7900 9550 8500 9550
+Wire Wire Line
+	8500 9550 8500 9800
+Wire Wire Line
+	8500 9800 8900 9800
+$Comp
+L R R12
+U 1 1 58FF1FFA
+P 9850 9450
+F 0 "R12" V 9930 9450 50  0000 C CNN
+F 1 "620" V 9850 9450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9780 9450 50  0001 C CNN
+F 3 "" H 9850 9450 50  0000 C CNN
+F 4 "Value" H 9850 9450 60  0001 C CNN "Test something"
+F 5 "Value" H 9850 9450 60  0001 C CNN "Fieldname"
+F 6 "ERJ-PB3B6200V" V 9850 9450 60  0001 C CNN "Part Number"
+F 7 "Panasonic Electronic Components" V 9850 9450 60  0001 C CNN "Manufacturer"
+	1    9850 9450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R13
+U 1 1 58FF20B5
+P 9850 9800
+F 0 "R13" V 9930 9800 50  0000 C CNN
+F 1 "620" V 9850 9800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9780 9800 50  0001 C CNN
+F 3 "" H 9850 9800 50  0000 C CNN
+F 4 "Value" H 9850 9800 60  0001 C CNN "Test something"
+F 5 "Value" H 9850 9800 60  0001 C CNN "Fieldname"
+F 6 "ERJ-PB3B6200V" V 9850 9800 60  0001 C CNN "Part Number"
+F 7 "Panasonic Electronic Components" V 9850 9800 60  0001 C CNN "Manufacturer"
+	1    9850 9800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 9450 9700 9450
+Wire Wire Line
+	9200 9800 9700 9800
+Wire Wire Line
+	10000 9450 10300 9450
+Wire Wire Line
+	10300 9450 10300 9800
+Wire Wire Line
+	10300 9800 10000 9800
+Wire Wire Line
+	10300 9600 10800 9600
+Wire Wire Line
+	10800 9600 10800 9300
+Connection ~ 10300 9600
+$Comp
+L +3.3V #PWR018
+U 1 1 58FF24A9
+P 10800 9300
+F 0 "#PWR018" H 10800 9150 50  0001 C CNN
+F 1 "+3.3V" H 10800 9440 50  0000 C CNN
+F 2 "" H 10800 9300 50  0000 C CNN
+F 3 "" H 10800 9300 50  0000 C CNN
+	1    10800 9300
+	1    0    0    -1  
+$EndComp
+Text Label 8400 9550 2    60   ~ 0
+~TX_LED
+Text Label 8400 9450 2    60   ~ 0
+~RX_LED
+Connection ~ 6750 4300
+Text GLabel 3450 7750 0    60   Input ~ 0
++5V_USB_COM
+Wire Wire Line
+	3550 7750 3450 7750
+Wire Wire Line
+	3550 7750 3550 8350
+Connection ~ 3550 8350
+Text Notes 7750 1050 0    100  ~ 20
+USB\n
+NoConn ~ 1650 9350
+$Comp
+L RCLAMP0504F.TCT D8
+U 1 1 59054A07
+P 5200 4250
+F 0 "D8" H 5200 4950 50  0000 C CNN
+F 1 "RCLAMP0504F.TCT" H 5200 4250 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 5200 4250 100 0001 C CNN
+F 3 "http://www.semtech.com/images/datasheet/rclamp0504s.pdf" H 5200 4250 100 0001 C CNN
+F 4 "Semtech Corporation" H 5200 4250 100 0001 C CNN "Manufacturer"
+F 5 "RCLAMP0504S.TCT" H 5200 4250 100 0001 C CNN "Part Number"
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3850 6400 3850
+Wire Wire Line
+	6400 3850 6400 2800
+Connection ~ 6400 2800
+Wire Wire Line
+	5500 3950 6750 3950
+Wire Wire Line
+	6750 3950 6750 4300
+Wire Wire Line
+	5450 5250 5450 4700
+Wire Wire Line
+	5450 4700 4800 4700
+Wire Wire Line
+	4800 4700 4800 3950
+Connection ~ 5450 5250
+Wire Wire Line
+	7300 4500 7300 3750
+Wire Wire Line
+	7300 3750 5500 3750
+Connection ~ 7300 4500
+$Comp
+L GND #PWR019
+U 1 1 590550A3
+P 4350 3950
+F 0 "#PWR019" H 4350 3700 50  0001 C CNN
+F 1 "GND" H 4350 3800 50  0000 C CNN
+F 2 "" H 4350 3950 50  0000 C CNN
+F 3 "" H 4350 3950 50  0000 C CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3950 4350 3850
+Wire Wire Line
+	4350 3850 4800 3850
+NoConn ~ 4800 3750
+$Comp
+L RCLAMP0504F.TCT D9
+U 1 1 59058124
+P 3750 10100
+F 0 "D9" H 3750 10800 50  0000 C CNN
+F 1 "RCLAMP0504F.TCT" H 3750 10100 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 3750 10100 100 0001 C CNN
+F 3 "http://www.semtech.com/images/datasheet/rclamp0504s.pdf" H 3750 10100 100 0001 C CNN
+F 4 "Semtech Corporation" H 3750 10100 100 0001 C CNN "Manufacturer"
+F 5 "RCLAMP0504S.TCT" H 3750 10100 100 0001 C CNN "Part Number"
+	1    3750 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 9700 4300 9700
+Wire Wire Line
+	4300 9700 4300 8350
+Connection ~ 4300 8350
+Wire Wire Line
+	4050 9600 4150 9600
+Wire Wire Line
+	4150 9600 4150 9150
+Connection ~ 4150 9150
+Wire Wire Line
+	3350 9600 3250 9600
+Wire Wire Line
+	3250 9600 3250 9250
+Connection ~ 3250 9250
+Wire Wire Line
+	3350 9700 3100 9700
+Wire Wire Line
+	3100 9700 3100 10000
+$Comp
+L GND #PWR020
+U 1 1 590584DD
+P 3100 10000
+F 0 "#PWR020" H 3100 9750 50  0001 C CNN
+F 1 "GND" H 3100 9850 50  0000 C CNN
+F 2 "" H 3100 10000 50  0000 C CNN
+F 3 "" H 3100 10000 50  0000 C CNN
+	1    3100 10000
+	1    0    0    -1  
+$EndComp
+Text Label 10000 2800 0    100  ~ 0
+VBUS
+Text Notes 3850 9050 2    60   ~ 0
+DIFF PAIR 90 OHM\nSINGLE END > 45 OHM
+Wire Notes Line
+	900  6650 900  10650
+Wire Notes Line
+	900  10650 11400 10650
+Wire Notes Line
+	11400 10650 11400 6650
+Wire Notes Line
+	11400 6650 900  6650
+Text Notes 5100 6750 0    60   ~ 0
+Debug\n
+$Comp
+L R R?
+U 1 1 5AB13CAB
+P 5200 5250
+F 0 "R?" V 5280 5250 50  0000 C CNN
+F 1 "0R" V 5200 5250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5130 5250 50  0001 C CNN
+F 3 "" H 5200 5250 50  0000 C CNN
+F 4 "Panasonic" V 5200 5250 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GN0R00C" V 5200 5250 60  0001 C CNN "Part Number"
+F 6 "0201" V 5150 5050 40  0000 C CNN "Package"
+	1    5200 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB13D0F
+P 5200 5550
+F 0 "R?" V 5280 5550 50  0000 C CNN
+F 1 "0R" V 5200 5550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5130 5550 50  0001 C CNN
+F 3 "" H 5200 5550 50  0000 C CNN
+F 4 "Panasonic" V 5200 5550 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GN0R00C" V 5200 5550 60  0001 C CNN "Part Number"
+F 6 "0201" V 5150 5350 40  0000 C CNN "Package"
+	1    5200 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB13D94
+P 7900 4950
+F 0 "R?" V 7980 4950 50  0000 C CNN
+F 1 "0R" V 7900 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 7830 4950 50  0001 C CNN
+F 3 "" H 7900 4950 50  0000 C CNN
+F 4 "Panasonic" V 7900 4950 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GN0R00C" V 7900 4950 60  0001 C CNN "Part Number"
+F 6 "DNI" V 8050 4950 60  0000 C CNN "DNI"
+F 7 "0201" V 7950 5150 40  0000 C CNN "Package"
+	1    7900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB146A7
+P 3100 2250
+F 0 "R?" H 3250 2200 50  0000 C CNN
+F 1 "10k" H 3250 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 3030 2250 50  0001 C CNN
+F 3 "" H 3100 2250 50  0000 C CNN
+F 4 "Panasonic" V 3100 2250 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GEF1002C" V 3100 2250 60  0001 C CNN "Part Number"
+F 6 "0201" H 2950 2200 40  0000 C CNN "Package"
+	1    3100 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB14C0E
+P 7950 2700
+F 0 "R?" V 7900 2500 50  0000 C CNN
+F 1 "0R" V 7950 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7880 2700 50  0001 C CNN
+F 3 "" H 7950 2700 50  0000 C CNN
+F 4 "Panasonic" V 7950 2700 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-2GE0R00X" V 7950 2700 60  0001 C CNN "Part Number"
+F 6 "0402" V 7900 2900 40  0000 C CNN "Package"
+	1    7950 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB15472
+P 6000 2200
+F 0 "R?" H 6150 2150 50  0000 C CNN
+F 1 "47k" H 6150 2250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5930 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0000 C CNN
+F 4 "Samsung Electro-Mechanics" V 6000 2200 60  0001 C CNN "Manufacturer"
+F 5 "RC0603F473CS" V 6000 2200 60  0001 C CNN "Part Number"
+F 6 "0201" H 5850 2150 40  0000 C CNN "Package"
+	1    6000 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L VUSB #PWR?
+U 1 1 5AB15A80
+P 12550 2100
+F 0 "#PWR?" H 12550 1950 50  0001 C CNN
+F 1 "VUSB" H 12550 2250 50  0000 C CNN
+F 2 "" H 12550 2100 50  0000 C CNN
+F 3 "" H 12550 2100 50  0000 C CNN
+F 4 "Value" H 12550 2100 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 12550 2100 60  0001 C CNN "Part Number"
+	1    12550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5AB15E58
+P 11900 2800
+F 0 "R?" V 11850 2600 50  0000 C CNN
+F 1 "0R" V 11900 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 11830 2800 50  0001 C CNN
+F 3 "" H 11900 2800 50  0000 C CNN
+F 4 "Panasonic" V 11900 2800 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-2GE0R00X" V 11900 2800 60  0001 C CNN "Part Number"
+F 6 "0402" V 11850 3000 40  0000 C CNN "Package"
+	1    11900 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB16A3F
+P 8800 3400
+F 0 "C?" H 8825 3500 50  0000 L CNN
+F 1 "0.1uF" H 8825 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 8838 3250 50  0001 C CNN
+F 3 "" H 8800 3400 50  0000 C CNN
+F 4 "Murata Electronics North America" H 8800 3400 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 8800 3400 60  0001 C CNN "Part Number"
+F 6 "10V" H 8900 3200 60  0000 C CNN "Voltage"
+F 7 "0201" H 8700 3300 40  0000 C CNN "Package"
+F 8 "20%" H 8800 3400 60  0001 C CNN "Tolerance"
+	1    8800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB16E59
+P 8150 3300
+F 0 "C?" H 8175 3400 50  0000 L CNN
+F 1 "0.1uF" H 8175 3200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 8188 3150 50  0001 C CNN
+F 3 "" H 8150 3300 50  0000 C CNN
+F 4 "Murata Electronics North America" H 8150 3300 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 8150 3300 60  0001 C CNN "Part Number"
+F 6 "10V" H 8250 3100 60  0000 C CNN "Voltage"
+F 7 "0201" H 8050 3200 40  0000 C CNN "Package"
+F 8 "20%" H 8150 3300 60  0001 C CNN "Tolerance"
+	1    8150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3150 8150 2800
+Connection ~ 8150 2800
+Wire Wire Line
+	8150 3450 8150 3650
+$Comp
+L GND #PWR?
+U 1 1 5AB1707F
+P 8150 3650
+F 0 "#PWR?" H 8150 3400 50  0001 C CNN
+F 1 "GND" H 8150 3500 50  0000 C CNN
+F 2 "" H 8150 3650 50  0000 C CNN
+F 3 "" H 8150 3650 50  0000 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5AB172E6
+P 9950 3600
+F 0 "C?" H 9975 3700 50  0000 L CNN
+F 1 "0.1uF" H 9975 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 9988 3450 50  0001 C CNN
+F 3 "" H 9950 3600 50  0000 C CNN
+F 4 "Murata Electronics North America" H 9950 3600 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 9950 3600 60  0001 C CNN "Part Number"
+F 6 "10V" H 10050 3400 60  0000 C CNN "Voltage"
+F 7 "0201" H 9850 3500 40  0000 C CNN "Package"
+F 8 "20%" H 9950 3600 60  0001 C CNN "Tolerance"
+	1    9950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 3450 9950 3100
+Wire Wire Line
+	9950 3750 9950 3950
+$Comp
+L GND #PWR?
+U 1 1 5AB172EE
+P 9950 3950
+F 0 "#PWR?" H 9950 3700 50  0001 C CNN
+F 1 "GND" H 9950 3800 50  0000 C CNN
+F 2 "" H 9950 3950 50  0000 C CNN
+F 3 "" H 9950 3950 50  0000 C CNN
+	1    9950 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
