@@ -96,7 +96,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "uMeadow_Debug"
 Date "03/16/2018"
 Rev "A"
@@ -135,5 +135,11 @@ S 12850 2850 1400 1400
 U 5AB6A1A3
 F0 "wifi_bluetooth" 60
 F1 "ESP32.sch" 60
+$EndSheet
+$Sheet
+S 13600 5300 1750 3400
+U 5ABDBEE6
+F0 "RAM_FLASH" 60
+F1 "uMeadowMemory.sch" 60
 $EndSheet
 $EndSCHEMATC
