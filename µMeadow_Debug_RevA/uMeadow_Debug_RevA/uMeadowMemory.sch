@@ -220,4 +220,240 @@ Text Label 8600 2000 0    60   ~ 0
 FLASH_IO_3
 Text HLabel 7700 2250 0    60   BiDi ~ 0
 FLASH_IO_[0..3]
+Wire Bus Line
+	1700 1100 1700 2900
+Text HLabel 1550 1100 0    60   Input ~ 0
+RAM_A[0..15]
+Wire Bus Line
+	1550 1100 1700 1100
+Wire Bus Line
+	4900 1100 4750 1100
+Wire Bus Line
+	4750 1100 4750 2950
+Text HLabel 4900 1100 2    60   BiDi ~ 0
+RAM_D[0..15]
+Entry Wire Line
+	1700 1250 1800 1350
+Entry Wire Line
+	1700 1350 1800 1450
+Entry Wire Line
+	1700 1450 1800 1550
+Entry Wire Line
+	1700 1550 1800 1650
+Entry Wire Line
+	1700 1650 1800 1750
+Entry Wire Line
+	1700 1750 1800 1850
+Entry Wire Line
+	1700 1850 1800 1950
+Entry Wire Line
+	1700 1950 1800 2050
+Entry Wire Line
+	1700 2050 1800 2150
+Entry Wire Line
+	1700 2150 1800 2250
+Entry Wire Line
+	1700 2250 1800 2350
+Entry Wire Line
+	1700 2350 1800 2450
+Entry Wire Line
+	1700 2450 1800 2550
+Entry Wire Line
+	1700 2550 1800 2650
+Entry Wire Line
+	1700 2650 1800 2750
+Entry Wire Line
+	1700 2750 1800 2850
+Entry Wire Line
+	4650 1350 4750 1250
+Entry Wire Line
+	4650 1450 4750 1350
+Entry Wire Line
+	4650 1550 4750 1450
+Entry Wire Line
+	4650 1650 4750 1550
+Entry Wire Line
+	4650 1750 4750 1650
+Entry Wire Line
+	4650 1850 4750 1750
+Entry Wire Line
+	4650 1950 4750 1850
+Entry Wire Line
+	4650 2050 4750 1950
+Entry Wire Line
+	4650 2150 4750 2050
+Entry Wire Line
+	4650 2250 4750 2150
+Entry Wire Line
+	4650 2350 4750 2250
+Entry Wire Line
+	4650 2450 4750 2350
+Entry Wire Line
+	4650 2550 4750 2450
+Entry Wire Line
+	4650 2650 4750 2550
+Entry Wire Line
+	4650 2750 4750 2650
+Entry Wire Line
+	4650 2850 4750 2750
+Wire Wire Line
+	1800 1350 2300 1350
+Wire Wire Line
+	1800 1450 2300 1450
+Wire Wire Line
+	1800 1550 2300 1550
+Wire Wire Line
+	1800 1650 2300 1650
+Wire Wire Line
+	1800 1750 2300 1750
+Wire Wire Line
+	1800 1850 2300 1850
+Wire Wire Line
+	1800 1950 2300 1950
+Wire Wire Line
+	1800 2050 2300 2050
+Wire Wire Line
+	1800 2150 2300 2150
+Wire Wire Line
+	1800 2250 2300 2250
+Wire Wire Line
+	1800 2350 2300 2350
+Wire Wire Line
+	1800 2450 2300 2450
+Wire Wire Line
+	1800 2550 2300 2550
+Wire Wire Line
+	1800 2650 2300 2650
+Wire Wire Line
+	1800 2750 2300 2750
+Wire Wire Line
+	1800 2850 2300 2850
+Text Label 2150 1350 2    60   ~ 0
+RAM_A0
+Text Label 2150 1450 2    60   ~ 0
+RAM_A1
+Text Label 2150 1550 2    60   ~ 0
+RAM_A2
+Text Label 2150 1650 2    60   ~ 0
+RAM_A3
+Text Label 2150 1750 2    60   ~ 0
+RAM_A4
+Text Label 2150 1850 2    60   ~ 0
+RAM_A5
+Text Label 2150 1950 2    60   ~ 0
+RAM_A6
+Text Label 2150 2050 2    60   ~ 0
+RAM_A7
+Text Label 2150 2150 2    60   ~ 0
+RAM_A8
+Text Label 2150 2250 2    60   ~ 0
+RAM_A9
+Text Label 2150 2350 2    60   ~ 0
+RAM_A10
+Text Label 2150 2450 2    60   ~ 0
+RAM_A11
+Text Label 2150 2550 2    60   ~ 0
+RAM_A12
+Text Label 2150 2650 2    60   ~ 0
+RAM_A13
+Text Label 2150 2750 2    60   ~ 0
+RAM_A14
+Text Label 2150 2850 2    60   ~ 0
+RAM_A15
+Wire Wire Line
+	4650 1350 4200 1350
+Text Label 4550 1350 2    60   ~ 0
+RAM_D0
+Wire Wire Line
+	4650 1450 4200 1450
+Wire Wire Line
+	4650 1550 4200 1550
+Wire Wire Line
+	4650 1650 4200 1650
+Wire Wire Line
+	4650 1750 4200 1750
+Wire Wire Line
+	4650 1850 4200 1850
+Wire Wire Line
+	4650 1950 4200 1950
+Wire Wire Line
+	4650 2050 4200 2050
+Wire Wire Line
+	4650 2150 4200 2150
+Wire Wire Line
+	4650 2250 4200 2250
+Wire Wire Line
+	4650 2350 4200 2350
+Wire Wire Line
+	4650 2450 4200 2450
+Wire Wire Line
+	4650 2550 4200 2550
+Wire Wire Line
+	4650 2650 4200 2650
+Wire Wire Line
+	4650 2750 4200 2750
+Wire Wire Line
+	4650 2850 4200 2850
+Text Label 4550 1450 2    60   ~ 0
+RAM_D1
+Text Label 4550 1550 2    60   ~ 0
+RAM_D2
+Text Label 4550 1650 2    60   ~ 0
+RAM_D3
+Text Label 4550 1750 2    60   ~ 0
+RAM_D4
+Text Label 4550 1850 2    60   ~ 0
+RAM_D5
+Text Label 4550 1950 2    60   ~ 0
+RAM_D6
+Text Label 4550 2050 2    60   ~ 0
+RAM_D7
+Text Label 4550 2150 2    60   ~ 0
+RAM_D8
+Text Label 4550 2250 2    60   ~ 0
+RAM_D9
+Text Label 4550 2350 2    60   ~ 0
+RAM_D10
+Text Label 4550 2450 2    60   ~ 0
+RAM_D11
+Text Label 4550 2550 2    60   ~ 0
+RAM_D12
+Text Label 4550 2650 2    60   ~ 0
+RAM_D13
+Text Label 4550 2750 2    60   ~ 0
+RAM_D14
+Text Label 4550 2850 2    60   ~ 0
+RAM_D15
+Text HLabel 1700 3200 0    60   Input ~ 0
+WE_n
+Text HLabel 1700 3300 0    60   Input ~ 0
+CAS_n
+Text HLabel 1700 3400 0    60   Input ~ 0
+RAS_n
+Text HLabel 1700 3500 0    60   Input ~ 0
+CS_n
+Text HLabel 1700 3600 0    60   Input ~ 0
+CKE
+Text HLabel 1700 3700 0    60   Input ~ 0
+CLK
+Wire Wire Line
+	1700 3200 2300 3200
+Wire Wire Line
+	1700 3300 2300 3300
+Wire Wire Line
+	1700 3400 2300 3400
+Wire Wire Line
+	1700 3500 2300 3500
+Wire Wire Line
+	1700 3600 2300 3600
+Wire Wire Line
+	1700 3700 2300 3700
+Text HLabel 4750 3150 2    60   Input ~ 0
+DQML
+Text HLabel 4750 3250 2    60   Input ~ 0
+DQMH
+Wire Wire Line
+	4750 3150 4200 3150
+Wire Wire Line
+	4200 3250 4750 3250
 $EndSCHEMATC
