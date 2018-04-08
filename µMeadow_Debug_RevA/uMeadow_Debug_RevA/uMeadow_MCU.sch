@@ -100,7 +100,7 @@ Sheet 2 7
 Title "uMeadow_Debug"
 Date "03/16/2018"
 Rev "A"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""

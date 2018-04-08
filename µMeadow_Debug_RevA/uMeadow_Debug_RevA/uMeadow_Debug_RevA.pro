@@ -1,4 +1,4 @@
-update=Monday, March 19, 2018 'PMt' 10:25:16 PM
+update=Sunday, April 08, 2018 'PMt' 12:31:43 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -121,3 +121,13 @@ LibName91=Zilog
 LibName92=stm32
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/Users/sheldon/Desktop/wilderness_labs.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -100,7 +100,7 @@ Sheet 4 7
 Title "MinimumMeadow"
 Date "06/08/2017"
 Rev "E"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 "Designer: S. Johnson"
 Comment2 ""
 Comment3 ""
