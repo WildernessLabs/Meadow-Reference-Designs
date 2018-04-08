@@ -137,9 +137,7 @@ F 8 "20%" H 8350 1250 60  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 850  8350 1000
-Wire Wire Line
-	8350 1000 8350 1100
+	8350 850  8350 1100
 Wire Wire Line
 	8350 1000 8700 1000
 Wire Wire Line
@@ -149,9 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	8350 1400 8350 1500
 Wire Wire Line
-	7650 1500 8350 1500
-Wire Wire Line
-	8350 1500 8950 1500
+	7650 1500 8950 1500
 Wire Wire Line
 	8950 1500 8950 1400
 Wire Wire Line
@@ -203,15 +199,7 @@ FLASH_CLK
 Text HLabel 8500 2100 0    60   Input ~ 0
 FLASH_CS_n
 Wire Bus Line
-	7800 1550 7800 1600
-Wire Bus Line
-	7800 1600 7800 1700
-Wire Bus Line
-	7800 1700 7800 1800
-Wire Bus Line
-	7800 1800 7800 1900
-Wire Bus Line
-	7800 1900 7800 2250
+	7800 1550 7800 2250
 Wire Bus Line
 	7800 2250 7700 2250
 Entry Wire Line
@@ -233,39 +221,7 @@ FLASH_IO_3
 Text HLabel 7700 2250 0    60   BiDi ~ 0
 FLASH_IO_[0..3]
 Wire Bus Line
-	1700 1100 1700 1250
-Wire Bus Line
-	1700 1250 1700 1350
-Wire Bus Line
-	1700 1350 1700 1450
-Wire Bus Line
-	1700 1450 1700 1550
-Wire Bus Line
-	1700 1550 1700 1650
-Wire Bus Line
-	1700 1650 1700 1750
-Wire Bus Line
-	1700 1750 1700 1850
-Wire Bus Line
-	1700 1850 1700 1950
-Wire Bus Line
-	1700 1950 1700 2050
-Wire Bus Line
-	1700 2050 1700 2150
-Wire Bus Line
-	1700 2150 1700 2250
-Wire Bus Line
-	1700 2250 1700 2350
-Wire Bus Line
-	1700 2350 1700 2450
-Wire Bus Line
-	1700 2450 1700 2550
-Wire Bus Line
-	1700 2550 1700 2650
-Wire Bus Line
-	1700 2650 1700 2750
-Wire Bus Line
-	1700 2750 1700 4400
+	1700 1100 1700 2900
 Text HLabel 1550 1100 0    60   Input ~ 0
 RAM_A[0..15]
 Wire Bus Line
@@ -273,43 +229,7 @@ Wire Bus Line
 Wire Bus Line
 	4900 1100 4750 1100
 Wire Bus Line
-	4750 1100 4750 1250
-Wire Bus Line
-	4750 1250 4750 1350
-Wire Bus Line
-	4750 1350 4750 1450
-Wire Bus Line
-	4750 1450 4750 1550
-Wire Bus Line
-	4750 1550 4750 1650
-Wire Bus Line
-	4750 1650 4750 1750
-Wire Bus Line
-	4750 1750 4750 1850
-Wire Bus Line
-	4750 1850 4750 1950
-Wire Bus Line
-	4750 1950 4750 2050
-Wire Bus Line
-	4750 2050 4750 2150
-Wire Bus Line
-	4750 2150 4750 2250
-Wire Bus Line
-	4750 2250 4750 2350
-Wire Bus Line
-	4750 2350 4750 2450
-Wire Bus Line
-	4750 2450 4750 2550
-Wire Bus Line
-	4750 2550 4750 2650
-Wire Bus Line
-	4750 2650 4750 2750
-Wire Bus Line
-	4750 2750 4750 2850
-Wire Bus Line
-	4750 2850 4750 2950
-Wire Bus Line
-	4750 2950 4750 4400
+	4750 1100 4750 2950
 Text HLabel 4900 1100 2    60   BiDi ~ 0
 RAM_D[0..15]
 Entry Wire Line
@@ -504,4 +424,36 @@ Text Label 4550 2750 2    60   ~ 0
 RAM_D14
 Text Label 4550 2850 2    60   ~ 0
 RAM_D15
+Text HLabel 1700 3200 0    60   Input ~ 0
+WE_n
+Text HLabel 1700 3300 0    60   Input ~ 0
+CAS_n
+Text HLabel 1700 3400 0    60   Input ~ 0
+RAS_n
+Text HLabel 1700 3500 0    60   Input ~ 0
+CS_n
+Text HLabel 1700 3600 0    60   Input ~ 0
+CKE
+Text HLabel 1700 3700 0    60   Input ~ 0
+CLK
+Wire Wire Line
+	1700 3200 2300 3200
+Wire Wire Line
+	1700 3300 2300 3300
+Wire Wire Line
+	1700 3400 2300 3400
+Wire Wire Line
+	1700 3500 2300 3500
+Wire Wire Line
+	1700 3600 2300 3600
+Wire Wire Line
+	1700 3700 2300 3700
+Text HLabel 4750 3150 2    60   Input ~ 0
+DQML
+Text HLabel 4750 3250 2    60   Input ~ 0
+DQMH
+Wire Wire Line
+	4750 3150 4200 3150
+Wire Wire Line
+	4200 3250 4750 3250
 $EndSCHEMATC

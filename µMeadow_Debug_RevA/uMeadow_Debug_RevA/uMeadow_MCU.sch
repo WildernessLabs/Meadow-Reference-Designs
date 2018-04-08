@@ -115,7 +115,7 @@ F 1 "STM32F77XAXY" H 4000 1300 60  0000 C CNN
 F 2 "footprints:WLCSP-180" H 4000 1400 60  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 4000 1400 60  0001 C CNN
 F 4 "ST MICRO" H 2900 1000 60  0001 C CNN "Manufacturer"
-F 5 "STM32F779AIY" H 4000 -2250 60  0000 C CNN "Part Number"
+F 5 "STM32F779AIY" H 4000 -1900 60  0000 C CNN "Part Number"
 	1    2900 1000
 	1    0    0    -1  
 $EndComp
@@ -141,7 +141,7 @@ F 1 "STM32F77XAXY" H 7700 6100 60  0000 C CNN
 F 2 "footprints:WLCSP-180" H 7700 6200 60  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 7700 6200 60  0001 C CNN
 F 4 "ST MICRO" H 6600 5800 60  0001 C CNN "Manufacturer"
-F 5 "STM32F779AIY" H 7700 2550 60  0000 C CNN "Part Number"
+F 5 "STM32F779AIY" H 7700 2800 60  0000 C CNN "Part Number"
 	3    6600 5800
 	1    0    0    -1  
 $EndComp
@@ -154,7 +154,7 @@ F 1 "STM32F77XAXY" H 11300 6250 60  0000 C CNN
 F 2 "footprints:WLCSP-180" H 11300 6350 60  0001 C CNN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/group3/8a/34/ed/7e/4c/04/4b/7a/DM00225424/files/DM00225424.pdf/jcr:content/translations/en.DM00225424.pdf" H 11300 6350 60  0001 C CNN
 F 4 "ST MICRO" H 10200 5950 60  0001 C CNN "Manufacturer"
-F 5 "STM32F779AIY" H 11300 2700 60  0000 C CNN "Part Number"
+F 5 "STM32F779AIY" H 11100 4700 60  0000 C CNN "Part Number"
 	4    10200 5950
 	1    0    0    -1  
 $EndComp
@@ -301,9 +301,9 @@ Wire Wire Line
 Wire Wire Line
 	2900 3100 2900 3500
 Wire Wire Line
-	2900 3500 2300 3500
+	2300 3500 2900 3500
 Wire Wire Line
-	2300 3500 2300 3350
+	2300 3350 2300 3500
 $Comp
 L GND #PWR?
 U 1 1 5AAFA37D
@@ -1119,7 +1119,7 @@ RESET_L
 Wire Wire Line
 	4300 8100 5350 8100
 Wire Wire Line
-	4300 8300 5350 8300
+	4300 8300 4900 8300
 Wire Wire Line
 	4300 8200 5350 8200
 Wire Wire Line
@@ -1188,7 +1188,7 @@ Wire Wire Line
 Wire Wire Line
 	14650 3050 14800 3050
 Wire Wire Line
-	14800 3050 14800 3350
+	14800 3350 14800 3050
 Wire Wire Line
 	13250 3350 15100 3350
 $Comp
@@ -1362,4 +1362,350 @@ Wire Notes Line
 	15450 2050 12600 2050
 Text Notes 14300 2200 2    60   ~ 0
 25MHZ CRYSTAL
+Wire Wire Line
+	6600 7500 6000 7500
+Wire Wire Line
+	6600 7600 6000 7600
+Wire Wire Line
+	6600 7700 6000 7700
+Wire Wire Line
+	6600 7800 6000 7800
+Wire Wire Line
+	6600 7900 6000 7900
+Wire Wire Line
+	6600 8000 6000 8000
+Text Label 6100 7500 0    60   ~ 0
+FMC_A0
+Text Label 6100 7600 0    60   ~ 0
+FMC_A1
+Text Label 6100 7700 0    60   ~ 0
+FMC_A2
+Text Label 6100 7800 0    60   ~ 0
+FMC_A3
+Text Label 6100 7900 0    60   ~ 0
+FMC_A4
+Text Label 6100 8000 0    60   ~ 0
+FMC_A5
+Text Label 6100 8300 0    50   ~ 0
+FMC_A6
+Wire Wire Line
+	6600 8300 6000 8300
+Wire Wire Line
+	6600 8400 6000 8400
+Wire Wire Line
+	6600 8500 6000 8500
+Wire Wire Line
+	6600 8600 6000 8600
+Text Label 6100 8400 0    60   ~ 0
+FMC_A7
+Text Label 6100 8500 0    60   ~ 0
+FMC_A8
+Text Label 6100 8600 0    60   ~ 0
+FMC_A9
+Text Label 8900 5800 0    60   ~ 0
+FMC_A10
+Text Label 8900 5900 0    60   ~ 0
+FMC_A11
+Text Label 8900 6000 0    60   ~ 0
+FMC_A12
+Entry Wire Line
+	5900 7400 6000 7500
+Wire Bus Line
+	5900 7400 5900 8700
+Wire Bus Line
+	5900 8700 6000 8700
+Entry Wire Line
+	5900 7500 6000 7600
+Entry Wire Line
+	5900 7600 6000 7700
+Entry Wire Line
+	5900 7700 6000 7800
+Entry Wire Line
+	5900 7800 6000 7900
+Entry Wire Line
+	5900 7900 6000 8000
+Entry Wire Line
+	5900 8200 6000 8300
+Entry Wire Line
+	5900 8300 6000 8400
+Entry Wire Line
+	5900 8400 6000 8500
+Entry Wire Line
+	5900 8500 6000 8600
+Text HLabel 6000 8700 2    60   Output ~ 0
+FMC_A[0..15]
+Text Label 9300 6200 2    60   ~ 0
+FMC_A14
+Text Label 9300 6300 2    60   ~ 0
+FMC_A15
+Wire Bus Line
+	9400 5600 9400 6200
+Entry Wire Line
+	9300 5800 9400 5700
+Entry Wire Line
+	9300 5900 9400 5800
+Entry Wire Line
+	9300 6000 9400 5900
+Wire Bus Line
+	9400 5600 9500 5600
+Text Label 9400 5600 2    60   ~ 0
+FMC_A[0..15]
+Entry Wire Line
+	9300 6200 9400 6100
+Entry Wire Line
+	9300 6300 9400 6200
+Text Notes 10600 5400 2    60   ~ 0
+NOTE: FMC_A14 and A15 are actually BA0 and BA1\n
+Wire Wire Line
+	4300 8400 4900 8400
+Wire Wire Line
+	4300 8500 4900 8500
+Text Label 4700 8400 2    60   ~ 0
+FMC_D0
+Text Label 4700 8500 2    60   ~ 0
+FMC_D1
+Wire Wire Line
+	4300 7000 4900 7000
+Wire Wire Line
+	4300 7100 4900 7100
+Text Label 4700 7000 2    60   ~ 0
+FMC_D2
+Text Label 4700 7100 2    60   ~ 0
+FMC_D3
+Wire Wire Line
+	6600 6500 6000 6500
+Wire Wire Line
+	6600 6600 6000 6600
+Wire Wire Line
+	6600 6700 6000 6700
+Wire Wire Line
+	6600 6800 6000 6800
+Wire Wire Line
+	6600 6900 6000 6900
+Wire Wire Line
+	6600 7000 6000 7000
+Wire Wire Line
+	6600 7100 6000 7100
+Wire Wire Line
+	6600 7200 6000 7200
+Wire Wire Line
+	6600 7300 6000 7300
+Text Label 6500 6500 2    60   ~ 0
+FMC_D4
+Text Label 6500 6600 2    60   ~ 0
+FMC_D5
+Text Label 6500 6700 2    60   ~ 0
+FMC_D6
+Text Label 6500 6800 2    60   ~ 0
+FMC_D7
+Text Label 6500 6900 2    60   ~ 0
+FMC_D8
+Text Label 6500 7000 2    60   ~ 0
+FMC_D9
+Text Label 6500 7100 2    60   ~ 0
+FMC_D10
+Text Label 6500 7200 2    60   ~ 0
+FMC_D11
+Text Label 6500 7300 2    60   ~ 0
+FMC_D12
+Wire Wire Line
+	4300 7800 4900 7800
+Wire Wire Line
+	4300 7900 4900 7900
+Wire Wire Line
+	4300 8000 4900 8000
+Text Label 4800 7800 2    60   ~ 0
+FMC_D13
+Text Label 4800 7900 2    60   ~ 0
+FMC_D14
+Text Label 4800 8000 2    60   ~ 0
+FMC_D15
+Entry Wire Line
+	4900 7000 5000 6900
+Entry Wire Line
+	4900 7100 5000 7000
+Entry Wire Line
+	4900 7800 5000 7700
+Entry Wire Line
+	4900 7900 5000 7800
+Entry Wire Line
+	4900 8000 5000 7900
+Entry Wire Line
+	4900 8400 5000 8300
+Entry Wire Line
+	4900 8500 5000 8400
+Entry Wire Line
+	5900 6400 6000 6500
+Entry Wire Line
+	5900 6500 6000 6600
+Entry Wire Line
+	5900 6600 6000 6700
+Entry Wire Line
+	5900 6700 6000 6800
+Entry Wire Line
+	5900 6800 6000 6900
+Entry Wire Line
+	5900 6900 6000 7000
+Entry Wire Line
+	5900 7000 6000 7100
+Entry Wire Line
+	5900 7100 6000 7200
+Entry Wire Line
+	5900 7200 6000 7300
+Wire Wire Line
+	4900 8300 4900 8250
+Wire Bus Line
+	5000 6700 5000 9100
+Wire Bus Line
+	5900 6700 5000 6700
+Wire Bus Line
+	5900 6400 5900 7200
+Wire Bus Line
+	5000 9100 5500 9100
+Text HLabel 5500 9100 2    60   BiDi ~ 0
+FMC_D[0..15]
+Wire Wire Line
+	5050 8250 5050 8300
+Wire Wire Line
+	5050 8300 5350 8300
+Wire Wire Line
+	4900 8250 5050 8250
+Wire Wire Line
+	6600 5800 6100 5800
+Wire Wire Line
+	6600 5900 6100 5900
+Text HLabel 6100 5800 0    60   Output ~ 0
+FMC_NBL0
+Text HLabel 6100 5900 0    60   Output ~ 0
+FMC_NBL1
+Text HLabel 9300 7600 2    60   Output ~ 0
+FMC_SDCKE0
+Text HLabel 9300 6600 2    60   Output ~ 0
+FMC_SDCLK
+Text HLabel 9300 7200 2    60   Output ~ 0
+FMC_SDNCAS
+Text HLabel 9300 7700 2    60   Output ~ 0
+FMC_SDNE0
+Text HLabel 9300 7900 2    60   Output ~ 0
+FMC_SDNWE
+Text HLabel 6600 8200 0    60   Output ~ 0
+FMC_SDNRAS
+Text GLabel 9300 7400 2    60   Input ~ 0
+OSC_IN_PH0
+Text GLabel 9300 7500 2    60   Output ~ 0
+OSC_OUT_PH1
+NoConn ~ 5100 2700
+NoConn ~ 5100 2800
+NoConn ~ 5100 2900
+NoConn ~ 5100 3000
+NoConn ~ 5100 3100
+NoConn ~ 5100 3200
+NoConn ~ 5100 3300
+NoConn ~ 5100 3400
+NoConn ~ 5100 3500
+NoConn ~ 5100 3600
+NoConn ~ 5100 3700
+NoConn ~ 5100 3800
+Wire Wire Line
+	1200 7000 1900 7000
+Wire Wire Line
+	1900 7100 1200 7100
+Text Label 1300 7000 0    60   ~ 0
+SWDIO/JTMS
+Text Label 1300 7100 0    60   ~ 0
+SWCLK/JTCK
+Wire Wire Line
+	1900 7200 1200 7200
+Text Label 1300 7200 0    60   ~ 0
+JTDI
+$Comp
+L CONN_02X05 P?
+U 1 1 5ACA4B5E
+P 1900 4700
+F 0 "P?" H 1900 5000 50  0000 C CNN
+F 1 "CONN_02X05" H 1900 4400 50  0000 C CNN
+F 2 "Connectors_Multicomp:Multicomp_MC9A12-1034_2x05x2.54mm_Straight" H 1900 3500 50  0001 C CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/75869.pdf" H 1900 3500 50  0001 C CNN
+F 4 "Amphenol" H 1900 4700 60  0001 C CNN "Manufacturer"
+F 5 "75869-101LF" H 1900 4200 60  0000 C CNN "Part Number"
+F 6 "Sullins" H 1900 4700 60  0001 C CNN "Manufacturer #2"
+F 7 "SFH11-PBPC-D05-ST-BK" H 1900 4700 60  0001 C CNN "Part Number 2"
+	1    1900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4500 900  4500
+Wire Wire Line
+	1700 4600 1200 4600
+Wire Wire Line
+	1200 4600 1200 5200
+Wire Wire Line
+	2100 4600 2300 4600
+Wire Wire Line
+	2300 4600 2300 5100
+Wire Wire Line
+	2300 5100 1200 5100
+Connection ~ 1200 5100
+$Comp
+L GND #PWR?
+U 1 1 5ACA724A
+P 1200 5200
+F 0 "#PWR?" H 1200 4950 50  0001 C CNN
+F 1 "GND" H 1200 5050 50  0000 C CNN
+F 2 "" H 1200 5200 50  0000 C CNN
+F 3 "" H 1200 5200 50  0000 C CNN
+	1    1200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4800 1700 4800
+Wire Wire Line
+	1500 4100 1500 4800
+Wire Wire Line
+	2100 4800 2200 4800
+Wire Wire Line
+	2200 4800 2200 4200
+Wire Wire Line
+	2200 4200 1500 4200
+Connection ~ 1500 4200
+$Comp
+L +3.3V #PWR?
+U 1 1 5ACA7871
+P 1500 4100
+F 0 "#PWR?" H 1500 3950 50  0001 C CNN
+F 1 "+3.3V" H 1500 4240 50  0000 C CNN
+F 2 "" H 1500 4100 50  0000 C CNN
+F 3 "" H 1500 4100 50  0000 C CNN
+	1    1500 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1700 4900
+NoConn ~ 2100 4900
+Wire Wire Line
+	2100 4700 2800 4700
+Text Label 2300 4700 0    60   ~ 0
+SWCLK/JTCK
+Wire Wire Line
+	2100 4500 2800 4500
+Text Label 2300 4500 0    60   ~ 0
+SWDIO/JTMS
+Text Label 1000 4500 0    60   ~ 0
+RESET_L
+NoConn ~ 1700 4700
+Text Notes 1700 4100 0    80   ~ 0
+"JTAG"
+Wire Notes Line
+	800  3800 800  5400
+Wire Notes Line
+	800  5400 2600 5400
+Wire Notes Line
+	2600 5400 2600 5100
+Wire Notes Line
+	2600 5100 2900 5100
+Wire Notes Line
+	2900 5100 2900 3800
+Wire Notes Line
+	2900 3800 800  3800
+Text Notes 800  3800 0    60   ~ 0
+DEBUG
 $EndSCHEMATC
