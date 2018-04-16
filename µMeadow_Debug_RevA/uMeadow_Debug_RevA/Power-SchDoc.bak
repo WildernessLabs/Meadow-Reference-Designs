@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:uMeadow_Debug_RevA-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -96,11 +97,11 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title "MinimumMeadow"
 Date "06/08/2017"
 Rev "E"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 "Designer: S. Johnson"
 Comment2 ""
 Comment3 ""
@@ -120,8 +121,6 @@ F 5 "Value" H 3350 2650 60  0001 C CNN "Fieldname"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 1950 3150 1950
-Wire Wire Line
 	3150 1750 3150 2050
 Wire Wire Line
 	2950 1750 3350 1750
@@ -129,7 +128,6 @@ Wire Wire Line
 	2950 2350 2950 2550
 Wire Wire Line
 	2950 2550 6100 2550
-Connection ~ 3150 1950
 Wire Wire Line
 	2950 1200 2950 2050
 Connection ~ 3150 1750
@@ -197,7 +195,7 @@ F 6 "Debug" H 2500 1100 60  0000 C CNN "Debug"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 1200 2950 1200
+	2450 1200 3250 1200
 Connection ~ 2950 1650
 Wire Wire Line
 	1450 1200 1950 1200
@@ -576,4 +574,34 @@ Wire Notes Line
 	4400 5350 850  5350
 Text Notes 2200 5550 0    60   ~ 0
 LiPo Charger
+Wire Wire Line
+	3350 1950 3250 1950
+Wire Wire Line
+	3250 1950 3250 1600
+$Comp
+L R R?
+U 1 1 5AD3A2D5
+P 3250 1450
+F 0 "R?" H 3400 1400 50  0000 C CNN
+F 1 "10k" H 3400 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 3180 1450 50  0001 C CNN
+F 3 "" H 3250 1450 50  0000 C CNN
+F 4 "Panasonic" V 3250 1450 60  0001 C CNN "Manufacturer"
+F 5 "ERJ-1GEF1002C" V 3250 1450 60  0001 C CNN "Part Number"
+F 6 "0201" H 3100 1400 40  0000 C CNN "Package"
+	1    3250 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 1200 3250 1300
+Connection ~ 2950 1200
+Wire Wire Line
+	3250 1650 3550 1650
+Wire Wire Line
+	3550 1650 3550 1000
+Wire Wire Line
+	3550 1000 3800 1000
+Connection ~ 3250 1650
+Text HLabel 3800 1000 2    60   Input ~ 0
+EN_3V3
 $EndSCHEMATC

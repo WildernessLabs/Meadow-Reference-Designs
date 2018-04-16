@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:uMeadow_Debug_RevA-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -96,7 +97,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title "MinimumMeadow"
 Date "06/08/2017"
 Rev "E"

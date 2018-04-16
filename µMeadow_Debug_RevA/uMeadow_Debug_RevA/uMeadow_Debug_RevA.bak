@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:uMeadow_Debug_RevA-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -96,11 +97,11 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "uMeadow_Debug"
 Date "03/16/2018"
 Rev "A"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -220,4 +221,10 @@ Text Label 12300 5600 0    60   ~ 0
 FLASH_CS_n
 Text Label 12300 5800 0    60   ~ 0
 FLASH_IO_[0..3]
+$Sheet
+S 2350 4650 1600 2150
+U 5AD3964B
+F0 "uMeadowHeaders" 60
+F1 "Headsers.sch" 60
+$EndSheet
 $EndSCHEMATC
