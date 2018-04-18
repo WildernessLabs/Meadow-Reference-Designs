@@ -97,10 +97,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
-Title ""
+Sheet 7 7
+Title "uMeadow_Debug"
 Date ""
-Rev ""
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -113,8 +113,10 @@ U 1 1 5AD39790
 P 5500 3250
 F 0 "P?" H 5500 4200 50  0000 C CNN
 F 1 "CONN_01X18" V 5600 3250 50  0000 C CNN
-F 2 "" H 5500 3250 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-118-X-XX_1x18" H 5500 3250 50  0001 C CNN
 F 3 "" H 5500 3250 50  0000 C CNN
+F 4 "Value" H 5500 3250 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 5500 3250 60  0001 C CNN "Part Number"
 	1    5500 3250
 	1    0    0    -1  
 $EndComp
@@ -124,8 +126,10 @@ U 1 1 5AD3981A
 P 6450 3200
 F 0 "P?" H 6450 3950 50  0000 C CNN
 F 1 "CONN_01X14" V 6550 3200 50  0000 C CNN
-F 2 "" H 6450 3200 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-114-X-XX_1x14" H 6450 3200 50  0001 C CNN
 F 3 "" H 6450 3200 50  0000 C CNN
+F 4 "Value" H 6450 3200 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 6450 3200 60  0001 C CNN "Part Number"
 	1    6450 3200
 	-1   0    0    -1  
 $EndComp
@@ -138,7 +142,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2700 5300 2700
 Wire Wire Line
-	5300 2800 4800 2800
+	5300 2800 4450 2800
 Wire Wire Line
 	5300 2900 4800 2900
 Wire Wire Line
@@ -168,7 +172,9 @@ Wire Wire Line
 Text HLabel 4800 2400 0    60   BiDi ~ 0
 RESET_L
 Wire Wire Line
-	3600 2200 3600 2600
+	3600 2200 3600 2500
+Wire Wire Line
+	3600 2500 3600 2600
 $Comp
 L +3.3V #PWR?
 U 1 1 5AD39967
@@ -198,7 +204,9 @@ F 8 "20%" H 3600 2750 60  0001 C CNN "Tolerance"
 $EndComp
 Connection ~ 3600 2500
 Wire Wire Line
-	3600 2900 3600 3000
+	3600 2900 3600 2950
+Wire Wire Line
+	3600 2950 3600 3000
 $Comp
 L GND #PWR?
 U 1 1 5AD39A83
@@ -217,7 +225,7 @@ Wire Wire Line
 Connection ~ 3600 2950
 Text Label 4900 2700 0    60   ~ 0
 GND
-Text HLabel 4800 2800 0    60   BiDi ~ 0
+Text HLabel 4450 2800 0    60   BiDi ~ 0
 A0
 Text HLabel 4800 2900 0    60   BiDi ~ 0
 A1
@@ -245,8 +253,8 @@ Text HLabel 4800 3900 0    60   BiDi ~ 0
 D02
 Text HLabel 4800 3000 0    60   Output ~ 0
 A2
-Text Notes 4950 2800 0    60   ~ 0
-DAC
+Text Notes 4650 2800 0    60   ~ 0
+DAC/SPI_CS_L
 Text Notes 4950 2900 0    60   ~ 0
 DAC
 Wire Wire Line
@@ -295,7 +303,9 @@ Wire Wire Line
 Text HLabel 7150 2650 2    60   Output ~ 0
 EN_3V3
 Wire Wire Line
-	7650 2350 7650 2750
+	7650 2350 7650 2400
+Wire Wire Line
+	7650 2400 7650 2750
 $Comp
 L VUSB #PWR?
 U 1 1 5AD3A87D
@@ -387,4 +397,8 @@ Text HLabel 7150 3350 2    60   BiDi ~ 0
 D10
 Text HLabel 7150 3250 2    60   BiDi ~ 0
 D11
+Text Notes 4850 3400 0    60   ~ 0
+UART4_TX\n
+Text Notes 4850 3600 0    60   ~ 0
+UART4_RX
 $EndSCHEMATC

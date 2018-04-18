@@ -97,10 +97,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 8
-Title "MinimumMeadow"
+Sheet 3 7
+Title "uMeadow_Debug"
 Date "06/08/2017"
-Rev "E"
+Rev "A"
 Comp ""
 Comment1 "Designer: S. Johnson"
 Comment2 ""
