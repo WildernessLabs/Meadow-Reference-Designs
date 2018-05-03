@@ -966,4 +966,16 @@ F 6 "0201" H 6750 1950 40  0000 C CNN "Package"
 	1    6600 1800
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	6400 1450 6400 2600
+Wire Notes Line
+	6400 2600 7500 2600
+Wire Notes Line
+	7500 2600 7500 1400
+Wire Notes Line
+	7500 1400 6400 1400
+Wire Notes Line
+	6400 1400 6400 1500
+Text Notes 6800 1400 0    60   ~ 0
+DEBUG
 $EndSCHEMATC

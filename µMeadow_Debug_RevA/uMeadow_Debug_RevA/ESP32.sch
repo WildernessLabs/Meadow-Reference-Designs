@@ -108,9 +108,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	6000 5500 6000 5800
-Wire Wire Line
-	6000 5800 6000 5950
+	6000 5500 6000 5950
 $Comp
 L GND #PWR50
 U 1 1 5AB6E452
@@ -138,9 +136,7 @@ F 7 "10V" H 7150 5350 60  0000 C CNN "Voltage"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 5300 7050 5300
-Wire Wire Line
-	7050 5300 7450 5300
+	6700 5300 7450 5300
 Wire Wire Line
 	7050 5300 7050 5400
 Wire Wire Line
@@ -179,11 +175,7 @@ F 7 "1%" V 7750 5600 40  0000 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7450 5200 7450 5300
-Wire Wire Line
-	7450 5300 7450 5350
-Wire Wire Line
-	7450 5350 7450 5650
+	7450 5200 7450 5650
 Wire Wire Line
 	7450 5350 7550 5350
 Wire Wire Line
@@ -220,21 +212,15 @@ Wire Wire Line
 Wire Wire Line
 	9650 5200 9900 5200
 Wire Wire Line
-	9900 5200 9900 5550
-Wire Wire Line
-	9900 5550 9900 5800
+	9900 5200 9900 5800
 Wire Wire Line
 	6700 5100 7600 5100
 Wire Wire Line
-	7900 5100 8350 5100
-Wire Wire Line
-	8350 5100 8800 5100
+	7900 5100 8800 5100
 Wire Wire Line
 	9900 5100 9650 5100
 Wire Wire Line
-	9900 4800 9900 5000
-Wire Wire Line
-	9900 5000 9900 5100
+	9900 4800 9900 5100
 Wire Wire Line
 	9900 4800 8650 4800
 Wire Wire Line
@@ -279,9 +265,7 @@ Wire Wire Line
 	8350 5150 8350 5100
 Connection ~ 8350 5100
 Wire Wire Line
-	8350 5450 8350 5550
-Wire Wire Line
-	8350 5550 8350 5800
+	8350 5450 8350 5800
 Wire Wire Line
 	8650 5550 8350 5550
 Wire Wire Line
@@ -322,17 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 3000 3300 2900
 Wire Wire Line
-	2000 3000 2100 3000
-Wire Wire Line
-	2100 3000 2400 3000
-Wire Wire Line
-	2400 3000 2850 3000
-Wire Wire Line
-	2850 3000 3300 3000
-Wire Wire Line
-	3300 3000 3700 3000
-Wire Wire Line
-	3700 3000 4150 3000
+	2000 3000 4150 3000
 Wire Wire Line
 	3700 3000 3700 2900
 Wire Wire Line
@@ -399,29 +373,7 @@ $EndComp
 Wire Wire Line
 	2000 2450 2000 2600
 Wire Wire Line
-	2000 2450 2100 2450
-Wire Wire Line
-	2100 2450 2400 2450
-Wire Wire Line
-	2400 2450 2850 2450
-Wire Wire Line
-	2850 2450 3300 2450
-Wire Wire Line
-	3300 2450 3700 2450
-Wire Wire Line
-	3700 2450 4150 2450
-Wire Wire Line
-	4150 2450 4300 2450
-Wire Wire Line
-	4300 2450 5600 2450
-Wire Wire Line
-	5600 2450 5700 2450
-Wire Wire Line
-	5700 2450 5800 2450
-Wire Wire Line
-	5800 2450 6000 2450
-Wire Wire Line
-	6000 2450 6100 2450
+	2000 2450 6100 2450
 Wire Wire Line
 	2400 2450 2400 2600
 Connection ~ 2400 2450
@@ -528,9 +480,7 @@ $EndComp
 Wire Wire Line
 	5200 1750 5200 1700
 Wire Wire Line
-	4850 1700 5200 1700
-Wire Wire Line
-	5200 1700 5900 1700
+	4850 1700 5900 1700
 $Comp
 L GND #PWR49
 U 1 1 5AB71AB0
@@ -562,24 +512,14 @@ F 7 "900mA" V 7600 2300 60  0001 C CNN "Current Rating"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6200 2300 6300 2300
-Wire Wire Line
-	6300 2300 7300 2300
-Wire Wire Line
-	7300 2300 7450 2300
+	6200 2300 7450 2300
 Wire Wire Line
 	7300 2400 7300 2300
 Connection ~ 7300 2300
 Wire Wire Line
 	7300 2700 7300 2900
 Wire Wire Line
-	7300 2900 8100 2900
-Wire Wire Line
-	8100 2900 8350 2900
-Wire Wire Line
-	8350 2900 8550 2900
-Wire Wire Line
-	8550 2900 9050 2900
+	7300 2900 9050 2900
 $Comp
 L C C48
 U 1 1 5AB72238
@@ -597,13 +537,7 @@ F 8 "20%" H 8550 2550 60  0001 C CNN "Tolerance"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 2300 8100 2300
-Wire Wire Line
-	8100 2300 8550 2300
-Wire Wire Line
-	8550 2300 8800 2300
-Wire Wire Line
-	8800 2300 9050 2300
+	7750 2300 9050 2300
 Wire Wire Line
 	8100 2300 8100 2400
 Wire Wire Line
@@ -2477,11 +2411,7 @@ A0 1C 49 02 00 00 28 47 92 00 00 00 CA 91 24 00 00 80 72 24 09 00 00 A0 1C 49 02
 EndData
 $EndBitmap
 Wire Wire Line
-	2750 3800 2900 3800
-Wire Wire Line
-	2900 3800 3200 3800
-Wire Wire Line
-	3200 3800 5200 3800
+	2750 3800 5200 3800
 $Comp
 L C C36
 U 1 1 5ACAD467
@@ -3432,9 +3362,7 @@ Wire Wire Line
 Text HLabel 3000 3500 0    60   Input ~ 0
 ESP32_EN
 Wire Wire Line
-	2300 5000 3100 5000
-Wire Wire Line
-	3100 5000 5200 5000
+	2300 5000 5200 5000
 Text HLabel 3000 4850 0    60   Input ~ 0
 ESP32_BOOT_L
 Wire Wire Line
@@ -3446,9 +3374,7 @@ Wire Wire Line
 	5600 2800 5600 2450
 Connection ~ 5600 2450
 Wire Wire Line
-	6700 3300 8700 3300
-Wire Wire Line
-	8700 3300 8850 3300
+	6700 3300 8850 3300
 $Comp
 L C C51
 U 1 1 5ADF966D
@@ -3481,9 +3407,7 @@ F 5 "TBD" H 9100 3300 60  0001 C CNN "Part Number"
 $EndComp
 Connection ~ 8700 3300
 Wire Wire Line
-	9350 3300 9550 3300
-Wire Wire Line
-	9550 3300 10100 3300
+	9350 3300 10100 3300
 Wire Wire Line
 	9550 3300 9550 3400
 Wire Wire Line
@@ -3511,9 +3435,7 @@ F 3 "" H 9550 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 3800 9550 3750
-Wire Wire Line
-	9550 3750 9550 3700
+	9550 3700 9550 3800
 $Comp
 L C C49
 U 1 1 5ADF9DF0
@@ -3546,9 +3468,7 @@ Wire Wire Line
 	10100 3300 10100 3250
 Connection ~ 9550 3300
 Wire Wire Line
-	10200 3250 10200 3300
-Wire Wire Line
-	10200 3300 10200 3750
+	10200 3250 10200 3750
 Wire Wire Line
 	10200 3750 9550 3750
 Connection ~ 9550 3750
@@ -3557,4 +3477,19 @@ Wire Wire Line
 Wire Wire Line
 	10250 3300 10200 3300
 Connection ~ 10200 3300
+$Comp
+L VCC #PWR?
+U 1 1 5AE85A7B
+P 3600 6700
+F 0 "#PWR?" H 3600 6550 50  0001 C CNN
+F 1 "VCC" H 3600 6850 50  0000 C CNN
+F 2 "" H 3600 6700 50  0000 C CNN
+F 3 "" H 3600 6700 50  0000 C CNN
+	1    3600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6700 3600 6950
+Wire Wire Line
+	3600 6950 4450 6950
 $EndSCHEMATC

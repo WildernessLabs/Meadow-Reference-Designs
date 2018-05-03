@@ -123,14 +123,14 @@ $EndComp
 $Comp
 L CONN_01X14 P7
 U 1 1 5AD3981A
-P 6450 3200
-F 0 "P7" H 6450 3950 50  0000 C CNN
-F 1 "CONN_01X14" V 6550 3200 50  0000 C CNN
-F 2 "Connectors_Samtec:SL-114-X-XX_1x14" H 6450 3200 50  0001 C CNN
-F 3 "" H 6450 3200 50  0000 C CNN
-F 4 "Value" H 6450 3200 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 6450 3200 60  0001 C CNN "Part Number"
-	1    6450 3200
+P 6350 3450
+F 0 "P7" H 6350 4200 50  0000 C CNN
+F 1 "CONN_01X14" V 6450 3450 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-114-X-XX_1x14" H 6350 3450 50  0001 C CNN
+F 3 "" H 6350 3450 50  0000 C CNN
+F 4 "Value" H 6350 3450 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 6350 3450 60  0001 C CNN "Part Number"
+	1    6350 3450
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -172,9 +172,7 @@ Wire Wire Line
 Text HLabel 4800 2400 0    60   BiDi ~ 0
 RESET_L
 Wire Wire Line
-	3600 2200 3600 2500
-Wire Wire Line
-	3600 2500 3600 2600
+	3600 2200 3600 2600
 $Comp
 L +3.3V #PWR62
 U 1 1 5AD39967
@@ -204,9 +202,7 @@ F 8 "20%" H 3600 2750 60  0001 C CNN "Tolerance"
 $EndComp
 Connection ~ 3600 2500
 Wire Wire Line
-	3600 2900 3600 2950
-Wire Wire Line
-	3600 2950 3600 3000
+	3600 2900 3600 3000
 $Comp
 L GND #PWR63
 U 1 1 5AD39A83
@@ -258,144 +254,142 @@ DAC/SPI_CS_L
 Text Notes 4950 2900 0    60   ~ 0
 DAC
 Wire Wire Line
-	7150 2550 7150 2350
+	7050 2800 7050 2600
 $Comp
 L VBAT #PWR64
 U 1 1 5AD39D87
-P 7150 2350
-F 0 "#PWR64" H 7150 2200 50  0001 C CNN
-F 1 "VBAT" H 7150 2500 50  0000 C CNN
-F 2 "" H 7150 2350 50  0000 C CNN
-F 3 "" H 7150 2350 50  0000 C CNN
-F 4 "Value" H 7150 2350 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 7150 2350 60  0001 C CNN "Part Number"
-	1    7150 2350
+P 7050 2600
+F 0 "#PWR64" H 7050 2450 50  0001 C CNN
+F 1 "VBAT" H 7050 2750 50  0000 C CNN
+F 2 "" H 7050 2600 50  0000 C CNN
+F 3 "" H 7050 2600 50  0000 C CNN
+F 4 "Value" H 7050 2600 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 7050 2600 60  0001 C CNN "Part Number"
+	1    7050 2600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 2550 6650 2550
+	7050 2800 6550 2800
 Wire Wire Line
-	6650 2650 7150 2650
+	6550 2900 7050 2900
 Wire Wire Line
-	7650 2750 6650 2750
+	7550 3000 6550 3000
 Wire Wire Line
-	6650 2850 7150 2850
+	6550 3100 7050 3100
 Wire Wire Line
-	6650 2950 7150 2950
+	6550 3200 7050 3200
 Wire Wire Line
-	6650 3050 7150 3050
+	6550 3300 7050 3300
 Wire Wire Line
-	6650 3150 7150 3150
+	6550 3400 7050 3400
 Wire Wire Line
-	6650 3250 7150 3250
+	6550 3500 7050 3500
 Wire Wire Line
-	6650 3350 7150 3350
+	6550 3600 7050 3600
 Wire Wire Line
-	6650 3450 7150 3450
+	6550 3700 7050 3700
 Wire Wire Line
-	6650 3550 7150 3550
+	6550 3800 7050 3800
 Wire Wire Line
-	6650 3650 7150 3650
+	6550 3900 7050 3900
 Wire Wire Line
-	6650 3750 7150 3750
+	6550 4000 7050 4000
 Wire Wire Line
-	6650 3850 7150 3850
-Text HLabel 7150 2650 2    60   Output ~ 0
+	6550 4100 7050 4100
+Text HLabel 7050 2900 2    60   Output ~ 0
 EN_3V3
 Wire Wire Line
-	7650 2350 7650 2400
-Wire Wire Line
-	7650 2400 7650 2750
+	7550 2600 7550 3000
 $Comp
 L VUSB #PWR65
 U 1 1 5AD3A87D
-P 7650 2350
-F 0 "#PWR65" H 7650 2200 50  0001 C CNN
-F 1 "VUSB" H 7650 2500 50  0000 C CNN
-F 2 "" H 7650 2350 50  0000 C CNN
-F 3 "" H 7650 2350 50  0000 C CNN
-F 4 "Value" H 7650 2350 60  0001 C CNN "Manufacturer"
-F 5 "Value" H 7650 2350 60  0001 C CNN "Part Number"
-	1    7650 2350
+P 7550 2600
+F 0 "#PWR65" H 7550 2450 50  0001 C CNN
+F 1 "VUSB" H 7550 2750 50  0000 C CNN
+F 2 "" H 7550 2600 50  0000 C CNN
+F 3 "" H 7550 2600 50  0000 C CNN
+F 4 "Value" H 7550 2600 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 7550 2600 60  0001 C CNN "Part Number"
+	1    7550 2600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C62
 U 1 1 5AD3A8C9
-P 8000 2600
-F 0 "C62" H 8025 2700 50  0000 L CNN
-F 1 "0.1uF" H 8025 2500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0201" H 8038 2450 50  0001 C CNN
-F 3 "" H 8000 2600 50  0000 C CNN
-F 4 "Murata Electronics North America" H 8000 2600 60  0001 C CNN "Manufacturer"
-F 5 "GRM033R61A104ME15D" H 8000 2600 60  0001 C CNN "Part Number"
-F 6 "10V" H 7900 2400 60  0000 C CNN "Voltage"
-F 7 "0201" H 7900 2500 40  0000 C CNN "Package"
-F 8 "20%" H 8000 2600 60  0001 C CNN "Tolerance"
-	1    8000 2600
+P 7900 2850
+F 0 "C62" H 7925 2950 50  0000 L CNN
+F 1 "0.1uF" H 7925 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 7938 2700 50  0001 C CNN
+F 3 "" H 7900 2850 50  0000 C CNN
+F 4 "Murata Electronics North America" H 7900 2850 60  0001 C CNN "Manufacturer"
+F 5 "GRM033R61A104ME15D" H 7900 2850 60  0001 C CNN "Part Number"
+F 6 "10V" H 7800 2650 60  0000 C CNN "Voltage"
+F 7 "0201" H 7800 2750 40  0000 C CNN "Package"
+F 8 "20%" H 7900 2850 60  0001 C CNN "Tolerance"
+	1    7900 2850
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2450 8000 2400
+	7900 2700 7900 2650
 Wire Wire Line
-	8000 2400 7650 2400
-Connection ~ 7650 2400
+	7900 2650 7550 2650
+Connection ~ 7550 2650
 $Comp
 L GND #PWR66
 U 1 1 5AD3A997
-P 8000 2900
-F 0 "#PWR66" H 8000 2650 50  0001 C CNN
-F 1 "GND" H 8000 2750 50  0000 C CNN
-F 2 "" H 8000 2900 50  0000 C CNN
-F 3 "" H 8000 2900 50  0000 C CNN
-	1    8000 2900
+P 7900 3150
+F 0 "#PWR66" H 7900 2900 50  0001 C CNN
+F 1 "GND" H 7900 3000 50  0000 C CNN
+F 2 "" H 7900 3150 50  0000 C CNN
+F 3 "" H 7900 3150 50  0000 C CNN
+	1    7900 3150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2900 8000 2750
-Text Label 6900 3850 0    60   ~ 0
+	7900 3150 7900 3000
+Text Label 6800 4100 0    60   ~ 0
 D05
-Text Label 6900 3750 0    60   ~ 0
+Text Label 6800 4000 0    60   ~ 0
 D6
-Text Label 6900 3650 0    60   ~ 0
+Text Label 6800 3900 0    60   ~ 0
 D7
-Text Label 6900 3550 0    60   ~ 0
+Text Label 6800 3800 0    60   ~ 0
 D8
-Text Label 6900 3450 0    60   ~ 0
+Text Label 6800 3700 0    60   ~ 0
 D9
-Text Label 6850 3350 0    60   ~ 0
+Text Label 6750 3600 0    60   ~ 0
 D10
-Text Label 6850 3250 0    60   ~ 0
+Text Label 6750 3500 0    60   ~ 0
 D11
-Text Label 6850 3150 0    60   ~ 0
+Text Label 6750 3400 0    60   ~ 0
 D12
-Text Label 6850 3050 0    60   ~ 0
+Text Label 6750 3300 0    60   ~ 0
 D13
-Text Label 6850 2950 0    60   ~ 0
+Text Label 6750 3200 0    60   ~ 0
 D14
-Text Label 6850 2850 0    60   ~ 0
+Text Label 6750 3100 0    60   ~ 0
 D15
-Text HLabel 7150 3650 2    60   BiDi ~ 0
+Text HLabel 7050 3900 2    60   BiDi ~ 0
 I2C_SDA
-Text HLabel 7150 3550 2    60   BiDi ~ 0
+Text HLabel 7050 3800 2    60   BiDi ~ 0
 I2C_SCK
-Text HLabel 7150 3150 2    60   Output ~ 0
+Text HLabel 7050 3400 2    60   Output ~ 0
 COM2_RX
-Text HLabel 7150 3050 2    60   Input ~ 0
+Text HLabel 7050 3300 2    60   Input ~ 0
 COM2_TX
-Text HLabel 7150 2950 2    60   BiDi ~ 0
+Text HLabel 7050 3200 2    60   BiDi ~ 0
 D14
-Text HLabel 7150 2850 2    60   BiDi ~ 0
+Text HLabel 7050 3100 2    60   BiDi ~ 0
 D15
-Text HLabel 7150 3850 2    60   BiDi ~ 0
+Text HLabel 7050 4100 2    60   BiDi ~ 0
 D5
-Text HLabel 7150 3750 2    60   BiDi ~ 0
+Text HLabel 7050 4000 2    60   BiDi ~ 0
 D6
-Text HLabel 7150 3450 2    60   BiDi ~ 0
+Text HLabel 7050 3700 2    60   BiDi ~ 0
 D9
-Text HLabel 7150 3350 2    60   BiDi ~ 0
+Text HLabel 7050 3600 2    60   BiDi ~ 0
 D10
-Text HLabel 7150 3250 2    60   BiDi ~ 0
+Text HLabel 7050 3500 2    60   BiDi ~ 0
 D11
 Text Notes 4850 3400 0    60   ~ 0
 UART4_TX\n
