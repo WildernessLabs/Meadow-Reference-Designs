@@ -1580,12 +1580,12 @@ F0 "#PWR" 0 -150 50 H I C CNN
 F1 "VBAT" 0 150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
-F4 "Value" 0 0 60 H I C CNN "Manufacturer"
-F5 "Value" 0 0 60 H I C CNN "Part Number"
+F4 "Value" 250 -50 60 H I C CNN "Manufacturer"
+F5 "Value" 250 100 60 H I C CNN "Part Number"
 DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
+X VBAT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
