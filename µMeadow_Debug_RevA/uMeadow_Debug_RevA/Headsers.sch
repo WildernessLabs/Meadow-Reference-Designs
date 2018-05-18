@@ -138,7 +138,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 2500 5300 2500
 Wire Wire Line
-	5300 2600 4800 2600
+	4750 2600 5300 2600
 Wire Wire Line
 	3900 2700 5300 2700
 Wire Wire Line
@@ -397,4 +397,7 @@ Text Notes 4850 3600 0    60   ~ 0
 UART4_RX
 Text Label 6650 2800 0    60   ~ 0
 VBAT
+Wire Wire Line
+	4750 2600 4750 2500
+Connection ~ 4750 2500
 $EndSCHEMATC
