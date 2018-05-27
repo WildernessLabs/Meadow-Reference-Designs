@@ -536,29 +536,6 @@ F 3 "" H 1850 9800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R9
-U 1 1 58FF1024
-P 1500 9400
-F 0 "R9" V 1580 9400 50  0000 C CNN
-F 1 "0R" V 1500 9400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1430 9400 50  0001 C CNN
-F 3 "" H 1500 9400 50  0000 C CNN
-F 4 "Value" H 1500 9400 60  0001 C CNN "Test something"
-F 5 "Value" H 1500 9400 60  0001 C CNN "Fieldname"
-F 6 "CRCW06030000Z0EA" V 1500 9400 60  0001 C CNN "Part Number"
-F 7 "Vishay Dale" V 1500 9400 60  0001 C CNN "Manufacturer"
-F 8 "DNI" V 1650 9400 60  0000 C CNN "DNI"
-	1    1500 9400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1250 9300 1250 9400
-Wire Wire Line
-	1250 9400 1350 9400
-Wire Wire Line
-	1650 9400 1850 9400
-Connection ~ 1850 9400
-$Comp
 L USB_OTG P2
 U 1 1 58FF095B
 P 1350 8900
