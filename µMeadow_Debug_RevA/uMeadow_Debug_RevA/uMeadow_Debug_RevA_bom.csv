@@ -1,0 +1,72 @@
+Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,Part Number,Manufacturer,Tolerance,DNI,Debug,Current Rating,Part Number 2,Manufacturer #2,Current,RdsON,Size
+Antennas 2.4GHz BlueTooth Ceramic Antenna,ANT_W3008,AE1,ANT_W3008,W3008,1,https://www.mouser.com/datasheet/2/336/-836.pdf,W3008,PulseLarsen,,,,,,,,,
+Unpolarized capacitor,C,C2 C4 C5 C6 C7 C9 C11 C13 C14 C15 C16 C17 C18 C20 C21 C22 C23 C24 C25 C26 C27 C33 C34 C35 C37 C38 C40 C41 C43 C45 C51 C55 C60 C61 C62 C63 C64 C65 C67 C68 C69,0.1uF,C_0201,41,,GRM033R61A104ME15D,Murata Electronics North America,20%,,,,,,,,
+Unpolarized capacitor,C,C47 C48,0.1uF,C_0201,2,,GRM033R61A104ME15D,Murata Electronics North America,20%,DNI,,,,,,,
+Unpolarized capacitor,C,C30 C31,1.0uf,C_0603,2,,GRM188R61C105KA93D,Murata Electronics North America,,,,,,,,,
+Unpolarized capacitor,C,C46,100pF,C_0201,1,,GRM0335C1H101JA01D,Murata Electronics North America,5%,,,,,,,,
+Unpolarized capacitor,C,C50,10nF,C_0201,1,,CL03B103KP3NNNC,Samsung Electro-Mechanics,,,,,,,,,
+Unpolarized capacitor,C,C57,10uF,C_0402,1,,GRM155C80J106ME11D,MURATA ELECTRONICS,,,,,,,,,
+Unpolarized capacitor,C,C1 C3 C19 C36 C39 C42 C44 C49 C53 C66,1uF,C_0201,10,,GRT033R60J105ME13D GRM033R61A105ME15D,Murata Electronics North America,20%,,,,,,,,
+Unpolarized capacitor,C,C10,2.2 uF,C_0201,1,,JMK105BJ225MV-F,AVX,20%,,,,,,,,
+Unpolarized capacitor,C,C8 C12,2.2uF,C_0201,2,,GRM033R61A225KE47D,Murata Electronics North America,20%,,,,,,,,
+Unpolarized capacitor,C,C52,3nF,C_0402,1,,GRM155R71H302JA01D,MURATA ELECTRONICS,,,,,,,,,
+Unpolarized capacitor,C,C32,4.7uf,C_0201,1,,GRM035R60J475ME15D,Murata Electronics North America,,,,,,,,,
+Unpolarized capacitor,C,C28 C29 C54 C59,8pF,C_0402,4,,GRM1555C1H8R0DA01D,MURATA ELECTRONICS,,,,,,,,,
+Unpolarized capacitor,C,C56 C58,TBD,C_0402,2,,TBD,-,,,,,,,,,
+,BAT60JFILM,D5 D6,BAT60JFILM,D_SOD-323_HandSoldering,2,http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/20/e3/4d/48/CD00001944.pdf/files/CD00001944.pdf/jcr:content/translations/en.CD00001944.pdf,BAT60JFILM,STMicroelectronics,,,Debug,,,,,,
+LED generic,LED,D3 D4,LED-GREEN,LED_0603,2,,VLMTG1300-GS08,Vishay Semiconductor Opto Division,,,,,,,,,
+LED generic,LED,D2,LED-RED,LED_0603,1,,VLMS1300-GS08,Vishay Semiconductor Opto Division,,,,,,,,,
+"LED RGB, common anode (pin 1)",LTST-C19HE1WT,D1,LTST-C19HE1WT,LEDSC85P160X160X35-4N,1,http://optoelectronics.liteon.com/upload/download/DS22-2008-0044/LTST-C19HE1WT.pdf,LTST-C19HE1WT,LITE-ON,,,,,,,,,
+Photodiode,D_Photo,D7,Orange,LED_0603,1,,RC1005J471CS,Lite-ON,,,,,,,,,
+Inductor,L,L1,2nH,R_0402,1,,LQG15HS2N0S02D,Murata Electronics,,,,900mA,,,,,
+,INDUCTOR,L2,TBD,R_0402,1,,TBD,Value,,,,,,,,,
+"Connector, single row, 01x08",CONN_01X08,P5,CONN_01X08,SL-108-X-XX_1x08,1,,Value,Value,,DNI,,,,,,,
+"Connector, single row, 01x14",CONN_01X14,P7,CONN_01X14,SL-114-X-XX_1x14,1,,Value,Value,,,,,,,,,
+"Connector, single row, 01x18",CONN_01X18,P6,CONN_01X18,SL-118-X-XX_1x18,1,,Value,Value,,,,,,,,,
+"Connector, double row, 02x05",CONN_02X05,P1,CONN_02X05,Multicomp_MC9A12-1034_2x05x2.54mm_Straight,1,https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/75869.pdf,75869-101LF,Amphenol,,,,,SFH11-PBPC-D05-ST-BK,Sullins,,,
+"Connector, single row, 01x02, SMT, RA",JST2PH_SMT,P4,JST2PH_SMT,JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled,1,http://www.jst-mfg.com/product/pdf/eng/ePH.pdf,S2B-PH-SM4-TB(LF)(SN),JST,,,,,,,,,
+USB micro/mini connector,USB_OTG,P2,USB_MICRO_B,USB_Micro-B_10103594-0001LF,1,http://portal.fciconnect.com/Comergent//fci/drawing/10103594.pdf,10103594-0001LF,Amphenol FCI,,,,,,,,,
+USB micro/mini connector,USB_OTG,P3,USB_OTG,Molex_0475900001,1,http://www.molex.com/pdm_docs/sd/475900001_sd.pdf,475900001,Molex,,,,,,,,,
+"-20V Vds, 2A Id, P-Channel MOSFET, CST3B",SSM3J46CTB,Q1,SSM3J46CTB,CST3B,1,https://toshiba.semicon-storage.com/info/docget.jsp?did=1707&prodName=SSM3J46CTB,SSM3J46CTB(TPL3),Toshiba,,,,,,,2A,.1,
+Resistor,R,R8 R10 R19 R23,0R,R_0402,4,,ERJ-2GE0R00X,Panasonic,,,,,,,,,
+Resistor,R,R12 R13 R14 R31 R34,0R,R_0201,5,,ERJ-1GN0R00C,Panasonic,,,,,,,,,
+Resistor,R,R18,0R,R_0201,1,,ERJ-1GN0R00C,Panasonic,,DNI,,,,,,,
+Resistor,R,R22,0R,R_0603,1,,CRCW06030000Z0EA,Vishay Dale,,,,,,,,,
+Resistor,R,R28,0R,C_0603,1,,CRCW06030000Z0EA,Vishay Dale,,,,,,,,,
+Resistor,R,R5,0R,R_0402,1,,ERJ-2GE0R00X,Panasonic,,DNI,,,,,,,
+Resistor,R,R16,10K,R_0603,1,,CRCW060310K0FKEAHP,Vishay Dale,,,,,,,,,
+Resistor,R,R1 R6 R7 R9 R11 R25 R26 R30,10k,R_0201,8,,ERJ-1GEF1002C,Panasonic,,,,,,,,,
+Resistor,R,R29 R33,20K,R_0201,2,,RC0201FR-0720KL,YAGEO,1%,,,,,,,,
+Resistor,R,R3 R4,300,R_0201,2,,RC0201FR-07300RL,Yageo,,,,,,,,,
+Resistor,R,R24,4.7k,R_0402,1,,ERA-2AEB472X,Panasonic,5%,,,,,,,,
+Resistor,R,R27,470,R_0402,1,,RC1005J471CS,Samsung Electro-Mechanics,5%,,,,,,,,
+Resistor,R,R15,47k,R_0201,1,,RC0603F473CS,Samsung Electro-Mechanics,,,,,,,,,
+Resistor,R,R32,499R,R_0201,1,,ERJ-1GN0R00C,RC0201FR-07499RL,,,,,,,,,
+Resistor,R,R2 R17,620,R_0201,2,,RC0201JR-07620RL,Yageo,,,,,,,,,
+Resistor,R,R20 R21,620,R_0603,2,,ERJ-PB3B6200V,Panasonic Electronic Components,,,,,,,,,
+"Push button switch, generic, four pins",SW_KMR2,SW1 SW2 SW3,SW_KMR2,KMR211NG,3,https://www.mouser.com/ds/2/60/kmr2-1109400.pdf,KMR211NG LFS,C&K,,,,,,,,,
+"ESP32, WIFI, BLUETOOTH",ESP32,U6,ESP32,QFN_48_5X5,1,https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf,ESP32-D2WD,Espressif Systems,,,,,,,,,
+"Full Speed USB to Basic UART, SSOP-16",FT230XS,U3,FT230XS,SSOP-16_3.9x4.9mm_Pitch0.635mm,1,http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf,FT230XS-R,FTDI,,,,,,,,,
+IC SDRAM 256MBIT 143MHZ 54BGA,IS42S16160J-7BLI,U7,IS42S16160J-7BLI,TFBGA-54,1,http://www.issi.com/WW/pdf/42-45S83200J-16160J.pdf,IS42S16160J-7BLI,ISSI,,,,,,,,,32MB
+,LP38691,U5,LP38691,SOT-223-5,1,http://www.ti.com/lit/ds/symlink/lp38693-q1.pdf,LP38693MP-3.3/NOPB,TI,,,,,,,,,
+"Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Open-Drain Status Output, in SOT23-5 package",MCP73831-2-OT,U4,MCP73831-2-OT,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf,MCP73831T-2ACI/OT,MicroChip,,,,,,,,,
+IC FLASH 256M 133MHZ 24BGA,S25FL256,U8,S25FL256,BGA25C100P4X6_800X600X120N,1,http://www.cypress.com/file/316171/download,S25FL256LAGBHV030,Cypress,,,,,,,,,32MB
+IC MCU 32BIT 2MB FLASH 216TFBGA,STM32F779NXH,U1,STM32F779NXH,TFBGA-216_13X13,1,,STM32F779NIH6,ST,,,,,,,,,
+,STMPS2141STR,U2,STMPS2141STR,SOT-23-5_HandSoldering,1,http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf,STMPS2141STR,STMicroelectronics,,,,,,,,,
+"40MHz ±10ppm Crystal 6pF 80 Ohms 4-SMD, No Lead",ABM12W-40,X1,ABM12W-25,XTAL_ABM12W_4_1.6x1.2,1,https://abracon.com/Resonators/ABM12W.pdf,ABM12W-25.0000MHZ-6-B1U-T3,Abracon LLC,+/- 10ppm,,,,,,,,
+"40MHz ±10ppm Crystal 6pF 80 Ohms 4-SMD, No Lead",ABM12W-40,X2,ABM12W-40,XTAL_ABM12W_4_1.6x1.2,1,https://abracon.com/Resonators/ABM12W.pdf,ABM12W-40.0000MHZ-6-B1U-T3,Abracon LLC,+/- 10ppm,,,,,,,,
+
+
+
+
+
+Component Groups:,56
+Component Count:,134
+Fitted Components:,134
+Number of PCBs:,1
+Total components:,134
+Schematic Version:,A
+Schematic Date:,03/16/2018
+BoM Date:,"Tuesday, May 29, 2018 'PMt' 08:51:14 PM"
+Schematic Source:,/Users/sheldon/Meadow-Reference-Designs/Meadow_Debug_RevA/uMeadow_Debug_RevA/uMeadow_Debug_RevA.sch
+KiCad Version:,Eeschema 4.0.7

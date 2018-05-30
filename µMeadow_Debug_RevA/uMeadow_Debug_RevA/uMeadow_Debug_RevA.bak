@@ -402,4 +402,43 @@ Wire Wire Line
 NoConn ~ 7050 7300
 NoConn ~ 10450 7100
 NoConn ~ 10450 7200
+$Comp
+L Mounting_Hole MK1
+U 1 1 5B01B335
+P 1350 8500
+F 0 "MK1" H 1350 8700 50  0000 C CNN
+F 1 "Mounting_Hole" H 1350 8625 50  0000 C CNN
+F 2 "footprints:MountingHole_0.1in_Pad" H 1350 8500 50  0001 C CNN
+F 3 "" H 1350 8500 50  0001 C CNN
+F 4 "Value" H 1350 8500 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 1350 8500 60  0001 C CNN "Part Number"
+	1    1350 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK2
+U 1 1 5B01D074
+P 1350 9100
+F 0 "MK2" H 1350 9300 50  0000 C CNN
+F 1 "Mounting_Hole_NoPAD" H 1350 9225 50  0000 C CNN
+F 2 "footprints:MountingHole_0.1in_NOPAD" H 1350 9100 50  0001 C CNN
+F 3 "" H 1350 9100 50  0001 C CNN
+F 4 "Value" H 1350 9100 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 1350 9100 60  0001 C CNN "Part Number"
+	1    1350 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK3
+U 1 1 5B01EBDC
+P 2100 8500
+F 0 "MK3" H 2100 8700 50  0000 C CNN
+F 1 "Mounting_Hole" H 2100 8625 50  0000 C CNN
+F 2 "footprints:MountingHole_0.1in_Pad" H 2100 8500 50  0001 C CNN
+F 3 "" H 2100 8500 50  0001 C CNN
+F 4 "Value" H 2100 8500 60  0001 C CNN "Manufacturer"
+F 5 "Value" H 2100 8500 60  0001 C CNN "Part Number"
+	1    2100 8500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
