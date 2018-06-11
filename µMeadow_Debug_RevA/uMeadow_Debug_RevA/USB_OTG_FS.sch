@@ -126,30 +126,7 @@ Wire Wire Line
 	5700 2700 7800 2700
 Wire Wire Line
 	6000 2700 6000 2350
-Wire Wire Line
-	6600 2550 6600 2700
 Connection ~ 6000 2700
-$Comp
-L LED D2
-U 1 1 58FD83E8
-P 6600 2400
-F 0 "D2" V 6650 2250 50  0000 C CNN
-F 1 "LED-RED" V 6550 2150 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 6600 2400 50  0001 C CNN
-F 3 "" H 6600 2400 50  0000 C CNN
-F 4 "Vishay Semiconductor Opto Division" H 6600 2400 60  0001 C CNN "Manufacturer"
-F 5 "VLMS1300-GS08" H 6600 2400 60  0001 C CNN "Part Number"
-F 6 "Value" H 6600 2400 60  0001 C CNN "Test something"
-F 7 "Value" H 6600 2400 60  0001 C CNN "Fieldname"
-	1    6600 2400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6600 2250 6600 1950
-Wire Wire Line
-	6600 1550 6600 1650
-Wire Wire Line
-	6000 1550 6600 1550
 Wire Wire Line
 	6000 1550 6000 2050
 $Comp
@@ -165,8 +142,6 @@ F 3 "" H 6300 1450 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	6300 1450 6300 1550
-Connection ~ 6300 1550
-Connection ~ 6600 2700
 Wire Wire Line
 	8100 2700 8800 2700
 $Comp
@@ -276,8 +251,6 @@ Wire Wire Line
 	8200 4950 8200 4800
 Text Notes 9750 4800 2    60   ~ 0
 Should not short shield to GND\n
-Text Notes 7400 2350 2    100  ~ 0
-"FAULT"\n
 Wire Wire Line
 	5750 4300 7800 4300
 Wire Wire Line
@@ -843,30 +816,6 @@ F 3 "" H 8150 3650 50  0000 C CNN
 	1    8150 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R17
-U 1 1 5AE04202
-P 6600 1800
-F 0 "R17" H 6750 1750 50  0000 C CNN
-F 1 "620" H 6750 1850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0201" V 6530 1800 50  0001 C CNN
-F 3 "" H 6600 1800 50  0000 C CNN
-F 4 "Yageo" V 6600 1800 60  0001 C CNN "Manufacturer"
-F 5 "RC0201JR-07620RL" V 6600 1800 60  0001 C CNN "Part Number"
-F 6 "0201" H 6750 1950 40  0000 C CNN "Package"
-	1    6600 1800
-	-1   0    0    1   
-$EndComp
-Wire Notes Line
-	6400 1450 6400 2600
-Wire Notes Line
-	6400 2600 7500 2600
-Wire Notes Line
-	7500 2600 7500 1400
-Wire Notes Line
-	7500 1400 6400 1400
-Wire Notes Line
-	6400 1400 6400 1500
-Text Notes 6800 1400 0    60   ~ 0
-DEBUG
+Wire Wire Line
+	6300 1550 6000 1550
 $EndSCHEMATC

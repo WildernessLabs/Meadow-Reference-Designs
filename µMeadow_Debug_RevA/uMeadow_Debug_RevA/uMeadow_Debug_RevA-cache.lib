@@ -670,6 +670,23 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# RFCON_A-1JB
+#
+DEF RFCON_A-1JB J 0 40 Y Y 1 F N
+F0 "J" 200 -100 60 H V C CNN
+F1 "RFCON_A-1JB" 400 0 60 H V C CNN
+F2 "footprints:CON_A-1JB" 100 -200 60 H I C CNN
+F3 "https://www.amphenolrf.com/media/downloads/3960/CA-1JB.pdf" 200 -100 60 H I C CNN
+F4 "A-1JB" 0 0 60 H I C CNN "Part Number"
+F5 "Amphenol" 0 0 60 H I C CNN "Manufacturer"
+DRAW
+C -5 5 71 0 1 0 N
+S -80 80 70 -70 0 1 0 N
+X ~ 1 0 -300 200 U 50 50 1 1 I
+X ~ 2 -200 0 200 R 50 50 1 1 I I
+ENDDRAW
+ENDDEF
+#
 # S25FL256
 #
 DEF S25FL256 U 0 40 Y Y 1 F N
