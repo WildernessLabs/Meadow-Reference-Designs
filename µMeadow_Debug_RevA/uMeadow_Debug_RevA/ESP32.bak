@@ -639,10 +639,10 @@ U 1 1 5ACAAB67
 P 6000 5400
 F 0 "U6" H 5350 8000 60  0000 C CNN
 F 1 "ESP32" H 5350 7900 60  0001 C CNN
-F 2 "footprints:QFN_48_5X5" H 5250 7900 60  0001 C CNN
+F 2 "footprints:QFN35P500X500X90-49N" H 5250 7900 60  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf" H 5250 5200 60  0001 C CNN
-F 4 "ESP32-D2WD" H 6350 5300 60  0000 C CNN "Part Number"
-F 5 "Espressif Systems" H 6000 5100 60  0001 C CNN "Manufacturer"
+F 4 "Espressif Systems" H 6000 5100 60  0001 C CNN "Manufacturer"
+F 5 "ESP32-D2WD" H 6350 5300 60  0000 C CNN "Part Number"
 	1    6000 5400
 	1    0    0    -1  
 $EndComp

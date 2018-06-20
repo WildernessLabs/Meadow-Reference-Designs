@@ -908,8 +908,8 @@ Text HLabel 3600 6600 2    60   BiDi ~ 0
 PC9_TIM8CH4
 Text HLabel 3600 6500 2    60   BiDi ~ 0
 PC8_TIM8CH3
-Text HLabel 1450 8600 0    60   Output ~ 0
-PB12
+Text HLabel 5600 8150 0    60   Output ~ 0
+PF7
 Text HLabel 11300 6700 0    60   Output ~ 0
 PI10
 $Comp
@@ -2193,4 +2193,6 @@ Text HLabel 5500 6050 0    60   BiDi ~ 0
 PE3
 Text HLabel 7800 6050 2    60   BiDi ~ 0
 PG3
+Wire Wire Line
+	5950 8150 5600 8150
 $EndSCHEMATC
