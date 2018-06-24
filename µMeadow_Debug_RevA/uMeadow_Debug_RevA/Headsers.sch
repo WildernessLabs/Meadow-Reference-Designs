@@ -117,6 +117,7 @@ F 2 "Connectors_Samtec:SL-118-X-XX_1x18" H 5500 3250 50  0001 C CNN
 F 3 "" H 5500 3250 50  0000 C CNN
 F 4 "Value" H 5500 3250 60  0001 C CNN "Manufacturer"
 F 5 "Value" H 5500 3250 60  0001 C CNN "Part Number"
+F 6 "DNI" H 5650 2950 60  0000 C CNN "DNI"
 	1    5500 3250
 	1    0    0    -1  
 $EndComp
@@ -130,6 +131,7 @@ F 2 "Connectors_Samtec:SL-114-X-XX_1x14" H 6350 3450 50  0001 C CNN
 F 3 "" H 6350 3450 50  0000 C CNN
 F 4 "Value" H 6350 3450 60  0001 C CNN "Manufacturer"
 F 5 "Value" H 6350 3450 60  0001 C CNN "Part Number"
+F 6 "DNI" H 6650 3400 60  0000 C CNN "DNI"
 	1    6350 3450
 	-1   0    0    -1  
 $EndComp
