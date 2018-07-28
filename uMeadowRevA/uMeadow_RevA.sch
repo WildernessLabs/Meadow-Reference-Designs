@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -6289,8 +6289,21 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </class>
 </classes>
 <modules>
-<module name="STM32_MCU" prefix="" dx="25.4" dy="101.6">
+<module name="STM32_MCU" prefix="" dx="76.2" dy="101.6">
 <ports>
+<port name="SPI2_SCK" side="left" coord="48.26" direction="out"/>
+<port name="SPI2_MOSI" side="left" coord="45.72" direction="out"/>
+<port name="SPI2_MISO" side="left" coord="43.18" direction="out"/>
+<port name="SPI2_CS" side="left" coord="40.64" direction="out"/>
+<port name="PF7" side="left" coord="35.56" direction="out"/>
+<port name="PI10" side="left" coord="33.02" direction="out"/>
+<port name="UART5_RX" side="left" coord="27.94" direction="in"/>
+<port name="UART5_TX" side="left" coord="25.4" direction="out"/>
+<port name="FLASH_CLK" side="right" coord="48.26" direction="out"/>
+<port name="FLASH_CS_L" side="right" coord="43.18" direction="out"/>
+<port name="QUAD_SPI_IO[0..3]" side="right" coord="38.1" direction="io"/>
+<port name="FMC_A[0..15]" side="right" coord="30.48" direction="out"/>
+<port name="FMC_D[0..15]" side="right" coord="25.4" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -7000,16 +7013,21 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <segment>
 <wire x1="142.24" y1="88.9" x2="142.24" y2="109.22" width="0.762" layer="92"/>
 <label x="140.97" y="90.805" size="1.778" layer="95" rot="R90"/>
+<wire x1="142.24" y1="88.9" x2="119.38" y2="88.9" width="0.762" layer="92"/>
+<wire x1="119.38" y1="88.9" x2="119.38" y2="30.48" width="0.762" layer="92"/>
+<label x="121.92" y="30.48" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="SPI2:SPI2_CLK,SPI2_CS,SPI2_MISO,SPI2_MOSI">
 <segment>
-<wire x1="252.095" y1="78.105" x2="270.51" y2="78.105" width="0.762" layer="92"/>
-<label x="258.445" y="79.375" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="248.92" y1="123.825" x2="248.92" y2="133.985" width="0.762" layer="92"/>
 <label x="247.015" y="127" size="1.778" layer="95" rot="R90"/>
+</segment>
+</bus>
+<bus name="QUAD_SPI_IO[0..3]">
+<segment>
+<wire x1="127" y1="40.64" x2="127" y2="134.62" width="0.762" layer="92"/>
+<label x="127" y="38.1" size="1.778" layer="95"/>
 </segment>
 </bus>
 </busses>
@@ -7737,27 +7755,27 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="FMC_D0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PD14"/>
-<wire x1="93.98" y1="45.72" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <label x="99.06" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D1" class="0">
 <segment>
-<wire x1="93.98" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
 <label x="99.06" y="43.18" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PD15"/>
 </segment>
 </net>
 <net name="FMC_D2" class="0">
 <segment>
-<wire x1="93.98" y1="81.28" x2="113.665" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD0"/>
 <label x="99.06" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FMC_D3" class="0">
 <segment>
-<wire x1="93.98" y1="78.74" x2="113.665" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD1"/>
 <label x="99.06" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -7832,21 +7850,21 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </net>
 <net name="FMC_D14" class="0">
 <segment>
-<wire x1="93.98" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
 <label x="96.52" y="60.96" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PD8"/>
 </segment>
 </net>
 <net name="FMC_D15" class="0">
 <segment>
-<wire x1="93.98" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <label x="96.52" y="58.42" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PD9"/>
 </segment>
 </net>
 <net name="FMC_D16" class="0">
 <segment>
-<wire x1="93.98" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
 <label x="96.52" y="55.88" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="PD10"/>
 </segment>
@@ -8236,22 +8254,21 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <net name="QUAD_SPI_IO3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PD13"/>
-<wire x1="93.98" y1="48.26" x2="116.205" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
 <label x="96.52" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QUAD_SPI_IO1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PD12"/>
-<wire x1="93.98" y1="50.8" x2="116.205" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="116.205" y1="50.8" x2="115.57" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
 <label x="96.52" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="QUAD_SPI_IO0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PD11"/>
-<wire x1="93.98" y1="53.34" x2="116.205" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
 <label x="96.52" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -8259,18 +8276,117 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <segment>
 <pinref part="U$1" gate="G$3" pin="PI0"/>
 <wire x1="248.92" y1="132.08" x2="271.78" y2="132.08" width="0.1524" layer="91"/>
+<label x="256.54" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
 <segment>
 <pinref part="U$1" gate="G$3" pin="PI2"/>
 <wire x1="248.92" y1="127" x2="271.78" y2="127" width="0.1524" layer="91"/>
+<label x="256.54" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
 <segment>
 <pinref part="U$1" gate="G$3" pin="PI3"/>
 <wire x1="248.92" y1="124.46" x2="271.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="256.54" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="QUAD_SPI_IO2" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE2"/>
+<wire x1="127" y1="121.92" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
+<label x="139.7" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_NBL0" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PE0"/>
+<wire x1="157.48" y1="127" x2="137.16" y2="127" width="0.1524" layer="91"/>
+<label x="139.7" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_NBL1" class="0">
+<segment>
+<wire x1="157.48" y1="124.46" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
+<label x="139.7" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PF7" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PF7"/>
+<wire x1="157.48" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="144.78" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_SDNRAS" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PF11"/>
+<wire x1="157.48" y1="55.88" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
+<label x="139.7" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PG3"/>
+<wire x1="195.58" y1="119.38" x2="213.36" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FMC_SDCLK" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PG8"/>
+<wire x1="195.58" y1="106.68" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
+<label x="203.2" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_SDNCAS" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PG15"/>
+<wire x1="195.58" y1="88.9" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
+<label x="203.2" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_SDCKE0" class="0">
+<segment>
+<wire x1="195.58" y1="78.74" x2="215.9" y2="78.74" width="0.1524" layer="91"/>
+<label x="203.2" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_SDNE0" class="0">
+<segment>
+<wire x1="195.58" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
+<label x="203.2" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="I2C2_SCL" class="0">
+<segment>
+<wire x1="195.58" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
+<label x="203.2" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FMC_SDNWE" class="0">
+<segment>
+<wire x1="195.58" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
+<label x="203.2" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART4_TX" class="0">
+<segment>
+<wire x1="195.58" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
+<label x="200.66" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OTG_FS_PWRON" class="0">
+<segment>
+<wire x1="195.58" y1="53.34" x2="215.9" y2="53.34" width="0.1524" layer="91"/>
+<label x="200.66" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PH10_TIM5CH1" class="0">
+<segment>
+<wire x1="195.58" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
+<label x="200.66" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -8280,48 +8396,23 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </modules>
 <parts>
 <part name="FRAME1" library="frames_SLJ" deviceset="FRAME_D_L" device=""/>
-<part name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="2.2uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A225KE47D"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="STM32_MCU1" module="STM32_MCU" x="462.28" y="325.12" offset="100"/>
+<moduleinst name="STM32_MCU1" module="STM32_MCU" x="469.9" y="312.42" smashed="yes">
+<attribute name="NAME" x="469.9" y="312.42" size="2.032" layer="95" align="bottom-center"/>
+</moduleinst>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="431.8" y="0"/>
 <instance part="FRAME1" gate="G$2" x="758.19" y="0"/>
-<instance part="C1" gate="G$1" x="289.56" y="350.52" smashed="yes">
-<attribute name="MANUFACTURER" x="289.56" y="350.52" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="289.56" y="350.52" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="289.56" y="350.52" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="281.94" y="350.52" size="1.778" layer="96"/>
-<attribute name="NAME" x="291.084" y="350.901" size="1.778" layer="95"/>
-<attribute name="VALUE" x="291.084" y="345.821" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="355.6" x2="289.56" y2="355.6" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="355.6" x2="289.56" y2="353.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND" class="0">
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="289.56" y1="342.9" x2="289.56" y2="345.44" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>

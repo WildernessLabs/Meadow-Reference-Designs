@@ -1423,6 +1423,44 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </package3d>
 </packages3d>
 </library>
+<library name="SLJ_led">
+<description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
+Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
+<packages>
+<package name="LTST-C19HE1WT">
+<description>&lt;b&gt;Chip LED RGB&lt;/b&gt;&lt;p&gt;
+Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
+<smd name="1" x="-0.475" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="4" x="-0.475" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="3" x="0.475" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="2" x="0.475" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<text x="-0.762" y="1.778" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-0.8" x2="0.8" y2="0.8" layer="51"/>
+<rectangle x1="-1.3" y1="0.7" x2="-1.1" y2="0.9" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SLJ_OSC">
+<description>Crystals and Oscilators</description>
+<packages>
+<package name="ABM12W">
+<smd name="1" x="0.5" y="0.35" dx="0.73" dy="0.58" layer="1"/>
+<smd name="2" x="-0.5" y="0.35" dx="0.73" dy="0.58" layer="1"/>
+<smd name="3" x="-0.5" y="-0.35" dx="0.73" dy="0.58" layer="1"/>
+<smd name="4" x="0.5" y="-0.35" dx="0.73" dy="0.58" layer="1"/>
+<rectangle x1="-0.8" y1="-0.6" x2="0.8" y2="0.6" layer="51"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.127" layer="21"/>
+<rectangle x1="0.8" y1="0.8" x2="1" y2="1" layer="21"/>
+<text x="-0.6" y="1.4" size="0.8" layer="27">&gt;VALUE</text>
+<text x="-0.2" y="-1.8" size="0.8" layer="25">&gt;Name</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1838,6 +1876,39 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER" value="C&amp;K" x="-30.48" y="-135.89" size="1.778" layer="27" display="off"/>
 <attribute name="PART_NUMBER" value="KMR211NG LFS" x="-30.48" y="-135.89" size="1.778" layer="27" display="off"/>
 </element>
+<element name="S103" library="SLJ_SWITCHES" package="KMR211NG" value="SPST_SW_KMR211NG_LFS" x="-30.48" y="-142.24">
+<attribute name="MANUFACTURER" value="C&amp;K" x="-30.48" y="-142.24" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="KMR211NG LFS" x="-30.48" y="-142.24" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R104" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:23593/1" value="10K" x="-31.75" y="-147.32">
+<attribute name="FOOTPRINT" value="0201" x="-31.75" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Panasonic" x="-31.75" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="ERJ-1GEF1002C" x="-31.75" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-31.75" y="-147.32" size="1.778" layer="27" display="off"/>
+</element>
+<element name="LED101" library="SLJ_led" package="LTST-C19HE1WT" value="LTST-C19HE1WT" x="-31.75" y="-153.67"/>
+<element name="R105" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:23593/1" value="620" x="-31.75" y="-160.02">
+<attribute name="FOOTPRINT" value="0201" x="-31.75" y="-160.02" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="-31.75" y="-160.02" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="RC0201JR-07620RL" x="-31.75" y="-160.02" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-31.75" y="-160.02" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R106" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:23593/1" value="300" x="-31.75" y="-165.1">
+<attribute name="FOOTPRINT" value="0201" x="-31.75" y="-165.1" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="-31.75" y="-165.1" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="RC0201FR-07300RL" x="-31.75" y="-165.1" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-31.75" y="-165.1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R107" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:23593/1" value="300" x="-31.75" y="-170.18">
+<attribute name="FOOTPRINT" value="0201" x="-31.75" y="-170.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="-31.75" y="-170.18" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="RC0201FR-07300RL" x="-31.75" y="-170.18" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="-31.75" y="-170.18" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X101" library="SLJ_OSC" package="ABM12W" value="ABM12W-25" x="-31.75" y="-175.26">
+<attribute name="MANUFACTURER" value="Abracon LLC" x="-31.75" y="-175.26" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="ABM12W-25.0000MHZ-6-B1U-T3" x="-31.75" y="-175.26" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1887,7 +1958,11 @@ design rules under a new name.</description>
 <contactref element="R103" pad="1"/>
 <contactref element="S102" pad="2"/>
 <contactref element="S102" pad="3"/>
-<wire x1="-28.43" y1="-136.69" x2="-28.43" y2="-135.09" width="0" layer="19" extent="1-1"/>
+<contactref element="X101" pad="2"/>
+<contactref element="X101" pad="4"/>
+<wire x1="-32.25" y1="-174.91" x2="-31.25" y2="-175.61" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.43" y1="-136.69" x2="-32.25" y2="-174.91" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.43" y1="-135.09" x2="-28.43" y2="-136.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.005" y1="-129.54" x2="-28.43" y2="-135.09" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.5" y1="-104.14" x2="-32.005" y2="-129.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.5" y1="-93.98" x2="-31.5" y2="-104.14" width="0" layer="19" extent="1-1"/>
@@ -1944,6 +2019,10 @@ design rules under a new name.</description>
 <contactref element="R101" pad="2"/>
 <contactref element="S101" pad="2"/>
 <contactref element="S101" pad="3"/>
+<contactref element="R104" pad="2"/>
+<contactref element="LED101" pad="4"/>
+<wire x1="-31.495" y1="-147.32" x2="-32.225" y2="-154.395" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.495" y1="-124.46" x2="-31.495" y2="-147.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.495" y1="-119.38" x2="-31.495" y2="-124.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.43" y1="-111.29" x2="-31.495" y2="-119.38" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.43" y1="-109.69" x2="-28.43" y2="-111.29" width="0" layer="19" extent="1-1"/>
@@ -2125,6 +2204,147 @@ design rules under a new name.</description>
 </signal>
 <signal name="STM32_MCU1:MOSI">
 <contactref element="U$101" pad="C13"/>
+</signal>
+<signal name="STM32_MCU1:UART4_RX">
+<contactref element="U$101" pad="D3"/>
+</signal>
+<signal name="STM32_MCU1:PI10">
+<contactref element="U$101" pad="E3"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A10">
+<contactref element="U$101" pad="N7"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A11">
+<contactref element="U$101" pad="M7"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A12">
+<contactref element="U$101" pad="L15"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A14">
+<contactref element="U$101" pad="K14"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A15">
+<contactref element="U$101" pad="K13"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A0">
+<contactref element="U$101" pad="E2"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A1">
+<contactref element="U$101" pad="H3"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A2">
+<contactref element="U$101" pad="H2"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A3">
+<contactref element="U$101" pad="J2"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A4">
+<contactref element="U$101" pad="J3"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A5">
+<contactref element="U$101" pad="K3"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A6">
+<contactref element="U$101" pad="P6"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A7">
+<contactref element="U$101" pad="N6"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A8">
+<contactref element="U$101" pad="R7"/>
+</signal>
+<signal name="STM32_MCU1:FMC_A9">
+<contactref element="U$101" pad="P7"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D0">
+<contactref element="U$101" pad="M14"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D1">
+<contactref element="U$101" pad="L14"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D2">
+<contactref element="U$101" pad="B12"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D3">
+<contactref element="U$101" pad="C12"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D4">
+<contactref element="U$101" pad="R8"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D5">
+<contactref element="U$101" pad="P8"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D6">
+<contactref element="U$101" pad="P9"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D7">
+<contactref element="U$101" pad="R9"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D8">
+<contactref element="U$101" pad="P10"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D10">
+<contactref element="U$101" pad="R10"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D11">
+<contactref element="U$101" pad="N11"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D12">
+<contactref element="U$101" pad="P11"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D13">
+<contactref element="U$101" pad="R11"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D14">
+<contactref element="U$101" pad="P15"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D15">
+<contactref element="U$101" pad="P14"/>
+</signal>
+<signal name="STM32_MCU1:FMC_D16">
+<contactref element="U$101" pad="N15"/>
+</signal>
+<signal name="STM32_MCU1:PD5_BUT">
+<contactref element="S103" pad="1"/>
+<contactref element="S103" pad="4"/>
+<contactref element="R104" pad="1"/>
+<wire x1="-32.53" y1="-143.04" x2="-32.005" y2="-147.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.53" y1="-141.44" x2="-32.53" y2="-143.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STM32_MCU1:N$10">
+<contactref element="S103" pad="2"/>
+<contactref element="S103" pad="3"/>
+<wire x1="-28.43" y1="-141.44" x2="-28.43" y2="-143.04" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STM32_MCU1:N$7">
+<contactref element="LED101" pad="1"/>
+<contactref element="R105" pad="2"/>
+<wire x1="-32.225" y1="-152.945" x2="-31.495" y2="-160.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STM32_MCU1:N$9">
+<contactref element="LED101" pad="2"/>
+<contactref element="R106" pad="2"/>
+<wire x1="-31.275" y1="-152.945" x2="-31.495" y2="-165.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STM32_MCU1:N$11">
+<contactref element="LED101" pad="3"/>
+<contactref element="R107" pad="2"/>
+<wire x1="-31.275" y1="-154.395" x2="-31.495" y2="-170.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="STM32_MCU1:BLINKY_R">
+<contactref element="R105" pad="1"/>
+</signal>
+<signal name="STM32_MCU1:BLINKY_G">
+<contactref element="R106" pad="1"/>
+</signal>
+<signal name="STM32_MCU1:BLINKY_B">
+<contactref element="R107" pad="1"/>
+</signal>
+<signal name="STM32_MCU1:OSC_IN_PH0">
+<contactref element="X101" pad="1"/>
+</signal>
+<signal name="STM32_MCU1:N$14">
+<contactref element="X101" pad="3"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

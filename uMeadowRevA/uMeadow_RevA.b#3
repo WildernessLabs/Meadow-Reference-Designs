@@ -2515,6 +2515,51 @@ design rules under a new name.</description>
 <signal name="STM32_MCU1:USART1_TX">
 <contactref element="U$101" pad="R15"/>
 </signal>
+<signal name="STM32_MCU1:ADC1_IN10">
+<contactref element="U$101" pad="M2"/>
+</signal>
+<signal name="STM32_MCU1:ADC1_IN11">
+<contactref element="U$101" pad="M3"/>
+</signal>
+<signal name="STM32_MCU1:OTG_FS_OC">
+<contactref element="U$101" pad="M4"/>
+</signal>
+<signal name="STM32_MCU1:PC6_TIM3CH1">
+<contactref element="U$101" pad="H15"/>
+</signal>
+<signal name="STM32_MCU1:PC7_TIM3CH2">
+<contactref element="U$101" pad="G15"/>
+</signal>
+<signal name="STM32_MCU1:PC8_TIM8CH1">
+<contactref element="U$101" pad="G14"/>
+</signal>
+<signal name="STM32_MCU1:PC9_TIM8CH4">
+<contactref element="U$101" pad="F14"/>
+</signal>
+<signal name="STM32_MCU1:SPI3_SCK">
+<contactref element="U$101" pad="B14"/>
+</signal>
+<signal name="STM32_MCU1:SPI3_MISO">
+<contactref element="U$101" pad="B13"/>
+</signal>
+<signal name="STM32_MCU1:N$5">
+<contactref element="U$101" pad="D12"/>
+</signal>
+<signal name="STM32_MCU1:QUAD_SPI_IO3">
+<contactref element="U$101" pad="M15"/>
+</signal>
+<signal name="STM32_MCU1:QUAD_SPI_IO1">
+<contactref element="U$101" pad="N13"/>
+</signal>
+<signal name="STM32_MCU1:QUAD_SPI_IO0">
+<contactref element="U$101" pad="N14"/>
+</signal>
+<signal name="STM32_MCU1:N$12">
+<contactref element="U$101" pad="D11"/>
+</signal>
+<signal name="STM32_MCU1:N$13">
+<contactref element="U$101" pad="C11"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
