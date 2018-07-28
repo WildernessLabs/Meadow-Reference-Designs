@@ -1,4 +1,4 @@
-### Module positions - created on Monday, June 11, 2018 'PMt' 11:09:46 PM ###
+### Module positions - created on Saturday, July 28, 2018 'AMt' 10:00:36 AM ###
 ### Printed by Pcbnew version kicad 4.0.7
 ## Unit = mm, Angle = deg.
 ## Side : bottom
@@ -30,5 +30,6 @@ C48       0.1uF     C_0201              93.1418  -112.7252   90.0000  bottom
 C62       0.1uF     C_0201              90.8558  -105.3084    0.0000  bottom
 C63       0.1uF     C_0201              90.8558  -102.1080  180.0000  bottom
 C66       1uF       C_0201              89.2810  -102.1334  180.0000  bottom
+G***      LOGO      BOT_SILK            91.4000   -86.0000  270.0000  bottom
 R6        10k       R_0201              89.2810   -91.3892  270.0000  bottom
 ## End

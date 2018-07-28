@@ -1,8 +1,9 @@
-### Module positions - created on Monday, June 11, 2018 'PMt' 11:09:46 PM ###
+### Module positions - created on Saturday, July 28, 2018 'AMt' 10:00:36 AM ###
 ### Printed by Pcbnew version kicad 4.0.7
 ## Unit = mm, Angle = deg.
 ## Side : top
 # Ref     Val               Package                                     PosX       PosY       Rot  Side
+AE1       ANT_W3008         W3008                                    90.5510  -123.5964    0.0000  top
 C3        1uF               C_0201                                   99.0346   -94.5388   90.0000  top
 C5        0.1uF             C_0201                                   99.0346   -93.3196  270.0000  top
 C6        0.1uF             C_0201                                   96.1644   -96.0120  180.0000  top
@@ -50,11 +51,14 @@ D4        LED-GREEN         LED_0603                                 71.1454  -1
 D5        BAT60JFILM        D_SOD-323_HandSoldering                  71.1200  -113.6650  180.0000  top
 D6        BAT60JFILM        D_SOD-323_HandSoldering                  85.8774   -58.4454   90.0000  top
 D7        Orange            LED_0603                                102.7430   -57.4294   90.0000  top
+G***      LOGO              NOTES_6LAYER                            198.9000   -67.3000    0.0000  top
+J1        RFCON_A-1JB       CON_A-1JB                               101.5746  -121.9726  180.0000  top
 L1        2nH               R_0402                                   97.1804  -114.5540  180.0000  top
 L2        TBD               R_0402                                   95.1230  -123.0630  180.0000  top
 L3        TBD               R_0402                                   96.0302  -123.0630    0.0000  top
 P2        USB_MICRO_B       USB_Micro-B_10103594-0001LF              55.0266  -120.2131  270.0000  top
 P4        JST2PH_SMT        JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled    99.3140   -64.5160   90.0000  top
+Q1        SSM3J46CTB        CST3B                                    98.5520   -70.1040   90.0000  top
 R1        10k               R_0201                                   77.8002  -102.2350   90.0000  top
 R2        620               R_0201                                   98.7298  -105.7148  270.0000  top
 R3        300               R_0201                                   96.6978  -107.1118  270.0000  top
@@ -87,6 +91,10 @@ R31       0R                R_0201                                   85.9028  -1
 R32       499R              R_0201                                   86.3540  -116.5606    0.0000  top
 R33       20K               R_0201                                   93.2688  -115.9256  180.0000  top
 R34       0R                R_0201                                   91.2600  -115.8200  180.0000  top
+SW1       SW_KMR2           KMR211NG                                 75.6920   -99.5680   90.0000  top
+SW2       SW_KMR2           KMR211NG                                101.3460  -113.9190    0.0000  top
+SW3       SW_KMR2           KMR211NG                                 81.4070  -109.4740  180.0000  top
+U1        STM32F779NXH      TFBGA-216_13X13                          91.6686   -88.6460   90.0000  top
 U2        STMPS2141STR      SOT-23-5_HandSoldering                   82.0420   -57.1500    0.0000  top
 U3        FT230XS           SSOP-16_3.9x4.9mm_Pitch0.635mm           62.8650  -119.8880   90.0000  top
 U4        MCP73831-2-OT     SOT-23-5                                 97.5360   -57.9120    0.0000  top
