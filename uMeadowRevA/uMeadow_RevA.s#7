@@ -6606,6 +6606,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <part name="U$38" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$39" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$40" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U$41" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U$42" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U$43" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6977,6 +6980,9 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <instance part="U$38" gate="G$1" x="195.58" y="101.6"/>
 <instance part="U$39" gate="G$1" x="195.58" y="101.6"/>
 <instance part="U$40" gate="G$1" x="195.58" y="104.14"/>
+<instance part="U$41" gate="G$1" x="93.98" y="116.84"/>
+<instance part="U$42" gate="G$1" x="93.98" y="114.3"/>
+<instance part="U$43" gate="G$1" x="93.98" y="111.76"/>
 </instances>
 <busses>
 <bus name="SPI_2:CLK,CS,MISO,MOSI">
@@ -6999,14 +7005,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <bus name="FMC_D[0..15]">
 <segment>
 <wire x1="142.24" y1="88.9" x2="142.24" y2="109.22" width="0.762" layer="92"/>
-<wire x1="142.24" y1="109.22" x2="137.16" y2="109.22" width="0.762" layer="92"/>
-<label x="119.38" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="43.18" x2="109.22" y2="81.28" width="0.762" layer="92"/>
-<wire x1="109.22" y1="81.28" x2="109.22" y2="83.82" width="0.762" layer="92"/>
-<wire x1="109.22" y1="83.82" x2="111.76" y2="83.82" width="0.762" layer="92"/>
-<label x="111.76" y="83.82" size="1.778" layer="95"/>
+<label x="140.97" y="90.805" size="1.778" layer="95" rot="R90"/>
 </segment>
 </bus>
 </busses>
@@ -8167,6 +8166,109 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <wire x1="55.88" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PB15"/>
 <label x="27.94" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1_IN10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PC0"/>
+<wire x1="93.98" y1="124.46" x2="107.315" y2="124.46" width="0.1524" layer="91"/>
+<label x="99.695" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADC1_IN11" class="0">
+<segment>
+<wire x1="93.98" y1="121.92" x2="107.315" y2="121.92" width="0.1524" layer="91"/>
+<label x="99.695" y="121.92" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC1"/>
+</segment>
+</net>
+<net name="OTG_FS_OC" class="0">
+<segment>
+<wire x1="93.98" y1="119.38" x2="107.315" y2="119.38" width="0.1524" layer="91"/>
+<label x="99.695" y="119.38" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC2"/>
+</segment>
+</net>
+<net name="PC6_TIM3CH1" class="0">
+<segment>
+<wire x1="93.98" y1="109.22" x2="107.315" y2="109.22" width="0.1524" layer="91"/>
+<label x="99.06" y="109.22" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC6"/>
+</segment>
+</net>
+<net name="PC7_TIM3CH2" class="0">
+<segment>
+<wire x1="93.98" y1="106.68" x2="107.315" y2="106.68" width="0.1524" layer="91"/>
+<label x="99.06" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC7"/>
+</segment>
+</net>
+<net name="PC8_TIM8CH1" class="0">
+<segment>
+<wire x1="93.98" y1="104.14" x2="107.315" y2="104.14" width="0.1524" layer="91"/>
+<label x="99.06" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC8"/>
+</segment>
+</net>
+<net name="PC9_TIM8CH4" class="0">
+<segment>
+<wire x1="93.98" y1="101.6" x2="107.315" y2="101.6" width="0.1524" layer="91"/>
+<label x="99.06" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC9"/>
+</segment>
+</net>
+<net name="SPI3_SCK" class="0">
+<segment>
+<wire x1="93.98" y1="99.06" x2="107.315" y2="99.06" width="0.1524" layer="91"/>
+<label x="99.06" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC10"/>
+</segment>
+</net>
+<net name="SPI3_MISO" class="0">
+<segment>
+<wire x1="93.98" y1="96.52" x2="107.315" y2="96.52" width="0.1524" layer="91"/>
+<label x="99.06" y="96.52" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PC11"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD2"/>
+<wire x1="93.98" y1="76.2" x2="113.665" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<wire x1="93.98" y1="73.66" x2="113.665" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PD3"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<wire x1="93.98" y1="68.58" x2="113.665" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PD5"/>
+</segment>
+</net>
+<net name="QUAD_SPI_IO3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD13"/>
+<wire x1="93.98" y1="48.26" x2="116.205" y2="48.26" width="0.1524" layer="91"/>
+<label x="96.52" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="QUAD_SPI_IO1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD12"/>
+<wire x1="93.98" y1="50.8" x2="116.205" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="116.205" y1="50.8" x2="115.57" y2="50.8" width="0.1524" layer="91"/>
+<label x="96.52" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="QUAD_SPI_IO0" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD11"/>
+<wire x1="93.98" y1="53.34" x2="116.205" y2="53.34" width="0.1524" layer="91"/>
+<label x="96.52" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

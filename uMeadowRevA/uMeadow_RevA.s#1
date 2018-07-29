@@ -65,9 +65,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="FRAME_D_L" urn="urn:adsk.eagle:symbol:13885/1">
-<frame x1="-431.8" y1="0" x2="431.8" y2="558.8" columns="16" rows="11" layer="94" border-bottom="no"/>
-</symbol>
 <symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" locally_modified="yes">
 <wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
@@ -104,20 +101,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_D_L" urn="urn:adsk.eagle:component:13943/1" locally_modified="yes" prefix="FRAME" uservalue="yes">
-<description>&lt;b&gt;FRAME&lt;/b&gt; D Size , 22 x 34 INCH, Landscape&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FRAME_D_L" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="DOCFIELD" x="326.39" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FRAME_B_L" urn="urn:adsk.eagle:component:13938/1" locally_modified="yes" prefix="FRAME" uservalue="yes">
 <description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
 <gates>
@@ -6299,6 +6282,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <port name="PI10" side="left" coord="33.02" direction="out"/>
 <port name="UART5_RX" side="left" coord="27.94" direction="in"/>
 <port name="UART5_TX" side="left" coord="25.4" direction="out"/>
+<port name="FLASH_CLK" side="right" coord="48.26" direction="out"/>
+<port name="FLASH_CS_L" side="right" coord="43.18" direction="out"/>
+<port name="QUAD_SPI_IO[0..3]" side="right" coord="38.1" direction="io"/>
+<port name="FMC_A[0..15]" side="right" coord="30.48" direction="out"/>
+<port name="FMC_D[0..15]" side="right" coord="25.4" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -8390,20 +8378,20 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </module>
 </modules>
 <parts>
-<part name="FRAME1" library="frames_SLJ" deviceset="FRAME_D_L" device=""/>
+<part name="FRAME1" library="frames_SLJ" deviceset="FRAME_B_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="STM32_MCU1" module="STM32_MCU" x="469.9" y="312.42" smashed="yes">
-<attribute name="NAME" x="469.9" y="312.42" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="STM32_MCU1" module="STM32_MCU" x="208.28" y="147.32" smashed="yes">
+<attribute name="NAME" x="213.36" y="154.94" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
-<instance part="FRAME1" gate="G$1" x="431.8" y="0"/>
-<instance part="FRAME1" gate="G$2" x="758.19" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 </instances>
 <busses>
 </busses>

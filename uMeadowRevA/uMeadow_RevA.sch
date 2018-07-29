@@ -65,9 +65,6 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="FRAME_D_L" urn="urn:adsk.eagle:symbol:13885/1">
-<frame x1="-431.8" y1="0" x2="431.8" y2="558.8" columns="16" rows="11" layer="94" border-bottom="no"/>
-</symbol>
 <symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:13864/1" locally_modified="yes">
 <wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
 <wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
@@ -104,20 +101,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FRAME_D_L" urn="urn:adsk.eagle:component:13943/1" locally_modified="yes" prefix="FRAME" uservalue="yes">
-<description>&lt;b&gt;FRAME&lt;/b&gt; D Size , 22 x 34 INCH, Landscape&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FRAME_D_L" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="DOCFIELD" x="326.39" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FRAME_B_L" urn="urn:adsk.eagle:component:13938/1" locally_modified="yes" prefix="FRAME" uservalue="yes">
 <description>&lt;b&gt;FRAME&lt;/b&gt; B Size , 11 x 17 INCH, Landscape&lt;p&gt;</description>
 <gates>
@@ -6277,6 +6260,86 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SLJ_Connectors" urn="urn:adsk.eagle:library:4418995">
+<description>Connectors</description>
+<packages>
+<package name="USB_OTG" library_version="1" library_locally_modified="yes">
+<description>SMT USB OTG FOOTPRINT</description>
+<smd name="5" x="1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="0" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-0.65" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<smd name="1" x="-1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
+<wire x1="2.55" y1="2.83" x2="2.54" y2="2.83" width="0" layer="46"/>
+<smd name="SHD2" x="-3.15" y="2.55" dx="2.1" dy="1.6" layer="1"/>
+<smd name="SHD1" x="3.15" y="2.55" dx="2.1" dy="1.6" layer="1"/>
+<smd name="SHD4" x="-1.2" y="0" dx="1.9" dy="1.9" layer="1"/>
+<smd name="SHD3" x="1.2" y="0" dx="1.9" dy="1.9" layer="1"/>
+<smd name="SHD5" x="-4" y="0" dx="1.9" dy="1.8" layer="1"/>
+<smd name="SHD6" x="4" y="0" dx="1.9" dy="1.8" layer="1"/>
+<wire x1="-4.125" y1="-1.45" x2="4.125" y2="-1.45" width="0.127" layer="21"/>
+<text x="-2.5" y="-2.825" size="1.27" layer="21">EDGE</text>
+<text x="-3" y="4.175" size="1.27" layer="25">&gt;Name</text>
+<text x="3.5" y="4.175" size="1.27" layer="27">&gt;Value</text>
+<rectangle x1="-3.75" y1="-2.15" x2="3.75" y2="3.85" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MINI-USB-5" urn="urn:adsk.eagle:symbol:4418996/1" library_version="1" library_locally_modified="yes">
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.35" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="90"/>
+<wire x1="-1.27" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="1.016" y2="-8.128" width="0.254" layer="94" curve="-53.130102"/>
+<wire x1="1.016" y1="-8.128" x2="2.54" y2="-8.89" width="0.254" layer="94" curve="53.130102"/>
+<wire x1="2.54" y1="-8.89" x2="5.08" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-8.89" x2="6.35" y2="-7.62" width="0.254" layer="94" curve="90"/>
+<wire x1="6.35" y1="-7.62" x2="6.35" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="6.35" x2="-1.27" y2="7.62" width="0.254" layer="94" curve="-90"/>
+<wire x1="-1.27" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="1.016" y2="8.128" width="0.254" layer="94" curve="53.130102"/>
+<wire x1="1.016" y1="8.128" x2="2.54" y2="8.89" width="0.254" layer="94" curve="-53.130102"/>
+<wire x1="2.54" y1="8.89" x2="5.08" y2="8.89" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.89" x2="6.35" y2="7.62" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-6.35" x2="3.81" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-6.35" x2="3.81" y2="6.35" width="0.254" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.16" y="-7.62" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="5.08" visible="pin" direction="pas"/>
+<pin name="2" x="-5.08" y="2.54" visible="pin" direction="pas"/>
+<pin name="3" x="-5.08" y="0" visible="pin" direction="pas"/>
+<pin name="4" x="-5.08" y="-2.54" visible="pin" direction="pas"/>
+<pin name="5" x="-5.08" y="-5.08" visible="pin" direction="pas"/>
+<pin name="SHIELD" x="0" y="-12.7" visible="off" length="middle" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="USB_OTG_ZX62-AB-5PA" library_version="1" library_locally_modified="yes">
+<description>USB OTG Connetor, SMT</description>
+<gates>
+<gate name="G$1" symbol="MINI-USB-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB_OTG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="SHIELD" pad="SHD1 SHD2 SHD3 SHD4 SHD5 SHD6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="MANUFACTURER" value=""/>
@@ -8395,20 +8458,22 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </module>
 </modules>
 <parts>
-<part name="FRAME1" library="frames_SLJ" deviceset="FRAME_D_L" device=""/>
+<part name="FRAME1" library="frames_SLJ" deviceset="FRAME_B_L" device=""/>
+<part name="U$1" library="SLJ_Connectors" library_urn="urn:adsk.eagle:library:4418995" deviceset="USB_OTG_ZX62-AB-5PA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <moduleinsts>
-<moduleinst name="STM32_MCU1" module="STM32_MCU" x="469.9" y="312.42" smashed="yes">
-<attribute name="NAME" x="469.9" y="312.42" size="2.032" layer="95" align="bottom-center"/>
+<moduleinst name="STM32_MCU1" module="STM32_MCU" x="208.28" y="147.32" smashed="yes">
+<attribute name="NAME" x="213.36" y="154.94" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
 <instances>
-<instance part="FRAME1" gate="G$1" x="431.8" y="0"/>
-<instance part="FRAME1" gate="G$2" x="758.19" y="0"/>
+<instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
+<instance part="U$1" gate="G$1" x="368.3" y="109.22"/>
 </instances>
 <busses>
 </busses>
