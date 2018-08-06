@@ -7317,6 +7317,7 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <vertex x="52.07" y="59.69"/>
 <vertex x="53.34" y="60.96"/>
 </polygon>
+<text x="327.66" y="43.18" size="10.16" layer="91">&gt;MODULE</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="60.96" y="127"/>
@@ -9148,6 +9149,7 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <sheets>
 <sheet>
 <plain>
+<text x="160.02" y="231.14" size="10.16" layer="91">&gt;MODULE</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9433,6 +9435,7 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <sheets>
 <sheet>
 <plain>
+<text x="190.5" y="254" size="10.16" layer="91">&gt;MODULE</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
