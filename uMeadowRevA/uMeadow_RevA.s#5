@@ -13734,6 +13734,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
+<part name="U$37" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13814,6 +13815,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="258.064" y="168.021" size="1.778" layer="95"/>
 <attribute name="VALUE" x="258.064" y="162.941" size="1.778" layer="96"/>
 </instance>
+<instance part="U$37" gate="G$1" x="317.5" y="154.94"/>
 </instances>
 <busses>
 <bus name="FMC_A[0..15]">
@@ -14777,8 +14779,8 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="159.004" y="150.241" size="1.27" layer="95"/>
 <attribute name="VALUE" x="158.369" y="145.796" size="1.27" layer="96"/>
 </instance>
-<instance part="U$37" gate="G$1" x="190.5" y="165.1"/>
-<instance part="U$2" gate="G$1" x="190.5" y="162.56"/>
+<instance part="U$37" gate="G$1" x="187.96" y="165.1"/>
+<instance part="U$2" gate="G$1" x="187.96" y="162.56"/>
 <instance part="U$3" gate="G$1" x="190.5" y="154.94"/>
 <instance part="U$4" gate="G$1" x="190.5" y="152.4"/>
 <instance part="U$5" gate="G$1" x="190.5" y="149.86"/>
@@ -15204,6 +15206,18 @@ Source: Samtec TSW.pdf</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="127" x2="271.78" y2="127" width="0.1524" layer="91"/>
 <label x="251.46" y="127" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="3">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDET_1"/>
+<wire x1="190.5" y1="165.1" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="3">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDET_2"/>
+<wire x1="190.5" y1="162.56" x2="187.96" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

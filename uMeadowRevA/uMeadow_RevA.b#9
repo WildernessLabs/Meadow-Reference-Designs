@@ -4132,6 +4132,11 @@ design rules under a new name.</description>
 <signal name="ESP32:N$12" class="3">
 <contactref element="ESP32:U1" pad="11"/>
 </signal>
+<signal name="MEMORY:N$1" class="3">
+<contactref element="MEMORY:U1" pad="C3"/>
+<contactref element="MEMORY:U1" pad="E4"/>
+<wire x1="11.43" y1="19.304" x2="13.43" y2="20.304" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

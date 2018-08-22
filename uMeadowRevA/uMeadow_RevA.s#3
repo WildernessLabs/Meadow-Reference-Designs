@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13815,7 +13815,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="258.064" y="168.021" size="1.778" layer="95"/>
 <attribute name="VALUE" x="258.064" y="162.941" size="1.778" layer="96"/>
 </instance>
-<instance part="U$37" gate="G$1" x="317.5" y="154.94"/>
+<instance part="U$37" gate="G$1" x="322.58" y="154.94"/>
 </instances>
 <busses>
 <bus name="FMC_A[0..15]">
@@ -14305,6 +14305,14 @@ Source: Samtec TSW.pdf</description>
 <wire x1="149.86" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="137.16" y="147.32" size="1.27" layer="95"/>
 </segment>
+</net>
+<net name="N$1" class="3">
+<segment>
+<pinref part="U1" gate="G$1" pin="RFU"/>
+<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="NVALE" class="3">
 </net>
 </nets>
 </sheet>
@@ -16069,16 +16077,16 @@ Source: Samtec TSW.pdf</description>
 <label x="345.44" y="129.54" size="1.27" layer="95"/>
 </segment>
 <segment>
-<portref moduleinst="MEMORY" port="VCC"/>
-<wire x1="332.74" y1="238.76" x2="332.74" y2="228.6" width="0.1524" layer="91"/>
-<label x="332.74" y="233.68" size="1.27" layer="95"/>
-<pinref part="+3V4" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
 <portref moduleinst="STM32_MCU1" port="VCC"/>
 <wire x1="208.28" y1="238.76" x2="208.28" y2="228.6" width="0.1524" layer="91"/>
 <label x="208.28" y="233.68" size="1.27" layer="95"/>
 <pinref part="+3V2" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="MEMORY" port="VCC"/>
+<wire x1="332.74" y1="228.6" x2="332.74" y2="238.76" width="0.1524" layer="91"/>
+<label x="332.74" y="233.68" size="1.27" layer="95"/>
+<pinref part="+3V4" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="+5V" class="4">
@@ -16393,6 +16401,7 @@ Source: Samtec TSW.pdf</description>
 <approved hash="102,1,345.44,134.62,+5V,+3V3,,,,"/>
 <approved hash="102,1,332.74,238.76,+5V,+3V3,,,,"/>
 <approved hash="102,1,208.28,238.76,+5V,+3V3,,,,"/>
+<approved hash="201,1,345.44,134.62,+5V,+5V\, +3V3,,,,"/>
 <approved hash="102,1@USB_OTG,154.94,154.94,VCC,+VBUS,,,,"/>
 <approved hash="102,1@USB_OTG,190.5,185.42,+4.1V,+3.3V,,,,"/>
 <approved hash="102,1@HEADERS,73.66,160.02,VDD,VREF+,,,,"/>

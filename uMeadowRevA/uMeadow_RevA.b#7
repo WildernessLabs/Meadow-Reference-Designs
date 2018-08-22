@@ -3127,6 +3127,7 @@ design rules under a new name.</description>
 <contactref element="USB_OTG1:U1" pad="TAB"/>
 <contactref element="USB_OTG1:J1" pad="5"/>
 <contactref element="ESP32:U1" pad="49"/>
+<contactref element="STM32_MCU1:U$1" pad="M1"/>
 <wire x1="19.046" y1="66.548" x2="19.051" y2="67.31" width="0" layer="19" extent="1-1"/>
 <wire x1="17.485" y1="66.048" x2="19.046" y2="66.548" width="0" layer="19" extent="1-1"/>
 <wire x1="16.51" y1="66.548" x2="17.485" y2="66.048" width="0" layer="19" extent="1-1"/>
@@ -3210,14 +3211,15 @@ design rules under a new name.</description>
 <wire x1="10.541" y1="28.96" x2="10.526" y2="28.866" width="0" layer="19" extent="1-16"/>
 <wire x1="8.509" y1="27.69" x2="9.876" y2="28.866" width="0" layer="19" extent="1-16"/>
 <wire x1="8.001" y1="27.69" x2="8.509" y2="27.69" width="0" layer="19" extent="16-16"/>
+<wire x1="13.776" y1="28.216" x2="13.081" y2="30.73" width="0" layer="19" extent="1-16"/>
+<wire x1="14.478" y1="27.309" x2="13.776" y2="28.216" width="0" layer="19" extent="1-16"/>
+<wire x1="15.076" y1="28.216" x2="14.478" y2="27.309" width="0" layer="19" extent="1-16"/>
+<wire x1="16.252" y1="28.194" x2="15.076" y2="28.216" width="0" layer="19" extent="1-16"/>
+<wire x1="16.252" y1="27.686" x2="16.252" y2="28.194" width="0" layer="19" extent="16-16"/>
 <wire x1="9.279" y1="24.988" x2="8.509" y2="27.69" width="0" layer="19" extent="1-16"/>
 <wire x1="10.279" y1="24.288" x2="9.279" y2="24.988" width="0" layer="19" extent="1-1"/>
 <wire x1="7.986" y1="23.241" x2="9.279" y2="24.988" width="0" layer="19" extent="1-1"/>
 <wire x1="12.715" y1="24.892" x2="10.279" y2="24.288" width="0" layer="19" extent="1-1"/>
-<wire x1="14.478" y1="27.309" x2="12.715" y2="24.892" width="0" layer="19" extent="1-16"/>
-<wire x1="15.076" y1="28.216" x2="14.478" y2="27.309" width="0" layer="19" extent="1-16"/>
-<wire x1="16.252" y1="28.194" x2="15.076" y2="28.216" width="0" layer="19" extent="1-16"/>
-<wire x1="16.252" y1="27.686" x2="16.252" y2="28.194" width="0" layer="19" extent="16-16"/>
 <wire x1="9.783" y1="20.32" x2="7.986" y2="23.241" width="0" layer="19" extent="1-16"/>
 <wire x1="10.43" y1="19.304" x2="9.783" y2="20.32" width="0" layer="19" extent="1-16"/>
 <wire x1="17.779" y1="20.32" x2="12.715" y2="24.892" width="0" layer="19" extent="1-1"/>
@@ -3469,22 +3471,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="+3V3">
 <contactref element="USB_OTG1:R6" pad="2"/>
-<contactref element="MEMORY:U1" pad="B4"/>
-<contactref element="MEMORY:C8" pad="1"/>
-<contactref element="MEMORY:U2" pad="A7"/>
-<contactref element="MEMORY:U2" pad="B3"/>
-<contactref element="MEMORY:U2" pad="C7"/>
-<contactref element="MEMORY:U2" pad="D3"/>
-<contactref element="MEMORY:C4" pad="1"/>
-<contactref element="MEMORY:C3" pad="1"/>
-<contactref element="MEMORY:C1" pad="1"/>
-<contactref element="MEMORY:C2" pad="1"/>
-<contactref element="MEMORY:C5" pad="1"/>
-<contactref element="MEMORY:C6" pad="1"/>
-<contactref element="MEMORY:C7" pad="1"/>
-<contactref element="MEMORY:U2" pad="A9"/>
-<contactref element="MEMORY:U2" pad="E7"/>
-<contactref element="MEMORY:U2" pad="J9"/>
 <contactref element="ESP32:L2" pad="2"/>
 <contactref element="ESP32:C8" pad="1"/>
 <contactref element="ESP32:C7" pad="1"/>
@@ -3548,6 +3534,22 @@ design rules under a new name.</description>
 <contactref element="POWER1:C2" pad="1"/>
 <contactref element="STM32_MCU1:U$1" pad="H13"/>
 <contactref element="STM32_MCU1:U$1" pad="C1"/>
+<contactref element="MEMORY:U1" pad="B4"/>
+<contactref element="MEMORY:C8" pad="1"/>
+<contactref element="MEMORY:U2" pad="A7"/>
+<contactref element="MEMORY:U2" pad="D3"/>
+<contactref element="MEMORY:U2" pad="C7"/>
+<contactref element="MEMORY:U2" pad="B3"/>
+<contactref element="MEMORY:C4" pad="1"/>
+<contactref element="MEMORY:C3" pad="1"/>
+<contactref element="MEMORY:C1" pad="1"/>
+<contactref element="MEMORY:C2" pad="1"/>
+<contactref element="MEMORY:C5" pad="1"/>
+<contactref element="MEMORY:C6" pad="1"/>
+<contactref element="MEMORY:C7" pad="1"/>
+<contactref element="MEMORY:U2" pad="E7"/>
+<contactref element="MEMORY:U2" pad="J9"/>
+<contactref element="MEMORY:U2" pad="A9"/>
 <wire x1="6.35" y1="65.282" x2="5.842" y2="65.282" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="63.7286" x2="6.35" y2="65.282" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="59.182" x2="6.35" y2="63.7286" width="0" layer="19" extent="1-1"/>
@@ -3969,9 +3971,6 @@ design rules under a new name.</description>
 <contactref element="STM32_MCU1:U$1" pad="J4"/>
 <contactref element="MEMORY:U2" pad="F9"/>
 <wire x1="11.826" y1="30.166" x2="8.484" y2="49.06" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="STM32_MCU1:VSSA">
-<contactref element="STM32_MCU1:U$1" pad="M1"/>
 </signal>
 <signal name="USB_OTG1:USB_ID">
 <contactref element="USB_OTG1:J1" pad="4"/>
