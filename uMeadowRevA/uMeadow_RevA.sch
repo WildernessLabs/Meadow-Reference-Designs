@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="17" fill="1" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="18" fill="1" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="19" fill="1" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="25" fill="1" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="26" fill="1" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="27" fill="1" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="28" fill="1" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="29" fill="1" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="30" fill="1" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="20" fill="1" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="21" fill="1" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="22" fill="1" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,12 +53,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="63" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="63" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -10668,7 +10668,8 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 </device>
 </devices>
 </deviceset>
-<deviceset name="W3008">
+<deviceset name="W3008" prefix="ANT">
+<description>2.4GHz Bluetooth Chip RF Antenna 2.4GHz ~ 2.483GHz 1.7dBi Solder Surface Mount</description>
 <gates>
 <gate name="G$1" symbol="W3008" x="0" y="0"/>
 </gates>
@@ -10682,7 +10683,11 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <package3dinstance package3d_urn="urn:adsk.eagle:package:4414097/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MANUFACTURER" value="PulseLarsen"/>
+<attribute name="PART_NUMBER" value="W3008" constant="no"/>
+<attribute name="VALUE" value="w3008" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11358,6 +11363,38 @@ Source: Samtec TSW.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SLJ_MECH">
+<description>Mounting Holes and other mechanical features</description>
+<packages>
+<package name="MTH_100_140MIL">
+<pad name="P$1" x="0" y="0" drill="2.54" diameter="3.556"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MOUNTHOLE">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="94">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MTH_100_140MIL" prefix="MTH">
+<description>Mounting Hole 100 mil hole 140 copper. No connection</description>
+<gates>
+<gate name="G$1" symbol="MOUNTHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MTH_100_140MIL">
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="100MIL_140MIL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="MANUFACTURER" value=""/>
@@ -11368,17 +11405,21 @@ Source: Samtec TSW.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
-<clearance class="0" value="0.205"/>
 </class>
-<class number="1" name="USB" width="0" drill="0">
+<class number="1" name="USB" width="0.1651" drill="0.2032">
+<clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0" drill="0">
+<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.15">
 </class>
-<class number="3" name="MEM_DATA" width="0" drill="0">
+<class number="3" name="MEM_DATA" width="0.1524" drill="0">
 </class>
-<class number="4" name="5V" width="0" drill="0">
+<class number="4" name="5V" width="0.1" drill="0">
 </class>
-<class number="5" name="50ohm" width="0" drill="0">
+<class number="5" name="50ohm" width="0.1" drill="0">
+</class>
+<class number="6" name="POWER" width="0.1" drill="0.15">
+</class>
+<class number="7" name="CLK" width="0.1" drill="0.15">
 </class>
 </classes>
 <modules>
@@ -11706,18 +11747,6 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="DNI" value=""/>
-<attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
-</part>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="00">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DNI" value="DNI"/>
 <attribute name="FOOTPRINT" value="0402"/>
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
@@ -12090,14 +12119,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="361.95" y="214.8586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="367.03" y="214.122" size="1.778" layer="96" rot="R180"/>
 <attribute name="DNI" x="368.3" y="208.28" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R9" gate="G$1" x="340.36" y="218.44" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="342.9" y="220.98" size="1.778" layer="96"/>
-<attribute name="MANUFACTURER" x="340.36" y="218.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="340.36" y="218.44" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="336.3214" y="222.25" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="336.042" y="217.17" size="1.778" layer="96" rot="R180"/>
-<attribute name="DNI" x="345.44" y="215.9" size="1.778" layer="97"/>
 </instance>
 <instance part="U$9" gate="G$1" x="55.88" y="109.22"/>
 <instance part="U$10" gate="G$1" x="55.88" y="104.14"/>
@@ -12775,42 +12796,42 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U$1" gate="G$2" pin="PG5"/>
 </segment>
 </net>
-<net name="FMC_A0" class="0">
+<net name="FMC_A0" class="2">
 <segment>
 <wire x1="137.16" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
 <label x="144.78" y="83.82" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$2" pin="PF0"/>
 </segment>
 </net>
-<net name="FMC_A1" class="0">
+<net name="FMC_A1" class="2">
 <segment>
 <wire x1="137.16" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$2" pin="PF1"/>
 <label x="144.78" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FMC_A2" class="0">
+<net name="FMC_A2" class="2">
 <segment>
 <wire x1="137.16" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
 <label x="144.78" y="78.74" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$2" pin="PF2"/>
 </segment>
 </net>
-<net name="FMC_A3" class="0">
+<net name="FMC_A3" class="2">
 <segment>
 <wire x1="137.16" y1="76.2" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
 <label x="144.78" y="76.2" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$2" pin="PF3"/>
 </segment>
 </net>
-<net name="FMC_A4" class="0">
+<net name="FMC_A4" class="2">
 <segment>
 <wire x1="137.16" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
 <label x="144.78" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$2" pin="PF4"/>
 </segment>
 </net>
-<net name="FMC_A5" class="0">
+<net name="FMC_A5" class="2">
 <segment>
 <wire x1="137.16" y1="71.12" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="144.78" y="71.12" size="1.778" layer="95"/>
@@ -12991,10 +13012,6 @@ Source: Samtec TSW.pdf</description>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="205.74" x2="314.96" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="205.74" x2="314.96" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="218.44" x2="330.2" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="218.44" x2="330.2" y2="205.74" width="0.1524" layer="91"/>
-<junction x="330.2" y="205.74"/>
 <pinref part="X1" gate="G$1" pin="IN"/>
 </segment>
 <segment>
@@ -13012,10 +13029,6 @@ Source: Samtec TSW.pdf</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="205.74" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
 <junction x="360.68" y="205.74"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="218.44" x2="355.6" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="355.6" y1="205.74" x2="355.6" y2="218.44" width="0.1524" layer="91"/>
-<junction x="355.6" y="205.74"/>
 <pinref part="X1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
@@ -13673,7 +13686,7 @@ Source: Samtec TSW.pdf</description>
 <junction x="167.64" y="149.86"/>
 </segment>
 </net>
-<net name="USB_N" class="0">
+<net name="USB_N" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
@@ -13682,7 +13695,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="167.64" y1="132.08" x2="172.72" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="USB_P" class="0">
+<net name="USB_P" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="142.24" y1="129.54" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
@@ -13982,7 +13995,7 @@ Source: Samtec TSW.pdf</description>
 </bus>
 </busses>
 <nets>
-<net name="FMC_A0" class="0">
+<net name="FMC_A0" class="2">
 <segment>
 <wire x1="78.74" y1="193.04" x2="86.36" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="193.04" x2="101.6" y2="193.04" width="0.1524" layer="91"/>
@@ -13990,7 +14003,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A0"/>
 </segment>
 </net>
-<net name="FMC_A1" class="0">
+<net name="FMC_A1" class="2">
 <segment>
 <wire x1="78.74" y1="190.5" x2="86.36" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="190.5" x2="101.6" y2="190.5" width="0.1524" layer="91"/>
@@ -13998,7 +14011,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A1"/>
 </segment>
 </net>
-<net name="FMC_A2" class="0">
+<net name="FMC_A2" class="2">
 <segment>
 <wire x1="78.74" y1="187.96" x2="86.36" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="187.96" x2="101.6" y2="187.96" width="0.1524" layer="91"/>
@@ -14006,7 +14019,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A2"/>
 </segment>
 </net>
-<net name="FMC_A3" class="0">
+<net name="FMC_A3" class="2">
 <segment>
 <wire x1="78.74" y1="185.42" x2="86.36" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="185.42" x2="101.6" y2="185.42" width="0.1524" layer="91"/>
@@ -14014,7 +14027,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A3"/>
 </segment>
 </net>
-<net name="FMC_A4" class="0">
+<net name="FMC_A4" class="2">
 <segment>
 <wire x1="78.74" y1="182.88" x2="86.36" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="182.88" x2="101.6" y2="182.88" width="0.1524" layer="91"/>
@@ -14022,7 +14035,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A4"/>
 </segment>
 </net>
-<net name="FMC_A5" class="0">
+<net name="FMC_A5" class="2">
 <segment>
 <wire x1="78.74" y1="180.34" x2="86.36" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="180.34" x2="101.6" y2="180.34" width="0.1524" layer="91"/>
@@ -14030,7 +14043,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A5"/>
 </segment>
 </net>
-<net name="FMC_A6" class="0">
+<net name="FMC_A6" class="2">
 <segment>
 <wire x1="78.74" y1="177.8" x2="86.36" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="177.8" x2="101.6" y2="177.8" width="0.1524" layer="91"/>
@@ -14038,7 +14051,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A6"/>
 </segment>
 </net>
-<net name="FMC_A7" class="0">
+<net name="FMC_A7" class="2">
 <segment>
 <wire x1="78.74" y1="175.26" x2="86.36" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="175.26" x2="101.6" y2="175.26" width="0.1524" layer="91"/>
@@ -14046,7 +14059,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A7"/>
 </segment>
 </net>
-<net name="FMC_A8" class="0">
+<net name="FMC_A8" class="2">
 <segment>
 <wire x1="78.74" y1="172.72" x2="86.36" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="172.72" x2="101.6" y2="172.72" width="0.1524" layer="91"/>
@@ -14054,7 +14067,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A8"/>
 </segment>
 </net>
-<net name="FMC_A9" class="0">
+<net name="FMC_A9" class="2">
 <segment>
 <wire x1="78.74" y1="170.18" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="170.18" x2="101.6" y2="170.18" width="0.1524" layer="91"/>
@@ -14062,7 +14075,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A9"/>
 </segment>
 </net>
-<net name="FMC_A10" class="0">
+<net name="FMC_A10" class="2">
 <segment>
 <wire x1="78.74" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="167.64" x2="101.6" y2="167.64" width="0.1524" layer="91"/>
@@ -14070,7 +14083,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A10"/>
 </segment>
 </net>
-<net name="FMC_A11" class="0">
+<net name="FMC_A11" class="2">
 <segment>
 <wire x1="78.74" y1="165.1" x2="86.36" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="165.1" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
@@ -14078,7 +14091,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A11"/>
 </segment>
 </net>
-<net name="FMC_A12" class="0">
+<net name="FMC_A12" class="2">
 <segment>
 <wire x1="78.74" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
@@ -14086,7 +14099,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="A12"/>
 </segment>
 </net>
-<net name="FMC_A13" class="0">
+<net name="FMC_A13" class="2">
 <segment>
 <wire x1="78.74" y1="160.02" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="160.02" x2="101.6" y2="160.02" width="0.1524" layer="91"/>
@@ -14094,7 +14107,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="NC"/>
 </segment>
 </net>
-<net name="FMC_A14" class="0">
+<net name="FMC_A14" class="2">
 <segment>
 <wire x1="78.74" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="157.48" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
@@ -14102,7 +14115,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="BA0"/>
 </segment>
 </net>
-<net name="FMC_A15" class="0">
+<net name="FMC_A15" class="2">
 <segment>
 <wire x1="78.74" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
@@ -14238,7 +14251,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="DQ15"/>
 </segment>
 </net>
-<net name="QUAD_SPI_IO3" class="0">
+<net name="QUAD_SPI_IO3" class="5">
 <segment>
 <wire x1="317.5" y1="170.18" x2="340.36" y2="170.18" width="0.1524" layer="91"/>
 <label x="320.04" y="170.18" size="1.778" layer="95"/>
@@ -14246,21 +14259,21 @@ Source: Samtec TSW.pdf</description>
 <wire x1="340.36" y1="170.18" x2="345.44" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="QUAD_SPI_IO2" class="0">
+<net name="QUAD_SPI_IO2" class="5">
 <segment>
 <pinref part="U1" gate="G$1" pin="IO2"/>
 <wire x1="345.44" y1="167.64" x2="317.5" y2="167.64" width="0.1524" layer="91"/>
 <label x="320.04" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="QUAD_SPI_IO1" class="0">
+<net name="QUAD_SPI_IO1" class="5">
 <segment>
 <pinref part="U1" gate="G$1" pin="IO1"/>
 <wire x1="345.44" y1="165.1" x2="317.5" y2="165.1" width="0.1524" layer="91"/>
 <label x="320.04" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="QUAD_SPI_IO0" class="0">
+<net name="QUAD_SPI_IO0" class="5">
 <segment>
 <pinref part="U1" gate="G$1" pin="IO0"/>
 <wire x1="345.44" y1="162.56" x2="317.5" y2="162.56" width="0.1524" layer="91"/>
@@ -14546,7 +14559,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="U$1" library="SLJ_wireless" deviceset="W3008" device="" package3d_urn="urn:adsk.eagle:package:4414097/1"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="SLJ_passives" deviceset="L_1_5NH_0402" device="" package3d_urn="urn:adsk.eagle:package:4412330/1" value="1.5nH"/>
 <part name="C5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="6pF">
@@ -14704,6 +14716,7 @@ Source: Samtec TSW.pdf</description>
 <part name="U$22" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$23" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="ANT1" library="SLJ_wireless" deviceset="W3008" device="" package3d_urn="urn:adsk.eagle:package:4414097/1" value="w3008"/>
 </parts>
 <sheets>
 <sheet>
@@ -14784,7 +14797,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="VALUE" x="181.991" y="171.704" size="1.27" layer="96" rot="R180"/>
 <attribute name="DNI" x="170.18" y="170.18" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="83.82" y="165.1"/>
 <instance part="SUPPLY3" gate="GND" x="88.9" y="157.48"/>
 <instance part="L1" gate="G$1" x="116.84" y="157.48"/>
 <instance part="C5" gate="G$1" x="127" y="152.4" smashed="yes">
@@ -14952,6 +14964,7 @@ Source: Samtec TSW.pdf</description>
 <instance part="U$22" gate="G$1" x="241.3" y="124.46"/>
 <instance part="U$23" gate="G$1" x="241.3" y="121.92"/>
 <instance part="SUPPLY11" gate="GND" x="248.92" y="104.14"/>
+<instance part="ANT1" gate="G$1" x="83.82" y="165.1"/>
 </instances>
 <busses>
 <bus name="SPI2:SPI2_CLK,SPI2_CS,SPI2_MISO,SPI2_MOSI">
@@ -15017,9 +15030,9 @@ Source: Samtec TSW.pdf</description>
 <junction x="114.3" y="170.18"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="88.9" y1="162.56" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="ANT1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -15174,7 +15187,6 @@ Source: Samtec TSW.pdf</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="FEED"/>
 <wire x1="83.82" y1="162.56" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="152.4" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
@@ -15185,6 +15197,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="157.48" width="0.1524" layer="91"/>
 <junction x="109.22" y="157.48"/>
+<pinref part="ANT1" gate="G$1" pin="FEED"/>
 </segment>
 </net>
 <net name="ANT_50OHM" class="5">
@@ -15778,7 +15791,7 @@ Source: Samtec TSW.pdf</description>
 </part>
 <part name="U$1" library="SLJ_PMIC" deviceset="MCP7381-2-0T" device="" package3d_urn="urn:adsk.eagle:package:4822883/1"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+VBUS"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="4.7K">
 <spice>
 <pinmapping spiceprefix="R">
@@ -15803,6 +15816,28 @@ Source: Samtec TSW.pdf</description>
 <attribute name="FOOTPRINT" value="0402"/>
 <attribute name="MANUFACTURER" value="Samsung"/>
 <attribute name="PART_NUMBER" value="RC1005J471CS"/>
+</part>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MANUFACTURER" value="MURATA"/>
+<attribute name="PACKAGE" value="0402"/>
+<attribute name="PART_NUMBER" value="GRM155R60J475ME87D"/>
+</part>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MANUFACTURER" value="MURATA"/>
+<attribute name="PACKAGE" value="0402"/>
+<attribute name="PART_NUMBER" value="GRM155R60J475ME87D"/>
 </part>
 </parts>
 <sheets>
@@ -15889,6 +15924,16 @@ Source: Samtec TSW.pdf</description>
 <attribute name="VALUE" x="141.605" y="80.772" size="1.27" layer="96" rot="R180"/>
 <attribute name="DNI" x="134.62" y="88.9" size="1.778" layer="96"/>
 </instance>
+<instance part="C3" gate="G$1" x="25.4" y="73.66">
+<attribute name="MANUFACTURER" x="25.4" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="PACKAGE" x="27.94" y="66.04" size="1.778" layer="96"/>
+<attribute name="PART_NUMBER" x="25.4" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C4" gate="G$1" x="106.68" y="53.34">
+<attribute name="MANUFACTURER" x="106.68" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="PACKAGE" x="109.22" y="45.72" size="1.778" layer="96"/>
+<attribute name="PART_NUMBER" x="106.68" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15960,13 +16005,22 @@ Source: Samtec TSW.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="71.12" y1="48.26" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="48.26" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="43.18" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="43.18" x2="71.12" y2="43.18" width="0.1524" layer="91"/>
 <junction x="71.12" y="43.18"/>
 <pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="68.58" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<junction x="43.18" y="43.18"/>
+<wire x1="71.12" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<junction x="71.12" y="45.72"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="45.72" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN_3V3" class="0">
@@ -15992,8 +16046,12 @@ Source: Samtec TSW.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VBAT"/>
-<wire x1="86.36" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
 <label x="96.52" y="63.5" size="1.778" layer="95"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="63.5" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<junction x="106.68" y="63.5"/>
 </segment>
 </net>
 <net name="+VBUS" class="0">
@@ -16009,10 +16067,15 @@ Source: Samtec TSW.pdf</description>
 <label x="71.12" y="83.82" size="1.778" layer="95"/>
 <pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="93.98" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="93.98" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="96.52" x2="71.12" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="93.98" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="71.12" y="93.98"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="96.52" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+<junction x="71.12" y="96.52"/>
 </segment>
 </net>
 <net name="+3V3" class="3">
@@ -16071,6 +16134,10 @@ Source: Samtec TSW.pdf</description>
 <part name="+3V4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+3V3"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+3V3"/>
+<part name="MTH1" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL"/>
+<part name="MTH2" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL"/>
+<part name="MTH3" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL"/>
+<part name="MTH4" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL"/>
 </parts>
 <sheets>
 <sheet>
@@ -16099,6 +16166,10 @@ Source: Samtec TSW.pdf</description>
 <instance part="+3V4" gate="+5V" x="332.74" y="241.3"/>
 <instance part="SUPPLY3" gate="GND" x="332.74" y="157.48"/>
 <instance part="+3V2" gate="+5V" x="208.28" y="241.3"/>
+<instance part="MTH1" gate="G$1" x="53.34" y="35.56"/>
+<instance part="MTH2" gate="G$1" x="81.28" y="35.56"/>
+<instance part="MTH3" gate="G$1" x="104.14" y="35.56"/>
+<instance part="MTH4" gate="G$1" x="124.46" y="35.56"/>
 </instances>
 <busses>
 <bus name="FMC_D[0..15]">
@@ -16127,7 +16198,7 @@ Source: Samtec TSW.pdf</description>
 </bus>
 </busses>
 <nets>
-<net name="FLASH_CLK" class="0">
+<net name="FLASH_CLK" class="7">
 <segment>
 <portref moduleinst="STM32_MCU1" port="FLASH_CLK"/>
 <portref moduleinst="MEMORY" port="FLASH_CLK"/>
@@ -16135,7 +16206,7 @@ Source: Samtec TSW.pdf</description>
 <label x="271.78" y="218.44" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="FLASH_CS_L" class="0">
+<net name="FLASH_CS_L" class="7">
 <segment>
 <portref moduleinst="STM32_MCU1" port="FLASH_CS_L"/>
 <portref moduleinst="MEMORY" port="FLASH_CS_L"/>
@@ -16263,7 +16334,7 @@ Source: Samtec TSW.pdf</description>
 <label x="144.78" y="172.72" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="6">
 <segment>
 <portref moduleinst="ESP32" port="GND"/>
 <wire x1="73.66" y1="172.72" x2="68.58" y2="172.72" width="0.1524" layer="91"/>
@@ -16296,7 +16367,7 @@ Source: Samtec TSW.pdf</description>
 <label x="210.82" y="60.96" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3" class="6">
 <segment>
 <portref moduleinst="HEADERS1" port="+3V3"/>
 <wire x1="73.66" y1="142.24" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
@@ -16347,7 +16418,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="332.74" y1="124.46" x2="332.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+VBAT" class="0">
+<net name="+VBAT" class="7">
 <segment>
 <portref moduleinst="POWER1" port="+VBAT"/>
 <portref moduleinst="HEADERS1" port="VBAT"/>
@@ -16403,7 +16474,7 @@ Source: Samtec TSW.pdf</description>
 <label x="266.7" y="81.28" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="+VBUS" class="0">
+<net name="+VBUS" class="6">
 <segment>
 <portref moduleinst="USB_OTG1" port="+VBUS"/>
 <portref moduleinst="STM32_MCU1" port="USB_OTG_FS_VBUS"/>
@@ -16655,6 +16726,7 @@ Source: Samtec TSW.pdf</description>
 <approved hash="102,1@USB_OTG,190.5,185.42,+4.1V,+3.3V,,,,"/>
 <approved hash="102,1@HEADERS,73.66,160.02,VDD,VREF+,,,,"/>
 <approved hash="102,1@POWER,38.1,193.04,+3V3,+VBAT,,,,"/>
+<approved hash="102,1@POWER,71.12,101.6,+5V,+VBUS,,,,"/>
 <approved hash="201,1@POWER,38.1,193.04,+3V3,+3V3\, +VBAT,,,,"/>
 <approved hash="104,1@STM32_MCU,157.48,251.46,U$1G$4,VDD,VCC,,,"/>
 <approved hash="104,1@STM32_MCU,157.48,248.92,U$1G$4,VDD,VCC,,,"/>
@@ -16707,6 +16779,7 @@ Source: Samtec TSW.pdf</description>
 <approved hash="104,1@STM32_MCU,111.76,167.64,U$1G$4,VSS,GND,,,"/>
 <approved hash="104,1@STM32_MCU,111.76,165.1,U$1G$4,VSS,GND,,,"/>
 <approved hash="104,1@STM32_MCU,111.76,162.56,U$1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,157.48,U$1G$4,VSSA,GND,,,"/>
 <approved hash="104,1@USB_OTG,236.22,167.64,U1,IN,+5V,,,"/>
 <approved hash="104,1@USB_OTG,210.82,170.18,U1,OUT,+VBUS,,,"/>
 <approved hash="104,1@MEMORY,292.1,157.48,U1,VSS,GND,,,"/>
@@ -16721,6 +16794,8 @@ Source: Samtec TSW.pdf</description>
 <approved hash="104,1@WIFI_BLUETOOTH,241.3,193.04,U1,VDD_SDIO,N$17,,,"/>
 <approved hash="104,1@WIFI_BLUETOOTH,241.3,190.5,U1,VDD3P3_CPU,VCC,,,"/>
 <approved hash="104,1@POWER,226.06,167.64,U1,VIN,+5V,,,"/>
+<approved hash="104,1@POWER,86.36,63.5,U$1,VBAT,+VBAT,,,"/>
+<approved hash="104,1@POWER,71.12,76.2,U$1,VDD,+VBUS,,,"/>
 <approved hash="106,1@STM32_MCU,195.58,73.66,I2C2_SCL,,,,,"/>
 <approved hash="106,1@STM32_MCU,55.88,53.34,I2C2_SDA,,,,,"/>
 <approved hash="106,1@STM32_MCU,55.88,88.9,NC_JTCK,,,,,"/>
@@ -16736,10 +16811,13 @@ Source: Samtec TSW.pdf</description>
 <approved hash="213,1,251.46,78.74,USB_OTG_FS_VBUS,in,,,,"/>
 <approved hash="213,1,299.72,78.74,+VBUS,out,,,,"/>
 <approved hash="209,1@MEMORY,317.5,154.94,N$1,,,,,"/>
+<approved hash="106,1@MEMORY,317.5,154.94,N$1,,,,,"/>
 <approved hash="213,1,134.62,180.34,ESP32_BOOT_L,in,,,,"/>
 <approved hash="213,1,134.62,172.72,ESP32_U0RX,in,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
+<approved hash="106,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
+<approved hash="106,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
 <approved hash="213,1,134.62,195.58,SPI2_CLK,in,,,,"/>
 <approved hash="213,1,134.62,187.96,SPI2_CS,in,,,,"/>
 <approved hash="213,1,134.62,193.04,SPI2_MOSI,in,,,,"/>
