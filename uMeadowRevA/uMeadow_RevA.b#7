@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.000003125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -2203,7 +2203,7 @@ Power Switchs, LDO's, Switchers</description>
 <class number="1" name="USB" width="0.1651" drill="0.2032">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1524" drill="0">
+<class number="2" name="MEM_ADDR_CNT" width="0.1" drill="0">
 </class>
 <class number="3" name="MEM_DATA" width="0.1524" drill="0">
 </class>
@@ -2236,21 +2236,21 @@ design rules under a new name.</description>
 <param name="layerSetup" value="(1*2+3*14+15*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="0.15mm 0.15mm 0.3mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.15mm"/>
-<param name="mdWireWire" value="10mil"/>
-<param name="mdWirePad" value="12mil"/>
-<param name="mdWireVia" value="10mil"/>
-<param name="mdPadPad" value="12mil"/>
-<param name="mdPadVia" value="10mil"/>
-<param name="mdViaVia" value="10mil"/>
-<param name="mdSmdPad" value="2mil"/>
-<param name="mdSmdVia" value="2mil"/>
-<param name="mdSmdSmd" value="2mil"/>
+<param name="mdWireWire" value="0.1mm"/>
+<param name="mdWirePad" value="0.08mm"/>
+<param name="mdWireVia" value="4mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="4mil"/>
+<param name="mdViaVia" value="4mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="6mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="6mil"/>
+<param name="mdCopperDimension" value="0.1mm"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="0.09mm"/>
 <param name="msDrill" value="8mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -2267,9 +2267,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="8mil"/>
 <param name="rlMinPadBottom" value="4mil"/>
 <param name="rlMaxPadBottom" value="8mil"/>
-<param name="rlMinViaOuter" value="0.35mm"/>
+<param name="rlMinViaOuter" value="4mil"/>
 <param name="rlMaxViaOuter" value="0.45mm"/>
-<param name="rlMinViaInner" value="0.35mm"/>
+<param name="rlMinViaInner" value="4mil"/>
 <param name="rlMaxViaInner" value="0.45mm"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -3284,6 +3284,9 @@ design rules under a new name.</description>
 <vertex x="22.606" y="73.914"/>
 <vertex x="0.254" y="73.914"/>
 </polygon>
+<wire x1="9.93109375" y1="28.6962" x2="9.805" y2="28.57010625" width="0.254" layer="1"/>
+<wire x1="10.13" y1="28.866" x2="9.9602" y2="28.6962" width="0.254" layer="1"/>
+<wire x1="9.9602" y1="28.6962" x2="9.93109375" y2="28.6962" width="0.254" layer="1"/>
 <wire x1="19.434" y1="67.818" x2="21.336" y2="66.66" width="0" layer="19" extent="1-1"/>
 <wire x1="18.534" y1="65.278" x2="19.434" y2="67.818" width="0" layer="19" extent="1-1"/>
 <wire x1="14.732" y1="65.39" x2="18.534" y2="65.278" width="0" layer="19" extent="1-1"/>
@@ -3369,7 +3372,7 @@ design rules under a new name.</description>
 <wire x1="10.13" y1="28.866" x2="10.16" y2="28.96" width="0" layer="19" extent="1-16"/>
 <wire x1="10.78" y1="28.866" x2="10.16" y2="28.96" width="0" layer="19" extent="1-16"/>
 <wire x1="10.795" y1="28.96" x2="10.78" y2="28.866" width="0" layer="19" extent="1-16"/>
-<wire x1="8.509" y1="27.69" x2="10.13" y2="28.866" width="0" layer="19" extent="1-16"/>
+<wire x1="8.509" y1="27.69" x2="9.805" y2="28.57010625" width="0" layer="19" extent="1-16"/>
 <wire x1="8.001" y1="27.69" x2="8.509" y2="27.69" width="0" layer="19" extent="16-16"/>
 <wire x1="14.03" y1="28.216" x2="13.335" y2="30.73" width="0" layer="19" extent="1-16"/>
 <wire x1="14.732" y1="27.309" x2="14.03" y2="28.216" width="0" layer="19" extent="1-16"/>
@@ -3447,7 +3450,7 @@ design rules under a new name.</description>
 <contactref element="STM32_MCU1:S3" pad="2"/>
 <contactref element="STM32_MCU1:R4" pad="1"/>
 <contactref element="STM32_MCU1:U$1" pad="C11"/>
-<wire x1="4.483" y1="24.148" x2="8.18" y2="34.716" width="0" layer="19" extent="1-1"/>
+<wire x1="8.18" y1="34.716" x2="4.483" y2="24.148" width="0" layer="19" extent="1-1"/>
 <wire x1="4.483" y1="20.048" x2="4.483" y2="24.148" width="0" layer="19" extent="1-1"/>
 <wire x1="2.541" y1="5.207" x2="4.483" y2="20.048" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4007,7 +4010,10 @@ design rules under a new name.</description>
 <signal name="FMC_A1" class="2">
 <contactref element="MEMORY:U2" pad="H8"/>
 <contactref element="STM32_MCU1:U$1" pad="H3"/>
-<wire x1="11.43" y1="29.516" x2="9.03" y2="50.66" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="29.516" x2="11.75605625" y2="29.84205625" width="0.1016" layer="1"/>
+<wire x1="11.75605625" y1="29.84205625" x2="11.75605625" y2="29.9207125" width="0.1016" layer="1"/>
+<wire x1="11.75605625" y1="29.9207125" x2="11.769871875" y2="29.934528125" width="0.1016" layer="1"/>
+<wire x1="11.769871875" y1="29.934528125" x2="9.03" y2="50.66" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMC_A2" class="2">
 <contactref element="MEMORY:U2" pad="J8"/>
@@ -4025,15 +4031,22 @@ design rules under a new name.</description>
 <wire x1="13.03" y1="51.46" x2="12.21271875" y2="51.46" width="0.1524" layer="1"/>
 <wire x1="12.21271875" y1="51.46" x2="12.19961875" y2="51.4731" width="0.1524" layer="1"/>
 <via x="12.19961875" y="51.4731" extent="1-16" drill="0.2032" diameter="0.7112"/>
-<wire x1="12.144" y1="30.244040625" x2="11.78051875" y2="29.880559375" width="0.1524" layer="16"/>
-<wire x1="11.78051875" y1="29.880559375" x2="11.744959375" y2="29.845" width="0.1524" layer="16"/>
 <wire x1="12.144" y1="31.0128125" x2="12.144" y2="30.244040625" width="0.1524" layer="16"/>
 <wire x1="12.19961875" y1="51.4731" x2="12.19961875" y2="37.27619375" width="0.1524" layer="16"/>
 <wire x1="12.19961875" y1="37.27619375" x2="12.621" y2="36.8548125" width="0.1524" layer="16"/>
 <wire x1="12.621" y1="36.8548125" x2="12.621" y2="31.4898125" width="0.1524" layer="16"/>
-<wire x1="12.621" y1="31.4898125" x2="12.144" y2="31.0128125" width="0.1524" layer="16"/>
-<wire x1="12.08" y1="29.516" x2="12.199" y2="29.635" width="0.1524" layer="1"/>
-<wire x1="12.08" y1="29.516" x2="11.78051875" y2="29.880559375" width="0" layer="19" extent="1-16"/>
+<wire x1="12.621" y1="31.4898125" x2="12.21655625" y2="31.08536875" width="0.1524" layer="16"/>
+<wire x1="12.21655625" y1="31.08536875" x2="12.144" y2="31.0128125" width="0.1524" layer="16"/>
+<wire x1="12.08" y1="29.516" x2="12.08" y2="29.62171875" width="0.1016" layer="1"/>
+<wire x1="12.08" y1="29.73834375" x2="12.08" y2="29.516" width="0.1016" layer="1"/>
+<wire x1="12.3824" y1="30.315053125" x2="12.452859375" y2="30.3855125" width="0.1016" layer="1"/>
+<wire x1="12.08" y1="29.73834375" x2="12.3824" y2="30.04074375" width="0.1016" layer="1"/>
+<wire x1="12.3824" y1="30.04074375" x2="12.3824" y2="30.315053125" width="0.1016" layer="1"/>
+<wire x1="12.08" y1="29.516" x2="12.30234375" y2="29.516" width="0.1016" layer="1"/>
+<wire x1="13.075128125" y1="29.8184" x2="13.075703125" y2="29.818975" width="0.1016" layer="1"/>
+<wire x1="12.30234375" y1="29.516" x2="12.60474375" y2="29.8184" width="0.1016" layer="1"/>
+<wire x1="12.60474375" y1="29.8184" x2="13.075128125" y2="29.8184" width="0.1016" layer="1"/>
+<wire x1="12.3824" y1="30.315053125" x2="12.144" y2="30.244040625" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMC_A5" class="2">
 <contactref element="MEMORY:U2" pad="J2"/>
@@ -4203,7 +4216,9 @@ design rules under a new name.</description>
 <signal name="FMC_CS_L" class="2">
 <contactref element="STM32_MCU1:U$1" pad="G4"/>
 <contactref element="MEMORY:U2" pad="G9"/>
-<wire x1="10.78" y1="30.166" x2="8.23" y2="49.86" width="0" layer="19" extent="1-1"/>
+<wire x1="10.78" y1="30.166" x2="10.78" y2="30.8783625" width="0.1016" layer="1"/>
+<wire x1="10.78" y1="30.8783625" x2="10.802978125" y2="30.901340625" width="0.1016" layer="1"/>
+<wire x1="10.802978125" y1="30.901340625" x2="8.23" y2="49.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="STM32_MCU1:I2C2_SCL">
 <contactref element="STM32_MCU1:U$1" pad="H4"/>
@@ -4344,7 +4359,8 @@ design rules under a new name.</description>
 <signal name="ADC1_IN10" class="3">
 <contactref element="HEADERS1:X1" pad="9"/>
 <contactref element="STM32_MCU1:U$1" pad="M2"/>
-<wire x1="14.03" y1="28.866" x2="1.27" y2="40.767" width="0" layer="19" extent="1-1"/>
+<wire x1="14.03" y1="28.866" x2="13.68363125" y2="29.21236875" width="0.1524" layer="1"/>
+<wire x1="13.68363125" y1="29.21236875" x2="1.27" y2="40.767" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC1_IN7" class="3">
 <contactref element="STM32_MCU1:U$1" pad="R3"/>
