@@ -11406,10 +11406,10 @@ Source: Samtec TSW.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.1651" drill="0.2032">
+<class number="1" name="USB" width="0.1651" drill="0.1016">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.2032">
+<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.1016">
 </class>
 <class number="3" name="MEM_DATA" width="0.1016" drill="0">
 </class>
@@ -11677,20 +11677,6 @@ Source: Samtec TSW.pdf</description>
 <part name="U$6" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$7" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$8" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
-<part name="S3" library="SLJ_SWITCHES" deviceset="SPST_SW_KMR211NG_LFS" device=""/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
-</part>
-<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="LED1" library="SLJ_led" deviceset="LTST-C19HE1WT" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="620">
@@ -11796,7 +11782,6 @@ Source: Samtec TSW.pdf</description>
 <plain>
 <text x="363.22" y="116.84" size="1.778" layer="97">"BOOT"</text>
 <text x="363.22" y="137.16" size="1.778" layer="97">"RESET"</text>
-<text x="215.9" y="203.2" size="1.778" layer="91">TEST BUTTON</text>
 <polygon width="0.1524" layer="97">
 <vertex x="48.26" y="43.18"/>
 <vertex x="46.99" y="44.45"/>
@@ -12060,19 +12045,6 @@ Source: Samtec TSW.pdf</description>
 <instance part="U$6" gate="G$1" x="271.78" y="114.3"/>
 <instance part="U$7" gate="G$1" x="271.78" y="111.76"/>
 <instance part="U$8" gate="G$1" x="271.78" y="104.14"/>
-<instance part="S3" gate="G$1" x="215.9" y="193.04" smashed="yes">
-<attribute name="PART_NUMBER" x="210.82" y="187.96" size="1.778" layer="96"/>
-<attribute name="NAME" x="210.82" y="198.12" size="1.778" layer="94" ratio="6"/>
-</instance>
-<instance part="R4" gate="G$1" x="203.2" y="205.74" smashed="yes" rot="R90">
-<attribute name="FOOTPRINT" x="210.82" y="203.2" size="1.778" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="203.2" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="203.2" y="205.74" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="204.47" y="207.2386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="209.55" y="206.502" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="SUPPLY11" gate="GND" x="231.14" y="182.88"/>
-<instance part="SUPPLY12" gate="G$1" x="203.2" y="215.9"/>
 <instance part="LED1" gate="G$1" x="259.08" y="208.28"/>
 <instance part="SUPPLY13" gate="G$1" x="254" y="218.44"/>
 <instance part="R5" gate="G$1" x="254" y="193.04" smashed="yes" rot="MR90">
@@ -12442,12 +12414,6 @@ Source: Samtec TSW.pdf</description>
 <wire x1="360.68" y1="187.96" x2="360.68" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S3" gate="G$1" pin="2_3"/>
-<wire x1="223.52" y1="193.04" x2="231.14" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="193.04" x2="231.14" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="195.58" y1="233.68" x2="195.58" y2="228.6" width="0.1524" layer="91"/>
@@ -12654,11 +12620,6 @@ Source: Samtec TSW.pdf</description>
 <wire x1="386.08" y1="154.94" x2="386.08" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="157.48" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
 <junction x="340.36" y="157.48"/>
-</segment>
-<segment>
-<pinref part="SUPPLY12" gate="G$1" pin="VCC"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="213.36" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="G$1" pin="VCC"/>
@@ -12938,14 +12899,6 @@ Source: Samtec TSW.pdf</description>
 </segment>
 </net>
 <net name="PD5_BUT" class="0">
-<segment>
-<pinref part="S3" gate="G$1" pin="1_4"/>
-<wire x1="203.2" y1="195.58" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="193.04" x2="208.28" y2="193.04" width="0.1524" layer="91"/>
-<label x="203.2" y="193.04" size="1.778" layer="95" align="bottom-right"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="200.66" x2="203.2" y2="195.58" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <wire x1="93.98" y1="68.58" x2="113.665" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PD5"/>
@@ -14466,12 +14419,6 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="DQMH"/>
 <wire x1="149.86" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="137.16" y="147.32" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="3">
-<segment>
-<pinref part="U1" gate="G$1" pin="RFU"/>
-<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NVALE" class="3">

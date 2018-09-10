@@ -11409,17 +11409,17 @@ Source: Samtec TSW.pdf</description>
 <class number="1" name="USB" width="0.1651" drill="0.2032">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1" drill="0.15">
+<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.2032">
 </class>
-<class number="3" name="MEM_DATA" width="0.1" drill="0">
+<class number="3" name="MEM_DATA" width="0.1016" drill="0">
 </class>
 <class number="4" name="5V" width="0.1" drill="0">
 </class>
 <class number="5" name="50ohm" width="0.1" drill="0">
 </class>
-<class number="6" name="POWER" width="0.1" drill="0.15">
+<class number="6" name="POWER" width="0.1" drill="0.2032">
 </class>
-<class number="7" name="CLK" width="0.1" drill="0.15">
+<class number="7" name="CLK" width="0.1" drill="0.2032">
 </class>
 </classes>
 <modules>
@@ -11789,6 +11789,7 @@ Source: Samtec TSW.pdf</description>
 <part name="X1" library="SLJ_OSC" deviceset="ABM12W-25" device="" package3d_urn="urn:adsk.eagle:package:4411597/1"/>
 <part name="U$44" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$45" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11797,15 +11798,15 @@ Source: Samtec TSW.pdf</description>
 <text x="363.22" y="137.16" size="1.778" layer="97">"RESET"</text>
 <text x="215.9" y="203.2" size="1.778" layer="91">TEST BUTTON</text>
 <polygon width="0.1524" layer="97">
-<vertex x="53.34" y="45.72"/>
-<vertex x="52.07" y="46.99"/>
-<vertex x="52.07" y="45.085"/>
-<vertex x="52.07" y="44.45"/>
+<vertex x="48.26" y="43.18"/>
+<vertex x="46.99" y="44.45"/>
+<vertex x="46.99" y="42.545"/>
+<vertex x="46.99" y="41.91"/>
 </polygon>
 <polygon width="0.1524" layer="97">
-<vertex x="46.99" y="41.91"/>
-<vertex x="46.99" y="44.45"/>
-<vertex x="45.72" y="43.18"/>
+<vertex x="52.07" y="44.45"/>
+<vertex x="52.07" y="46.99"/>
+<vertex x="50.8" y="45.72"/>
 </polygon>
 <polygon width="0.1524" layer="97">
 <vertex x="46.99" y="46.99"/>
@@ -12158,6 +12159,7 @@ Source: Samtec TSW.pdf</description>
 <instance part="X1" gate="G$1" x="340.36" y="205.74"/>
 <instance part="U$44" gate="G$1" x="40.64" y="53.34"/>
 <instance part="U$45" gate="G$1" x="215.9" y="73.66"/>
+<instance part="SUPPLY15" gate="GND" x="162.56" y="200.66"/>
 </instances>
 <busses>
 <bus name="FMC_A[0..15]">
@@ -12507,6 +12509,12 @@ Source: Samtec TSW.pdf</description>
 <wire x1="210.82" y1="228.6" x2="195.58" y2="228.6" width="0.1524" layer="91"/>
 <junction x="210.82" y="228.6"/>
 <junction x="195.58" y="228.6"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$4" pin="BYPASS_REG"/>
+<wire x1="157.48" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="215.9" x2="162.56" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -13198,18 +13206,11 @@ Source: Samtec TSW.pdf</description>
 <label x="27.94" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="USART1_RX" class="0">
+<net name="USART1_TX" class="0">
 <segment>
 <wire x1="55.88" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PB14"/>
 <label x="27.94" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="USART1_TX" class="0">
-<segment>
-<wire x1="55.88" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PB15"/>
-<label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC1_IN10" class="0">
@@ -13492,6 +13493,13 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U$1" gate="G$2" pin="PE3"/>
 <wire x1="157.48" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 <label x="139.7" y="119.38" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="USART1_RX" class="0">
+<segment>
+<wire x1="55.88" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PB15"/>
+<label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
