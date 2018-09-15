@@ -10405,8 +10405,8 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <connect gate="G$1" pin="DQ7" pad="E9"/>
 <connect gate="G$1" pin="DQ8" pad="E1"/>
 <connect gate="G$1" pin="DQ9" pad="D2"/>
-<connect gate="G$1" pin="DQMH" pad="E8"/>
-<connect gate="G$1" pin="DQML" pad="F1"/>
+<connect gate="G$1" pin="DQMH" pad="F1"/>
+<connect gate="G$1" pin="DQML" pad="E8"/>
 <connect gate="G$1" pin="NC" pad="E2"/>
 <connect gate="G$1" pin="RAS_L" pad="F8"/>
 <connect gate="G$1" pin="VDD" pad="A9 E7 J9"/>
@@ -11409,9 +11409,9 @@ Source: Samtec TSW.pdf</description>
 <class number="1" name="USB" width="0.1651" drill="0.2032">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.2032">
+<class number="2" name="MEM_ADDR_CNT" width="0.1651" drill="0.2032">
 </class>
-<class number="3" name="MEM_DATA" width="0.1016" drill="0">
+<class number="3" name="MEM_DATA" width="0.1524" drill="0">
 </class>
 <class number="4" name="5V" width="0.1" drill="0">
 </class>
@@ -15649,7 +15649,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="X2" gate="-8" pin="1"/>
 </segment>
 </net>
-<net name="COM2_TX" class="0">
+<net name="COM2_RX" class="0">
 <segment>
 <wire x1="189.23" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
 <label x="172.72" y="144.78" size="1.27" layer="95"/>
@@ -15678,7 +15678,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="X2" gate="-4" pin="1"/>
 </segment>
 </net>
-<net name="COM2_RX" class="0">
+<net name="COM2_TX" class="0">
 <segment>
 <wire x1="189.23" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <label x="172.72" y="142.24" size="1.27" layer="95"/>
