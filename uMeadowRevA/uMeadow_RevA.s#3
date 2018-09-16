@@ -10511,12 +10511,14 @@ http://www.st.com/content/ccc/resource/technical/document/datasheet/3d/d2/27/1d/
 <text x="0" y="-1.799" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 <smd name="1" x="1.6" y="-0.425" dx="0.8" dy="0.65" layer="1"/>
 <smd name="2" x="1.6" y="0.425" dx="0.8" dy="0.65" layer="1"/>
-<rectangle x1="-2" y1="-3" x2="2" y2="-1" layer="39"/>
-<rectangle x1="-2" y1="-3" x2="2" y2="-1" layer="40"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="40"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
+<rectangle x1="-2" y1="-3" x2="2" y2="-1" layer="41"/>
+<rectangle x1="-2" y1="-3" x2="2" y2="-1" layer="42"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="42"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="41"/>
 <rectangle x1="-2" y1="1" x2="2" y2="2" layer="39"/>
 <rectangle x1="-2" y1="1" x2="2" y2="2" layer="40"/>
+<rectangle x1="-2" y1="-3" x2="2" y2="-1" layer="42"/>
+<rectangle x1="0.99890625" y1="-1.024178125" x2="2.106625" y2="-0.88465625" layer="41"/>
 </package>
 </packages>
 <packages3d>
@@ -11420,6 +11422,9 @@ Source: Samtec TSW.pdf</description>
 <class number="6" name="POWER" width="0.1" drill="0.2032">
 </class>
 <class number="7" name="CLK" width="0.1" drill="0.2032">
+</class>
+<class number="8" name="ANT" width="0" drill="0">
+<clearance class="8" value="0.3"/>
 </class>
 </classes>
 <modules>
@@ -14421,12 +14426,6 @@ Source: Samtec TSW.pdf</description>
 <label x="137.16" y="147.32" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="3">
-<segment>
-<pinref part="U1" gate="G$1" pin="RFU"/>
-<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="NVALE" class="3">
 </net>
 </nets>
@@ -15146,7 +15145,7 @@ Source: Samtec TSW.pdf</description>
 <junction x="157.48" y="167.64"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="N$8" class="8">
 <segment>
 <wire x1="83.82" y1="162.56" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="152.4" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
@@ -15161,7 +15160,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="ANT1" gate="G$1" pin="FEED"/>
 </segment>
 </net>
-<net name="ANT_50OHM" class="5">
+<net name="ANT_50OHM" class="8">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="LNA_IN"/>
@@ -16771,8 +16770,6 @@ Source: Samtec TSW.pdf</description>
 <approved hash="213,1,165.1,119.38,USART1_RX,in,,,,"/>
 <approved hash="213,1,251.46,78.74,USB_OTG_FS_VBUS,in,,,,"/>
 <approved hash="213,1,299.72,78.74,+VBUS,out,,,,"/>
-<approved hash="209,1@MEMORY,317.5,154.94,N$1,,,,,"/>
-<approved hash="106,1@MEMORY,317.5,154.94,N$1,,,,,"/>
 <approved hash="213,1,134.62,180.34,ESP32_BOOT_L,in,,,,"/>
 <approved hash="213,1,134.62,172.72,ESP32_U0RX,in,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>

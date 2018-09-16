@@ -11406,12 +11406,12 @@ Source: Samtec TSW.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.1651" drill="0.2032">
+<class number="1" name="USB" width="0.1651" drill="0.1016">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1651" drill="0.2032">
+<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.1016">
 </class>
-<class number="3" name="MEM_DATA" width="0.1524" drill="0">
+<class number="3" name="MEM_DATA" width="0.1016" drill="0">
 </class>
 <class number="4" name="5V" width="0.1" drill="0">
 </class>
@@ -14419,12 +14419,6 @@ Source: Samtec TSW.pdf</description>
 <pinref part="U2" gate="G$1" pin="DQMH"/>
 <wire x1="149.86" y1="147.32" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="137.16" y="147.32" size="1.27" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="3">
-<segment>
-<pinref part="U1" gate="G$1" pin="RFU"/>
-<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NVALE" class="3">
