@@ -2,6 +2,10 @@
 
 __Previews/
 
+# eagle backups
+*.b#*
+*.b##
+
 
 # OS generated files #
 ######################
