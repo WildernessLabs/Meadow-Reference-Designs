@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "silk test")(type KiCad)(uri "/Users/sheldon/Meadow-Reference-Designs/µMeadow_Debug_RevA/uMeadow_Debug_RevA/silk test.pretty")(options "")(descr ""))
+)

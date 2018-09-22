@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -32,8 +32,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -55,10 +55,10 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="63" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
@@ -73,6 +73,7 @@
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<description>uMeadow eval Kit.</description>
 <fusionsync huburn="a.cGVyc29uYWw6dWUyZGJjM2U5" projecturn="a.cGVyc29uYWw6dWUyZGJjM2U5IzIwMTgwODE1MTQ0MDU0OTAx" f3durn="urn:adsk.wipprod:dm.lineage:CDGYGZrrQ0maHsVbWZc7zw" pcbguid="bcfdbf47-882d-4f60-9920-620e831b059e" lastpulledtime="" lastsyncedchangeguid="f844cb7b-f783-d779-9da1-e0629740a3f5"/>
 <plain>
 <wire x1="0" y1="72.39" x2="0" y2="1.27" width="0.1524" layer="20"/>
@@ -99,6 +100,13 @@
 <text x="16.18488125" y="23.136859375" size="0.635" layer="51" font="vector" ratio="15">uMeadow</text>
 <text x="16.164559375" y="22.2504" size="0.635" layer="51" font="vector" ratio="15">Rev:</text>
 <rectangle x1="18.02891875" y1="21.49601875" x2="20.0533" y2="23.00478125" layer="51"/>
+<text x="74.15021875" y="-32.184340625" size="2.54" layer="48" font="vector" ratio="15">UMeadow</text>
+<text x="74.3585" y="-38.19398125" size="2.54" layer="48" font="vector" ratio="15">REV. A</text>
+<text x="73.279" y="-44.13758125" size="2.54" layer="48" font="vector" ratio="15">&gt;ENGINEER</text>
+<text x="54.594759375" y="-44.59478125" size="2.54" layer="48" font="vector" ratio="15">ENGINEER:</text>
+<frame x1="-117.73661875" y1="-57.558940625" x2="111.8235" y2="138.249659375" columns="8" rows="5" layer="48"/>
+<text x="16.131540625" y="14.985996875" size="0.8128" layer="25" font="vector" ratio="15">BOOT</text>
+<text x="3.72364375" y="12.753340625" size="0.8128" layer="25" font="vector" ratio="15">RESET</text>
 </plain>
 <libraries>
 <library name="eagle-ltspice" urn="urn:adsk.eagle:library:217">
@@ -2200,6 +2208,10 @@ Power Switchs, LDO's, Switchers</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="DATE" value="09/16/2018"/>
+<attribute name="ENGINEER" value="S.JOHNSON"/>
+<attribute name="PART_NUMBER" value="uMeadow"/>
+<attribute name="REV" value="A"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -2792,7 +2804,7 @@ design rules under a new name.</description>
 <element name="C204" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="8pF" x="5.06" y="11.24" smashed="yes">
 <attribute name="FOOTPRINT" value="0402" x="5.06" y="11.24" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Murata Electronica" x="5.06" y="11.24" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="4.425" y="11.875" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="6.23348125" y="11.7124375" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="PART_NUMBER" value="GRM1555C1H8R0DA01D" x="5.06" y="11.24" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEMODEL" value="NONE" x="5.06" y="11.24" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="5.06" y="11.24" size="1.778" layer="27" display="off"/>
@@ -2885,7 +2897,7 @@ design rules under a new name.</description>
 <element name="R203" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="499" x="6.35" y="14.224" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" value="0201" x="6.35" y="14.224" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="PANASONIC" x="6.35" y="14.224" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="5.715" y="13.589" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="7.310121875" y="14.2494" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="PART_NUMBER" value="ERJ-1GNF4990C" x="6.35" y="14.224" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="6.35" y="14.224" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.255" y="13.589" size="0.635" layer="27" font="vector" ratio="15" rot="R90"/>
@@ -3125,7 +3137,7 @@ design rules under a new name.</description>
 <element name="R401" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K" x="3.937" y="16.002" smashed="yes">
 <attribute name="FOOTPRINT" value="0201" x="3.937" y="16.002" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic" x="3.937" y="16.002" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.53821875" y="16.436340625" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="3.782059375" y="16.80971875" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="PART_NUMBER" value="ERJ-1GEF1002C" x="3.937" y="16.002" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="3.937" y="16.002" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.302" y="14.097" size="0.635" layer="27" font="vector" ratio="15"/>
@@ -3187,7 +3199,7 @@ design rules under a new name.</description>
 </element>
 <element name="S402" library="SLJ_SWITCHES" package="KMR211NG" value="SPST_SW_KMR211NG_LFS" x="1.905" y="13.462" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="C&amp;K" x="1.905" y="13.462" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.405" y="15.862" size="0.635" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="3.469940625" y="14.972159375" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="PART_NUMBER" value="KMR211NG LFS" x="1.905" y="13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="1.905" y="13.462" size="0.635" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
@@ -3333,10 +3345,18 @@ design rules under a new name.</description>
 <attribute name="PART_NUMBER" value="W3008" x="16.256" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="16.256" y="3.069" size="0.635" layer="27" font="vector" ratio="15" rot="R180" align="top-center"/>
 </element>
-<element name="MTH1" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="2.54" y="2.54" smashed="yes"/>
-<element name="MTH2" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="20.32" y="2.54" smashed="yes"/>
-<element name="MTH3" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="2.54" y="71.12" smashed="yes"/>
-<element name="MTH4" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="20.32" y="71.12" smashed="yes"/>
+<element name="MTH1" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="2.54" y="2.54" smashed="yes">
+<attribute name="DNI" value="DNI" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MTH2" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="20.32" y="2.54" smashed="yes">
+<attribute name="DNI" value="DNI" x="20.32" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MTH3" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="2.54" y="71.12" smashed="yes">
+<attribute name="DNI" value="DNI" x="2.54" y="71.12" size="1.778" layer="27" display="off"/>
+</element>
+<element name="MTH4" library="SLJ_MECH" package="MTH_100_140MIL" value="100MIL_140MIL" x="20.32" y="71.12" smashed="yes">
+<attribute name="DNI" value="DNI" x="20.32" y="71.12" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="6">
@@ -7130,7 +7150,6 @@ design rules under a new name.</description>
 <wire x1="1.27" y1="40.767" x2="1.27" y2="39.545825" width="0.1651" layer="16"/>
 <wire x1="1.27" y1="39.545825" x2="2.20255" y2="38.613275" width="0.1651" layer="16"/>
 <via x="1.961675" y="16.795125" extent="1-16" drill="0.2032"/>
-<wire x1="1.961675" y1="16.795125" x2="2.136778125" y2="16.970228125" width="0.1651" layer="1"/>
 <wire x1="4.147540625" y1="16.879171875" x2="2.045721875" y2="16.879171875" width="0.1651" layer="1"/>
 <wire x1="2.045721875" y1="16.879171875" x2="1.961675" y2="16.795125" width="0.1651" layer="1"/>
 <wire x1="1.961675" y1="16.968796875" x2="1.961675" y2="16.795125" width="0.1651" layer="16"/>
