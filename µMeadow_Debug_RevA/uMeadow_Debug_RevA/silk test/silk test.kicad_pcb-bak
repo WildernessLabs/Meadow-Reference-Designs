@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 0)
     (zones 0)
     (modules 1)
@@ -58,7 +58,7 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 91.44 147.32)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x00010_7ffffffe)
@@ -71,7 +71,7 @@
       (plotframeref false)
       (viasonmask false)
       (mode 1)
-      (useauxorigin false)
+      (useauxorigin true)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15.000000)
@@ -101,7 +101,7 @@
   )
 
   (module "silk test:LOGO" (layer B.Cu) (tedit 5BA6C222) (tstamp 5BA7EF82)
-    (at 111.76 76.2 270)
+    (at 20.32 -71.12 270)
     (fp_text reference G*** (at 0 0 270) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
@@ -1973,9 +1973,10 @@
       (xy 68.578194 18.767222) (xy 68.600233 18.757002)) (layer B.SilkS) (width 0.01))
   )
 
-  (gr_line (start 114.3 73.66) (end 91.44 73.66) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 114.3 147.32) (end 114.3 73.66) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 91.44 147.32) (end 114.3 147.32) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 91.44 73.66) (end 91.44 147.32) (layer Edge.Cuts) (width 0.2))
+  (target plus (at 0 0) (size 5) (width 0.15) (layer Edge.Cuts))
+  (gr_line (start 22.86 -73.66) (end 0 -73.66) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 22.86 0) (end 22.86 -73.66) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 0 0) (end 22.86 0) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 0 -73.66) (end 0 0) (layer Edge.Cuts) (width 0.2))
 
 )
