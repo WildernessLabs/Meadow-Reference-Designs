@@ -103,7 +103,7 @@
 <text x="73.279" y="-44.13758125" size="2.54" layer="48" font="vector" ratio="15">&gt;ENGINEER</text>
 <text x="54.594759375" y="-44.59478125" size="2.54" layer="48" font="vector" ratio="15">ENGINEER:</text>
 <frame x1="-117.73661875" y1="-57.558940625" x2="111.8235" y2="138.249659375" columns="8" rows="5" layer="48"/>
-<text x="16.131540625" y="14.985996875" size="0.8128" layer="25" font="vector" ratio="15">BOOT</text>
+<text x="16.29668125" y="14.325434375" size="0.8128" layer="25" font="vector" ratio="15">BOOT</text>
 <text x="3.72364375" y="12.753340625" size="0.8128" layer="25" font="vector" ratio="15">RESET</text>
 <dimension x1="20.32" y1="2.54" x2="20.32" y2="71.12" x3="40.64" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
 <dimension x1="-12.7" y1="73.66" x2="-12.7" y2="0" x3="-17.78" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
@@ -2670,7 +2670,7 @@ design rules under a new name.</description>
 <element name="C201" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="3nF" x="6.604" y="7.112" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" value="0402" x="6.604" y="7.112" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="MURATA" x="6.604" y="7.112" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="7.68058125" y="4.398459375" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="6.7062375" y="5.356271875" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="PART_NUMBER" value="GRM1557U1A302JA01D" x="6.604" y="7.112" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="6.604" y="7.112" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="8.054" y="6.612" size="0.635" layer="27" font="vector" ratio="15" rot="R90"/>
@@ -2876,7 +2876,7 @@ design rules under a new name.</description>
 <element name="R201" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K" x="5.588" y="7.112" smashed="yes" rot="R270">
 <attribute name="FOOTPRINT" value="0201" x="5.588" y="7.112" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="YAGEO" x="5.588" y="7.112" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.25551875" y="6.7538625" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="2.982146875" y="6.68780625" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="PART_NUMBER" value="RC0201FR-0720KL" x="5.588" y="7.112" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="5.588" y="7.112" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="3.683" y="7.747" size="0.635" layer="27" font="vector" ratio="15" rot="R270"/>
@@ -2940,7 +2940,7 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER" value="Samtec" x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Samtec Inc." x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TSW-118-07-G-S" x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="2.349503125" y="63.0428" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="2.11555625" y="63.3593125" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="OC_FARNELL" value="" x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="" x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART_NUMBER" value="TSW-118-07-G-S" x="1.27" y="39.497" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2950,7 +2950,7 @@ design rules under a new name.</description>
 <attribute name="DNI" value="DNI" x="21.59" y="34.417" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Samtec Inc." x="21.59" y="34.417" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TSW-114-07-G-S" x="21.59" y="34.417" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="19.596103125" y="51.440084375" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="21.8566125" y="53.700428125" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="OC_FARNELL" value="" x="21.59" y="34.417" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="" x="21.59" y="34.417" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="22.86" y="54.102" size="0.635" layer="27" font="vector" ratio="15" rot="R180"/>
@@ -3097,7 +3097,7 @@ design rules under a new name.</description>
 <element name="P101" library="SLJ_Connectors" package="JST_S2B-PH-SM4-TB(LF)(SN)" value="S2B-PH-SM4-TB(LF)(SN)" x="14.986" y="58.674" smashed="yes" rot="R270">
 <attribute name="DESCRIPTION" value=" PH Series 2 Position 2 mm Pitch Surface Mount Side Entry Shrouded Header " x="14.986" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="JST" x="14.986" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.31005" y="56.1454625" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="13.1294875" y="55.75013125" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="PACKAGE" value="FakePackage u" x="14.986" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART_NUMBER" value="S2B-PH-SM4-TB_LF__SN_" x="14.986" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PRICE" value="None" x="14.986" y="58.674" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3106,7 +3106,7 @@ design rules under a new name.</description>
 <element name="Q101" library="SLJ_TRANSISTORS" package="DFN120X80X50-3" package3d_urn="urn:adsk.eagle:package:4558649/1" value="SSM3J46CTB" x="11.938" y="59.69" smashed="yes">
 <attribute name="CURRENT" value="2A" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12.118340625" y="58.336440625" size="0.635" layer="25" font="vector" ratio="15" align="bottom-center"/>
+<attribute name="NAME" x="11.92568125" y="57.8823125" size="0.635" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="PART_NUMBER" value="SSM3J46CTB(TPL3)" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="11.938" y="58.341" size="0.635" layer="27" font="vector" ratio="15" align="top-center"/>
 <attribute name="VOLTAGE" value="20V" x="11.938" y="59.69" size="1.778" layer="27" display="off"/>
@@ -3232,13 +3232,13 @@ design rules under a new name.</description>
 </element>
 <element name="D601" library="SLJ_Diodes" package="SOD2512X117" package3d_urn="urn:adsk.eagle:package:4435552/1" value="BAT60JFILM" x="0.83" y="67.77" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="STMicroelectronics" x="0.83" y="67.77" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.76361875" y="65.21221875" size="0.635" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="1.796646875" y="64.6012" size="0.635" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
 <attribute name="PART_NUMBER" value="BAT60JFILM" x="0.83" y="67.77" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="2.19" y="67.77" size="0.635" layer="27" font="vector" ratio="15" rot="R90" align="top-center"/>
 </element>
 <element name="J601" library="SLJ_Connectors" package="USB_OTG" package3d_urn="urn:adsk.eagle:package:4421200/2" value="USB_OTG_ZX62-AB-5PA" x="11.43" y="72.1868" locked="yes" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Hirose Electric Co." x="11.43" y="72.1868" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="18.910559375" y="72.187559375" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="18.580284375" y="72.889390625" size="0.635" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="PART_NUMBER" value="ZX62-AB-5PA(31)" x="11.43" y="72.1868" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="7.93" y="68.0118" size="0.635" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
@@ -3269,7 +3269,7 @@ design rules under a new name.</description>
 <element name="R606" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="47K" x="12.192" y="55.118" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" value="0201" x="12.192" y="55.118" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics" x="12.192" y="55.118" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="12.984478125" y="54.7497" size="0.635" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="12.667965625" y="53.827684375" size="0.635" layer="25" font="vector" ratio="15"/>
 <attribute name="PART_NUMBER" value="RC0603F473CS" x="12.192" y="55.118" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="12.192" y="55.118" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="14.097" y="54.483" size="0.635" layer="27" font="vector" ratio="15" rot="R90"/>
@@ -3296,7 +3296,7 @@ design rules under a new name.</description>
 </element>
 <element name="U102" library="SLJ_PMIC" package="SOT95P270X145-5" package3d_urn="urn:adsk.eagle:package:4822883/1" value="MCP7381-2-0T" x="18.034" y="67.818" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="MicroChip" x="18.034" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="19.1135" y="70.29721875" size="0.635" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="17.11464375" y="70.89448125" size="0.635" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
 <attribute name="PART_NUMBER" value="MCP73831T-2ACI/OT" x="18.034" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="18.034" y="70.0118" size="0.635" layer="27" font="vector" ratio="15" rot="R180" align="top-center"/>
 </element>
@@ -3343,7 +3343,7 @@ design rules under a new name.</description>
 </element>
 <element name="ANT201" library="SLJ_wireless" package="W3008" package3d_urn="urn:adsk.eagle:package:4414097/1" value="w3008" x="16.256" y="1.27" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="PulseLarsen" x="16.256" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="16.256" y="-0.529" size="0.635" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="17.140675" y="4.09418125" size="0.635" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
 <attribute name="PART_NUMBER" value="W3008" x="16.256" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="16.256" y="3.069" size="0.635" layer="27" font="vector" ratio="15" rot="R180" align="top-center"/>
 </element>

@@ -15726,7 +15726,7 @@ Source: Samtec TSW.pdf</description>
 <part name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
 <attribute name="FOOTPRINT" value="0201"/>
 <attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
+<attribute name="PART_NUMBER" value="GRM033C71A104KE14D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="1uF">

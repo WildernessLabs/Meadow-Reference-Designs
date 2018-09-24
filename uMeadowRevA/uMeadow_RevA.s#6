@@ -11423,6 +11423,9 @@ Source: Samtec TSW.pdf</description>
 </class>
 <class number="7" name="CLK" width="0.1" drill="0.2032">
 </class>
+<class number="8" name="ANT" width="0" drill="0">
+<clearance class="8" value="0.3"/>
+</class>
 </classes>
 <modules>
 <module name="STM32_MCU" prefix="" dx="76.2" dy="152.4">
@@ -15142,7 +15145,7 @@ Source: Samtec TSW.pdf</description>
 <junction x="157.48" y="167.64"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="N$8" class="8">
 <segment>
 <wire x1="83.82" y1="162.56" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="152.4" x2="93.98" y2="152.4" width="0.1524" layer="91"/>
@@ -15157,7 +15160,7 @@ Source: Samtec TSW.pdf</description>
 <pinref part="ANT1" gate="G$1" pin="FEED"/>
 </segment>
 </net>
-<net name="ANT_50OHM" class="5">
+<net name="ANT_50OHM" class="8">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="LNA_IN"/>

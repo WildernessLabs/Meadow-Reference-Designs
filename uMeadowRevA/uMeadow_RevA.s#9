@@ -11406,10 +11406,10 @@ Source: Samtec TSW.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.1651" drill="0.2032">
+<class number="1" name="USB" width="0.1651" drill="0.1016">
 <clearance class="1" value="0.254"/>
 </class>
-<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.2032">
+<class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.1016">
 </class>
 <class number="3" name="MEM_DATA" width="0.1016" drill="0">
 </class>

@@ -14421,12 +14421,6 @@ Source: Samtec TSW.pdf</description>
 <label x="137.16" y="147.32" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="3">
-<segment>
-<pinref part="U1" gate="G$1" pin="RFU"/>
-<wire x1="322.58" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="NVALE" class="3">
 </net>
 </nets>
