@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -26,11 +26,11 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -4784,29 +4784,25 @@ design rules under a new name.</description>
 <attribute name="DNI" value="DNI" x="20.32" y="71.12" size="1.778" layer="27" display="off"/>
 </element>
 <element name="DRILEGEND" library="drilegend" package="DRILEGEND" value="" x="-118.03661875" y="-61.668940625"/>
-<element name="ANT202" library="SLJ_wireless" package="A-1JB" value="A-1JB" x="-143.51" y="-77.47">
-<attribute name="MANUFACTURER" value="amphenol RF" x="-143.51" y="-77.47" size="1.778" layer="27" display="off"/>
-<attribute name="PART_NUMBER" value="A-1JB" x="-143.51" y="-77.47" size="1.778" layer="27" display="off"/>
+<element name="ANT202" library="SLJ_wireless" package="A-1JB" value="A-1JB" x="2.54" y="2.54">
+<attribute name="MANUFACTURER" value="amphenol RF" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="A-1JB" x="2.54" y="2.54" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U202" library="SLJ_wireless" package="SC70-6L" value="SKYA21001" x="-143.51" y="-85.09">
-<attribute name="MANUFACTURER" value="Skyworks Solutions" x="-143.51" y="-85.09" size="1.778" layer="27" display="off"/>
-<attribute name="PART_NUMBER" value="SKYA21001" x="-143.51" y="-85.09" size="1.778" layer="27" display="off"/>
+<element name="C219" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF" x="5.08" y="3.81">
+<attribute name="FOOTPRINT" value="0201" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="TDK" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEMODEL" value="NONE" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="5.08" y="3.81" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C219" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF" x="-143.51" y="-91.44">
-<attribute name="FOOTPRINT" value="0201" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="TDK" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEMODEL" value="NONE" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="-143.51" y="-91.44" size="1.778" layer="27" display="off"/>
-</element>
-<element name="C220" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF" x="-143.51" y="-96.52">
-<attribute name="FOOTPRINT" value="0201" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="TDK" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
-<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEMODEL" value="NONE" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="10V" x="-143.51" y="-96.52" size="1.778" layer="27" display="off"/>
+<element name="C220" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF" x="6.35" y="1.27" rot="R180">
+<attribute name="FOOTPRINT" value="0201" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="TDK" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEMODEL" value="NONE" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="10V" x="6.35" y="1.27" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C221" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF" x="-143.51" y="-101.6">
 <attribute name="FOOTPRINT" value="0201" x="-143.51" y="-101.6" size="1.778" layer="27" display="off"/>
@@ -4815,6 +4811,10 @@ design rules under a new name.</description>
 <attribute name="SPICEMODEL" value="NONE" x="-143.51" y="-101.6" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-143.51" y="-101.6" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="-143.51" y="-101.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U202" library="SLJ_wireless" package="SC70-6L" value="SKYA21001" x="-142.24" y="-107.95">
+<attribute name="MANUFACTURER" value="Skyworks Solutions" x="-142.24" y="-107.95" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="SKYA21001" x="-142.24" y="-107.95" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -5491,7 +5491,11 @@ design rules under a new name.</description>
 <wire x1="7.509" y1="26.285559375" x2="7.50508125" y2="26.285559375" width="0.15" layer="1"/>
 <wire x1="8.201" y1="26.84" x2="8.207621875" y2="26.833378125" width="0.15" layer="1"/>
 <contactref element="U202" pad="2"/>
-<wire x1="0.381" y1="2.54" x2="-143.51" y2="-85.94" width="0" layer="19" extent="1-1"/>
+<contactref element="ANT202" pad="GND"/>
+<contactref element="ANT202" pad="GND1"/>
+<contactref element="ANT202" pad="GND2"/>
+<wire x1="0.381" y1="2.54" x2="-142.24" y2="-108.8" width="0" layer="19" extent="1-1"/>
+<wire x1="1.015" y1="2.54" x2="0.381" y2="2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="0.381" y1="4.318" x2="0.381" y2="2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="1.016" y1="5.08" x2="0.381" y2="4.318" width="0" layer="19" extent="1-1"/>
 <wire x1="0.381" y1="5.461" x2="1.016" y2="5.08" width="0" layer="19" extent="1-1"/>
@@ -5547,6 +5551,8 @@ design rules under a new name.</description>
 <wire x1="6.096" y1="2.032" x2="6.858" y2="2.794" width="0" layer="19" extent="1-1"/>
 <wire x1="4.445" y1="0.508" x2="5.334" y2="1.27" width="0" layer="19" extent="1-1"/>
 <wire x1="3.302" y1="0.508" x2="4.445" y2="0.508" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="1.065" x2="3.302" y2="0.508" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="4.015" x2="3.048" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="9.779" y1="4.445" x2="8.509" y2="4.572" width="0" layer="19" extent="1-1"/>
 <wire x1="9.779" y1="5.08" x2="9.779" y2="4.445" width="0" layer="19" extent="1-1"/>
 <wire x1="10.414" y1="4.064" x2="9.779" y2="4.445" width="0" layer="19" extent="1-1"/>
@@ -7006,7 +7012,7 @@ design rules under a new name.</description>
 <wire x1="11.2" y1="2.032" x2="11.2324" y2="2.032" width="0.15" layer="1"/>
 <wire x1="11.2324" y1="2.032" x2="11.2" y2="2.032" width="0.15" layer="1"/>
 <contactref element="C220" pad="1"/>
-<wire x1="9.2" y1="3" x2="-143.76" y2="-96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="9.2" y1="3" x2="6.6" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:N$11">
 <contactref element="L202" pad="1"/>
@@ -8982,37 +8988,38 @@ design rules under a new name.</description>
 </signal>
 <signal name="ESP32:N$13">
 <contactref element="C220" pad="2"/>
-<contactref element="U202" pad="1"/>
-<wire x1="-144.16" y1="-85.94" x2="-143.26" y2="-96.52" width="0" layer="19" extent="1-1"/>
+<contactref element="U202" pad="3"/>
+<wire x1="6.1" y1="1.27" x2="-141.59" y2="-108.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:N$14">
 <contactref element="C219" pad="2"/>
-<contactref element="U202" pad="3"/>
-<wire x1="-142.86" y1="-85.94" x2="-143.26" y2="-91.44" width="0" layer="19" extent="1-1"/>
+<contactref element="U202" pad="1"/>
+<wire x1="5.33" y1="3.81" x2="-142.89" y2="-108.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:N$15">
-<contactref element="U202" pad="5"/>
 <contactref element="C221" pad="1"/>
-<wire x1="-143.51" y1="-84.24" x2="-143.76" y2="-101.6" width="0" layer="19" extent="1-1"/>
+<contactref element="U202" pad="5"/>
+<wire x1="-143.76" y1="-101.6" x2="-142.24" y2="-107.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:LNA_50OHM">
-<contactref element="ANT202" pad="SIG"/>
-<contactref element="C219" pad="1"/>
 <contactref element="C221" pad="2"/>
 <contactref element="U201" pad="2"/>
-<wire x1="-143.76" y1="-91.44" x2="-143.26" y2="-101.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-141.985" y1="-77.47" x2="-143.76" y2="-91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="9.251" y1="7.2069" x2="-141.985" y2="-77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="9.251" y1="7.2069" x2="-143.26" y2="-101.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:GPIO26">
 <contactref element="U201" pad="15"/>
-<contactref element="U202" pad="4"/>
-<wire x1="13.6211" y1="8.077" x2="-142.86" y2="-84.24" width="0" layer="19" extent="1-1"/>
+<contactref element="U202" pad="6"/>
+<wire x1="13.6211" y1="8.077" x2="-142.89" y2="-107.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ESP32:GPIO27">
 <contactref element="U201" pad="16"/>
-<contactref element="U202" pad="6"/>
-<wire x1="13.6211" y1="8.427" x2="-144.16" y2="-84.24" width="0" layer="19" extent="1-1"/>
+<contactref element="U202" pad="4"/>
+<wire x1="13.6211" y1="8.427" x2="-141.59" y2="-107.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ESP32:EXTANT_50OHM">
+<contactref element="ANT202" pad="SIG"/>
+<contactref element="C219" pad="1"/>
+<wire x1="4.83" y1="3.81" x2="4.065" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
