@@ -16969,7 +16969,7 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="DEBUG" prefix="D" dx="50.8" dy="25.4">
+<module name="DEBUG" prefix="D" dx="50.8" dy="38.1">
 <ports>
 <port name="USB0_UART_TX" side="right" coord="7.62" direction="out"/>
 <port name="USB0_UART_RX" side="right" coord="5.08" direction="in"/>
@@ -16987,6 +16987,7 @@ Source: Samtec TSW.pdf</description>
 <port name="JTDI" side="right" coord="-5.08" direction="io"/>
 <port name="JTDO" side="right" coord="-7.62" direction="io"/>
 <port name="RESET_L" side="right" coord="-10.16" direction="io"/>
+<port name="+5V" side="left" coord="15.24" direction="pwr"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -17674,6 +17675,7 @@ Source: Samtec TSW.pdf</description>
 <part name="MTH4" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL">
 <attribute name="DNI" value="DNI"/>
 </part>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17759,6 +17761,9 @@ Source: Samtec TSW.pdf</description>
 <attribute name="DNI" x="124.46" y="35.56" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="121.92" y="38.1" size="1.778" layer="94"/>
 <attribute name="VALUE" x="121.92" y="30.48" size="1.778" layer="94"/>
+</instance>
+<instance part="SUPPLY6" gate="+5V" x="73.66" y="266.7" smashed="yes">
+<attribute name="VALUE" x="71.755" y="269.875" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -17985,6 +17990,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="68.58" y1="256.54" x2="83.82" y2="256.54" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="256.54" x2="66.04" y2="256.54" width="0.1524" layer="91"/>
 <junction x="66.04" y="256.54"/>
+<label x="76.2" y="256.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="+3V3" gate="+5V" pin="+5V"/>
@@ -18020,6 +18026,13 @@ Source: Samtec TSW.pdf</description>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <portref moduleinst="USB_OTG1" port="+5V"/>
 <wire x1="342.9" y1="109.22" x2="342.9" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<portref moduleinst="DEBUG1" port="+5V"/>
+<wire x1="83.82" y1="261.62" x2="73.66" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="261.62" x2="73.66" y2="264.16" width="0.1524" layer="91"/>
+<label x="78.74" y="261.62" size="1.778" layer="95"/>
+<pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="+VBAT" class="7">
@@ -18334,42 +18347,42 @@ Source: Samtec TSW.pdf</description>
 <segment>
 <portref moduleinst="DEBUG1" port="USB1_UART_RX"/>
 <portref moduleinst="ESP32" port="ESP32_U1TX"/>
-<wire x1="99.06" y1="228.6" x2="99.06" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="222.25" x2="99.06" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="USB1_UART_TX"/>
 <portref moduleinst="ESP32" port="ESP32_U1RX"/>
-<wire x1="101.6" y1="228.6" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="222.25" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="MTCK"/>
 <portref moduleinst="ESP32" port="MTCK"/>
-<wire x1="104.14" y1="228.6" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="222.25" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="MTDI"/>
 <portref moduleinst="ESP32" port="MTDI"/>
-<wire x1="106.68" y1="228.6" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="222.25" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="MTDO"/>
 <portref moduleinst="ESP32" port="MTDO"/>
-<wire x1="109.22" y1="228.6" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="222.25" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="MTMS"/>
 <portref moduleinst="ESP32" port="MTMS"/>
-<wire x1="111.76" y1="228.6" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="222.25" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">

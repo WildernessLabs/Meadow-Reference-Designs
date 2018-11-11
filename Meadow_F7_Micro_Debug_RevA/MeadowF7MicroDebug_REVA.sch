@@ -16977,10 +16977,10 @@ Source: Samtec TSW.pdf</description>
 <port name="GND" side="left" coord="-10.16" direction="pwr"/>
 <port name="USB1_UART_RX" side="bottom" coord="-15.24" direction="in"/>
 <port name="USB1_UART_TX" side="bottom" coord="-12.7" direction="out"/>
-<port name="MTCK" side="bottom" coord="-10.16" direction="io"/>
-<port name="MTDI" side="bottom" coord="-7.62" direction="io"/>
-<port name="MTDO" side="bottom" coord="-5.08" direction="io"/>
-<port name="MTMS" side="bottom" coord="-2.54" direction="io"/>
+<port name="ESP32_MTCK" side="bottom" coord="-10.16" direction="io"/>
+<port name="ESP32_MTDI" side="bottom" coord="-7.62" direction="io"/>
+<port name="ESP32_MTDO" side="bottom" coord="-5.08" direction="io"/>
+<port name="ESP32_MTMS" side="bottom" coord="-2.54" direction="io"/>
 <port name="RESET_ESP32_L" side="left" coord="7.62" direction="out"/>
 <port name="SWCLK/JTCK" side="right" coord="0" direction="io"/>
 <port name="SWDIO/JTMS" side="right" coord="-2.54" direction="io"/>
@@ -17561,41 +17561,41 @@ Source: Samtec TSW.pdf</description>
 <label x="271.78" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MTDI" class="0">
+<net name="ESP32_MTDI" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
-<label x="284.48" y="106.68" size="1.778" layer="95"/>
+<label x="274.32" y="106.68" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="106.68" x2="292.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="116.84" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MTMS" class="0">
+<net name="ESP32_MTMS" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="7"/>
 <wire x1="256.54" y1="104.14" x2="264.16" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="104.14" x2="292.1" y2="104.14" width="0.1524" layer="91"/>
-<label x="284.48" y="104.14" size="1.778" layer="95"/>
+<label x="274.32" y="104.14" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="116.84" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MTCK" class="0">
+<net name="ESP32_MTCK" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="9"/>
 <wire x1="246.38" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="101.6" x2="292.1" y2="101.6" width="0.1524" layer="91"/>
-<label x="284.48" y="101.6" size="1.778" layer="95"/>
+<label x="274.32" y="101.6" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="116.84" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MTDO" class="0">
+<net name="ESP32_MTDO" class="0">
 <segment>
 <wire x1="238.76" y1="96.52" x2="269.24" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="J3" gate="G$1" pin="13"/>
 <wire x1="269.24" y1="96.52" x2="292.1" y2="96.52" width="0.1524" layer="91"/>
-<label x="284.48" y="96.52" size="1.778" layer="95"/>
+<label x="274.32" y="96.52" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="116.84" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
@@ -18358,30 +18358,30 @@ Source: Samtec TSW.pdf</description>
 <wire x1="101.6" y1="222.25" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ESP32_MTCH" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTCK"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTCK"/>
 <portref moduleinst="ESP32" port="MTCK"/>
 <wire x1="104.14" y1="222.25" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="ESP32_MTDI" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTDI"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTDI"/>
 <portref moduleinst="ESP32" port="MTDI"/>
 <wire x1="106.68" y1="222.25" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="ESP32_MTDO" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTDO"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTDO"/>
 <portref moduleinst="ESP32" port="MTDO"/>
 <wire x1="109.22" y1="222.25" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="ESP32_MTMS" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTMS"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTMS"/>
 <portref moduleinst="ESP32" port="MTMS"/>
 <wire x1="111.76" y1="222.25" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
 </segment>

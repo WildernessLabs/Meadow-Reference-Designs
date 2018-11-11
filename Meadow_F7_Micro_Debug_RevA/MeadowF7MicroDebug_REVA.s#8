@@ -11849,7 +11849,7 @@ Source: Samtec TSW.pdf</description>
 </class>
 </classes>
 <modules>
-<module name="STM32_MCU" prefix="" dx="76.2" dy="152.4">
+<module name="STM32_MCU" prefix="S" dx="76.2" dy="152.4">
 <ports>
 <port name="SPI2_SCK" side="left" coord="48.26" direction="out"/>
 <port name="SPI2_MOSI" side="left" coord="45.72" direction="out"/>
@@ -13966,7 +13966,7 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="USB_OTG" prefix="" dx="50.8" dy="50.8">
+<module name="USB_OTG" prefix="U" dx="50.8" dy="50.8">
 <ports>
 <port name="+VBUS" side="left" coord="-15.24" direction="out"/>
 <port name="OTG_FS_ID" side="left" coord="-12.7" direction="out"/>
@@ -16109,7 +16109,7 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="HEADERS" prefix="" dx="50.8" dy="86.36">
+<module name="HEADERS" prefix="H" dx="50.8" dy="86.36">
 <ports>
 <port name="A0" side="right" coord="40.64" direction="io"/>
 <port name="A1" side="right" coord="38.1" direction="io"/>
@@ -16969,7 +16969,7 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="DEBUG" prefix="" dx="50.8" dy="25.4">
+<module name="DEBUG" prefix="D" dx="50.8" dy="25.4">
 <ports>
 <port name="USB0_UART_TX" side="right" coord="7.62" direction="out"/>
 <port name="USB0_UART_RX" side="right" coord="5.08" direction="in"/>
@@ -17651,7 +17651,7 @@ Source: Samtec TSW.pdf</description>
 <moduleinst name="POWER1" module="POWER" x="35.56" y="129.54" offset="100">
 <attribute name="NAME" x="35.56" y="129.54" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DEBUG1" module="DEBUG" x="114.3" y="246.38">
+<moduleinst name="DEBUG1" module="DEBUG" x="114.3" y="246.38" offset="700">
 <attribute name="NAME" x="114.3" y="246.38" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>
