@@ -17457,12 +17457,10 @@ Source: Samtec TSW.pdf</description>
 <net name="MTDI" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
-<wire x1="261.62" y1="106.68" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
 <label x="284.48" y="106.68" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="106.68" x2="292.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="116.84" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
-<junction x="269.24" y="106.68"/>
 </segment>
 </net>
 <net name="MTMS" class="0">

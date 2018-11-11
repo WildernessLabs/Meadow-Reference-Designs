@@ -17113,6 +17113,10 @@ Source: Samtec TSW.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="111.76" y="165.1" size="6.35" layer="91">ESP32 JTAG</text>
+<text x="276.86" y="157.48" size="6.35" layer="91">STM32  JTAG</text>
+<text x="208.28" y="241.3" size="6.35" layer="91">STM32  UART</text>
+<text x="208.28" y="218.44" size="6.35" layer="91">ESP32 UART</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
