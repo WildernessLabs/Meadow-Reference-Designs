@@ -17650,26 +17650,6 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 </module>
-<module name="TEST" prefix="" dx="30.48" dy="20.32">
-<ports>
-</ports>
-<variantdefs>
-</variantdefs>
-<parts>
-</parts>
-<sheets>
-<sheet>
-<plain>
-</plain>
-<instances>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-</sheets>
-</module>
 </modules>
 <parts>
 <part name="FRAME1" library="frames_SLJ" deviceset="FRAME_B_L" device=""/>

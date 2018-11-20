@@ -17651,7 +17651,7 @@ Source: Samtec TSW.pdf</description>
 <moduleinst name="POWER1" module="POWER" x="35.56" y="129.54" offset="100">
 <attribute name="NAME" x="35.56" y="129.54" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DEBUG1" module="DEBUG" x="114.3" y="246.38">
+<moduleinst name="DEBUG1" module="DEBUG" x="114.3" y="246.38" offset="700">
 <attribute name="NAME" x="114.3" y="246.38" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>

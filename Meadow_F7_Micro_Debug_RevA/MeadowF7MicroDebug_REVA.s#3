@@ -17903,8 +17903,11 @@ Source: Samtec TSW.pdf</description>
 <label x="154.94" y="167.64" size="1.27" layer="95"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="254" x2="68.58" y2="254" width="0.1524" layer="91"/>
-<label x="68.58" y="254" size="1.778" layer="95"/>
+<label x="35.56" y="254" size="1.778" layer="95"/>
+<wire x1="60.96" y1="246.38" x2="12.7" y2="246.38" width="0.1524" layer="91"/>
+<portref moduleinst="DEBUG1" port="RESET_ESP32_L"/>
+<wire x1="60.96" y1="246.38" x2="60.96" y2="254" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="254" x2="83.82" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESP32_BOOT_L" class="0">
@@ -18423,70 +18426,12 @@ Source: Samtec TSW.pdf</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,345.44,134.62,+5V,+3V3,,,,"/>
-<approved hash="102,1,332.74,238.76,+5V,+3V3,,,,"/>
-<approved hash="102,1,208.28,238.76,+5V,+3V3,,,,"/>
-<approved hash="201,1,208.28,238.76,+5V,+5V\, +3V3,,,,"/>
-<approved hash="201,1,332.74,238.76,+5V,+5V\, +3V3,,,,"/>
-<approved hash="201,1,345.44,134.62,+5V,+5V\, +3V3,,,,"/>
 <approved hash="102,1@USB_OTG,154.94,154.94,VCC,+VBUS,,,,"/>
 <approved hash="102,1@USB_OTG,190.5,185.42,+4.1V,+3.3V,,,,"/>
 <approved hash="102,1@HEADERS,73.66,160.02,VDD,VREF+,,,,"/>
 <approved hash="102,1@POWER,38.1,193.04,+3V3,+VBAT,,,,"/>
 <approved hash="102,1@POWER,71.12,101.6,+5V,+VBUS,,,,"/>
 <approved hash="201,1@POWER,38.1,193.04,+3V3,+3V3\, +VBAT,,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,251.46,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,248.92,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,246.38,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,243.84,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,241.3,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,238.76,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,236.22,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,233.68,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,231.14,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,228.6,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,226.06,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,223.52,U$1G$4,VDD,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,154.94,U$1G$4,VDDA,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,157.48,254,U$1G$4,VDDSDMMC,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,256.54,U$1G$4,VDD_USB,VCC,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,251.46,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,248.92,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,246.38,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,243.84,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,241.3,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,238.76,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,236.22,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,233.68,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,231.14,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,228.6,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,226.06,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,223.52,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,220.98,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,218.44,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,215.9,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,213.36,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,210.82,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,208.28,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,205.74,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,203.2,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,200.66,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,198.12,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,195.58,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,193.04,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,190.5,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,187.96,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,185.42,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,182.88,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,180.34,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,177.8,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,175.26,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,172.72,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,170.18,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,167.64,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,165.1,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,162.56,U$1G$4,VSS,GND,,,"/>
-<approved hash="104,1@STM32_MCU,111.76,157.48,U$1G$4,VSSA,GND,,,"/>
 <approved hash="104,1@USB_OTG,236.22,167.64,U1,IN,+5V,,,"/>
 <approved hash="104,1@USB_OTG,210.82,170.18,U1,OUT,+VBUS,,,"/>
 <approved hash="104,1@MEMORY,292.1,157.48,U1,VSS,GND,,,"/>
@@ -18501,32 +18446,13 @@ Source: Samtec TSW.pdf</description>
 <approved hash="104,1@WIFI_BLUETOOTH,241.3,193.04,U1,VDD_SDIO,N$17,,,"/>
 <approved hash="104,1@WIFI_BLUETOOTH,241.3,190.5,U1,VDD3P3_CPU,VCC,,,"/>
 <approved hash="104,1@POWER,226.06,167.64,U1,VIN,+5V,,,"/>
-<approved hash="104,1@POWER,86.36,63.5,U$1,VBAT,+VBAT,,,"/>
-<approved hash="104,1@POWER,71.12,76.2,U$1,VDD,+VBUS,,,"/>
 <approved hash="106,1@STM32_MCU,195.58,73.66,I2C2_SCL,,,,,"/>
 <approved hash="106,1@STM32_MCU,55.88,53.34,I2C2_SDA,,,,,"/>
-<approved hash="106,1@STM32_MCU,55.88,88.9,NC_JTCK,,,,,"/>
-<approved hash="106,1@STM32_MCU,55.88,86.36,NC_JTDI,,,,,"/>
-<approved hash="106,1@STM32_MCU,55.88,91.44,NC_JTMS,,,,,"/>
-<approved hash="213,1,251.46,81.28,OTG_FS_ID,in,,,,"/>
-<approved hash="213,1,251.46,86.36,OTG_FS_OC,in,,,,"/>
 <approved hash="106,1@STM32_MCU,93.98,104.14,PC8_TIM8CH1,,,,,"/>
-<approved hash="213,1,165.1,190.5,SPI2_MISO,in,,,,"/>
-<approved hash="213,1,165.1,127,UART4_RX,in,,,,"/>
-<approved hash="213,1,165.1,175.26,UART5_RX,in,,,,"/>
-<approved hash="213,1,165.1,119.38,USART1_RX,in,,,,"/>
-<approved hash="213,1,251.46,78.74,USB_OTG_FS_VBUS,in,,,,"/>
-<approved hash="213,1,299.72,78.74,+VBUS,out,,,,"/>
-<approved hash="213,1,134.62,180.34,ESP32_BOOT_L,in,,,,"/>
-<approved hash="213,1,134.62,172.72,ESP32_U0RX,in,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
 <approved hash="106,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
 <approved hash="106,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
-<approved hash="213,1,134.62,195.58,SPI2_CLK,in,,,,"/>
-<approved hash="213,1,134.62,187.96,SPI2_CS,in,,,,"/>
-<approved hash="213,1,134.62,193.04,SPI2_MOSI,in,,,,"/>
-<approved hash="213,1,45.72,142.24,+3V3,pwr,,,,"/>
 <approved hash="208,1@POWER,261.62,167.64,+3V3,out,,,,"/>
 <approved hash="208,1@POWER,292.1,180.34,+3V3,sup,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>

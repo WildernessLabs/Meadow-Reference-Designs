@@ -16977,10 +16977,10 @@ Source: Samtec TSW.pdf</description>
 <port name="GND" side="left" coord="-10.16" direction="pwr"/>
 <port name="USB1_UART_RX" side="bottom" coord="-15.24" direction="in"/>
 <port name="USB1_UART_TX" side="bottom" coord="-12.7" direction="out"/>
-<port name="MTCK" side="bottom" coord="-10.16" direction="io"/>
-<port name="MTDI" side="bottom" coord="-7.62" direction="io"/>
-<port name="MTDO" side="bottom" coord="-5.08" direction="io"/>
-<port name="MTMS" side="bottom" coord="-2.54" direction="io"/>
+<port name="ESP32_MTCK" side="bottom" coord="-10.16" direction="io"/>
+<port name="ESP32_MTDI" side="bottom" coord="-7.62" direction="io"/>
+<port name="ESP32_MTDO" side="bottom" coord="-5.08" direction="io"/>
+<port name="ESP32_MTMS" side="bottom" coord="-2.54" direction="io"/>
 <port name="RESET_ESP32_L" side="left" coord="7.62" direction="out"/>
 <port name="SWCLK/JTCK" side="right" coord="0" direction="io"/>
 <port name="SWDIO/JTMS" side="right" coord="-2.54" direction="io"/>
@@ -18358,30 +18358,30 @@ Source: Samtec TSW.pdf</description>
 <wire x1="101.6" y1="222.25" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="ESP32_MTCH" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTCK"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTCK"/>
 <portref moduleinst="ESP32" port="MTCK"/>
 <wire x1="104.14" y1="222.25" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="ESP32_MTDI" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTDI"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTDI"/>
 <portref moduleinst="ESP32" port="MTDI"/>
 <wire x1="106.68" y1="222.25" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="ESP32_MTDO" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTDO"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTDO"/>
 <portref moduleinst="ESP32" port="MTDO"/>
 <wire x1="109.22" y1="222.25" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="ESP32_MTMS" class="0">
 <segment>
-<portref moduleinst="DEBUG1" port="MTMS"/>
+<portref moduleinst="DEBUG1" port="ESP32_MTMS"/>
 <portref moduleinst="ESP32" port="MTMS"/>
 <wire x1="111.76" y1="222.25" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
 </segment>
