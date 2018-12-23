@@ -12072,8 +12072,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
 <spice>
@@ -12083,8 +12083,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
 <spice>
@@ -12094,8 +12094,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -14053,8 +14053,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="D1" library="SLJ_Diodes" deviceset="BAT60JFILM" device="" package3d_urn="urn:adsk.eagle:package:4435552/1"/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -15202,8 +15202,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C18" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
@@ -15232,20 +15232,20 @@ Source: Samtec TSW.pdf</description>
 <part name="ANT2" library="SLJ_wireless" deviceset="A-1JB" device=""/>
 <part name="C19" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF">
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA"/>
+<attribute name="MANUFACTURER" value="MURATA"/>
+<attribute name="PART_NUMBER" value="GRM0335C1H101JA01D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="C20" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF">
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA"/>
+<attribute name="MANUFACTURER" value="MURATA"/>
+<attribute name="PART_NUMBER" value="GRM0335C1H101JA01D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="C21" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF">
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="PART_NUMBER" value="CGA1A2X7R1H101M030BA"/>
+<attribute name="MANUFACTURER" value="Murata"/>
+<attribute name="PART_NUMBER" value="GRM0335C1H101JA01D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="U2" library="SLJ_wireless" deviceset="SKYA21001" device=""/>
@@ -16564,7 +16564,7 @@ Source: Samtec TSW.pdf</description>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
 <attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
@@ -16592,8 +16592,8 @@ Source: Samtec TSW.pdf</description>
 </pinmapping>
 </spice>
 <attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
 <part name="U2" library="SLJ_PMIC" deviceset="MCP7381-2-0T" device="" package3d_urn="urn:adsk.eagle:package:4822883/1"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -16728,12 +16728,12 @@ Source: Samtec TSW.pdf</description>
 <instance part="Q1" gate="G$1" x="76.2" y="180.34" smashed="yes" rot="R90">
 <attribute name="VALUE" x="76.2" y="182.88" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="73.66" y="182.88" size="1.778" layer="95" rot="R90"/>
-<attribute name="PART_NUMBER" x="78.74" y="182.88" size="1.778" layer="96" rot="R90"/>
+<attribute name="PART_NUMBER" x="78.74" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="78.74" y="167.64" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" x="86.36" y="165.1" size="1.778" layer="96" rot="R180"/>
 <attribute name="MANUFACTURER" x="78.74" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="78.74" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NUMBER" x="78.74" y="167.64" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="80.01" y="169.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="168.402" size="1.778" layer="96" rot="R180"/>
 </instance>

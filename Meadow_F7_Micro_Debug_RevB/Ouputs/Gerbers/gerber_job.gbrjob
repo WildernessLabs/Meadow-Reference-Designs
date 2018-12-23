@@ -1,0 +1,20 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2018-11-11T20:29:58Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.11,
+        "LayerNumber": 6,
+        "Name": {
+            "ProjectId": "MeadowF7MicroDebug_REVA"
+        },
+        "Owner": "Sheldon Johnson <sheldon.johnson@wildernesslabs.co>"
+    }
+}
