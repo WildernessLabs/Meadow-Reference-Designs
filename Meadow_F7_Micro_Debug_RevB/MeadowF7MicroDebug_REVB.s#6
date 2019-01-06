@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9453,29 +9453,6 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 </device>
 </devices>
 </deviceset>
-<deviceset name="ABM12W-40" prefix="X">
-<gates>
-<gate name="G$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="OSCCC160X120X40">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4411597/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="Abracon LLC" constant="no"/>
-<attribute name="PART_NUMBER" value="ABM12W-40.0000MHZ-6-B1U-T3" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SLJ_Connectors">
@@ -10589,70 +10566,6 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </library>
 <library name="SLJ_wireless">
 <packages>
-<package name="QFN35P500X500X90-49N" urn="urn:adsk.eagle:footprint:4402803/1" locally_modified="yes">
-<description>48-QFN, 0.35 mm pitch, 5.00 X 5.00 X 0.90 mm body
-&lt;p&gt;48-pin QFN package with 0.35 mm pitch with body size 5.00 X 5.00 X 0.90 mm&lt;/p&gt;</description>
-<circle x="-3.004" y="2.879" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.56" y1="2.629" x2="-1.929" y2="2.629" width="0.12" layer="21"/>
-<wire x1="2.56" y1="2.629" x2="1.929" y2="2.629" width="0.12" layer="21"/>
-<wire x1="2.56" y1="-2.629" x2="1.929" y2="-2.629" width="0.12" layer="21"/>
-<wire x1="-2.56" y1="-2.629" x2="-1.929" y2="-2.629" width="0.12" layer="21"/>
-<wire x1="2.525" y1="-2.525" x2="-2.525" y2="-2.525" width="0.12" layer="51"/>
-<wire x1="-2.525" y1="-2.525" x2="-2.525" y2="2.525" width="0.12" layer="51"/>
-<wire x1="-2.525" y1="2.525" x2="2.525" y2="2.525" width="0.12" layer="51"/>
-<wire x1="2.525" y1="2.525" x2="2.525" y2="-2.525" width="0.12" layer="51"/>
-<smd name="1" x="-2.4451" y="2.275" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="2" x="-2.4451" y="1.925" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="3" x="-2.4451" y="1.575" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="4" x="-2.4451" y="1.225" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="5" x="-2.4451" y="0.875" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="6" x="-2.4451" y="0.525" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="7" x="-2.4451" y="0.175" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="8" x="-2.4451" y="-0.175" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="9" x="-2.4451" y="-0.525" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="10" x="-2.4451" y="-0.875" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="11" x="-2.4451" y="-1.225" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="12" x="-2.4451" y="-1.575" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="13" x="-2.4451" y="-1.925" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="14" x="-2.4451" y="-2.275" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="15" x="-1.575" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="16" x="-1.225" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="17" x="-0.875" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="18" x="-0.525" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="19" x="-0.175" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="20" x="0.175" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="21" x="0.525" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="22" x="0.875" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="23" x="1.225" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="24" x="1.575" y="-2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="25" x="2.4451" y="-2.275" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="26" x="2.4451" y="-1.925" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="27" x="2.4451" y="-1.575" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="28" x="2.4451" y="-1.225" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="29" x="2.4451" y="-0.875" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="30" x="2.4451" y="-0.525" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="31" x="2.4451" y="-0.175" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="32" x="2.4451" y="0.175" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="33" x="2.4451" y="0.525" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="34" x="2.4451" y="0.875" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="35" x="2.4451" y="1.225" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="36" x="2.4451" y="1.575" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="37" x="2.4451" y="1.925" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="38" x="2.4451" y="2.275" dx="0.8098" dy="0.2" layer="1" roundness="100"/>
-<smd name="39" x="1.575" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="40" x="1.225" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="41" x="0.875" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="42" x="0.525" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="43" x="0.175" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="44" x="-0.175" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="45" x="-0.525" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="46" x="-0.875" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="47" x="-1.225" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="48" x="-1.575" y="2.4451" dx="0.8098" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<text x="0" y="3.764" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.485" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
-<smd name="49" x="0" y="0" dx="3.75" dy="3.75" layer="1"/>
-</package>
 <package name="W3008" urn="urn:adsk.eagle:footprint:4416064/1" locally_modified="yes">
 <description>Chip, 3.20 X 1.60 X 1.15 mm body
 &lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.15 mm&lt;/p&gt;</description>
@@ -10715,15 +10628,76 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 </package>
+<package name="QFN50P700X700X104-49T550" urn="urn:adsk.eagle:footprint:7911055/1">
+<description>48-QFN, 0.50 mm pitch, 7.00 X 7.00 X 1.04 mm body, 5.50 X 5.50 mm thermal pad
+&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.04 mm and thermal pad size 5.50 X 5.50 mm&lt;/p&gt;</description>
+<circle x="-4.054" y="3.389" radius="0.25" width="0" layer="21"/>
+<wire x1="-3.55" y1="3.139" x2="-3.55" y2="3.55" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="3.55" x2="-3.139" y2="3.55" width="0.12" layer="21"/>
+<wire x1="3.55" y1="3.139" x2="3.55" y2="3.55" width="0.12" layer="21"/>
+<wire x1="3.55" y1="3.55" x2="3.139" y2="3.55" width="0.12" layer="21"/>
+<wire x1="3.55" y1="-3.139" x2="3.55" y2="-3.55" width="0.12" layer="21"/>
+<wire x1="3.55" y1="-3.55" x2="3.139" y2="-3.55" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="-3.139" x2="-3.55" y2="-3.55" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="-3.55" x2="-3.139" y2="-3.55" width="0.12" layer="21"/>
+<wire x1="3.55" y1="-3.55" x2="-3.55" y2="-3.55" width="0.12" layer="51"/>
+<wire x1="-3.55" y1="-3.55" x2="-3.55" y2="3.55" width="0.12" layer="51"/>
+<wire x1="-3.55" y1="3.55" x2="3.55" y2="3.55" width="0.12" layer="51"/>
+<wire x1="3.55" y1="3.55" x2="3.55" y2="-3.55" width="0.12" layer="51"/>
+<smd name="1" x="-3.4315" y="2.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="2" x="-3.4315" y="2.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="3" x="-3.4315" y="1.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="4" x="-3.4315" y="1.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="5" x="-3.4315" y="0.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="6" x="-3.4315" y="0.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="7" x="-3.4315" y="-0.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="8" x="-3.4315" y="-0.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="9" x="-3.4315" y="-1.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="10" x="-3.4315" y="-1.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="11" x="-3.4315" y="-2.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="12" x="-3.4315" y="-2.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="13" x="-2.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="14" x="-2.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="15" x="-1.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="16" x="-1.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="17" x="-0.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="18" x="-0.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="19" x="0.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="20" x="0.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="21" x="1.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="22" x="1.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="23" x="2.25" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="24" x="2.75" y="-3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="25" x="3.4315" y="-2.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="26" x="3.4315" y="-2.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="27" x="3.4315" y="-1.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="28" x="3.4315" y="-1.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="29" x="3.4315" y="-0.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="30" x="3.4315" y="-0.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="31" x="3.4315" y="0.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="32" x="3.4315" y="0.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="33" x="3.4315" y="1.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="34" x="3.4315" y="1.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="35" x="3.4315" y="2.25" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="36" x="3.4315" y="2.75" dx="0.8661" dy="0.27" layer="1"/>
+<smd name="37" x="2.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="38" x="2.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="39" x="1.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="40" x="1.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="41" x="0.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="42" x="0.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="43" x="-0.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="44" x="-0.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="45" x="-1.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="46" x="-1.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="47" x="-2.25" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="48" x="-2.75" y="3.4315" dx="0.8661" dy="0.27" layer="1" rot="R90"/>
+<smd name="49" x="0" y="0" dx="5.5" dy="5.5" layer="1" thermals="no"/>
+<text x="0" y="4.4996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.4996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="QFN35P500X500X90-48" urn="urn:adsk.eagle:package:4402802/1" locally_modified="yes" type="model">
-<description>48-QFN, 0.35 mm pitch, 5.00 X 5.00 X 0.90 mm body
-&lt;p&gt;48-pin QFN package with 0.35 mm pitch with body size 5.00 X 5.00 X 0.90 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="QFN35P500X500X90-49N"/>
-</packageinstances>
-</package3d>
 <package3d name="BEADC3216X115" urn="urn:adsk.eagle:package:4414097/1" locally_modified="yes" type="model">
 <description>Chip, 3.20 X 1.60 X 1.15 mm body
 &lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.15 mm&lt;/p&gt;</description>
@@ -10731,62 +10705,15 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <packageinstance name="W3008"/>
 </packageinstances>
 </package3d>
+<package3d name="QFN50P700X700X104-49T550" urn="urn:adsk.eagle:package:7911054/1" type="model">
+<description>48-QFN, 0.50 mm pitch, 7.00 X 7.00 X 1.04 mm body, 5.50 X 5.50 mm thermal pad
+&lt;p&gt;48-pin QFN package with 0.50 mm pitch with body size 7.00 X 7.00 X 1.04 mm and thermal pad size 5.50 X 5.50 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="QFN50P700X700X104-49T550"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
-<symbol name="ESP32-D2WD">
-<wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-45.72" x2="-20.32" y2="40.64" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="40.64" x2="20.32" y2="40.64" width="0.254" layer="94"/>
-<wire x1="20.32" y1="40.64" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
-<text x="-20.3421" y="40.6843" size="1.779940625" layer="95">&gt;NAME</text>
-<text x="-20.323" y="-48.2671" size="1.778259375" layer="96">&gt;VALUE</text>
-<pin name="VDDA" x="25.4" y="38.1" length="middle" direction="pwr" rot="R180"/>
-<pin name="LNA_IN" x="-25.4" y="-2.54" length="middle"/>
-<pin name="VDD3P3" x="25.4" y="35.56" length="middle" direction="pwr" rot="R180"/>
-<pin name="SENSOR_VP" x="-25.4" y="17.78" length="middle" direction="in"/>
-<pin name="SENSOR_CAPP" x="-25.4" y="15.24" length="middle" direction="in"/>
-<pin name="SENSOR_CAPN" x="-25.4" y="12.7" length="middle" direction="in"/>
-<pin name="SENSOR_VN" x="-25.4" y="10.16" length="middle" direction="in"/>
-<pin name="CHIP_PU" x="-25.4" y="7.62" length="middle" direction="in"/>
-<pin name="VDET_1" x="-25.4" y="5.08" length="middle" direction="in"/>
-<pin name="VDET_2" x="-25.4" y="2.54" length="middle" direction="in"/>
-<pin name="32K_XP" x="-25.4" y="-5.08" length="middle"/>
-<pin name="32K_XN" x="-25.4" y="-7.62" length="middle"/>
-<pin name="GPIO25" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="GPIO26" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="GPIO27" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="MTMS" x="-25.4" y="-12.7" length="middle"/>
-<pin name="MTDI" x="-25.4" y="-10.16" length="middle"/>
-<pin name="VDD3P3_RTC" x="25.4" y="27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="MTCK" x="-25.4" y="-15.24" length="middle"/>
-<pin name="MTDO" x="-25.4" y="-17.78" length="middle"/>
-<pin name="GPIO2" x="25.4" y="-33.02" length="middle" rot="R180"/>
-<pin name="GPIO0" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="GPIO4" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="GPIO16" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="VDD_SDIO" x="25.4" y="33.02" length="middle" direction="pwr" rot="R180"/>
-<pin name="GPIO17" x="25.4" y="-22.86" length="middle" rot="R180"/>
-<pin name="SD_DATA_2" x="-25.4" y="-25.4" length="middle"/>
-<pin name="SD_DATA_3" x="-25.4" y="-27.94" length="middle"/>
-<pin name="SD_CMD" x="-25.4" y="-35.56" length="middle"/>
-<pin name="SD_CLK" x="25.4" y="-38.1" length="middle" rot="R180"/>
-<pin name="SD_DATA_0" x="-25.4" y="-20.32" length="middle"/>
-<pin name="SD_DATA_1" x="-25.4" y="-22.86" length="middle"/>
-<pin name="GPIO5" x="25.4" y="-27.94" length="middle" rot="R180"/>
-<pin name="GPIO18" x="25.4" y="-20.32" length="middle" rot="R180"/>
-<pin name="GPIO23" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="VDD3P3_CPU" x="25.4" y="30.48" length="middle" direction="pwr" rot="R180"/>
-<pin name="GPIO19" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="GPIO22" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="U0RXD" x="-25.4" y="-30.48" length="middle"/>
-<pin name="U0TXD" x="-25.4" y="-33.02" length="middle"/>
-<pin name="GPIO21" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="XTAL_N" x="-25.4" y="22.86" length="middle" direction="in"/>
-<pin name="XTAL_P" x="-25.4" y="20.32" length="middle" direction="in"/>
-<pin name="CAP2" x="-25.4" y="27.94" length="middle" direction="in"/>
-<pin name="CAP1" x="-25.4" y="25.4" length="middle" direction="in"/>
-<pin name="GND" x="25.4" y="-43.18" length="middle" direction="pwr" rot="R180"/>
-</symbol>
 <symbol name="W3008">
 <text x="-2.5424" y="5.720409375" size="1.271209375" layer="95">&gt;NAME</text>
 <text x="-2.54951875" y="-8.923309375" size="1.274759375" layer="96">&gt;VALUE</text>
@@ -10838,75 +10765,62 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <text x="-7.62" y="-10.16" size="1.778" layer="94">&gt;Value</text>
 <pin name="GND" x="-10.16" y="0" length="short" direction="pwr"/>
 </symbol>
+<symbol name="ESP32-PICO-D4">
+<wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-45.72" x2="-20.32" y2="40.64" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="40.64" x2="20.32" y2="40.64" width="0.254" layer="94"/>
+<wire x1="20.32" y1="40.64" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
+<text x="-20.3421" y="40.6843" size="1.779940625" layer="95">&gt;NAME</text>
+<text x="-20.323" y="-48.2671" size="1.778259375" layer="96">&gt;VALUE</text>
+<pin name="VDDA" x="25.4" y="38.1" length="middle" direction="pwr" rot="R180"/>
+<pin name="LNA_IN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="VDDA3P3" x="25.4" y="35.56" length="middle" direction="pwr" rot="R180"/>
+<pin name="SENSOR_VP" x="-25.4" y="17.78" length="middle" direction="in"/>
+<pin name="SENSOR_CAPP" x="-25.4" y="15.24" length="middle" direction="in"/>
+<pin name="SENSOR_CAPN" x="-25.4" y="12.7" length="middle" direction="in"/>
+<pin name="SENSOR_VN" x="-25.4" y="10.16" length="middle" direction="in"/>
+<pin name="EN" x="-25.4" y="7.62" length="middle" direction="in"/>
+<pin name="IO34" x="-25.4" y="5.08" length="middle" direction="in"/>
+<pin name="IO35" x="-25.4" y="2.54" length="middle" direction="in"/>
+<pin name="IO32_32K_XP" x="-25.4" y="-5.08" length="middle"/>
+<pin name="IO33_32K_XN" x="-25.4" y="-7.62" length="middle"/>
+<pin name="GPIO25" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO26" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO27" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="MTMS_IO14" x="-25.4" y="-12.7" length="middle"/>
+<pin name="MTDI_IO12" x="-25.4" y="-10.16" length="middle"/>
+<pin name="VDD3P3_RTC" x="25.4" y="27.94" length="middle" direction="pwr" rot="R180"/>
+<pin name="MTCK" x="-25.4" y="-15.24" length="middle"/>
+<pin name="MTDO" x="-25.4" y="-17.78" length="middle"/>
+<pin name="GPIO2" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="GPIO0" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="GPIO4" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="GPIO16" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="VDD_SDIO" x="25.4" y="33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO17" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="SD_DATA_2" x="-25.4" y="-25.4" length="middle"/>
+<pin name="SD_DATA_3" x="-25.4" y="-27.94" length="middle"/>
+<pin name="SD_CMD" x="-25.4" y="-35.56" length="middle"/>
+<pin name="SD_CLK" x="25.4" y="-38.1" length="middle" rot="R180"/>
+<pin name="SD_DATA_0" x="-25.4" y="-20.32" length="middle"/>
+<pin name="SD_DATA_1" x="-25.4" y="-22.86" length="middle"/>
+<pin name="GPIO5" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="GPIO18" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO23" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="VDD3P3_CPU" x="25.4" y="30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="GPIO19" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO22" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="U0RXD" x="-25.4" y="-30.48" length="middle"/>
+<pin name="U0TXD" x="-25.4" y="-33.02" length="middle"/>
+<pin name="GPIO21" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="XTAL_N_NC" x="-25.4" y="22.86" length="middle" direction="nc"/>
+<pin name="XTAL_P_NC" x="-25.4" y="20.32" length="middle" direction="nc"/>
+<pin name="CAP2_NC" x="-25.4" y="27.94" length="middle" direction="nc"/>
+<pin name="CAP1_NC" x="-25.4" y="25.4" length="middle" direction="nc"/>
+<pin name="GND" x="25.4" y="-43.18" length="middle" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ESP32-D2WD" prefix="U">
-<description>ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC ultra-low-power 40 nm technology. It is designed to achieve the best power and RF performance, showing robustness, versatility and reliability in a wide variety of applications and power scenarios.</description>
-<gates>
-<gate name="G$1" symbol="ESP32-D2WD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN35P500X500X90-49N">
-<connects>
-<connect gate="G$1" pin="32K_XN" pad="12"/>
-<connect gate="G$1" pin="32K_XP" pad="13"/>
-<connect gate="G$1" pin="CAP1" pad="48"/>
-<connect gate="G$1" pin="CAP2" pad="47"/>
-<connect gate="G$1" pin="CHIP_PU" pad="9"/>
-<connect gate="G$1" pin="GND" pad="49"/>
-<connect gate="G$1" pin="GPIO0" pad="23"/>
-<connect gate="G$1" pin="GPIO16" pad="25"/>
-<connect gate="G$1" pin="GPIO17" pad="27"/>
-<connect gate="G$1" pin="GPIO18" pad="35"/>
-<connect gate="G$1" pin="GPIO19" pad="38"/>
-<connect gate="G$1" pin="GPIO2" pad="22"/>
-<connect gate="G$1" pin="GPIO21" pad="42"/>
-<connect gate="G$1" pin="GPIO22" pad="39"/>
-<connect gate="G$1" pin="GPIO23" pad="36"/>
-<connect gate="G$1" pin="GPIO25" pad="14"/>
-<connect gate="G$1" pin="GPIO26" pad="15"/>
-<connect gate="G$1" pin="GPIO27" pad="16"/>
-<connect gate="G$1" pin="GPIO4" pad="24"/>
-<connect gate="G$1" pin="GPIO5" pad="34"/>
-<connect gate="G$1" pin="LNA_IN" pad="2"/>
-<connect gate="G$1" pin="MTCK" pad="20"/>
-<connect gate="G$1" pin="MTDI" pad="18"/>
-<connect gate="G$1" pin="MTDO" pad="21"/>
-<connect gate="G$1" pin="MTMS" pad="17"/>
-<connect gate="G$1" pin="SD_CLK" pad="31"/>
-<connect gate="G$1" pin="SD_CMD" pad="30"/>
-<connect gate="G$1" pin="SD_DATA_0" pad="32"/>
-<connect gate="G$1" pin="SD_DATA_1" pad="33"/>
-<connect gate="G$1" pin="SD_DATA_2" pad="28"/>
-<connect gate="G$1" pin="SD_DATA_3" pad="29"/>
-<connect gate="G$1" pin="SENSOR_CAPN" pad="7"/>
-<connect gate="G$1" pin="SENSOR_CAPP" pad="6"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="8"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="5"/>
-<connect gate="G$1" pin="U0RXD" pad="40"/>
-<connect gate="G$1" pin="U0TXD" pad="41"/>
-<connect gate="G$1" pin="VDD3P3" pad="3 4"/>
-<connect gate="G$1" pin="VDD3P3_CPU" pad="37"/>
-<connect gate="G$1" pin="VDD3P3_RTC" pad="19"/>
-<connect gate="G$1" pin="VDDA" pad="1 43 46"/>
-<connect gate="G$1" pin="VDD_SDIO" pad="26"/>
-<connect gate="G$1" pin="VDET_1" pad="10"/>
-<connect gate="G$1" pin="VDET_2" pad="11"/>
-<connect gate="G$1" pin="XTAL_N" pad="44"/>
-<connect gate="G$1" pin="XTAL_P" pad="45"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4402802/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MANUFACTURER" value="Espressif Systems" constant="no"/>
-<attribute name="PART_NUMBER" value="ESP32-D2WD" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="W3008" prefix="ANT">
 <description>2.4GHz Bluetooth Chip RF Antenna 2.4GHz ~ 2.483GHz 1.7dBi Solder Surface Mount</description>
 <gates>
@@ -10970,6 +10884,73 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <technology name="">
 <attribute name="MANUFACTURER" value="Skyworks Solutions" constant="no"/>
 <attribute name="PART_NUMBER" value="SKYA21001"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32-PICO-D4" prefix="U">
+<description>ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC ultra-low-power 40 nm technology. It is designed to achieve the best power and RF performance, showing robustness, versatility and reliability in a wide variety of applications and power scenarios.</description>
+<gates>
+<gate name="G$1" symbol="ESP32-PICO-D4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN50P700X700X104-49T550">
+<connects>
+<connect gate="G$1" pin="CAP1_NC" pad="47"/>
+<connect gate="G$1" pin="CAP2_NC" pad="48"/>
+<connect gate="G$1" pin="EN" pad="9"/>
+<connect gate="G$1" pin="GND" pad="49"/>
+<connect gate="G$1" pin="GPIO0" pad="23"/>
+<connect gate="G$1" pin="GPIO16" pad="25"/>
+<connect gate="G$1" pin="GPIO17" pad="27"/>
+<connect gate="G$1" pin="GPIO18" pad="35"/>
+<connect gate="G$1" pin="GPIO19" pad="38"/>
+<connect gate="G$1" pin="GPIO2" pad="22"/>
+<connect gate="G$1" pin="GPIO21" pad="42"/>
+<connect gate="G$1" pin="GPIO22" pad="39"/>
+<connect gate="G$1" pin="GPIO23" pad="36"/>
+<connect gate="G$1" pin="GPIO25" pad="14"/>
+<connect gate="G$1" pin="GPIO26" pad="15"/>
+<connect gate="G$1" pin="GPIO27" pad="16"/>
+<connect gate="G$1" pin="GPIO4" pad="24"/>
+<connect gate="G$1" pin="GPIO5" pad="34"/>
+<connect gate="G$1" pin="IO32_32K_XP" pad="12"/>
+<connect gate="G$1" pin="IO33_32K_XN" pad="13"/>
+<connect gate="G$1" pin="IO34" pad="10"/>
+<connect gate="G$1" pin="IO35" pad="11"/>
+<connect gate="G$1" pin="LNA_IN" pad="2"/>
+<connect gate="G$1" pin="MTCK" pad="20"/>
+<connect gate="G$1" pin="MTDI_IO12" pad="18"/>
+<connect gate="G$1" pin="MTDO" pad="21"/>
+<connect gate="G$1" pin="MTMS_IO14" pad="17"/>
+<connect gate="G$1" pin="SD_CLK" pad="31"/>
+<connect gate="G$1" pin="SD_CMD" pad="30"/>
+<connect gate="G$1" pin="SD_DATA_0" pad="32"/>
+<connect gate="G$1" pin="SD_DATA_1" pad="33"/>
+<connect gate="G$1" pin="SD_DATA_2" pad="28"/>
+<connect gate="G$1" pin="SD_DATA_3" pad="29"/>
+<connect gate="G$1" pin="SENSOR_CAPN" pad="7"/>
+<connect gate="G$1" pin="SENSOR_CAPP" pad="6"/>
+<connect gate="G$1" pin="SENSOR_VN" pad="8"/>
+<connect gate="G$1" pin="SENSOR_VP" pad="5"/>
+<connect gate="G$1" pin="U0RXD" pad="40"/>
+<connect gate="G$1" pin="U0TXD" pad="41"/>
+<connect gate="G$1" pin="VDD3P3_CPU" pad="37"/>
+<connect gate="G$1" pin="VDD3P3_RTC" pad="19"/>
+<connect gate="G$1" pin="VDDA" pad="1 43 46"/>
+<connect gate="G$1" pin="VDDA3P3" pad="3 4"/>
+<connect gate="G$1" pin="VDD_SDIO" pad="26"/>
+<connect gate="G$1" pin="XTAL_N_NC" pad="44"/>
+<connect gate="G$1" pin="XTAL_P_NC" pad="45"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7911054/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="Espressif Systems" constant="no"/>
+<attribute name="PART_NUMBER" value="ESP32-PICO-D4" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11040,36 +11021,6 @@ Part Number: L-07C1N5SV6T</description>
 <attribute name="MANUFACTURER" value="Johanson Technology" constant="no"/>
 <attribute name="PART_NUMBER" value="L-07C1N5SV6T" constant="no"/>
 <attribute name="VALUE" value="1.5nH" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="L_2NH_0402" prefix="L">
-<description>FIXED IND 2NH 900MA 100 MOHM SMD
-
-FOOTPRINT: 0402
-Manufacturer: Muata
-Part Number: LQG15HS2N0S02D</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="L0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4412330/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CURRENT" value="900mA" constant="no"/>
-<attribute name="FOOTPRINT" value="0402" constant="no"/>
-<attribute name="MANUFACTURER" value="Murata Electronics" constant="no"/>
-<attribute name="PART_NUMBER" value="LQG15HS2N0S02D" constant="no"/>
-<attribute name="VALUE" value="2nh" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11572,6 +11523,21 @@ Source: Samtec TSW.pdf</description>
 <text x="0" y="1.349" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.349" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SOT-23" urn="urn:adsk.eagle:footprint:30948/1">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
+<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
+<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
+<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
+<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
+<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
+<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DFN120X80X50-3" urn="urn:adsk.eagle:package:4558649/1" type="model">
@@ -11579,6 +11545,12 @@ Source: Samtec TSW.pdf</description>
 &lt;p&gt;DFN3 package with body size 1.20 X 0.80 X 0.50 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="DFN120X80X50-3"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-23" urn="urn:adsk.eagle:package:30981/1" type="box">
+<description>Small Outline Transistor</description>
+<packageinstances>
+<packageinstance name="SOT-23"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -11616,6 +11588,25 @@ Source: Samtec TSW.pdf</description>
 </polygon>
 <text x="2.54" y="-2.54" size="1.778" layer="96">&gt;PART_NUMBER</text>
 </symbol>
+<symbol name="NPN-BJT">
+<description>NPN BJT Transistor</description>
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SSM3J46CTB" prefix="Q">
@@ -11639,6 +11630,31 @@ Source: Samtec TSW.pdf</description>
 <attribute name="MANUFACTURER" value="Toshiba Semiconductor"/>
 <attribute name="PART_NUMBER" value="SSM3J46CTB(TPL3)"/>
 <attribute name="VOLTAGE" value="20V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMSS8050-H-TP">
+<description>Bipolar (BJT) Transistor NPN 25V 1.5A 100MHz 625mW Surface Mount SOT-23</description>
+<gates>
+<gate name="G$1" symbol="NPN-BJT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23">
+<connects>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30981/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="FOOTPRINT" value="SOT-23" constant="no"/>
+<attribute name="MANUFACTURER" value="Micro Commercial" constant="no"/>
+<attribute name="PART_NUMBER" value="MMSS8050-H-TP"/>
 </technology>
 </technologies>
 </device>
@@ -15004,73 +15020,18 @@ Source: Samtec TSW.pdf</description>
 <port name="MTDI" side="top" coord="-7.62" direction="io"/>
 <port name="MTDO" side="top" coord="-5.08" direction="io"/>
 <port name="MTMS" side="top" coord="-2.54" direction="io"/>
+<port name="ADC2_CH0" side="left" coord="-15.24" direction="in"/>
 </ports>
 <variantdefs>
 </variantdefs>
 <parts>
 <part name="FRAME1" library="frames_SLJ" deviceset="FRAME_B_L" device=""/>
-<part name="U1" library="SLJ_wireless" deviceset="ESP32-D2WD" device="" package3d_urn="urn:adsk.eagle:package:4402802/1"/>
-<part name="C11" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="10nF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="PART_NUMBER" value="C0603X7R1A103K030BA"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402K" package3d_urn="urn:adsk.eagle:package:23679/2" value="3nF">
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="MURATA"/>
-<attribute name="PART_NUMBER" value="GRM1557U1A302JA01D"/>
-</part>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="YAGEO"/>
-<attribute name="PART_NUMBER" value="RC0201FR-0720KL"/>
-</part>
-<part name="X1" library="SLJ_OSC" deviceset="ABM12W-40" device="" package3d_urn="urn:adsk.eagle:package:4411597/1"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="00">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="DNI" value=""/>
-<attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
-</part>
-<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
 <attribute name="DNI" value="DNI"/>
 <attribute name="FOOTPRINT" value="0201"/>
 <attribute name="MANUFACTURER" value="Murata Electronica"/>
 <attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
 <attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C24" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="8pF">
-<attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM1555C1H8R0DA01D"/>
-<attribute name="VOLTAGE" value="50V"/>
-</part>
-<part name="C4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="8pF">
-<attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM1555C1H8R0DA01D"/>
-<attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="C3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
 <attribute name="DNI" value="DNI"/>
@@ -15094,39 +15055,8 @@ Source: Samtec TSW.pdf</description>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="L2" library="SLJ_passives" deviceset="L_2NH_0402" device="" package3d_urn="urn:adsk.eagle:package:4412330/1" value="2nh"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C7" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C8" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRT033R60J105ME13D"/>
-<attribute name="VOLTAGE" value="6.3V"/>
-</part>
-<part name="C9" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="C10" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRT033R60J105ME13D"/>
-<attribute name="VOLTAGE" value="6.3V"/>
-</part>
-<part name="C12" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRT033R60J105ME13D"/>
-<attribute name="VOLTAGE" value="6.3V"/>
-</part>
-<part name="C13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
 <attribute name="FOOTPRINT" value="0201"/>
 <attribute name="MANUFACTURER" value="Murata Electronica"/>
 <attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
@@ -15140,12 +15070,6 @@ Source: Samtec TSW.pdf</description>
 </part>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C15" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="00">
 <spice>
 <pinmapping spiceprefix="R">
@@ -15153,23 +15077,10 @@ Source: Samtec TSW.pdf</description>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
-<attribute name="DNI" value=""/>
+<attribute name="DNI" value="DNI"/>
 <attribute name="FOOTPRINT" value="0402"/>
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
-</part>
-<part name="C16" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
-<attribute name="VOLTAGE" value="10V"/>
-</part>
-<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C17" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="100pF">
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM0335C1H101JA01D"/>
-<attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="499">
 <spice>
@@ -15205,7 +15116,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="PART_NUMBER" value="RC0201FR-0710KL"/>
 </part>
-<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C18" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
 <attribute name="FOOTPRINT" value="0201"/>
 <attribute name="MANUFACTURER" value="Murata Electronica"/>
@@ -15222,10 +15132,7 @@ Source: Samtec TSW.pdf</description>
 <part name="U$12" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$13" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$16" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
-<part name="U$17" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$18" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
-<part name="U$21" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
-<part name="U$22" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$23" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="ANT1" library="SLJ_wireless" deviceset="W3008" device="" package3d_urn="urn:adsk.eagle:package:4414097/1" value="w3008"/>
@@ -15249,12 +15156,57 @@ Source: Samtec TSW.pdf</description>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="U2" library="SLJ_wireless" deviceset="SKYA21001" device=""/>
+<part name="C22" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0201" package3d_urn="urn:adsk.eagle:package:13260/1" value="0.1uF">
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="Murata Electronica"/>
+<attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
+<attribute name="VOLTAGE" value="10V"/>
+</part>
+<part name="U$1" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U$5" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="U$6" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U$7" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
+<part name="U3" library="SLJ_wireless" deviceset="ESP32-PICO-D4" device="" package3d_urn="urn:adsk.eagle:package:7911054/1"/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="10uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MANUFACTURER" value="MURATA"/>
+<attribute name="PACKAGE" value="0402"/>
+<attribute name="PART_NUMBER" value="GRM155R60J106ME15D"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="172.72" y="251.46" size="10.16" layer="91">&gt;MODULE</text>
 <text x="45.72" y="109.22" size="1.778" layer="91">NOTE: ONLY ONE OF THE INPUTS FOR U2 CAN BE ACTIVE AT A TIME. EITHER GPIO26 or GPIO27 CAN BE HIGH NOT BOTH</text>
+<text x="10.16" y="81.28" size="1.778" layer="91">MTDI = 0 VDD_SDIO = 3.3V</text>
+<text x="10.16" y="78.74" size="1.778" layer="91">MTDI = 1 VDD_SDIO = 1.8V</text>
+<text x="10.16" y="68.58" size="1.778" layer="91">GPIO0 = 1 GPIO2 = X BOOTMODE = SPI</text>
+<text x="10.16" y="66.04" size="1.778" layer="91">GPIO0 = 0 GPIO2 = 0 BOOTMODE = DOWNLOAD</text>
+<text x="10.16" y="55.88" size="1.778" layer="91">MTDO = 1 UOTXD ACTIVE</text>
+<text x="10.16" y="53.34" size="1.778" layer="91">MTDO = 0 UOTXD SILENT</text>
+<text x="12.7" y="86.36" size="1.778" layer="91">LDO CHOICES</text>
+<text x="12.7" y="73.66" size="1.778" layer="91">BOOT MODE</text>
+<text x="12.7" y="60.96" size="1.778" layer="91">UART LOG WHILE BOOTING</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -15264,50 +15216,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="DRAWING_NAME" x="342.9" y="19.05" size="2.54" layer="94"/>
 <attribute name="REV" x="416.56" y="7.62" size="2.54" layer="94"/>
 </instance>
-<instance part="U1" gate="G$1" x="215.9" y="160.02" smashed="yes">
-<attribute name="NAME" x="195.5579" y="200.7043" size="1.779940625" layer="95"/>
-<attribute name="VALUE" x="195.577" y="111.7529" size="1.778259375" layer="96"/>
-</instance>
-<instance part="C11" gate="G$1" x="167.64" y="190.5" smashed="yes" rot="R90">
-<attribute name="MANUFACTURER" x="167.64" y="190.5" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="167.64" y="190.5" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="VOLTAGE" x="167.64" y="190.5" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="FOOTPRINT" x="173.99" y="189.865" size="1.27" layer="96" rot="R180"/>
-<attribute name="NAME" x="166.624" y="192.024" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="174.879" y="192.024" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="C1" gate="G$1" x="167.64" y="198.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="166.116" y="200.279" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="173.736" y="200.279" size="1.27" layer="91" rot="R180"/>
-<attribute name="FOOTPRINT" x="174.625" y="197.485" size="1.27" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="167.64" y="198.12" size="1.27" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="167.64" y="198.12" size="1.27" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="SUPPLY1" gate="GND" x="152.4" y="187.96" smashed="yes">
-<attribute name="VALUE" x="150.495" y="184.785" size="1.778" layer="96"/>
-</instance>
-<instance part="R1" gate="G$1" x="170.18" y="205.74" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="172.72" y="208.28" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="170.18" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="170.18" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="166.37" y="209.3214" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="163.83" y="210.058" size="1.27" layer="96"/>
-</instance>
-<instance part="X1" gate="G$1" x="134.62" y="182.88" smashed="yes">
-<attribute name="NAME" x="127" y="185.42" size="1.27" layer="94"/>
-<attribute name="VALUE" x="132.08" y="185.42" size="1.27" layer="94"/>
-</instance>
-<instance part="R8" gate="G$1" x="162.56" y="180.34" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="165.1" y="178.435" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="162.56" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="162.56" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="158.75" y="182.0164" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="165.735" y="180.848" size="1.27" layer="96"/>
-<attribute name="DNI" x="167.64" y="187.96" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="SUPPLY2" gate="GND" x="134.62" y="162.56" smashed="yes">
-<attribute name="VALUE" x="132.715" y="159.385" size="1.778" layer="96"/>
-</instance>
 <instance part="C2" gate="G$1" x="157.48" y="175.26" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" x="157.48" y="175.26" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="PART_NUMBER" x="157.48" y="175.26" size="1.778" layer="96" rot="R90" display="off"/>
@@ -15316,22 +15224,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="154.051" y="177.419" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="166.751" y="176.784" size="1.27" layer="96" rot="R180"/>
 <attribute name="DNI" x="154.94" y="175.26" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="C24" gate="G$1" x="114.3" y="177.8" smashed="yes">
-<attribute name="MANUFACTURER" x="114.3" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="114.3" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="114.3" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="106.68" y="177.8" size="1.778" layer="96"/>
-<attribute name="NAME" x="115.824" y="178.181" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.824" y="173.101" size="1.778" layer="96"/>
-</instance>
-<instance part="C4" gate="G$1" x="99.06" y="177.8" smashed="yes">
-<attribute name="MANUFACTURER" x="99.06" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="99.06" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="99.06" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="91.44" y="177.8" size="1.778" layer="96"/>
-<attribute name="NAME" x="100.584" y="178.181" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.584" y="173.101" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="172.72" y="170.18" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" x="172.72" y="170.18" size="1.778" layer="96" rot="R90" display="off"/>
@@ -15368,12 +15260,8 @@ Source: Samtec TSW.pdf</description>
 <instance part="SUPPLY4" gate="GND" x="63.5" y="139.7" smashed="yes">
 <attribute name="VALUE" x="61.595" y="136.525" size="1.778" layer="96"/>
 </instance>
-<instance part="L2" gate="G$1" x="279.4" y="195.58" smashed="yes">
-<attribute name="NAME" x="276.86" y="198.12" size="1.778" layer="94"/>
-<attribute name="VALUE" x="276.86" y="192.278" size="1.778" layer="94"/>
-</instance>
-<instance part="SUPPLY5" gate="G$1" x="302.26" y="220.98" smashed="yes">
-<attribute name="VALUE" x="300.355" y="224.155" size="1.778" layer="96"/>
+<instance part="SUPPLY5" gate="G$1" x="302.26" y="231.14" smashed="yes">
+<attribute name="VALUE" x="300.355" y="234.315" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="304.8" y="190.5" smashed="yes">
 <attribute name="MANUFACTURER" x="304.8" y="190.5" size="1.778" layer="96" display="off"/>
@@ -15382,46 +15270,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="FOOTPRINT" x="300.355" y="190.5" size="1.27" layer="96"/>
 <attribute name="NAME" x="306.324" y="190.881" size="1.27" layer="95"/>
 <attribute name="VALUE" x="305.689" y="186.436" size="1.27" layer="96"/>
-</instance>
-<instance part="C8" gate="G$1" x="289.56" y="190.5" smashed="yes">
-<attribute name="MANUFACTURER" x="289.56" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="289.56" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="289.56" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="285.115" y="190.5" size="1.27" layer="96"/>
-<attribute name="NAME" x="291.084" y="190.881" size="1.27" layer="95"/>
-<attribute name="VALUE" x="290.449" y="186.436" size="1.27" layer="96"/>
-</instance>
-<instance part="C9" gate="G$1" x="261.62" y="220.98" smashed="yes">
-<attribute name="MANUFACTURER" x="261.62" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="261.62" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="261.62" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="257.175" y="220.98" size="1.27" layer="96"/>
-<attribute name="NAME" x="263.144" y="221.361" size="1.27" layer="95"/>
-<attribute name="VALUE" x="262.509" y="216.916" size="1.27" layer="96"/>
-</instance>
-<instance part="C10" gate="G$1" x="251.46" y="220.98" smashed="yes">
-<attribute name="MANUFACTURER" x="251.46" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="251.46" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="251.46" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="247.015" y="220.98" size="1.27" layer="96"/>
-<attribute name="NAME" x="252.984" y="221.361" size="1.27" layer="95"/>
-<attribute name="VALUE" x="252.349" y="216.916" size="1.27" layer="96"/>
-</instance>
-<instance part="C12" gate="G$1" x="241.3" y="220.98" smashed="yes">
-<attribute name="MANUFACTURER" x="241.3" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="241.3" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="241.3" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="236.855" y="220.98" size="1.27" layer="96"/>
-<attribute name="NAME" x="242.824" y="221.361" size="1.27" layer="95"/>
-<attribute name="VALUE" x="242.189" y="216.916" size="1.27" layer="96"/>
-</instance>
-<instance part="C13" gate="G$1" x="271.78" y="220.98" smashed="yes">
-<attribute name="MANUFACTURER" x="271.78" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="271.78" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="271.78" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="267.335" y="220.98" size="1.27" layer="96"/>
-<attribute name="NAME" x="273.304" y="221.361" size="1.27" layer="95"/>
-<attribute name="VALUE" x="272.669" y="216.916" size="1.27" layer="96"/>
 </instance>
 <instance part="C14" gate="G$1" x="281.94" y="220.98" smashed="yes">
 <attribute name="MANUFACTURER" x="281.94" y="220.98" size="1.778" layer="96" display="off"/>
@@ -15434,43 +15282,16 @@ Source: Samtec TSW.pdf</description>
 <instance part="SUPPLY6" gate="GND" x="302.26" y="177.8" smashed="yes">
 <attribute name="VALUE" x="300.355" y="174.625" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="GND" x="279.4" y="208.28" smashed="yes">
-<attribute name="VALUE" x="277.495" y="205.105" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="GND" x="281.94" y="208.28" smashed="yes">
+<attribute name="VALUE" x="280.035" y="205.105" size="1.778" layer="96"/>
 </instance>
-<instance part="C15" gate="G$1" x="269.24" y="190.5" smashed="yes">
-<attribute name="MANUFACTURER" x="269.24" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="269.24" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="269.24" y="190.5" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="264.795" y="190.5" size="1.27" layer="96"/>
-<attribute name="NAME" x="270.764" y="190.881" size="1.27" layer="95"/>
-<attribute name="VALUE" x="270.129" y="186.436" size="1.27" layer="96"/>
-</instance>
-<instance part="R2" gate="G$1" x="251.46" y="180.34" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="254" y="178.435" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="251.46" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="251.46" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="247.65" y="182.0164" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="254.635" y="180.848" size="1.27" layer="96"/>
-<attribute name="DNI" x="256.54" y="187.96" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="C16" gate="G$1" x="243.84" y="175.26" smashed="yes">
-<attribute name="MANUFACTURER" x="243.84" y="175.26" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="243.84" y="175.26" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="243.84" y="175.26" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="239.395" y="175.26" size="1.27" layer="96"/>
-<attribute name="NAME" x="245.364" y="175.641" size="1.27" layer="95"/>
-<attribute name="VALUE" x="244.729" y="171.196" size="1.27" layer="96"/>
-</instance>
-<instance part="SUPPLY8" gate="GND" x="243.84" y="165.1" smashed="yes">
-<attribute name="VALUE" x="241.935" y="161.925" size="1.778" layer="96"/>
-</instance>
-<instance part="C17" gate="G$1" x="231.14" y="220.98" smashed="yes">
-<attribute name="MANUFACTURER" x="231.14" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="231.14" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="231.14" y="220.98" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="226.695" y="220.98" size="1.27" layer="96"/>
-<attribute name="NAME" x="232.664" y="221.361" size="1.27" layer="95"/>
-<attribute name="VALUE" x="232.029" y="216.916" size="1.27" layer="96"/>
+<instance part="R2" gate="G$1" x="259.08" y="180.34" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="261.62" y="178.435" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="259.08" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="259.08" y="180.34" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="255.27" y="182.0164" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="262.255" y="180.848" size="1.27" layer="96"/>
+<attribute name="DNI" x="259.08" y="182.88" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="180.34" y="127" smashed="yes" rot="R180">
 <attribute name="FOOTPRINT" x="183.515" y="127.635" size="1.27" layer="96"/>
@@ -15479,12 +15300,12 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="175.895" y="128.6764" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="173.99" y="124.968" size="1.27" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="276.86" y="127" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="279.4" y="129.54" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="276.86" y="127" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="276.86" y="127" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="273.05" y="130.5814" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="270.51" y="131.318" size="1.27" layer="96"/>
+<instance part="R4" gate="G$1" x="276.86" y="124.46" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="281.94" y="124.46" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="276.86" y="124.46" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="276.86" y="124.46" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="283.21" y="122.9614" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="273.05" y="126.238" size="1.27" layer="96"/>
 </instance>
 <instance part="SUPPLY9" gate="G$1" x="292.1" y="144.78" smashed="yes">
 <attribute name="VALUE" x="290.195" y="147.955" size="1.778" layer="96"/>
@@ -15495,9 +15316,6 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" x="142.24" y="167.64" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="NAME" x="138.43" y="169.9514" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="144.78" y="168.148" size="1.27" layer="96"/>
-</instance>
-<instance part="SUPPLY10" gate="G$1" x="124.46" y="200.66" smashed="yes">
-<attribute name="VALUE" x="122.555" y="203.835" size="1.778" layer="96"/>
 </instance>
 <instance part="C18" gate="G$1" x="157.48" y="149.86" smashed="yes">
 <attribute name="MANUFACTURER" x="157.48" y="149.86" size="1.778" layer="96" display="off"/>
@@ -15517,10 +15335,7 @@ Source: Samtec TSW.pdf</description>
 <instance part="U$12" gate="G$1" x="190.5" y="132.08" smashed="yes"/>
 <instance part="U$13" gate="G$1" x="190.5" y="124.46" smashed="yes"/>
 <instance part="U$16" gate="G$1" x="241.3" y="152.4" smashed="yes"/>
-<instance part="U$17" gate="G$1" x="241.3" y="147.32" smashed="yes"/>
 <instance part="U$18" gate="G$1" x="241.3" y="144.78" smashed="yes"/>
-<instance part="U$21" gate="G$1" x="241.3" y="129.54" smashed="yes"/>
-<instance part="U$22" gate="G$1" x="241.3" y="124.46" smashed="yes"/>
 <instance part="U$23" gate="G$1" x="241.3" y="121.92" smashed="yes"/>
 <instance part="SUPPLY11" gate="GND" x="248.92" y="104.14" smashed="yes">
 <attribute name="VALUE" x="247.015" y="100.965" size="1.778" layer="96"/>
@@ -15561,6 +15376,43 @@ Source: Samtec TSW.pdf</description>
 <attribute name="NAME" x="111.76" y="116.84" size="1.778" layer="94" rot="MR180"/>
 <attribute name="VALUE" x="111.76" y="137.16" size="1.778" layer="94" rot="MR180"/>
 </instance>
+<instance part="C22" gate="G$1" x="266.7" y="119.38" smashed="yes">
+<attribute name="MANUFACTURER" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NUMBER" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="FOOTPRINT" x="262.255" y="119.38" size="1.27" layer="96"/>
+<attribute name="NAME" x="268.224" y="119.761" size="1.27" layer="95"/>
+<attribute name="VALUE" x="267.589" y="115.316" size="1.27" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="241.3" y="137.16" smashed="yes"/>
+<instance part="U$5" gate="G$1" x="241.3" y="134.62" smashed="yes"/>
+<instance part="R6" gate="G$1" x="243.84" y="91.44" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="248.92" y="88.265" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="243.84" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="243.84" y="91.44" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="245.11" y="94.8436" size="1.27" layer="95"/>
+<attribute name="VALUE" x="248.285" y="90.932" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="236.22" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="GND" x="243.84" y="81.28" smashed="yes">
+<attribute name="VALUE" x="241.935" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="U$6" gate="G$1" x="241.3" y="157.48" smashed="yes"/>
+<instance part="U$7" gate="G$1" x="241.3" y="154.94" smashed="yes"/>
+<instance part="U3" gate="G$1" x="215.9" y="160.02" smashed="yes">
+<attribute name="NAME" x="195.5579" y="200.7043" size="1.779940625" layer="95"/>
+<attribute name="VALUE" x="195.577" y="111.7529" size="1.778259375" layer="96"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="124.46" y="175.26" smashed="yes">
+<attribute name="VALUE" x="122.555" y="178.435" size="1.778" layer="96"/>
+</instance>
+<instance part="C1" gate="G$1" x="289.56" y="190.5" smashed="yes">
+<attribute name="MANUFACTURER" x="289.56" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="PACKAGE" x="292.1" y="182.88" size="1.778" layer="96"/>
+<attribute name="PART_NUMBER" x="289.56" y="190.5" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="291.084" y="190.881" size="1.778" layer="95"/>
+<attribute name="VALUE" x="291.084" y="185.801" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="SPI2:SPI2_CLK,SPI2_CS,SPI2_MISO,SPI2_MOSI">
@@ -15577,60 +15429,7 @@ Source: Samtec TSW.pdf</description>
 </bus>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="190.5" x2="180.34" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="CAP1"/>
-<wire x1="180.34" y1="185.42" x2="190.5" y2="185.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="CAP2"/>
-<wire x1="190.5" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="187.96" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="205.74" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="205.74" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
-<junction x="185.42" y="198.12"/>
-</segment>
-</net>
 <net name="GND" class="0">
-<segment>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="190.5" x2="157.48" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="195.58" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="198.12" x2="165.1" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="195.58" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="195.58" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
-<junction x="157.48" y="195.58"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="205.74" x2="157.48" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="205.74" x2="157.48" y2="198.12" width="0.1524" layer="91"/>
-<junction x="157.48" y="198.12"/>
-<label x="157.48" y="190.5" size="1.27" layer="95"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="134.62" y1="177.8" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="170.18" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="172.72" x2="114.3" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="170.18" x2="134.62" y2="170.18" width="0.1524" layer="91"/>
-<junction x="134.62" y="170.18"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="172.72" x2="99.06" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="170.18" x2="114.3" y2="170.18" width="0.1524" layer="91"/>
-<junction x="114.3" y="170.18"/>
-</segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="48.26" y1="167.64" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
@@ -15661,117 +15460,60 @@ Source: Samtec TSW.pdf</description>
 <junction x="73.66" y="142.24"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="289.56" y1="185.42" x2="289.56" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="182.88" x2="302.26" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="302.26" y1="182.88" x2="304.8" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="182.88" x2="304.8" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="302.26" y1="180.34" x2="302.26" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="289.56" y1="185.42" x2="289.56" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="182.88" x2="302.26" y2="182.88" width="0.1524" layer="91"/>
 <junction x="302.26" y="182.88"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="269.24" y1="185.42" x2="269.24" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="182.88" x2="289.56" y2="182.88" width="0.1524" layer="91"/>
-<junction x="289.56" y="182.88"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="215.9" x2="281.94" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="213.36" x2="279.4" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="213.36" x2="271.78" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="213.36" x2="271.78" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="213.36" x2="261.62" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="213.36" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
-<junction x="271.78" y="213.36"/>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="261.62" y1="213.36" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="213.36" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<junction x="261.62" y="213.36"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="213.36" x2="241.3" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="213.36" x2="241.3" y2="215.9" width="0.1524" layer="91"/>
-<junction x="251.46" y="213.36"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="279.4" y1="210.82" x2="279.4" y2="213.36" width="0.1524" layer="91"/>
-<junction x="279.4" y="213.36"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="215.9" x2="231.14" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="213.36" x2="241.3" y2="213.36" width="0.1524" layer="91"/>
-<junction x="241.3" y="213.36"/>
+<wire x1="281.94" y1="210.82" x2="281.94" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="170.18" x2="243.84" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="241.3" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="116.84" x2="248.92" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="116.84" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="116.84" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="111.76" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="114.3" x2="266.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="111.76" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
+<junction x="248.92" y="111.76"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
-</net>
-<net name="40MHZ_N" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="OUT"/>
-<pinref part="U1" gate="G$1" pin="XTAL_N"/>
-<wire x1="142.24" y1="182.88" x2="144.78" y2="182.88" width="0.1524" layer="91"/>
-<label x="175.26" y="182.88" size="1.27" layer="95"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="182.88" x2="190.5" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="180.34" x2="99.06" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="187.96" x2="144.78" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="187.96" x2="144.78" y2="182.88" width="0.1524" layer="91"/>
-<junction x="144.78" y="182.88"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="IN"/>
-<wire x1="127" y1="182.88" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="182.88" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="172.72" x2="142.24" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="180.34" x2="157.48" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="180.34" x2="114.3" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="182.88" x2="121.92" y2="182.88" width="0.1524" layer="91"/>
-<junction x="121.92" y="182.88"/>
-</segment>
-</net>
-<net name="40MHZ_P" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="XTAL_P"/>
-<wire x1="167.64" y1="180.34" x2="190.5" y2="180.34" width="0.1524" layer="91"/>
-<label x="175.26" y="180.34" size="1.27" layer="95"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="243.84" y1="86.36" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="175.26" x2="154.94" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="SENSOR_VP"/>
 <wire x1="154.94" y1="177.8" x2="190.5" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SENSOR_VP"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="SENSOR_CAPP"/>
 <wire x1="162.56" y1="175.26" x2="190.5" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SENSOR_CAPP"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="SENSOR_VN"/>
 <wire x1="177.8" y1="170.18" x2="190.5" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SENSOR_VN"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -15779,13 +15521,12 @@ Source: Samtec TSW.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="170.18" x2="162.56" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="170.18" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="SENSOR_CAPN"/>
 <wire x1="162.56" y1="172.72" x2="190.5" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SENSOR_CAPN"/>
 </segment>
 </net>
 <net name="RESET_ESP32_L" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CHIP_PU"/>
 <wire x1="190.5" y1="167.64" x2="177.8" y2="167.64" width="0.1524" layer="91"/>
 <label x="149.86" y="167.64" size="1.27" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -15797,6 +15538,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="177.8" y1="167.64" x2="177.8" y2="152.4" width="0.1524" layer="91"/>
 <junction x="177.8" y="167.64"/>
 <wire x1="177.8" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="N$8" class="8">
@@ -15825,112 +15567,78 @@ Source: Samtec TSW.pdf</description>
 <junction x="73.66" y="157.48"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="VDD3P3"/>
-<wire x1="274.32" y1="195.58" x2="269.24" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="269.24" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="193.04" x2="269.24" y2="195.58" width="0.1524" layer="91"/>
-<junction x="269.24" y="195.58"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="195.58" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="195.58" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="195.58" x2="302.26" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="195.58" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="302.26" y1="203.2" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="215.9" x2="302.26" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="193.04" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
-<junction x="289.56" y="195.58"/>
-<wire x1="302.26" y1="195.58" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
-<junction x="302.26" y="195.58"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="195.58" x2="304.8" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VDDA"/>
-<wire x1="241.3" y1="198.12" x2="248.92" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="198.12" x2="248.92" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="203.2" x2="256.54" y2="203.2" width="0.1524" layer="91"/>
-<junction x="302.26" y="203.2"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="203.2" x2="261.62" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="203.2" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="223.52" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="226.06" x2="251.46" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="226.06" x2="251.46" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="226.06" x2="261.62" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="226.06" x2="261.62" y2="223.52" width="0.1524" layer="91"/>
-<junction x="251.46" y="226.06"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="261.62" y1="226.06" x2="271.78" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="226.06" x2="271.78" y2="223.52" width="0.1524" layer="91"/>
-<junction x="261.62" y="226.06"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="226.06" x2="281.94" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="226.06" x2="281.94" y2="223.52" width="0.1524" layer="91"/>
-<junction x="271.78" y="226.06"/>
-<wire x1="281.94" y1="226.06" x2="292.1" y2="226.06" width="0.1524" layer="91"/>
-<junction x="281.94" y="226.06"/>
-<wire x1="292.1" y1="226.06" x2="292.1" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="215.9" x2="302.26" y2="215.9" width="0.1524" layer="91"/>
-<junction x="302.26" y="215.9"/>
-<pinref part="U1" gate="G$1" pin="VDD3P3_CPU"/>
-<wire x1="241.3" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="190.5" x2="256.54" y2="203.2" width="0.1524" layer="91"/>
-<junction x="256.54" y="203.2"/>
-<pinref part="U1" gate="G$1" pin="VDD3P3_RTC"/>
-<wire x1="241.3" y1="187.96" x2="256.54" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="187.96" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
-<junction x="256.54" y="190.5"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="180.34" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="180.34" x2="261.62" y2="203.2" width="0.1524" layer="91"/>
-<junction x="261.62" y="203.2"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="223.52" x2="231.14" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="226.06" x2="241.3" y2="226.06" width="0.1524" layer="91"/>
-<junction x="241.3" y="226.06"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="127" x2="292.1" y2="127" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="127" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="124.46" x2="292.1" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="124.46" x2="292.1" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="167.64" x2="124.46" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="167.64" x2="124.46" y2="198.12" width="0.1524" layer="91"/>
 <label x="129.54" y="167.64" size="1.27" layer="95"/>
-<pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<wire x1="124.46" y1="172.72" x2="124.46" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="289.56" y1="195.58" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="195.58" x2="302.26" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="195.58" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<wire x1="302.26" y1="203.2" x2="302.26" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="226.06" x2="302.26" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="195.58" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
+<junction x="302.26" y="195.58"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="195.58" x2="304.8" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="198.12" x2="248.92" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="198.12" x2="248.92" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="203.2" x2="264.16" y2="203.2" width="0.1524" layer="91"/>
+<junction x="302.26" y="203.2"/>
+<wire x1="264.16" y1="203.2" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="203.2" x2="302.26" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="226.06" x2="281.94" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="226.06" x2="292.1" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="226.06" x2="302.26" y2="226.06" width="0.1524" layer="91"/>
+<junction x="302.26" y="226.06"/>
+<wire x1="241.3" y1="190.5" x2="264.16" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="190.5" x2="264.16" y2="203.2" width="0.1524" layer="91"/>
+<junction x="264.16" y="203.2"/>
+<wire x1="241.3" y1="187.96" x2="264.16" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="187.96" x2="264.16" y2="190.5" width="0.1524" layer="91"/>
+<junction x="264.16" y="190.5"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="180.34" x2="271.78" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="180.34" x2="271.78" y2="203.2" width="0.1524" layer="91"/>
+<junction x="271.78" y="203.2"/>
+<pinref part="U3" gate="G$1" pin="VDDA"/>
+<pinref part="U3" gate="G$1" pin="VDD3P3_RTC"/>
+<pinref part="U3" gate="G$1" pin="VDD3P3_CPU"/>
+<pinref part="U3" gate="G$1" pin="VDDA3P3"/>
+<wire x1="289.56" y1="195.58" x2="241.3" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="193.04" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
+<junction x="289.56" y="195.58"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="FLASH_VDD" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="VDD_SDIO"/>
 <wire x1="241.3" y1="193.04" x2="243.84" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="193.04" x2="243.84" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="243.84" y1="180.34" x2="246.38" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="177.8" x2="243.84" y2="180.34" width="0.1524" layer="91"/>
-<junction x="243.84" y="180.34"/>
+<wire x1="243.84" y1="180.34" x2="254" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VDD_SDIO"/>
+<label x="243.84" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP32_U0RX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="U0RXD"/>
 <wire x1="190.5" y1="129.54" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
 <label x="170.18" y="129.54" size="1.27" layer="95"/>
+<pinref part="U3" gate="G$1" pin="U0RXD"/>
 </segment>
 </net>
 <net name="ESP32_U0TX" class="0">
@@ -15943,56 +15651,57 @@ Source: Samtec TSW.pdf</description>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="U0TXD"/>
 <wire x1="185.42" y1="127" x2="190.5" y2="127" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="U0TXD"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO23"/>
 <wire x1="266.7" y1="149.86" x2="241.3" y2="149.86" width="0.1524" layer="91"/>
 <label x="256.54" y="149.86" size="1.27" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO23"/>
 </segment>
 </net>
 <net name="SPI2_CS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO5"/>
 <wire x1="266.7" y1="132.08" x2="241.3" y2="132.08" width="0.1524" layer="91"/>
 <label x="256.54" y="132.08" size="1.27" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO5"/>
 </segment>
 </net>
 <net name="SPI2_MISO" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO19"/>
 <wire x1="266.7" y1="142.24" x2="241.3" y2="142.24" width="0.1524" layer="91"/>
 <label x="256.54" y="142.24" size="1.27" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO19"/>
 </segment>
 </net>
 <net name="SPI2_CLK" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO18"/>
 <wire x1="266.7" y1="139.7" x2="241.3" y2="139.7" width="0.1524" layer="91"/>
 <label x="256.54" y="139.7" size="1.27" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO18"/>
 </segment>
 </net>
 <net name="ESP32_BOOT_L" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO2"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="127" x2="271.78" y2="127" width="0.1524" layer="91"/>
-<label x="251.46" y="127" size="1.27" layer="95"/>
+<label x="251.46" y="124.46" size="1.27" layer="95"/>
+<wire x1="264.16" y1="124.46" x2="271.78" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="124.46" x2="264.16" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GPIO0"/>
 </segment>
 </net>
 <net name="N$9" class="3">
 <segment>
-<pinref part="U1" gate="G$1" pin="VDET_1"/>
 <wire x1="190.5" y1="165.1" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IO34"/>
 </segment>
 </net>
 <net name="N$12" class="3">
 <segment>
-<pinref part="U1" gate="G$1" pin="VDET_2"/>
 <wire x1="190.5" y1="162.56" x2="187.96" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IO35"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -16021,17 +15730,12 @@ Source: Samtec TSW.pdf</description>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="127" x2="147.32" y2="127" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="127" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="LNA_IN"/>
 <wire x1="147.32" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 <label x="162.56" y="157.48" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="LNA_IN"/>
 </segment>
 </net>
 <net name="GPIO26" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO26"/>
-<wire x1="241.3" y1="154.94" x2="259.08" y2="154.94" width="0.1524" layer="91"/>
-<label x="248.92" y="154.94" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="132.08" y1="121.92" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
 <label x="134.62" y="121.92" size="1.778" layer="95"/>
@@ -16039,11 +15743,6 @@ Source: Samtec TSW.pdf</description>
 </segment>
 </net>
 <net name="GPIO27" class="0">
-<segment>
-<wire x1="241.3" y1="157.48" x2="259.08" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GPIO27"/>
-<label x="248.92" y="157.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="132.08" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="134.62" y="132.08" size="1.778" layer="95"/>
@@ -16059,50 +15758,60 @@ Source: Samtec TSW.pdf</description>
 <label x="55.88" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ESP32_U1TX" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO17"/>
-<wire x1="241.3" y1="137.16" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
-<label x="243.84" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP32_U1RX" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO16"/>
-<wire x1="241.3" y1="134.62" x2="261.62" y2="134.62" width="0.1524" layer="91"/>
-<label x="243.84" y="134.62" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MTDI" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="MTDI"/>
 <wire x1="190.5" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
 <label x="180.34" y="149.86" size="1.778" layer="95"/>
 <wire x1="177.8" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="MTDI_IO12"/>
 </segment>
 </net>
 <net name="MTMS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="MTMS"/>
 <wire x1="190.5" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
 <label x="180.34" y="147.32" size="1.778" layer="95"/>
 <wire x1="177.8" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="MTMS_IO14"/>
 </segment>
 </net>
 <net name="MTCK" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="MTCK"/>
 <wire x1="190.5" y1="144.78" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
 <label x="180.34" y="144.78" size="1.778" layer="95"/>
 <wire x1="172.72" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="MTCK"/>
 </segment>
 </net>
 <net name="MTDO" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="MTDO"/>
 <wire x1="190.5" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
 <label x="180.34" y="142.24" size="1.778" layer="95"/>
 <wire x1="172.72" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="MTDO"/>
+</segment>
+</net>
+<net name="ADC2_CH0" class="0">
+<segment>
+<wire x1="241.3" y1="129.54" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
+<label x="251.46" y="129.54" size="1.778" layer="95"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="129.54" x2="266.7" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GPIO4"/>
+</segment>
+</net>
+<net name="GPIO2" class="0">
+<segment>
+<wire x1="241.3" y1="127" x2="243.84" y2="127" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="127" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="GPIO2"/>
+</segment>
+</net>
+<net name="ESP32_IO22" class="0">
+<segment>
+<wire x1="241.3" y1="147.32" x2="261.62" y2="147.32" width="0.1524" layer="91"/>
+<label x="246.38" y="147.32" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO22"/>
 </segment>
 </net>
 </nets>
@@ -16535,6 +16244,7 @@ Source: Samtec TSW.pdf</description>
 <port name="EN_3V3" side="right" coord="7.62" direction="in"/>
 <port name="GND" side="bottom" coord="5.08" direction="pwr"/>
 <port name="+VBUS" side="top" coord="-2.54" direction="pwr"/>
+<port name="VBAT_MEAS" side="right" coord="12.7" direction="out"/>
 </ports>
 <variantdefs>
 </variantdefs>
@@ -16611,7 +16321,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" value="ERA-2AEB472X"/>
 </part>
 <part name="D1" library="SLJ_Diodes" deviceset="QBLP595-O" device="" package3d_urn="urn:adsk.eagle:package:4822994/1"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="470">
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1K">
 <spice>
 <pinmapping spiceprefix="R">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
@@ -16620,8 +16330,8 @@ Source: Samtec TSW.pdf</description>
 </spice>
 <attribute name="DNI" value=""/>
 <attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Samsung"/>
-<attribute name="PART_NUMBER" value="RC1005J471CS"/>
+<attribute name="MANUFACTURER" value="VISHAY"/>
+<attribute name="PART_NUMBER" value="MCS04020C1001FE000"/>
 </part>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="4.7uF">
 <spice>
@@ -16645,6 +16355,29 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PACKAGE" value="0402"/>
 <attribute name="PART_NUMBER" value="GRM155R60J475ME87D"/>
 </part>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="499K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-07499KL"/>
+</part>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="499K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="PART_NUMBER" value="RC0201FR-07499KL"/>
+</part>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16715,9 +16448,9 @@ Source: Samtec TSW.pdf</description>
 <instance part="SUPPLY3" gate="GND" x="276.86" y="142.24" smashed="yes">
 <attribute name="VALUE" x="274.955" y="139.065" size="1.778" layer="96"/>
 </instance>
-<instance part="P1" gate="G$1" x="25.4" y="177.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.674059375" y="175.24783125" size="1.274059375" layer="95" rot="R180"/>
-<attribute name="VALUE" x="26.67413125" y="184.166509375" size="1.27413125" layer="96" rot="R180"/>
+<instance part="P1" gate="G$1" x="17.78" y="177.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.054059375" y="170.16783125" size="1.274059375" layer="95" rot="R180"/>
+<attribute name="VALUE" x="29.21413125" y="186.706509375" size="1.27413125" layer="96" rot="R180"/>
 </instance>
 <instance part="+3V2" gate="G$1" x="38.1" y="195.58" smashed="yes">
 <attribute name="VALUE" x="35.56" y="190.5" size="1.778" layer="96" rot="R90"/>
@@ -16733,7 +16466,7 @@ Source: Samtec TSW.pdf</description>
 <instance part="R2" gate="G$1" x="78.74" y="167.64" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" x="86.36" y="165.1" size="1.778" layer="96" rot="R180"/>
 <attribute name="MANUFACTURER" x="78.74" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="78.74" y="167.64" size="1.778" layer="96" rot="R90"/>
+<attribute name="PART_NUMBER" x="101.6" y="162.56" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="80.01" y="169.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="168.402" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -16756,12 +16489,12 @@ Source: Samtec TSW.pdf</description>
 <attribute name="DNI" x="35.56" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="142.24" y="71.12" smashed="yes">
-<attribute name="NAME" x="145.796" y="66.548" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="147.955" y="66.548" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="149.352" y="72.136" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="159.512" y="69.215" size="1.778" layer="96" rot="R180"/>
 <attribute name="COLOR" x="149.86" y="63.5" size="1.27" layer="94" rot="R180"/>
 </instance>
 <instance part="R3" gate="G$1" x="142.24" y="83.82" smashed="yes" rot="R270">
-<attribute name="FOOTPRINT" x="147.32" y="80.645" size="1.27" layer="96" rot="R180"/>
+<attribute name="FOOTPRINT" x="147.32" y="83.185" size="1.27" layer="96" rot="R180"/>
 <attribute name="MANUFACTURER" x="142.24" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="PART_NUMBER" x="142.24" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="NAME" x="143.51" y="87.2236" size="1.27" layer="95"/>
@@ -16781,6 +16514,23 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" x="106.68" y="53.34" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="108.204" y="53.721" size="1.778" layer="95"/>
 <attribute name="VALUE" x="108.204" y="48.641" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="129.54" y="170.18" smashed="yes" rot="R90">
+<attribute name="FOOTPRINT" x="137.16" y="167.64" size="1.778" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="129.54" y="170.18" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NUMBER" x="129.54" y="170.18" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="130.81" y="171.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="170.942" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R5" gate="G$1" x="129.54" y="154.94" smashed="yes" rot="R90">
+<attribute name="FOOTPRINT" x="137.16" y="152.4" size="1.778" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="129.54" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NUMBER" x="129.54" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="NAME" x="130.81" y="156.4386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="135.89" y="155.702" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY7" gate="GND" x="129.54" y="139.7" smashed="yes">
+<attribute name="VALUE" x="127.635" y="136.525" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -16803,12 +16553,16 @@ Source: Samtec TSW.pdf</description>
 <wire x1="205.74" y1="185.42" x2="170.18" y2="185.42" width="0.1524" layer="91"/>
 <junction x="170.18" y="185.42"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="81.28" y1="180.34" x2="170.18" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="180.34" x2="129.54" y2="180.34" width="0.1524" layer="91"/>
 <junction x="170.18" y="180.34"/>
 <pinref part="U1" gate="A" pin="VIN"/>
+<wire x1="129.54" y1="180.34" x2="170.18" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="167.64" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
 <junction x="190.5" y="167.64"/>
 <label x="215.9" y="167.64" size="1.27" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="175.26" x2="129.54" y2="180.34" width="0.1524" layer="91"/>
+<junction x="129.54" y="180.34"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -16840,8 +16594,6 @@ Source: Samtec TSW.pdf</description>
 <junction x="276.86" y="147.32"/>
 </segment>
 <segment>
-<pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="177.8" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="177.8" x2="35.56" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <wire x1="35.56" y1="165.1" x2="35.56" y2="157.48" width="0.1524" layer="91"/>
@@ -16850,6 +16602,9 @@ Source: Samtec TSW.pdf</description>
 <wire x1="78.74" y1="162.56" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
 <junction x="35.56" y="157.48"/>
+<pinref part="P1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="180.34" x2="35.56" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="180.34" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -16870,6 +16625,11 @@ Source: Samtec TSW.pdf</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="106.68" y1="45.72" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="149.86" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="EN_3V3" class="0">
 <segment>
@@ -16884,12 +16644,13 @@ Source: Samtec TSW.pdf</description>
 <segment>
 <wire x1="38.1" y1="190.5" x2="38.1" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<label x="33.02" y="180.34" size="1.27" layer="95"/>
-<pinref part="P1" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="180.34" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
+<label x="25.4" y="177.8" size="1.27" layer="95"/>
 <wire x1="38.1" y1="180.34" x2="38.1" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="38.1" y1="180.34" x2="71.12" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="177.8" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="177.8" x2="38.1" y2="180.34" width="0.1524" layer="91"/>
 <junction x="38.1" y="180.34"/>
 </segment>
 <segment>
@@ -16965,6 +16726,17 @@ Source: Samtec TSW.pdf</description>
 <wire x1="142.24" y1="78.74" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="VBAT_MEAS" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="165.1" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="162.56" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="129.54" y="162.56"/>
+<label x="137.16" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -17021,50 +16793,6 @@ Source: Samtec TSW.pdf</description>
 <part name="J2" library="SLJ_Connectors" deviceset="CON_02X10_VERT_100" device="" package3d_urn="urn:adsk.eagle:package:6511154/1" value="02X20"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
-</part>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
-</part>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
-</part>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="Panasonic"/>
-<attribute name="PART_NUMBER" value="ERJ-1GEF1002C"/>
-</part>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="10K">
 <spice>
 <pinmapping spiceprefix="R">
@@ -17118,14 +16846,124 @@ Source: Samtec TSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM035R60J475ME15D"/>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value="DNI"/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
+<part name="U$1" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
+<part name="U$2" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
+<part name="U$3" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0720KL"/>
+</part>
+<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0720KL"/>
+</part>
+<part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="FOOTPRINT" value="0201"/>
+<attribute name="MANUFACTURER" value="YAGEO"/>
+<attribute name="PART_NUMBER" value="RC0201FR-0720KL"/>
+</part>
+<part name="D2" library="SLJ_Diodes" deviceset="QBLP595-O" device="" package3d_urn="urn:adsk.eagle:package:4822994/1"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/2" value="1K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="VISHAY"/>
+<attribute name="PART_NUMBER" value="MCS04020C1001FE000"/>
+</part>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="274.32" y="154.94" size="6.35" layer="91">ESP32 JTAG</text>
 <text x="109.22" y="162.56" size="6.35" layer="91">STM32  JTAG</text>
-<text x="208.28" y="241.3" size="6.35" layer="91">STM32  UART</text>
-<text x="208.28" y="218.44" size="6.35" layer="91">ESP32 UART</text>
+<text x="185.42" y="251.46" size="6.35" layer="91">STM32  UART</text>
+<text x="294.64" y="205.74" size="6.35" layer="91">ESP32 UART</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -17139,7 +16977,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="VALUE" x="31.115" y="197.485" size="1.778" layer="96"/>
 </instance>
 <instance part="J1" gate="G$1" x="25.4" y="228.6" smashed="yes" rot="MR0">
-<attribute name="NAME" x="27.94" y="240.03" size="1.778" layer="95" rot="MR0"/>
+<attribute name="NAME" x="17.78" y="237.49" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="15.24" y="220.98" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="121.92" y="266.7" smashed="yes">
@@ -17192,34 +17030,6 @@ Source: Samtec TSW.pdf</description>
 <instance part="+3V3" gate="G$1" x="119.38" y="154.94" smashed="yes">
 <attribute name="VALUE" x="116.84" y="149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="256.54" y="121.92" smashed="yes" rot="R90">
-<attribute name="FOOTPRINT" x="264.16" y="119.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="256.54" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="256.54" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="257.81" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="262.89" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R1" gate="G$1" x="246.38" y="121.92" smashed="yes" rot="R90">
-<attribute name="FOOTPRINT" x="254" y="119.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="246.38" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="246.38" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="247.65" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="252.73" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R3" gate="G$1" x="269.24" y="121.92" smashed="yes" rot="R90">
-<attribute name="FOOTPRINT" x="276.86" y="119.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="269.24" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="269.24" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="270.51" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="275.59" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R4" gate="G$1" x="236.22" y="121.92" smashed="yes" rot="R90">
-<attribute name="FOOTPRINT" x="243.84" y="119.38" size="1.778" layer="96" rot="R180"/>
-<attribute name="MANUFACTURER" x="236.22" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="PART_NUMBER" x="236.22" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="NAME" x="237.49" y="123.4186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="242.57" y="122.682" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="R5" gate="G$1" x="86.36" y="127" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" x="93.98" y="124.46" size="1.778" layer="96" rot="R180"/>
 <attribute name="MANUFACTURER" x="86.36" y="127" size="1.778" layer="96" rot="R90" display="off"/>
@@ -17266,6 +17076,95 @@ Source: Samtec TSW.pdf</description>
 <attribute name="FOOTPRINT" x="63.5" y="218.44" size="1.778" layer="96"/>
 <attribute name="NAME" x="72.644" y="218.821" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.644" y="213.741" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="269.24" y="121.92" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="274.32" y="118.745" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="269.24" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="269.24" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="270.51" y="125.3236" size="1.27" layer="95"/>
+<attribute name="VALUE" x="273.685" y="121.412" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="261.62" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="236.22" y="121.92" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="241.3" y="118.745" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="236.22" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="236.22" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="237.49" y="125.3236" size="1.27" layer="95"/>
+<attribute name="VALUE" x="240.665" y="121.412" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="228.6" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="256.54" y="121.92" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="261.62" y="118.745" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="256.54" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="256.54" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="257.81" y="125.3236" size="1.27" layer="95"/>
+<attribute name="VALUE" x="260.985" y="121.412" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="248.92" y="127" size="1.778" layer="96"/>
+</instance>
+<instance part="R2" gate="G$1" x="246.38" y="86.36" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="251.46" y="83.185" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="246.38" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="246.38" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="247.65" y="89.7636" size="1.27" layer="95"/>
+<attribute name="VALUE" x="250.825" y="85.852" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="238.76" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="269.24" y="86.36" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="274.32" y="83.185" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="269.24" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="269.24" y="86.36" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="270.51" y="89.7636" size="1.27" layer="95"/>
+<attribute name="VALUE" x="273.685" y="85.852" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="271.78" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="259.08" y="226.06" smashed="yes">
+<attribute name="NAME" x="248.92" y="233.68" size="1.778" layer="95"/>
+<attribute name="VALUE" x="248.92" y="231.14" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="259.08" y="205.74" smashed="yes" rot="MR180">
+<attribute name="NAME" x="248.92" y="198.12" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="248.92" y="200.66" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="U$3" gate="G$1" x="259.08" y="182.88" smashed="yes" rot="MR180">
+<attribute name="NAME" x="248.92" y="175.26" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="248.92" y="177.8" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="R10" gate="G$1" x="243.84" y="226.06" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="248.92" y="226.06" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="243.84" y="226.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="243.84" y="226.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="250.19" y="224.5614" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="240.03" y="227.838" size="1.27" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="243.84" y="205.74" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="248.92" y="205.74" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="243.84" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="243.84" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="250.19" y="204.2414" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="240.03" y="207.518" size="1.27" layer="96"/>
+</instance>
+<instance part="R12" gate="G$1" x="243.84" y="182.88" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="248.92" y="182.88" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="243.84" y="182.88" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="243.84" y="182.88" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="250.19" y="181.3814" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="240.03" y="184.658" size="1.27" layer="96"/>
+</instance>
+<instance part="D2" gate="G$1" x="124.46" y="33.02" smashed="yes">
+<attribute name="NAME" x="131.572" y="34.036" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="141.732" y="31.115" size="1.778" layer="96" rot="R180"/>
+<attribute name="COLOR" x="132.08" y="25.4" size="1.27" layer="94" rot="R180"/>
+</instance>
+<instance part="R13" gate="G$1" x="124.46" y="45.72" smashed="yes" rot="R270">
+<attribute name="FOOTPRINT" x="129.54" y="45.085" size="1.27" layer="96" rot="R180"/>
+<attribute name="MANUFACTURER" x="124.46" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="PART_NUMBER" x="124.46" y="45.72" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="125.73" y="49.1236" size="1.27" layer="95"/>
+<attribute name="VALUE" x="123.825" y="42.672" size="1.27" layer="96" rot="R180"/>
+<attribute name="DNI" x="116.84" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V4" gate="G$1" x="124.46" y="58.42" smashed="yes">
+<attribute name="VALUE" x="121.92" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17315,7 +17214,8 @@ Source: Samtec TSW.pdf</description>
 <wire x1="320.04" y1="96.52" x2="320.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="93.98" x2="320.04" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="91.44" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="88.9" x2="320.04" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="88.9" x2="320.04" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="73.66" x2="320.04" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
 <junction x="320.04" y="88.9"/>
 <pinref part="J3" gate="G$1" pin="18"/>
@@ -17340,6 +17240,14 @@ Source: Samtec TSW.pdf</description>
 <wire x1="312.42" y1="106.68" x2="320.04" y2="106.68" width="0.1524" layer="91"/>
 <junction x="320.04" y="106.68"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="81.28" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="73.66" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
+<junction x="320.04" y="73.66"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="73.66" x2="320.04" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="81.28" x2="269.24" y2="73.66" width="0.1524" layer="91"/>
+<junction x="269.24" y="73.66"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
@@ -17399,27 +17307,23 @@ Source: Samtec TSW.pdf</description>
 <junction x="71.12" y="233.68"/>
 </segment>
 </net>
-<net name="ID" class="0">
-<segment>
-<wire x1="30.48" y1="231.14" x2="60.96" y2="231.14" width="0.1524" layer="91"/>
-<label x="40.64" y="231.14" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="D_P" class="1">
 <segment>
-<wire x1="30.48" y1="228.6" x2="129.54" y2="228.6" width="0.1524" layer="91"/>
 <label x="33.02" y="228.6" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="3"/>
 <pinref part="U1" gate="G$1" pin="D_P"/>
+<wire x1="43.18" y1="228.6" x2="129.54" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="43.18" y1="228.6" x2="30.48" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D_N" class="1">
 <segment>
-<wire x1="30.48" y1="226.06" x2="129.54" y2="226.06" width="0.1524" layer="91"/>
-<label x="33.02" y="226.06" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="4"/>
+<label x="33.02" y="231.14" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="D_N"/>
+<wire x1="53.34" y1="226.06" x2="129.54" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="226.06" x2="53.34" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="231.14" x2="30.48" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -17457,19 +17361,13 @@ Source: Samtec TSW.pdf</description>
 <segment>
 <wire x1="281.94" y1="137.16" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="127" x2="236.22" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="137.16" x2="246.38" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="137.16" x2="256.54" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="137.16" x2="269.24" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="137.16" x2="281.94" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="127" x2="246.38" y2="137.16" width="0.1524" layer="91"/>
-<junction x="246.38" y="137.16"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="127" x2="256.54" y2="137.16" width="0.1524" layer="91"/>
 <junction x="256.54" y="137.16"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="127" x2="269.24" y2="137.16" width="0.1524" layer="91"/>
 <junction x="269.24" y="137.16"/>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -17483,6 +17381,9 @@ Source: Samtec TSW.pdf</description>
 <wire x1="317.5" y1="111.76" x2="317.5" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="121.92" x2="281.94" y2="121.92" width="0.1524" layer="91"/>
 <junction x="281.94" y="121.92"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -17515,6 +17416,11 @@ Source: Samtec TSW.pdf</description>
 <wire x1="154.94" y1="124.46" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="127" x2="119.38" y2="127" width="0.1524" layer="91"/>
 <junction x="119.38" y="127"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="124.46" y1="55.88" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="USB0_UART_TX" class="0">
@@ -17560,14 +17466,23 @@ Source: Samtec TSW.pdf</description>
 <wire x1="271.78" y1="109.22" x2="292.1" y2="109.22" width="0.1524" layer="91"/>
 <label x="271.78" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="C"/>
+<wire x1="261.62" y1="231.14" x2="261.62" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="236.22" x2="281.94" y2="236.22" width="0.1524" layer="91"/>
+<label x="264.16" y="236.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ESP32_MTDI" class="0">
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
 <label x="274.32" y="106.68" size="1.778" layer="95"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="106.68" x2="292.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="116.84" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="91.44" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
+<junction x="269.24" y="106.68"/>
 </segment>
 </net>
 <net name="ESP32_MTMS" class="0">
@@ -17576,8 +17491,8 @@ Source: Samtec TSW.pdf</description>
 <wire x1="256.54" y1="104.14" x2="264.16" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="264.16" y1="104.14" x2="292.1" y2="104.14" width="0.1524" layer="91"/>
 <label x="274.32" y="104.14" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="256.54" y1="116.84" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ESP32_MTCK" class="0">
@@ -17586,8 +17501,8 @@ Source: Samtec TSW.pdf</description>
 <wire x1="246.38" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="101.6" x2="292.1" y2="101.6" width="0.1524" layer="91"/>
 <label x="274.32" y="101.6" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="116.84" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="246.38" y1="101.6" x2="246.38" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESP32_MTDO" class="0">
@@ -17596,9 +17511,9 @@ Source: Samtec TSW.pdf</description>
 <pinref part="J3" gate="G$1" pin="13"/>
 <wire x1="269.24" y1="96.52" x2="292.1" y2="96.52" width="0.1524" layer="91"/>
 <label x="274.32" y="96.52" size="1.778" layer="95"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="116.84" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RESET_L" class="3">
@@ -17642,6 +17557,110 @@ Source: Samtec TSW.pdf</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="58.42" y1="248.92" x2="58.42" y2="254" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="ID" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="30.48" y1="226.06" x2="43.18" y2="226.06" width="0.1524" layer="91"/>
+<label x="33.02" y="226.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ECI_GPIO0"/>
+<wire x1="165.1" y1="226.06" x2="203.2" y2="226.06" width="0.1524" layer="91"/>
+<label x="177.8" y="226.06" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="E"/>
+<wire x1="261.62" y1="187.96" x2="261.62" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="190.5" x2="271.78" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="210.82" x2="271.78" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="E"/>
+<wire x1="271.78" y1="213.36" x2="261.62" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="213.36" x2="261.62" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="213.36" x2="236.22" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="213.36" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+<junction x="261.62" y="213.36"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="226.06" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+<junction x="236.22" y="226.06"/>
+</segment>
+</net>
+<net name="RTS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="ECI_RTS"/>
+<wire x1="165.1" y1="213.36" x2="203.2" y2="213.36" width="0.1524" layer="91"/>
+<label x="177.8" y="213.36" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="205.74" x2="228.6" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="205.74" x2="218.44" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="205.74" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="205.74" x2="215.9" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="213.36" x2="203.2" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="205.74" x2="215.9" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="182.88" x2="238.76" y2="182.88" width="0.1524" layer="91"/>
+<junction x="215.9" y="205.74"/>
+<pinref part="U$1" gate="G$1" pin="E"/>
+<wire x1="261.62" y1="220.98" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="215.9" x2="228.6" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="215.9" x2="228.6" y2="205.74" width="0.1524" layer="91"/>
+<junction x="228.6" y="205.74"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="B"/>
+<wire x1="248.92" y1="226.06" x2="256.54" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="B"/>
+<wire x1="248.92" y1="205.74" x2="256.54" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="B"/>
+<wire x1="248.92" y1="182.88" x2="256.54" y2="182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ESP32_GPIO0" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="C"/>
+<wire x1="261.62" y1="200.66" x2="261.62" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="195.58" x2="279.4" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="195.58" x2="284.48" y2="195.58" width="0.1524" layer="91"/>
+<label x="276.86" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_GPIO2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="C"/>
+<wire x1="261.62" y1="177.8" x2="261.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="172.72" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
+<label x="276.86" y="172.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP32_BLINKY" class="0">
+<segment>
+<wire x1="68.58" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="124.46" y1="20.32" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
+<label x="96.52" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="124.46" y1="40.64" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -18344,25 +18363,28 @@ Source: Samtec TSW.pdf</description>
 <label x="154.94" y="139.7" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="ESP32_U1TX" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="USB1_UART_RX"/>
 <portref moduleinst="ESP32" port="ESP32_U1TX"/>
 <wire x1="99.06" y1="222.25" x2="99.06" y2="213.36" width="0.1524" layer="91"/>
+<label x="99.06" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="ESP32_U1RX" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="USB1_UART_TX"/>
 <portref moduleinst="ESP32" port="ESP32_U1RX"/>
 <wire x1="101.6" y1="222.25" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<label x="101.6" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="ESP32_MTCH" class="0">
+<net name="ESP32_MTCK" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="ESP32_MTCK"/>
 <portref moduleinst="ESP32" port="MTCK"/>
 <wire x1="104.14" y1="222.25" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
+<label x="104.14" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ESP32_MTDI" class="0">
@@ -18370,6 +18392,7 @@ Source: Samtec TSW.pdf</description>
 <portref moduleinst="DEBUG1" port="ESP32_MTDI"/>
 <portref moduleinst="ESP32" port="MTDI"/>
 <wire x1="106.68" y1="222.25" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
+<label x="106.68" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ESP32_MTDO" class="0">
@@ -18377,6 +18400,7 @@ Source: Samtec TSW.pdf</description>
 <portref moduleinst="DEBUG1" port="ESP32_MTDO"/>
 <portref moduleinst="ESP32" port="MTDO"/>
 <wire x1="109.22" y1="222.25" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
+<label x="109.22" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ESP32_MTMS" class="0">
@@ -18384,42 +18408,58 @@ Source: Samtec TSW.pdf</description>
 <portref moduleinst="DEBUG1" port="ESP32_MTMS"/>
 <portref moduleinst="ESP32" port="MTMS"/>
 <wire x1="111.76" y1="222.25" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
+<label x="111.76" y="210.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="JTDO" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="JTDO"/>
 <wire x1="144.78" y1="238.76" x2="162.56" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="238.76" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
 <portref moduleinst="STM32_MCU1" port="JTDO"/>
 <wire x1="162.56" y1="198.12" x2="175.26" y2="198.12" width="0.1524" layer="91"/>
+<label x="149.86" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="JTDI" class="0">
 <segment>
 <portref moduleinst="STM32_MCU1" port="JTDI"/>
 <wire x1="175.26" y1="200.66" x2="165.1" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="200.66" x2="165.1" y2="241.3" width="0.1524" layer="91"/>
 <portref moduleinst="DEBUG1" port="JTDI"/>
 <wire x1="165.1" y1="241.3" x2="144.78" y2="241.3" width="0.1524" layer="91"/>
+<label x="149.86" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="JTMS" class="0">
 <segment>
 <wire x1="167.64" y1="243.84" x2="167.64" y2="203.2" width="0.1524" layer="91"/>
 <portref moduleinst="STM32_MCU1" port="SWDIO/JTMS"/>
 <wire x1="167.64" y1="203.2" x2="175.26" y2="203.2" width="0.1524" layer="91"/>
 <portref moduleinst="DEBUG1" port="SWDIO/JTMS"/>
 <wire x1="167.64" y1="243.84" x2="144.78" y2="243.84" width="0.1524" layer="91"/>
+<label x="149.86" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="JTCK" class="0">
 <segment>
 <portref moduleinst="DEBUG1" port="SWCLK/JTCK"/>
 <wire x1="144.78" y1="246.38" x2="170.18" y2="246.38" width="0.1524" layer="91"/>
 <portref moduleinst="STM32_MCU1" port="SWCLK/JTCK"/>
 <wire x1="170.18" y1="246.38" x2="170.18" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="205.74" x2="175.26" y2="205.74" width="0.1524" layer="91"/>
+<label x="149.86" y="246.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBAT_MEAS" class="0">
+<segment>
+<portref moduleinst="POWER1" port="VBAT_MEAS"/>
+<wire x1="55.88" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="142.24" x2="73.66" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="142.24" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
+<portref moduleinst="ESP32" port="ADC2_CH0"/>
+<wire x1="73.66" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
+<label x="73.66" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
