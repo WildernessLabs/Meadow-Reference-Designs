@@ -16143,7 +16143,7 @@ Source: Samtec SSW.pdf</description>
 <net name="MTDI" class="0">
 <segment>
 <wire x1="190.5" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
-<label x="180.34" y="149.86" size="1.778" layer="95"/>
+<label x="172.72" y="149.86" size="1.778" layer="95"/>
 <wire x1="177.8" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="MTDI_IO12"/>
 </segment>
@@ -16151,7 +16151,7 @@ Source: Samtec SSW.pdf</description>
 <net name="MTMS" class="0">
 <segment>
 <wire x1="190.5" y1="147.32" x2="177.8" y2="147.32" width="0.1524" layer="91"/>
-<label x="180.34" y="147.32" size="1.778" layer="95"/>
+<label x="172.72" y="147.32" size="1.778" layer="95"/>
 <wire x1="177.8" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="MTMS_IO14"/>
 </segment>
@@ -16159,7 +16159,7 @@ Source: Samtec SSW.pdf</description>
 <net name="MTCK" class="0">
 <segment>
 <wire x1="190.5" y1="144.78" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
-<label x="180.34" y="144.78" size="1.778" layer="95"/>
+<label x="172.72" y="144.78" size="1.778" layer="95"/>
 <wire x1="172.72" y1="144.78" x2="170.18" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="MTCK"/>
 </segment>
@@ -16167,7 +16167,7 @@ Source: Samtec SSW.pdf</description>
 <net name="MTDO" class="0">
 <segment>
 <wire x1="190.5" y1="142.24" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
-<label x="180.34" y="142.24" size="1.778" layer="95"/>
+<label x="172.72" y="142.24" size="1.778" layer="95"/>
 <wire x1="172.72" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="MTDO"/>
 </segment>
@@ -18191,6 +18191,8 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <sheets>
 <sheet>
 <plain>
+<text x="172.72" y="231.14" size="2.54" layer="91">NOTE: PULL R712 When using STM32 to talk to ESP32.
+MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</text>
 </plain>
 <moduleinsts>
 <moduleinst name="STM32_MCU1" module="STM32_MCU" x="218.44" y="132.08" offset="400">
