@@ -11978,6 +11978,7 @@ Source: Samtec SSW.pdf</description>
 </package>
 <package name="TP_SMT_40MIL">
 <smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+<text x="1.27" y="0" size="0.635" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15612,8 +15613,6 @@ Source: Samtec SSW.pdf</description>
 <attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
 </part>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$6" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
-<part name="U$7" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U3" library="SLJ_wireless" deviceset="ESP32-PICO-D4" device="" package3d_urn="urn:adsk.eagle:package:7911054/1"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="10uF">
@@ -15840,8 +15839,6 @@ Source: Samtec SSW.pdf</description>
 <instance part="SUPPLY12" gate="GND" x="243.84" y="81.28" smashed="yes">
 <attribute name="VALUE" x="241.935" y="78.105" size="1.778" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="241.3" y="157.48" smashed="yes"/>
-<instance part="U$7" gate="G$1" x="241.3" y="154.94" smashed="yes"/>
 <instance part="U3" gate="G$1" x="215.9" y="160.02" smashed="yes">
 <attribute name="NAME" x="195.5579" y="200.7043" size="1.779940625" layer="95"/>
 <attribute name="VALUE" x="195.577" y="111.7529" size="1.778259375" layer="96"/>
@@ -16241,12 +16238,22 @@ Source: Samtec SSW.pdf</description>
 <label x="134.62" y="121.92" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="V2"/>
 </segment>
+<segment>
+<wire x1="241.3" y1="154.94" x2="254" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GPIO26"/>
+<label x="246.38" y="154.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO27" class="0">
 <segment>
 <wire x1="132.08" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="134.62" y="132.08" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="V1"/>
+</segment>
+<segment>
+<wire x1="241.3" y1="157.48" x2="254" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GPIO27"/>
+<label x="246.38" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXTANT_50OHM" class="8">
@@ -16962,7 +16969,7 @@ Source: Samtec SSW.pdf</description>
 <attribute name="VALUE" x="274.955" y="139.065" size="1.778" layer="96"/>
 </instance>
 <instance part="P1" gate="G$1" x="17.78" y="177.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.054059375" y="170.16783125" size="1.274059375" layer="95" rot="R180"/>
+<attribute name="NAME" x="8.894059375" y="180.32783125" size="1.274059375" layer="95" rot="R180"/>
 <attribute name="VALUE" x="29.21413125" y="186.706509375" size="1.27413125" layer="96" rot="R180"/>
 </instance>
 <instance part="+3V2" gate="G$1" x="38.1" y="195.58" smashed="yes">
@@ -17110,6 +17117,7 @@ Source: Samtec SSW.pdf</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="147.32" x2="149.86" y2="180.34" width="0.1524" layer="91"/>
 <junction x="149.86" y="180.34"/>
+<label x="134.62" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -17135,6 +17143,7 @@ Source: Samtec SSW.pdf</description>
 <pinref part="P1" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="180.34" x2="35.56" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="180.34" x2="35.56" y2="177.8" width="0.1524" layer="91"/>
+<label x="25.4" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -17256,6 +17265,7 @@ Source: Samtec SSW.pdf</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="162.56" x2="276.86" y2="167.64" width="0.1524" layer="91"/>
 <junction x="276.86" y="167.64"/>
+<label x="269.24" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -17559,7 +17569,7 @@ Source: Samtec SSW.pdf</description>
 <text x="274.32" y="154.94" size="6.35" layer="91">ESP32 JTAG</text>
 <text x="109.22" y="162.56" size="6.35" layer="91">STM32  JTAG</text>
 <text x="185.42" y="251.46" size="6.35" layer="91">STM32  UART</text>
-<text x="279.4" y="208.28" size="6.35" layer="91">ESP32 UART</text>
+<text x="172.72" y="203.2" size="6.35" layer="91">ESP32 UART</text>
 <text x="182.88" y="185.42" size="2.54" layer="91">NOTE: PULL R712 When using STM32 to talk to ESP32.
 MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</text>
 </plain>
@@ -17710,12 +17720,12 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <attribute name="NAME" x="250.19" y="224.5614" size="1.27" layer="95" rot="R180"/>
 <attribute name="VALUE" x="240.03" y="227.838" size="1.27" layer="96"/>
 </instance>
-<instance part="R11" gate="G$1" x="243.84" y="205.74" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="248.92" y="205.74" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="243.84" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="243.84" y="205.74" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="250.19" y="204.2414" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="240.03" y="207.518" size="1.27" layer="96"/>
+<instance part="R11" gate="G$1" x="243.84" y="200.66" smashed="yes" rot="R180">
+<attribute name="FOOTPRINT" x="248.92" y="200.66" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="243.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="PART_NUMBER" x="243.84" y="200.66" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="250.19" y="199.1614" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="240.03" y="202.438" size="1.27" layer="96"/>
 </instance>
 <instance part="D2" gate="G$1" x="124.46" y="33.02" smashed="yes">
 <attribute name="NAME" x="131.572" y="34.036" size="1.778" layer="95" rot="R180"/>
@@ -17784,9 +17794,9 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <attribute name="NAME" x="264.16" y="226.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="264.16" y="223.52" size="1.778" layer="96"/>
 </instance>
-<instance part="Q2" gate="G$1" x="259.08" y="205.74" smashed="yes" rot="MR180">
-<attribute name="NAME" x="264.16" y="208.28" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="264.16" y="205.74" size="1.778" layer="96" rot="MR180"/>
+<instance part="Q2" gate="G$1" x="259.08" y="200.66" smashed="yes" rot="MR180">
+<attribute name="NAME" x="264.16" y="203.2" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="264.16" y="200.66" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="JP1" gate="A" x="124.46" y="190.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="124.46" y="191.77" size="1.778" layer="95"/>
@@ -17897,12 +17907,10 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="124.46" y1="88.9" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="X1" gate="-6" pin="1"/>
 <wire x1="129.54" y1="104.14" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="104.14" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="93.98" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
@@ -17975,6 +17983,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <pinref part="U1" gate="G$1" pin="VIO"/>
 <pinref part="U1" gate="G$1" pin="REGIN"/>
+<label x="86.36" y="256.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="281.94" y1="137.16" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
@@ -18204,9 +18213,10 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <pinref part="U1" gate="G$1" pin="ECI_GPIO0"/>
 <wire x1="165.1" y1="226.06" x2="203.2" y2="226.06" width="0.1524" layer="91"/>
 <label x="177.8" y="226.06" size="1.778" layer="95"/>
-<wire x1="261.62" y1="213.36" x2="261.62" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="213.36" x2="236.22" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="213.36" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="205.74" x2="261.62" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="210.82" x2="259.08" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="210.82" x2="236.22" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="210.82" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="226.06" x2="238.76" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="226.06" x2="236.22" y2="226.06" width="0.1524" layer="91"/>
@@ -18220,15 +18230,16 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="165.1" y1="213.36" x2="203.2" y2="213.36" width="0.1524" layer="91"/>
 <label x="177.8" y="213.36" size="1.778" layer="95"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="238.76" y1="205.74" x2="228.6" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="205.74" x2="218.44" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="205.74" x2="215.9" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="205.74" x2="215.9" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="200.66" x2="228.6" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="200.66" x2="228.6" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="213.36" x2="220.98" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="213.36" x2="218.44" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="213.36" x2="215.9" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="213.36" x2="203.2" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="220.98" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="215.9" x2="228.6" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="215.9" x2="228.6" y2="205.74" width="0.1524" layer="91"/>
-<junction x="228.6" y="205.74"/>
+<wire x1="261.62" y1="220.98" x2="261.62" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="213.36" x2="259.08" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="213.36" x2="228.6" y2="213.36" width="0.1524" layer="91"/>
+<junction x="228.6" y="213.36"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
 </segment>
 </net>
@@ -18242,13 +18253,12 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <net name="N$2" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="205.74" x2="256.54" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="200.66" x2="256.54" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="ESP32_GPIO0" class="0">
 <segment>
-<wire x1="261.62" y1="200.66" x2="261.62" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="195.58" x2="279.4" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="195.58" x2="284.48" y2="195.58" width="0.1524" layer="91"/>
 <label x="276.86" y="195.58" size="1.778" layer="95"/>
@@ -19117,12 +19127,67 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 </sheet>
 </sheets>
 <errors>
+<approved hash="102,1,355.6,119.38,+5V,+3V3,,,,"/>
+<approved hash="102,1,342.9,223.52,+5V,+3V3,,,,"/>
+<approved hash="102,1,218.44,223.52,+5V,+3V3,,,,"/>
 <approved hash="102,1@USB_OTG,154.94,154.94,VCC,+VBUS,,,,"/>
 <approved hash="102,1@USB_OTG,190.5,185.42,+4.1V,+3.3V,,,,"/>
 <approved hash="102,1@HEADERS,73.66,160.02,VDD,VREF+,,,,"/>
 <approved hash="102,1@POWER,38.1,193.04,+3V3,+VBAT,,,,"/>
 <approved hash="102,1@POWER,71.12,101.6,+5V,+VBUS,,,,"/>
 <approved hash="201,1@POWER,38.1,193.04,+3V3,+3V3\, +VBAT,,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,251.46,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,248.92,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,246.38,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,243.84,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,241.3,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,238.76,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,236.22,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,233.68,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,231.14,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,228.6,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,226.06,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,223.52,U1G$4,VDD,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,154.94,U1G$4,VDDA,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,157.48,254,U1G$4,VDDSDMMC,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,256.54,U1G$4,VDD_USB,VCC,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,251.46,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,248.92,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,246.38,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,243.84,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,241.3,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,238.76,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,236.22,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,233.68,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,231.14,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,228.6,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,226.06,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,223.52,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,220.98,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,218.44,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,215.9,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,213.36,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,210.82,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,208.28,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,205.74,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,203.2,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,200.66,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,198.12,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,195.58,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,193.04,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,190.5,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,187.96,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,185.42,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,182.88,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,180.34,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,177.8,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,175.26,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,172.72,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,170.18,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,167.64,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,165.1,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,162.56,U1G$4,VSS,GND,,,"/>
+<approved hash="104,1@STM32_MCU,111.76,157.48,U1G$4,VSSA,GND,,,"/>
 <approved hash="104,1@USB_OTG,236.22,167.64,U1,IN,+5V,,,"/>
 <approved hash="104,1@USB_OTG,210.82,170.18,U1,OUT,+VBUS,,,"/>
 <approved hash="104,1@MEMORY,292.1,157.48,U1,VSS,GND,,,"/>
@@ -19131,21 +19196,31 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <approved hash="104,1@MEMORY,132.08,139.7,U2,VDD,VCC,,,"/>
 <approved hash="104,1@MEMORY,132.08,137.16,U2,VSSQ,GND,,,"/>
 <approved hash="104,1@MEMORY,132.08,134.62,U2,VSS,GND,,,"/>
-<approved hash="104,1@WIFI_BLUETOOTH,241.3,198.12,U1,VDDA,VCC,,,"/>
-<approved hash="104,1@WIFI_BLUETOOTH,241.3,195.58,U1,VDD3P3,N$11,,,"/>
-<approved hash="104,1@WIFI_BLUETOOTH,241.3,187.96,U1,VDD3P3_RTC,VCC,,,"/>
-<approved hash="104,1@WIFI_BLUETOOTH,241.3,193.04,U1,VDD_SDIO,N$17,,,"/>
-<approved hash="104,1@WIFI_BLUETOOTH,241.3,190.5,U1,VDD3P3_CPU,VCC,,,"/>
-<approved hash="104,1@POWER,226.06,167.64,U1,VIN,+5V,,,"/>
+<approved hash="104,1@WIFI_BLUETOOTH,241.3,198.12,U3,VDDA,VCC,,,"/>
+<approved hash="104,1@WIFI_BLUETOOTH,241.3,195.58,U3,VDDA3P3,VCC,,,"/>
+<approved hash="104,1@WIFI_BLUETOOTH,241.3,187.96,U3,VDD3P3_RTC,VCC,,,"/>
+<approved hash="104,1@WIFI_BLUETOOTH,241.3,193.04,U3,VDD_SDIO,FLASH_VDD,,,"/>
+<approved hash="104,1@WIFI_BLUETOOTH,241.3,190.5,U3,VDD3P3_CPU,VCC,,,"/>
+<approved hash="104,1@POWER,86.36,63.5,U2,VBAT,+VBAT,,,"/>
+<approved hash="104,1@POWER,71.12,76.2,U2,VDD,+VBUS,,,"/>
+<approved hash="104,1@POWER,228.6,167.64,U1,VIN,N$4,,,"/>
+<approved hash="104,1@POWER,256.54,167.64,U1,VOUT,+3V3,,,"/>
+<approved hash="104,1@DEBUG,129.54,254,U1,VDD,+3V3,,,"/>
+<approved hash="104,1@DEBUG,129.54,248.92,U1,VIO,+3V3,,,"/>
+<approved hash="104,1@DEBUG,129.54,246.38,U1,REGIN,+3V3,,,"/>
 <approved hash="106,1@STM32_MCU,195.58,73.66,I2C2_SCL,,,,,"/>
 <approved hash="106,1@STM32_MCU,55.88,53.34,I2C2_SDA,,,,,"/>
 <approved hash="106,1@STM32_MCU,93.98,104.14,PC8_TIM8CH1,,,,,"/>
+<approved hash="106,1@STM32_MCU,93.98,68.58,PD5_BUT,,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
 <approved hash="106,1@WIFI_BLUETOOTH,190.5,165.1,N$9,,,,,"/>
 <approved hash="209,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
 <approved hash="106,1@WIFI_BLUETOOTH,190.5,162.56,N$12,,,,,"/>
-<approved hash="208,1@POWER,261.62,167.64,+3V3,out,,,,"/>
-<approved hash="208,1@POWER,292.1,180.34,+3V3,sup,,,,"/>
+<approved hash="106,1@DEBUG,30.48,226.06,ID,,,,,"/>
+<approved hash="110,1@POWER,35.56,177.8,+VBAT,GND,,,,"/>
+<approved hash="110,1@POWER,35.56,177.8,+VBAT,GND,,,,"/>
+<approved hash="110,1@DEBUG,269.24,96.52,ESP32_MTDI,ESP32_MTDO,,,,"/>
+<approved hash="110,1@DEBUG,269.24,96.52,ESP32_MTDI,ESP32_MTDO,,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1@STM32_MCU,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1@USB_OTG,215.796,139.596,FRAME1,,,,,"/>
@@ -19154,14 +19229,17 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <approved hash="113,1@WIFI_BLUETOOTH,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1@HEADERS,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1@POWER,215.796,139.596,FRAME1,,,,,"/>
+<approved hash="113,1@DEBUG,215.796,139.596,FRAME1,,,,,"/>
+<approved hash="113,1@DEBUG,123.519,190.205,JP1,,,,,"/>
 <approved hash="118,1@USB_OTG,241.3,167.64,Net,+5V,,,,"/>
 <approved hash="118,1@USB_OTG,190.5,184.15,Net,+3.3V,,,,"/>
 <approved hash="118,1@USB_OTG,157.48,110.49,Net,GND,,,,"/>
 <approved hash="118,1@MEMORY,290.83,157.48,Net,GND,,,,"/>
+<approved hash="118,1@WIFI_BLUETOOTH,48.26,166.37,Net,GND,,,,"/>
 <approved hash="118,1@HEADERS,66.04,160.02,Net,+3V3,,,,"/>
 <approved hash="118,1@HEADERS,66.04,140.97,Net,GND,,,,"/>
-<approved hash="118,1@POWER,266.7,165.1,Net,+3V3,,,,"/>
-<approved hash="118,1@POWER,170.18,151.13,Net,GND,,,,"/>
+<approved hash="118,1@DEBUG,31.75,223.52,Net,GND,,,,"/>
+<approved hash="118,1@DEBUG,58.42,251.46,Net,+5V,,,,"/>
 </errors>
 </schematic>
 </drawing>

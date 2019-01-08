@@ -12630,7 +12630,6 @@ Source: Samtec SSW.pdf</description>
 <part name="U$44" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$45" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="TP7" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 <part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 <part name="TP2" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 </parts>
@@ -13040,10 +13039,6 @@ Source: Samtec SSW.pdf</description>
 <instance part="U$45" gate="G$1" x="215.9" y="73.66" smashed="yes"/>
 <instance part="SUPPLY15" gate="GND" x="162.56" y="200.66" smashed="yes">
 <attribute name="VALUE" x="160.655" y="197.485" size="1.778" layer="96"/>
-</instance>
-<instance part="TP7" gate="G$1" x="38.1" y="17.78" smashed="yes" rot="MR0">
-<attribute name="NAME" x="15.24" y="17.78" size="1.778" layer="94" rot="MR0"/>
-<attribute name="VALUE" x="35.56" y="17.78" size="1.778" layer="94" rot="MR0"/>
 </instance>
 <instance part="TP1" gate="G$1" x="38.1" y="15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="15.24" size="1.778" layer="94" rot="MR0"/>
@@ -13628,9 +13623,6 @@ Source: Samtec SSW.pdf</description>
 <wire x1="12.7" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <label x="17.78" y="30.48" size="1.778" layer="95"/>
 <wire x1="27.94" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="TP7" gate="G$1" pin="P$1"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -14009,6 +14001,12 @@ Source: Samtec SSW.pdf</description>
 <label x="35.56" y="91.44" size="1.778" layer="95"/>
 <wire x1="35.56" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="71.12" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="12.7" x2="63.5" y2="12.7" width="0.1524" layer="91"/>
+<label x="45.72" y="12.7" size="1.778" layer="95"/>
+<pinref part="TP2" gate="G$1" pin="P$1"/>
+</segment>
 </net>
 <net name="SWCLK/JTCK" class="0">
 <segment>
@@ -14018,10 +14016,10 @@ Source: Samtec SSW.pdf</description>
 <wire x1="35.56" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="43.18" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<label x="45.72" y="15.24" size="1.778" layer="95"/>
 <pinref part="TP1" gate="G$1" pin="P$1"/>
-<wire x1="43.18" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
-<junction x="43.18" y="15.24"/>
 </segment>
 </net>
 <net name="JTDI" class="0">
@@ -17522,7 +17520,9 @@ Source: Samtec SSW.pdf</description>
 <attribute name="MANUFACTURER" value="Panasonic"/>
 <attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
 </part>
-<part name="X1" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="SSW-107-02-G-S" device=""/>
+<part name="X1" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="SSW-107-02-G-S" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
 <part name="X2" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="SSW-105-02-G-S" device=""/>
 <part name="Q1" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
 <part name="Q2" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
@@ -17753,6 +17753,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 </instance>
 <instance part="X1" gate="-4" x="132.08" y="109.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="135.128" y="109.982" size="1.524" layer="95" rot="MR180"/>
+<attribute name="DNI" x="134.62" y="96.52" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="X1" gate="-5" x="132.08" y="106.68" smashed="yes" rot="MR0">
 <attribute name="NAME" x="135.128" y="107.442" size="1.524" layer="95" rot="MR180"/>
