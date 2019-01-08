@@ -11979,6 +11979,7 @@ Source: Samtec SSW.pdf</description>
 <package name="TP_SMT_40MIL">
 <smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
 <text x="1.27" y="0" size="0.635" layer="25">&gt;NAME</text>
+<text x="1.27" y="-1.27" size="0.635" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
