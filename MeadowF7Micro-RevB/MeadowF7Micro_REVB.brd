@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="63" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="63" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -1615,7 +1615,7 @@ Source: Samtec TSW.pdf</description>
 </library>
 <library name="SLJ_Memory">
 <packages>
-<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1">
+<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1" locally_modified="yes">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <circle x="-3.504" y="2" radius="0.25" width="0" layer="21"/>
@@ -1658,6 +1658,11 @@ Source: Samtec TSW.pdf</description>
 <smd name="E5" x="2" y="-2" dx="0.25" dy="0.25" layer="1" roundness="100" thermals="no"/>
 <text x="0" y="4.635" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<smd name="P$1" x="-2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$2" x="-1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$3" x="0" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$4" x="1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$5" x="2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
 </package>
 <package name="BGA81C80P9X9_800X800X120" urn="urn:adsk.eagle:footprint:4529515/1" locally_modified="yes">
 <description>81-BGA, collapsing, 0.80 mm pitch, 8.00 X 8.00 X 1.20 mm body
@@ -1734,7 +1739,7 @@ Source: Samtec TSW.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" type="model">
+<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" locally_modified="yes" type="model">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -4458,21 +4463,21 @@ design rules under a new name.</description>
 <wire x1="15.48989375" y1="28.286159375" x2="15.570996875" y2="28.20505625" width="0.1524" layer="16"/>
 <wire x1="15.570996875" y1="28.20505625" x2="15.795746875" y2="27.98030625" width="0.1524" layer="16"/>
 <wire x1="15.795746875" y1="27.98030625" x2="15.896409375" y2="27.87964375" width="0.1524" layer="16"/>
-<wire x1="15.85905" y1="20.630165625" x2="14.953675" y2="20.630165625" width="0.1524" layer="1"/>
-<wire x1="14.953675" y1="20.630165625" x2="14.098528125" y2="19.77501875" width="0.1524" layer="1"/>
+<wire x1="15.85905" y1="20.630165625" x2="15.3416" y2="20.630165625" width="0.1524" layer="1"/>
 <wire x1="10.887684375" y1="18.724503125" x2="10.46718125" y2="18.304" width="0.1524" layer="1"/>
 <wire x1="10.46718125" y1="18.304" x2="10.43" y2="18.304" width="0.1524" layer="1"/>
 <wire x1="15.896409375" y1="27.87964375" x2="15.896409375" y2="20.667525" width="0.1524" layer="16"/>
 <wire x1="15.570996875" y1="28.20505625" x2="15.499621875" y2="28.27643125" width="0.1524" layer="16"/>
 <wire x1="15.48989375" y1="28.75453125" x2="15.48989375" y2="28.286159375" width="0.1524" layer="16"/>
 <wire x1="15.48989375" y1="28.286159375" x2="15.795746875" y2="27.98030625" width="0.1524" layer="16"/>
-<wire x1="14.098528125" y1="19.77501875" x2="11.2400125" y2="19.77501875" width="0.1524" layer="1"/>
 <wire x1="10.887684375" y1="19.422690625" x2="10.887684375" y2="18.724503125" width="0.1524" layer="1"/>
 <wire x1="11.2400125" y1="19.77501875" x2="10.887684375" y2="19.422690625" width="0.1524" layer="1"/>
 <wire x1="15.896409375" y1="20.667525" x2="15.85905" y2="20.630165625" width="0.1524" layer="16"/>
 <wire x1="14.03" y1="31.466" x2="14.03" y2="31.462209375" width="0.1524" layer="1"/>
 <wire x1="14.03" y1="31.462209375" x2="14.355" y2="31.137209375" width="0.1524" layer="1"/>
 <wire x1="14.355" y1="31.137209375" x2="14.541903125" y2="30.95030625" width="0.127" layer="16"/>
+<wire x1="15.3416" y1="20.630165625" x2="14.486453125" y2="19.77501875" width="0.1524" layer="1"/>
+<wire x1="14.486453125" y1="19.77501875" x2="11.2400125" y2="19.77501875" width="0.1524" layer="1"/>
 </signal>
 <signal name="FLASH_CS_L" class="7">
 <contactref element="U401" pad="R12"/>
@@ -6451,14 +6456,16 @@ design rules under a new name.</description>
 <via x="14.999509375" y="39.207621875" extent="1-16" drill="0.2032"/>
 <wire x1="12.43" y1="20.304" x2="13.0040375" y2="20.304" width="0.1524" layer="1"/>
 <wire x1="13.0040375" y1="20.304" x2="13.3052375" y2="20.6052" width="0.1524" layer="1"/>
-<wire x1="13.3052375" y1="20.6052" x2="13.652390625" y2="20.6052" width="0.1524" layer="1"/>
-<wire x1="14.081953125" y1="21.0347625" x2="17.164653125" y2="21.0347625" width="0.1524" layer="1"/>
+<wire x1="13.652390625" y1="20.6052" x2="13.3052375" y2="20.6052" width="0.1524" layer="1"/>
 <via x="17.164653125" y="21.0347625" extent="1-16" drill="0.2032"/>
-<wire x1="13.652390625" y1="20.6052" x2="14.081953125" y2="21.0347625" width="0.1524" layer="1"/>
+<wire x1="17.164653125" y1="21.0347625" x2="15.1384" y2="21.0347625" width="0.1524" layer="1"/>
 <wire x1="17.164653125" y1="21.0347625" x2="17.164653125" y2="23.770971875" width="0.1524" layer="16"/>
 <wire x1="17.164653125" y1="23.770971875" x2="17.16296875" y2="23.77265625" width="0.1524" layer="16"/>
 <wire x1="14.03" y1="38.2381125" x2="14.999509375" y2="39.207621875" width="0.1524" layer="1"/>
 <wire x1="14.03" y1="37.316" x2="14.03" y2="38.2381125" width="0.1524" layer="1"/>
+<wire x1="15.1384" y1="21.0347625" x2="14.9862125" y2="20.882575" width="0.1524" layer="1"/>
+<wire x1="14.9862125" y1="20.882575" x2="13.929765625" y2="20.882575" width="0.1524" layer="1"/>
+<wire x1="13.929765625" y1="20.882575" x2="13.652390625" y2="20.6052" width="0.1524" layer="1"/>
 </signal>
 <signal name="QUAD_SPI_IO1" class="5">
 <contactref element="U401" pad="N13"/>
@@ -6487,11 +6494,8 @@ design rules under a new name.</description>
 <via x="15.71990625" y="38.43606875" extent="1-16" drill="0.2032"/>
 <via x="17.718153125" y="19.204065625" extent="1-16" drill="0.2032"/>
 <wire x1="17.718153125" y1="19.204065625" x2="17.304621875" y2="19.204065625" width="0.1524" layer="1"/>
-<wire x1="17.304621875" y1="19.204065625" x2="17.28744375" y2="19.22124375" width="0.1524" layer="1"/>
-<wire x1="17.28744375" y1="19.22124375" x2="13.77320625" y2="19.22124375" width="0.1524" layer="1"/>
-<wire x1="13.77320625" y1="19.22124375" x2="13.5547625" y2="19.0028" width="0.1524" layer="1"/>
-<wire x1="13.5547625" y1="19.0028" x2="12.7312" y2="19.0028" width="0.1524" layer="1"/>
-<wire x1="12.7312" y1="19.0028" x2="12.43" y2="19.304" width="0.1524" layer="1"/>
+<wire x1="17.28744375" y1="19.22124375" x2="17.304621875" y2="19.204065625" width="0.1524" layer="1"/>
+<wire x1="12.43" y1="19.304" x2="12.7312" y2="19.0028" width="0.1524" layer="1"/>
 <wire x1="16.4182" y1="30.9753625" x2="17.459428125" y2="29.934134375" width="0.1524" layer="16"/>
 <wire x1="15.71990625" y1="37.0142625" x2="15.71990625" y2="38.43606875" width="0.1524" layer="16"/>
 <wire x1="15.350484375" y1="38.15" x2="15.35" y2="38.15" width="0.1651" layer="1"/>
@@ -6506,6 +6510,9 @@ design rules under a new name.</description>
 <wire x1="14.98" y1="37.45935625" x2="14.9935" y2="37.44585625" width="0.127" layer="1"/>
 <wire x1="14.9935" y1="37.44585625" x2="14.9935" y2="36.9795" width="0.127" layer="1"/>
 <wire x1="14.9935" y1="36.9795" x2="14.68" y2="36.666" width="0.127" layer="1"/>
+<wire x1="14.5547625" y1="19.0028" x2="14.77320625" y2="19.22124375" width="0.1524" layer="1"/>
+<wire x1="14.77320625" y1="19.22124375" x2="17.28744375" y2="19.22124375" width="0.1524" layer="1"/>
+<wire x1="12.7312" y1="19.0028" x2="14.5547625" y2="19.0028" width="0.1524" layer="1"/>
 </signal>
 <signal name="QUAD_SPI_IO2" class="5">
 <contactref element="U401" pad="A2"/>

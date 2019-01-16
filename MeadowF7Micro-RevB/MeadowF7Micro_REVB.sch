@@ -10316,7 +10316,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </library>
 <library name="SLJ_Memory">
 <packages>
-<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1">
+<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1" locally_modified="yes">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <circle x="-3.504" y="2" radius="0.25" width="0" layer="21"/>
@@ -10359,6 +10359,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <smd name="E5" x="2" y="-2" dx="0.25" dy="0.25" layer="1" roundness="100" thermals="no"/>
 <text x="0" y="4.635" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<smd name="P$1" x="-2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$2" x="-1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$3" x="0" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$4" x="1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$5" x="2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
 </package>
 <package name="BGA81C80P9X9_800X800X120" urn="urn:adsk.eagle:footprint:4529515/1" locally_modified="yes">
 <description>81-BGA, collapsing, 0.80 mm pitch, 8.00 X 8.00 X 1.20 mm body
@@ -10435,7 +10440,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" type="model">
+<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" locally_modified="yes" type="model">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <packageinstances>
