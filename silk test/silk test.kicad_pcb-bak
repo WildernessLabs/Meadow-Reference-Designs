@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 0)
     (zones 0)
     (modules 1)
@@ -58,7 +58,7 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
-    (aux_axis_origin 91.44 147.32)
+    (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x00010_7ffffffe)
@@ -71,7 +71,7 @@
       (plotframeref false)
       (viasonmask false)
       (mode 1)
-      (useauxorigin true)
+      (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15.000000)
@@ -1973,6 +1973,7 @@
       (xy 68.578194 18.767222) (xy 68.600233 18.757002)) (layer B.SilkS) (width 0.01))
   )
 
+  (target plus (at 0 0) (size 5) (width 0.15) (layer Edge.Cuts))
   (target plus (at 0 0) (size 5) (width 0.15) (layer Edge.Cuts))
   (gr_line (start 22.86 -73.66) (end 0 -73.66) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 22.86 0) (end 22.86 -73.66) (layer Edge.Cuts) (width 0.2))
