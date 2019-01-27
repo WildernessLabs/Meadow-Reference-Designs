@@ -3383,16 +3383,36 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="19.812" y="47.371" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="21.717" y="46.736" size="0.635" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="TP202" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="11.684" y="15.494" smashed="yes" rot="MR0"/>
-<element name="TP201" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="10.668" smashed="yes" rot="MR0"/>
-<element name="TP203" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="9.144" smashed="yes" rot="MR0"/>
-<element name="TP204" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="12.192" smashed="yes" rot="MR0"/>
-<element name="TP205" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.318" y="7.62" smashed="yes" rot="MR0"/>
-<element name="TP206" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="14.224" y="14.986" smashed="yes" rot="MR0"/>
-<element name="TP207" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="7.62" y="13.97" smashed="yes" rot="MR0"/>
-<element name="TP208" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="6.35" y="15.24" smashed="yes" rot="MR0"/>
-<element name="TP401" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="6.604" y="36.322" smashed="yes" rot="MR0"/>
-<element name="TP402" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="7.62" y="37.592" smashed="yes" rot="MR0"/>
+<element name="TP202" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="11.684" y="15.494" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="11.684" y="15.494" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP201" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="10.668" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="4.572" y="10.668" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP203" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="9.144" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="4.572" y="9.144" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP204" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.572" y="12.192" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="4.572" y="12.192" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP205" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="4.318" y="7.62" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="4.318" y="7.62" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP206" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="14.224" y="14.986" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="14.224" y="14.986" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP207" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="7.62" y="13.97" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="7.62" y="13.97" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP208" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="6.35" y="15.24" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="6.35" y="15.24" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP401" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="6.604" y="36.322" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="6.604" y="36.322" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP402" library="SLJ_MECH" package="TP_SMT_40MIL" value="TP_SMT_40MIL" x="7.62" y="37.592" smashed="yes" rot="MR0">
+<attribute name="DNI" value="DNI" x="7.62" y="37.592" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="6">
