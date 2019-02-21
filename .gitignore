@@ -16,3 +16,7 @@ __Previews/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Build files for validation applications.
+[Bb]uild/
+
