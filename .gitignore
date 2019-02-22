@@ -20,3 +20,11 @@ Thumbs.db
 # Build files for validation applications.
 [Bb]uild/
 
+# Old configuration files
+sdkconfig.old
+
+# VS Code database files.
+*.db
+*.db-shm
+*.db-wal
+
