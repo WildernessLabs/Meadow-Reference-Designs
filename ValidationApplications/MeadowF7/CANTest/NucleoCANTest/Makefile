@@ -187,7 +187,14 @@ $(BUILD_DIR):
 clean:
 	-rm -fR $(BUILD_DIR)
   
-#######################################
+
+#######################################################
+# Use st-flash to write the application to the STM32
+#######################################################
+flash: $(BUILD_DIR)/$(TARGET).bin
+	st-flash write $(BUILD_DIR)/$(TARGET).bin 0x08000000
+
+########################################
 # dependencies
 #######################################
 -include $(wildcard $(BUILD_DIR)/*.d)

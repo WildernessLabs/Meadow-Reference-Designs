@@ -47,6 +47,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -117,8 +121,19 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+#define WELCOME_MESSAGE   "Nucleo CAN Slave\n"
+
+  HAL_UART_Transmit(&huart2, (uint8_t *) WELCOME_MESSAGE, strlen(WELCOME_MESSAGE), HAL_MAX_DELAY);
+
+  char buffer[256];
+  int counter = 0;
   while (1)
   {
+    snprintf(buffer, sizeof(buffer), "Message: %d\n", counter);
+    HAL_UART_Transmit(&huart2, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
+    counter++;
+    HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
