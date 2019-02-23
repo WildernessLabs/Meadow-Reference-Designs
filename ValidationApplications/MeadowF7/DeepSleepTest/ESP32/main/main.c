@@ -68,7 +68,6 @@ void app_main()
     // uart_driver_install(LOGGING_UART_PORT_NUMBER, RX_BUFFER_SIZE * 2, 0, 0, NULL, 0);
 
 
-
     struct timeval now;
     gettimeofday(&now, NULL);
     int sleep_time_ms = (now.tv_sec - sleep_enter_time.tv_sec) * 1000 + (now.tv_usec - sleep_enter_time.tv_usec) / 1000;
@@ -82,34 +81,46 @@ void app_main()
             {
                 int pin = __builtin_ffsll(wakeup_pin_mask) - 1;
                 ESP_LOGI(__func__, "Wake up from GPIO %d\n", pin);
-            } else {
+            }
+            else
+            {
                 ESP_LOGI(__func__, "Wake up from GPIO\n");
             }
             break;
         }
         case ESP_SLEEP_WAKEUP_TIMER:
-        {
             ESP_LOGI(__func__, "Wake up from timer. Time spent in deep sleep: %dms\n", sleep_time_ms);
             break;
-        }
         case ESP_SLEEP_WAKEUP_UNDEFINED:
         default:
             ESP_LOGI(__func__, "Not a deep sleep reset\n");
+            break;
     }
 
     vTaskDelay(1000 / portTICK_PERIOD_MS);
 
 
-   const int wakeup_time_sec = 20;
-   ESP_LOGI(__func__, "Enabling timer wakeup, %ds\n", wakeup_time_sec);
-   esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
-//
-//    const int ext_wakeup_pin_1 = 3;
-//    const uint64_t ext_wakeup_pin_1_mask = 1ULL << ext_wakeup_pin_1;
-   const int ext_wakeup_pin_1 = 0;
-   const uint64_t ext_wakeup_pin_1_mask = 1ULL << ext_wakeup_pin_1;
-   ESP_LOGI(__func__, "Enabling EXT1 wakeup on pins GPIO%d\n", ext_wakeup_pin_1);
-   esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ALL_LOW);
+    const int wakeup_time_sec = 20;
+    ESP_LOGI(__func__, "Enabling timer wakeup, %ds\n", wakeup_time_sec);
+    esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
+    //
+    //  Choose GPIO 0 for Meadow Rev B board
+    //
+    // const int ext_wakeup_pin_1 = 0;
+    //
+    //  Choose GPIO 25 for the suggested changes to Rev B.
+    //
+    const int ext_wakeup_pin_1 = 25;
+    const uint64_t ext_wakeup_pin_1_mask = 1ULL << ext_wakeup_pin_1;
+    ESP_LOGI(__func__, "Enabling EXT1 wakeup on pins GPIO%d\n", ext_wakeup_pin_1);
+    //
+    //  Choose ESP_EXT1_WAKEUP_ALL_LOW for Meadow Rev B board with GPIO0
+    //
+    // esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ALL_LOW);
+    //
+    //  Choose ESP_EXT1_WAKEUP_ANY_HIGH for suggested changes to Rev B.
+    //
+    esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ANY_HIGH);
 //
 //    // Isolate GPIO12 pin from external circuits. This is needed for modules
 //    // which have an external pull-up resistor on GPIO12 (such as ESP32-WROVER)
