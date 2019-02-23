@@ -10316,7 +10316,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </library>
 <library name="SLJ_Memory">
 <packages>
-<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1">
+<package name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:footprint:4529472/1" locally_modified="yes">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <circle x="-3.504" y="2" radius="0.25" width="0" layer="21"/>
@@ -10359,6 +10359,11 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 <smd name="E5" x="2" y="-2" dx="0.25" dy="0.25" layer="1" roundness="100" thermals="no"/>
 <text x="0" y="4.635" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<smd name="P$1" x="-2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$2" x="-1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$3" x="0" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$4" x="1" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
+<smd name="P$5" x="2" y="-3" dx="0.25" dy="0.25" layer="1" roundness="100"/>
 </package>
 <package name="BGA81C80P9X9_800X800X120" urn="urn:adsk.eagle:footprint:4529515/1" locally_modified="yes">
 <description>81-BGA, collapsing, 0.80 mm pitch, 8.00 X 8.00 X 1.20 mm body
@@ -10435,7 +10440,7 @@ Source: http://document.sharpsma.com/files/GM1WA55311A_SS.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" type="model">
+<package3d name="BGA25C100P5X5_800X600X120" urn="urn:adsk.eagle:package:4529470/1" locally_modified="yes" type="model">
 <description>25-BGA, collapsing, 1.00 mm pitch, 8.00 X 6.00 X 1.20 mm body
 &lt;p&gt;25-pin collapsing BGA package with 1.00 mm col pitch and 1.00 mm row pitch with body size 8.00 X 6.00 X 1.20 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -12023,7 +12028,9 @@ Source: Samtec SSW.pdf</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DNI" value="DNI" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12632,7 +12639,9 @@ Source: Samtec SSW.pdf</description>
 <part name="U$44" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$45" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
+<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
 <part name="TP2" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 </parts>
 <sheets>
@@ -13045,10 +13054,12 @@ Source: Samtec SSW.pdf</description>
 <instance part="TP1" gate="G$1" x="38.1" y="15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="15.24" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="35.56" y="15.24" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="10.16" y="15.24" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP2" gate="G$1" x="38.1" y="12.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="12.7" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="35.56" y="12.7" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="10.16" y="12.7" size="1.778" layer="96" rot="MR0" display="name"/>
 </instance>
 </instances>
 <busses>
@@ -15628,11 +15639,21 @@ Source: Samtec SSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM155R60J106ME15D"/>
 </part>
 <part name="TP2" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP3" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP4" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP5" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP6" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
+<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP3" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP4" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP5" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP6" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
 <part name="TP7" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 <part name="TP8" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 </parts>
@@ -15861,22 +15882,27 @@ Source: Samtec SSW.pdf</description>
 <instance part="TP1" gate="G$1" x="86.36" y="48.26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="48.26" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="48.26" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="48.26" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP3" gate="G$1" x="86.36" y="45.72" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="45.72" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="45.72" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="45.72" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP4" gate="G$1" x="86.36" y="43.18" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="43.18" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="43.18" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="43.18" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP5" gate="G$1" x="86.36" y="40.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="40.64" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="40.64" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="40.64" size="1.778" layer="96" rot="MR0" display="name"/>
 </instance>
 <instance part="TP6" gate="G$1" x="86.36" y="38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="38.1" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="38.1" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="38.1" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP7" gate="G$1" x="162.56" y="119.38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="139.7" y="119.38" size="1.778" layer="94" rot="MR0"/>

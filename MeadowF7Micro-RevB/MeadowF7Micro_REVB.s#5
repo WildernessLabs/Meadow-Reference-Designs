@@ -12248,8 +12248,8 @@ Source: Samtec SSW.pdf</description>
 </libraries>
 <attributes>
 <attribute name="MANUFACTURER" value=""/>
-<attribute name="PART_NUMBER" value=""/>
-<attribute name="REV" value="A"/>
+<attribute name="PART_NUMBER" value="Meadow F7 Micro"/>
+<attribute name="REV" value="B"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -18322,7 +18322,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <parts>
 <part name="FRAME1" library="frames_SLJ" deviceset="FRAME_B_L" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="+3V3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+3V3"/>
@@ -18343,13 +18342,11 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <part name="MTH4" library="SLJ_MECH" deviceset="MTH_100_140MIL" device="" value="100MIL_140MIL">
 <attribute name="DNI" value="DNI"/>
 </part>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="+3V1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+3V3"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="172.72" y="231.14" size="2.54" layer="91">NOTE: PULL R712 When using STM32 to talk to ESP32.
-MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</text>
 </plain>
 <moduleinsts>
 <moduleinst name="STM32_MCU1" module="STM32_MCU" x="218.44" y="132.08" offset="400">
@@ -18370,9 +18367,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <moduleinst name="POWER1" module="POWER" x="35.56" y="129.54" offset="100">
 <attribute name="NAME" x="35.56" y="129.54" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="DEBUG1" module="DEBUG" x="114.3" y="246.38" offset="700">
-<attribute name="NAME" x="114.3" y="246.38" size="2.032" layer="95" align="bottom-center"/>
-</moduleinst>
 </moduleinsts>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -18384,9 +18378,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 </instance>
 <instance part="SUPPLY1" gate="GND" x="78.74" y="48.26" smashed="yes">
 <attribute name="VALUE" x="76.835" y="45.085" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V1" gate="G$1" x="66.04" y="266.7" smashed="yes">
-<attribute name="VALUE" x="63.5" y="261.62" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY2" gate="+5V" x="60.96" y="154.94" smashed="yes">
 <attribute name="VALUE" x="59.055" y="158.115" size="1.778" layer="96"/>
@@ -18432,8 +18423,8 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <attribute name="NAME" x="121.92" y="38.1" size="1.778" layer="94"/>
 <attribute name="VALUE" x="121.92" y="30.48" size="1.778" layer="94"/>
 </instance>
-<instance part="SUPPLY6" gate="+5V" x="73.66" y="266.7" smashed="yes">
-<attribute name="VALUE" x="71.755" y="269.875" size="1.778" layer="96"/>
+<instance part="+3V1" gate="+5V" x="66.04" y="208.28" smashed="yes">
+<attribute name="VALUE" x="64.135" y="211.455" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18574,13 +18565,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="175.26" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
 <label x="154.94" y="167.64" size="1.27" layer="95"/>
 </segment>
-<segment>
-<label x="33.02" y="246.38" size="1.778" layer="95"/>
-<wire x1="60.96" y1="246.38" x2="12.7" y2="246.38" width="0.1524" layer="91"/>
-<portref moduleinst="DEBUG1" port="RESET_ESP32_L"/>
-<wire x1="60.96" y1="246.38" x2="60.96" y2="254" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="254" x2="83.82" y2="254" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="ESP32_BOOT_L" class="0">
 <segment>
@@ -18589,12 +18573,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="175.26" y1="165.1" x2="144.78" y2="165.1" width="0.1524" layer="91"/>
 <label x="154.94" y="165.1" size="1.27" layer="95"/>
 </segment>
-<segment>
-<portref moduleinst="DEBUG1" port="ESP32_GPIO0"/>
-<wire x1="96.52" y1="223.52" x2="96.52" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="213.36" x2="27.94" y2="213.36" width="0.1524" layer="91"/>
-<label x="30.48" y="213.36" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="ESP32_UART5" class="0">
 <segment>
@@ -18602,11 +18580,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <portref moduleinst="ESP32" port="ESP32_U0TX"/>
 <wire x1="175.26" y1="160.02" x2="149.86" y2="160.02" width="0.1524" layer="91"/>
 <label x="154.94" y="160.02" size="1.27" layer="95"/>
-<portref moduleinst="DEBUG1" port="USB1_UART_RX"/>
 <wire x1="149.86" y1="160.02" x2="144.78" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="231.14" x2="149.86" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="231.14" x2="149.86" y2="160.02" width="0.1524" layer="91"/>
-<junction x="149.86" y="160.02"/>
 </segment>
 </net>
 <net name="UART5_ESP32" class="0">
@@ -18615,11 +18589,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <portref moduleinst="STM32_MCU1" port="UART5_TX"/>
 <wire x1="144.78" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
 <label x="154.94" y="157.48" size="1.27" layer="95"/>
-<portref moduleinst="DEBUG1" port="USB1_UART_TX"/>
 <wire x1="152.4" y1="157.48" x2="175.26" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="157.48" x2="152.4" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="233.68" x2="144.78" y2="233.68" width="0.1524" layer="91"/>
-<junction x="152.4" y="157.48"/>
 </segment>
 </net>
 <net name="GND" class="6">
@@ -18637,10 +18607,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="40.64" y1="109.22" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <junction x="78.74" y="93.98"/>
-<wire x1="78.74" y1="157.48" x2="78.74" y2="236.22" width="0.1524" layer="91"/>
-<junction x="78.74" y="157.48"/>
-<portref moduleinst="DEBUG1" port="GND"/>
-<wire x1="78.74" y1="236.22" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
@@ -18661,27 +18627,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 </net>
 <net name="+3V3" class="6">
 <segment>
-<portref moduleinst="HEADERS1" port="+3V3"/>
-<wire x1="83.82" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="127" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
-<portref moduleinst="ESP32" port="VCC"/>
-<wire x1="66.04" y1="203.2" x2="68.58" y2="203.2" width="0.1524" layer="91"/>
-<label x="71.12" y="127" size="1.27" layer="95"/>
-<portref moduleinst="POWER1" port="+3V3"/>
-<wire x1="68.58" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<junction x="66.04" y="127"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="66.04" y1="264.16" x2="66.04" y2="256.54" width="0.1524" layer="91"/>
-<junction x="66.04" y="203.2"/>
-<portref moduleinst="DEBUG1" port="+3V3"/>
-<wire x1="66.04" y1="256.54" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="256.54" x2="83.82" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="256.54" x2="66.04" y2="256.54" width="0.1524" layer="91"/>
-<junction x="66.04" y="256.54"/>
-<label x="76.2" y="256.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="+3V3" gate="+5V" pin="+5V"/>
 <portref moduleinst="USB_OTG1" port="+3.3V"/>
 <wire x1="355.6" y1="109.22" x2="355.6" y2="119.38" width="0.1524" layer="91"/>
@@ -18698,6 +18643,18 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="342.9" y1="213.36" x2="342.9" y2="223.52" width="0.1524" layer="91"/>
 <label x="342.9" y="218.44" size="1.27" layer="95"/>
 <pinref part="+3V4" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<portref moduleinst="HEADERS1" port="+3V3"/>
+<wire x1="83.82" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="127" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
+<portref moduleinst="ESP32" port="VCC"/>
+<wire x1="66.04" y1="203.2" x2="68.58" y2="203.2" width="0.1524" layer="91"/>
+<label x="71.12" y="127" size="1.27" layer="95"/>
+<portref moduleinst="POWER1" port="+3V3"/>
+<wire x1="68.58" y1="203.2" x2="83.82" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<junction x="66.04" y="127"/>
 </segment>
 </net>
 <net name="+5V" class="4">
@@ -18717,11 +18674,8 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="342.9" y1="109.22" x2="342.9" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<portref moduleinst="DEBUG1" port="+5V"/>
-<wire x1="83.82" y1="261.62" x2="73.66" y2="261.62" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="261.62" x2="73.66" y2="264.16" width="0.1524" layer="91"/>
-<label x="78.74" y="261.62" size="1.778" layer="95"/>
-<pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
+<pinref part="+3V1" gate="+5V" pin="+5V"/>
+<wire x1="66.04" y1="205.74" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+VBAT" class="7">
@@ -18808,11 +18762,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <portref moduleinst="STM32_MCU1" port="RESET_L"/>
 <wire x1="144.78" y1="58.42" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
 <label x="157.48" y="58.42" size="1.27" layer="95"/>
-</segment>
-<segment>
-<wire x1="144.78" y1="236.22" x2="160.02" y2="236.22" width="0.1524" layer="91"/>
-<label x="147.32" y="236.22" size="1.778" layer="95"/>
-<portref moduleinst="DEBUG1" port="RESET_L"/>
 </segment>
 </net>
 <net name="PC9" class="3">
@@ -18918,11 +18867,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="175.26" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
 <label x="157.48" y="101.6" size="1.27" layer="95"/>
 </segment>
-<segment>
-<wire x1="175.26" y1="251.46" x2="144.78" y2="251.46" width="0.1524" layer="91"/>
-<label x="152.4" y="251.46" size="1.778" layer="95"/>
-<portref moduleinst="DEBUG1" port="USB0_UART_RX"/>
-</segment>
 </net>
 <net name="USART1_RX" class="3">
 <segment>
@@ -18930,11 +18874,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <portref moduleinst="HEADERS1" port="COM2_RX"/>
 <wire x1="175.26" y1="104.14" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <label x="157.48" y="104.14" size="1.27" layer="95"/>
-</segment>
-<segment>
-<wire x1="175.26" y1="254" x2="144.78" y2="254" width="0.1524" layer="91"/>
-<label x="152.4" y="254" size="1.778" layer="95"/>
-<portref moduleinst="DEBUG1" port="USB0_UART_TX"/>
 </segment>
 </net>
 <net name="UART4_TX" class="3">
@@ -19033,78 +18972,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <label x="154.94" y="139.7" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="ESP32_MTCK" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="ESP32_MTCK"/>
-<portref moduleinst="ESP32" port="MTCK"/>
-<wire x1="104.14" y1="223.52" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
-<label x="104.14" y="210.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="ESP32_MTDI" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="ESP32_MTDI"/>
-<portref moduleinst="ESP32" port="MTDI"/>
-<wire x1="106.68" y1="223.52" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
-<label x="106.68" y="210.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="ESP32_MTDO" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="ESP32_MTDO"/>
-<portref moduleinst="ESP32" port="MTDO"/>
-<wire x1="109.22" y1="223.52" x2="109.22" y2="213.36" width="0.1524" layer="91"/>
-<label x="109.22" y="210.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="ESP32_MTMS" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="ESP32_MTMS"/>
-<portref moduleinst="ESP32" port="MTMS"/>
-<wire x1="111.76" y1="223.52" x2="111.76" y2="213.36" width="0.1524" layer="91"/>
-<label x="111.76" y="210.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="JTDO" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="JTDO"/>
-<wire x1="144.78" y1="238.76" x2="162.56" y2="238.76" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="238.76" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
-<portref moduleinst="STM32_MCU1" port="JTDO"/>
-<wire x1="162.56" y1="198.12" x2="175.26" y2="198.12" width="0.1524" layer="91"/>
-<label x="149.86" y="238.76" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="JTDI" class="0">
-<segment>
-<portref moduleinst="STM32_MCU1" port="JTDI"/>
-<wire x1="175.26" y1="200.66" x2="165.1" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="200.66" x2="165.1" y2="241.3" width="0.1524" layer="91"/>
-<portref moduleinst="DEBUG1" port="JTDI"/>
-<wire x1="165.1" y1="241.3" x2="144.78" y2="241.3" width="0.1524" layer="91"/>
-<label x="149.86" y="241.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="JTMS" class="0">
-<segment>
-<wire x1="167.64" y1="243.84" x2="167.64" y2="203.2" width="0.1524" layer="91"/>
-<portref moduleinst="STM32_MCU1" port="SWDIO/JTMS"/>
-<wire x1="167.64" y1="203.2" x2="175.26" y2="203.2" width="0.1524" layer="91"/>
-<portref moduleinst="DEBUG1" port="SWDIO/JTMS"/>
-<wire x1="167.64" y1="243.84" x2="144.78" y2="243.84" width="0.1524" layer="91"/>
-<label x="149.86" y="243.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="JTCK" class="0">
-<segment>
-<portref moduleinst="DEBUG1" port="SWCLK/JTCK"/>
-<wire x1="144.78" y1="246.38" x2="170.18" y2="246.38" width="0.1524" layer="91"/>
-<portref moduleinst="STM32_MCU1" port="SWCLK/JTCK"/>
-<wire x1="170.18" y1="246.38" x2="170.18" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="205.74" x2="175.26" y2="205.74" width="0.1524" layer="91"/>
-<label x="149.86" y="246.38" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VBAT_MEAS" class="0">
 <segment>
 <portref moduleinst="POWER1" port="VBAT_MEAS"/>
@@ -19114,14 +18981,6 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <portref moduleinst="ESP32" port="ADC2_CH0"/>
 <wire x1="73.66" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
 <label x="73.66" y="144.78" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="BLINKY" class="0">
-<segment>
-<portref moduleinst="ESP32" port="ESP32_IO22"/>
-<portref moduleinst="DEBUG1" port="ESP32_BLINKY"/>
-<wire x1="99.06" y1="213.36" x2="99.06" y2="223.52" width="0.1524" layer="91"/>
-<label x="99.06" y="213.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>

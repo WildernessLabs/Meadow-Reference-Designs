@@ -11979,7 +11979,7 @@ Source: Samtec SSW.pdf</description>
 <description>Mounting Holes and other mechanical features</description>
 <packages>
 <package name="MTH_100_140MIL">
-<pad name="P$1" x="0" y="0" drill="2.54" diameter="3.556"/>
+<pad name="1" x="0" y="0" drill="2.54" diameter="3.556" thermals="no"/>
 </package>
 <package name="TP_SMT_40MIL">
 <smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
@@ -11992,6 +11992,7 @@ Source: Samtec SSW.pdf</description>
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="2.54" size="1.778" layer="94">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="P$1" x="0" y="0" length="point"/>
 </symbol>
 <symbol name="TP">
 <description>Test Point</description>
@@ -12009,6 +12010,9 @@ Source: Samtec SSW.pdf</description>
 </gates>
 <devices>
 <device name="" package="MTH_100_140MIL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="100MIL_140MIL"/>
@@ -15467,7 +15471,7 @@ Source: Samtec SSW.pdf</description>
 <port name="MTDI" side="top" coord="-7.62" direction="io"/>
 <port name="MTDO" side="top" coord="-5.08" direction="io"/>
 <port name="MTMS" side="top" coord="-2.54" direction="io"/>
-<port name="ADC2_CH0" side="left" coord="-15.24" direction="in"/>
+<port name="ADC1_CH6" side="left" coord="-15.24" direction="in"/>
 <port name="ESP32_IO22" side="top" coord="-15.24" direction="out"/>
 </ports>
 <variantdefs>
@@ -15489,17 +15493,21 @@ Source: Samtec SSW.pdf</description>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="L1" library="SLJ_passives" deviceset="L_1_5NH_0402" device="" package3d_urn="urn:adsk.eagle:package:4412330/1" value="1.5nH"/>
+<part name="L1" library="SLJ_passives" deviceset="L_1_5NH_0402" device="" package3d_urn="urn:adsk.eagle:package:4412330/1" value="0 Ohm">
+<attribute name="MANUFACTURER" value="Panasonic"/>
+<attribute name="PART_NUMBER" value="ERJ-2GE0R00X"/>
+</part>
 <part name="C5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="6pF">
+<attribute name="DNI" value="DNI"/>
 <attribute name="FOOTPRINT" value="0402"/>
 <attribute name="MANUFACTURER" value="Murata Electronica"/>
 <attribute name="PART_NUMBER" value="GJM1555C1H6R0BB01D"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="6.2pF">
+<part name="C6" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0402" package3d_urn="urn:adsk.eagle:package:13264/1" value="1.8pF">
 <attribute name="FOOTPRINT" value="0402"/>
-<attribute name="MANUFACTURER" value="Murata Electronica"/>
-<attribute name="PART_NUMBER" value="GRM1555C1H6R2BA01D"/>
+<attribute name="MANUFACTURER" value="Johanson Technology Inc."/>
+<attribute name="PART_NUMBER" value="500R07S1R8BV4T"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -15570,7 +15578,6 @@ Source: Samtec SSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM033R61A104ME15D"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
-<part name="U$37" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$2" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$3" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$4" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
@@ -15656,6 +15663,7 @@ Source: Samtec SSW.pdf</description>
 </part>
 <part name="TP7" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 <part name="TP8" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15671,6 +15679,7 @@ Source: Samtec SSW.pdf</description>
 <text x="12.7" y="86.36" size="1.778" layer="91">LDO CHOICES</text>
 <text x="12.7" y="73.66" size="1.778" layer="91">BOOT MODE</text>
 <text x="12.7" y="60.96" size="1.778" layer="91">UART LOG WHILE BOOTING</text>
+<text x="55.88" y="167.64" size="1.778" layer="91">L201 is a 0 Ohm resistor not an inductor</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -15703,7 +15712,7 @@ Source: Samtec SSW.pdf</description>
 </instance>
 <instance part="L1" gate="G$1" x="63.5" y="157.48" smashed="yes">
 <attribute name="NAME" x="60.96" y="160.02" size="1.778" layer="94"/>
-<attribute name="VALUE" x="60.96" y="154.178" size="1.778" layer="94"/>
+<attribute name="VALUE" x="60.96" y="164.338" size="1.778" layer="94"/>
 </instance>
 <instance part="C5" gate="G$1" x="73.66" y="152.4" smashed="yes">
 <attribute name="MANUFACTURER" x="73.66" y="152.4" size="1.778" layer="96" display="off"/>
@@ -15712,6 +15721,7 @@ Source: Samtec SSW.pdf</description>
 <attribute name="FOOTPRINT" x="66.04" y="152.4" size="1.778" layer="96"/>
 <attribute name="NAME" x="75.184" y="152.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="75.184" y="147.701" size="1.778" layer="96"/>
+<attribute name="DNI" x="76.2" y="144.78" size="1.778" layer="96" display="name"/>
 </instance>
 <instance part="C6" gate="G$1" x="55.88" y="152.4" smashed="yes">
 <attribute name="MANUFACTURER" x="55.88" y="152.4" size="1.778" layer="96" display="off"/>
@@ -15789,7 +15799,6 @@ Source: Samtec SSW.pdf</description>
 <attribute name="NAME" x="159.004" y="150.241" size="1.27" layer="95"/>
 <attribute name="VALUE" x="158.369" y="145.796" size="1.27" layer="96"/>
 </instance>
-<instance part="U$37" gate="G$1" x="187.96" y="165.1" smashed="yes"/>
 <instance part="U$2" gate="G$1" x="187.96" y="162.56" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="190.5" y="154.94" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="190.5" y="152.4" smashed="yes"/>
@@ -15840,13 +15849,13 @@ Source: Samtec SSW.pdf</description>
 <attribute name="NAME" x="111.76" y="116.84" size="1.778" layer="94" rot="MR180"/>
 <attribute name="VALUE" x="111.76" y="137.16" size="1.778" layer="94" rot="MR180"/>
 </instance>
-<instance part="C22" gate="G$1" x="266.7" y="119.38" smashed="yes">
-<attribute name="MANUFACTURER" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
-<attribute name="PART_NUMBER" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
-<attribute name="VOLTAGE" x="266.7" y="119.38" size="1.778" layer="96" display="off"/>
-<attribute name="FOOTPRINT" x="262.255" y="119.38" size="1.27" layer="96"/>
-<attribute name="NAME" x="268.224" y="119.761" size="1.27" layer="95"/>
-<attribute name="VALUE" x="267.589" y="115.316" size="1.27" layer="96"/>
+<instance part="C22" gate="G$1" x="134.62" y="157.48" smashed="yes">
+<attribute name="MANUFACTURER" x="134.62" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NUMBER" x="134.62" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="VOLTAGE" x="134.62" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="FOOTPRINT" x="130.175" y="157.48" size="1.27" layer="96"/>
+<attribute name="NAME" x="136.144" y="157.861" size="1.27" layer="95"/>
+<attribute name="VALUE" x="135.509" y="153.416" size="1.27" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="241.3" y="137.16" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="241.3" y="134.62" smashed="yes"/>
@@ -15911,6 +15920,9 @@ Source: Samtec SSW.pdf</description>
 <instance part="TP8" gate="G$1" x="162.56" y="116.84" smashed="yes" rot="MR0">
 <attribute name="NAME" x="139.7" y="116.84" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="160.02" y="116.84" size="1.778" layer="94" rot="MR0"/>
+</instance>
+<instance part="SUPPLY2" gate="GND" x="134.62" y="147.32" smashed="yes">
+<attribute name="VALUE" x="132.715" y="144.145" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15984,17 +15996,18 @@ Source: Samtec SSW.pdf</description>
 <wire x1="246.38" y1="116.84" x2="248.92" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="116.84" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<pinref part="C22" gate="G$1" pin="2"/>
 <wire x1="248.92" y1="111.76" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="114.3" x2="266.7" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="111.76" x2="248.92" y2="111.76" width="0.1524" layer="91"/>
-<junction x="248.92" y="111.76"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 <wire x1="243.84" y1="86.36" x2="243.84" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C22" gate="G$1" pin="2"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+<wire x1="134.62" y1="149.86" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -16216,12 +16229,6 @@ Source: Samtec SSW.pdf</description>
 <junction x="269.24" y="124.46"/>
 </segment>
 </net>
-<net name="N$9" class="3">
-<segment>
-<wire x1="190.5" y1="165.1" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IO34"/>
-</segment>
-</net>
 <net name="N$12" class="3">
 <segment>
 <wire x1="190.5" y1="162.56" x2="187.96" y2="162.56" width="0.1524" layer="91"/>
@@ -16348,13 +16355,14 @@ Source: Samtec SSW.pdf</description>
 <pinref part="TP4" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="ADC2_CH0" class="0">
+<net name="ADC1_CH6" class="0">
 <segment>
-<wire x1="241.3" y1="129.54" x2="266.7" y2="129.54" width="0.1524" layer="91"/>
-<label x="251.46" y="129.54" size="1.778" layer="95"/>
+<wire x1="165.1" y1="165.1" x2="190.5" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IO34"/>
+<label x="162.56" y="165.1" size="1.778" layer="95"/>
 <pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="129.54" x2="266.7" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="GPIO4"/>
+<wire x1="134.62" y1="160.02" x2="134.62" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="165.1" x2="165.1" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -18369,6 +18377,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <attribute name="DNI" value="DNI"/>
 </part>
 <part name="+3V1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device="" value="+3V3"/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18451,6 +18460,9 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 </instance>
 <instance part="+3V1" gate="+5V" x="66.04" y="208.28" smashed="yes">
 <attribute name="VALUE" x="64.135" y="211.455" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="GND" x="81.28" y="25.4" smashed="yes">
+<attribute name="VALUE" x="79.375" y="22.225" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18649,6 +18661,11 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="220.98" y1="50.8" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <label x="220.98" y="45.72" size="1.27" layer="95"/>
+</segment>
+<segment>
+<wire x1="81.28" y1="35.56" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<pinref part="MTH2" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="+3V3" class="6">
@@ -19004,7 +19021,7 @@ MAKE SURE THE PB13 IS SET TO AN INPUT TO AVOID CONFLICTS WHEN USING DEBUG UART</
 <wire x1="55.88" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="142.24" x2="73.66" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="142.24" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
-<portref moduleinst="ESP32" port="ADC2_CH0"/>
+<portref moduleinst="ESP32" port="ADC1_CH6"/>
 <wire x1="73.66" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
 <label x="73.66" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
