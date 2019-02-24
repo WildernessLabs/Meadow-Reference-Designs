@@ -12028,7 +12028,9 @@ Source: Samtec SSW.pdf</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DNI" value="DNI" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12637,7 +12639,9 @@ Source: Samtec SSW.pdf</description>
 <part name="U$44" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="U$45" library="Philbywhizz" deviceset="NOCONNECTION" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
+<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
 <part name="TP2" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 </parts>
 <sheets>
@@ -13050,10 +13054,12 @@ Source: Samtec SSW.pdf</description>
 <instance part="TP1" gate="G$1" x="38.1" y="15.24" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="15.24" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="35.56" y="15.24" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="10.16" y="15.24" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP2" gate="G$1" x="38.1" y="12.7" smashed="yes" rot="MR0">
 <attribute name="NAME" x="15.24" y="12.7" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="35.56" y="12.7" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="10.16" y="12.7" size="1.778" layer="96" rot="MR0" display="name"/>
 </instance>
 </instances>
 <busses>
@@ -15633,11 +15639,21 @@ Source: Samtec SSW.pdf</description>
 <attribute name="PART_NUMBER" value="GRM155R60J106ME15D"/>
 </part>
 <part name="TP2" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP3" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP4" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP5" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
-<part name="TP6" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
+<part name="TP1" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP3" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP4" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP5" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
+<part name="TP6" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device="">
+<attribute name="DNI" value="DNI"/>
+</part>
 <part name="TP7" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 <part name="TP8" library="SLJ_MECH" deviceset="TP_SMT_40MIL" device=""/>
 </parts>
@@ -15866,22 +15882,27 @@ Source: Samtec SSW.pdf</description>
 <instance part="TP1" gate="G$1" x="86.36" y="48.26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="48.26" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="48.26" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="48.26" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP3" gate="G$1" x="86.36" y="45.72" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="45.72" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="45.72" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="45.72" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP4" gate="G$1" x="86.36" y="43.18" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="43.18" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="43.18" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="43.18" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP5" gate="G$1" x="86.36" y="40.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="40.64" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="40.64" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="40.64" size="1.778" layer="96" rot="MR0" display="name"/>
 </instance>
 <instance part="TP6" gate="G$1" x="86.36" y="38.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="63.5" y="38.1" size="1.778" layer="94" rot="MR0"/>
 <attribute name="VALUE" x="83.82" y="38.1" size="1.778" layer="94" rot="MR0"/>
+<attribute name="DNI" x="58.42" y="38.1" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="TP7" gate="G$1" x="162.56" y="119.38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="139.7" y="119.38" size="1.778" layer="94" rot="MR0"/>
