@@ -66,6 +66,12 @@ This application scans the I2C bus for devices and displays the hexadecimal ID o
 
 This application puts a PWM signal on all of the PWM enabled pins.
 
+## SPITest
+
+STM32 and ESP32 applications, the STM32 should act as SPI Master and the ESP32 is an SPI Slave.  These applications can be used to test the connection between the ESP32 and the STM32 as well as the external SPI pins on Meadow.
+
+Note that these applications will need editing before use.
+
 ## UARTTest-STM32
 
 This application outputs messages on `COM1` and `COM4` of fhe STM32.
