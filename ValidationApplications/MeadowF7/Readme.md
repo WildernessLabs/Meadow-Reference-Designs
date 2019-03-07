@@ -36,6 +36,12 @@ This application should be loaded into the Meadow board.
 
 The PICO board should be connected to the Meadow board.  The two applications will display diagnostic information on a serial console.
 
+## COMPortTest
+
+This application verifies that the COM ports on Meadow are functioning.  The application will read data from one port, say `COM1` and echo the characters typed on the ther COM port (in this case `COM4`).
+
+Two defines can be found in the `main.c` source file.  Swapping the uart ports allows the direction to be changed.
+
 ## DeepSleepTest
 
 There are two applications, one for the ESP32 and one for the STM32.
