@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="9.84251969" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -24,13 +24,13 @@
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="63" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="63" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -86,11 +86,8 @@
 <dimension x1="22.86" y1="1.27" x2="0" y2="1.27" x3="11.43" y3="-10.16" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="2.54" y1="71.12" x2="0" y2="71.12" x3="1.27" y3="76.2" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="2.54" y1="71.12" x2="20.32" y2="71.12" x3="11.43" y3="80.01" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="1.27" y1="60.96" x2="0" y2="60.96" x3="0.635" y3="83.82" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="21.59" y1="17.78" x2="22.86" y2="17.78" x3="22.225" y3="-13.97" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="2.54" y1="71.12" x2="2.54" y2="73.66" x3="-7.62" y3="72.39" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="2.54" y1="71.12" x2="1.27" y2="60.96" x3="-11.43" y3="66.04" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="20.32" y1="71.12" x2="21.59" y2="50.8" x3="26.67" y3="60.96" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
 <dimension x1="1.27" y1="17.78" x2="21.59" y2="17.78" x3="11.43" y3="-21.59" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
 <text x="16.18488125" y="23.136859375" size="0.635" layer="51" font="vector" ratio="15">uMeadow</text>
 <text x="16.164559375" y="22.2504" size="0.635" layer="51" font="vector" ratio="15">Rev:</text>
@@ -1525,6 +1522,10 @@ Debug Rev B</text>
 <wire x1="-102.25" y1="114" x2="-103.75" y2="117" width="0.1524" layer="48"/>
 <text x="-101" y="114.25" size="1.778" layer="48">U501 Can be two parts with different footprints. 
 Line up part based on pin A1 not on center of part so that both parts work.</text>
+<dimension x1="1.27" y1="61.087" x2="2.54" y2="71.12" x3="-11.049" y3="66.1035" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="20.32" y1="71.12" x2="21.59" y2="50.927" x3="28.575" y3="61.0235" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="1.27" y1="17.907" x2="2.54" y2="2.54" x3="-5.969" y3="10.2235" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="1.27" y1="61.087" x2="2.54" y2="71.12" x3="1.905" y3="84.201" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
 </plain>
 <libraries>
 <library name="eagle-ltspice" urn="urn:adsk.eagle:library:217">
