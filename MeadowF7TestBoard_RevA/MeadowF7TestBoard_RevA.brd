@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -22,15 +22,15 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="63" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="63" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -82,15 +82,6 @@
 <wire x1="-48.26" y1="2.54" x2="-45.72" y2="0" width="0.1524" layer="20" curve="90"/>
 <wire x1="-45.72" y1="73.66" x2="-48.26" y2="71.12" width="0.1524" layer="20" curve="90"/>
 <wire x1="43.18" y1="71.12" x2="40.64" y2="73.66" width="0.1524" layer="20" curve="90"/>
-<dimension x1="0" y1="0" x2="20.32" y2="2.54" x3="10.16" y3="-3.81" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="22.86" y1="1.27" x2="0" y2="1.27" x3="11.43" y3="-10.16" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="2.54" y1="71.12" x2="0" y2="71.12" x3="1.27" y3="76.2" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="2.54" y1="71.12" x2="20.32" y2="71.12" x3="11.43" y3="80.01" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="1.27" y1="60.96" x2="0" y2="60.96" x3="0.635" y3="83.82" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="21.59" y1="17.78" x2="22.86" y2="17.78" x3="22.225" y3="-13.97" textsize="1.778" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="2.54" y1="71.12" x2="2.54" y2="73.66" x3="-7.62" y3="72.39" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="20.32" y1="71.12" x2="21.59" y2="50.8" x3="26.67" y3="60.96" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="1.27" y1="17.78" x2="21.59" y2="17.78" x3="11.43" y3="-21.59" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
 <text x="16.18488125" y="23.136859375" size="0.635" layer="51" font="vector" ratio="15">uMeadow</text>
 <text x="16.164559375" y="22.2504" size="0.635" layer="51" font="vector" ratio="15">Rev:</text>
 <rectangle x1="18.02891875" y1="21.49601875" x2="20.0533" y2="23.00478125" layer="51"/>
@@ -101,18 +92,10 @@
 <frame x1="-117.73661875" y1="-57.558940625" x2="111.8235" y2="138.249659375" columns="8" rows="5" layer="48"/>
 <text x="16.85548125" y="14.985834375" size="0.635" layer="25" font="vector" ratio="15">BOOT</text>
 <text x="3.29184375" y="13.794740625" size="0.635" layer="25" font="vector" ratio="15">RESET</text>
-<dimension x1="20.32" y1="2.54" x2="20.32" y2="71.12" x3="40.64" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="-12.7" y1="73.66" x2="-12.7" y2="0" x3="-17.78" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch"/>
 <wire x1="-45.72" y1="0" x2="40.64" y2="0" width="0.1524" layer="20"/>
 <wire x1="43.18" y1="2.54" x2="43.18" y2="71.12" width="0.1524" layer="20"/>
 <wire x1="40.64" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="20"/>
 <wire x1="43.18" y1="2.54" x2="40.64" y2="0" width="0.1524" layer="20" curve="-90"/>
-<circle x="2.54" y="2.54" radius="2.75" width="0.1524" layer="47"/>
-<circle x="20.32" y="2.54" radius="2.75" width="0.1524" layer="47"/>
-<circle x="20.32" y="2.54" radius="2.75" width="0.1524" layer="47"/>
-<circle x="2.54" y="71.12" radius="2.75" width="0.1524" layer="47"/>
-<circle x="2.54" y="71.12" radius="2.75" width="0.1524" layer="47"/>
-<circle x="20.32" y="71.12" radius="2.75" width="0.1524" layer="47"/>
 <text x="23.7744" y="59.6392" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">F7 Meadow
 Debug Rev B</text>
 <text x="4.572" y="12.8524" size="0.6096" layer="26" rot="MR0">MTDO</text>
@@ -1524,10 +1507,19 @@ Debug Rev B</text>
 <wire x1="-102.25" y1="114" x2="-103.75" y2="117" width="0.1524" layer="48"/>
 <text x="-101" y="114.25" size="1.778" layer="48">U501 Can be two parts with different footprints. 
 Line up part based on pin A1 not on center of part so that both parts work.</text>
-<dimension x1="2.54" y1="71.12" x2="1.27" y2="61.087" x3="-10.9728" y3="66.1035" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="1.27" y1="61.087" x2="-5.08" y2="68.707" x3="-34.036" y3="64.897" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
-<dimension x1="27.94" y1="68.707" x2="-5.08" y2="68.707" x3="11.43" y3="90.678" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
-<dimension x1="-5.08" y1="2.667" x2="1.27" y2="17.907" x3="-1.905" y3="-16.764" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-48.26" y1="71.12" x2="43.18" y2="67.691" x3="-2.54" y3="102.489" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="27.94" y1="2.413" x2="-48.26" y2="2.54" x3="-10.16" y3="-21.971" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-5.08" y1="2.413" x2="-48.26" y2="2.54" x3="-26.67" y3="-18.034" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-5.08" y1="68.707" x2="1.27" y2="61.087" x3="-1.905" y3="75.692" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="21.59" y1="50.927" x2="-5.08" y2="68.707" x3="8.255" y3="80.391" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-44.45" y1="61.087" x2="-24.13" y2="50.927" x3="-34.29" y3="77.343" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-5.08" y1="68.707" x2="-17.145" y2="60.198" x3="-11.1125" y3="80.391" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="-14.605" y1="2.032" x2="-5.08" y2="2.54" x3="-9.8425" y3="-4.191" textsize="1.778" layer="47" dtype="horizontal" unit="inch" precision="3"/>
+<dimension x1="40.64" y1="0" x2="37.719" y2="73.66" x3="51.181" y3="36.83" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="-45.72" y1="73.66" x2="-51.816" y2="61.722" x3="-50.546" y3="67.691" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="-44.45" y1="17.907" x2="-44.069" y2="0" x3="-54.991" y3="8.9535" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="1.27" y1="17.907" x2="-5.08" y2="2.54" x3="47.498" y3="10.2235" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
+<dimension x1="27.94" y1="68.707" x2="21.59" y2="50.927" x3="47.625" y3="59.817" textsize="1.778" layer="47" dtype="vertical" unit="inch" precision="3"/>
 </plain>
 <libraries>
 <library name="con-samtec" urn="urn:adsk.eagle:library:184">
