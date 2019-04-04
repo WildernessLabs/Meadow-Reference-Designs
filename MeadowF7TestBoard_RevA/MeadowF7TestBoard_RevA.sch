@@ -7351,7 +7351,7 @@ Y is drill diameter</description>
 <attributes>
 <attribute name="MANUFACTURER" value=""/>
 <attribute name="PART_NUMBER" value="Meadow F7 Micro"/>
-<attribute name="REV" value="B"/>
+<attribute name="REV" value="A"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -9994,7 +9994,7 @@ Y is drill diameter</description>
 <moduleinst name="HEADERS1" module="HEADERS" x="114.3" y="99.06" offset="300">
 <attribute name="NAME" x="114.3" y="99.06" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
-<moduleinst name="D1" module="DEBUG" x="114.3" y="246.38">
+<moduleinst name="D1" module="DEBUG" x="114.3" y="246.38" offset="100">
 <attribute name="NAME" x="114.3" y="246.38" size="2.032" layer="95" align="bottom-center"/>
 </moduleinst>
 </moduleinsts>

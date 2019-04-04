@@ -1,0 +1,104 @@
+Partlist
+
+Exported from MeadowF7TestBoard_RevA.brd at 4/3/19 9:53 PM
+
+EAGLE Version 9.3.2 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value               Package                          Library         Position (mil)        Orientation
+
+C101     0.1uF               C0201                            eagle-ltspice   (1358 508)            R0
+C102     4.7uF               C0201                            eagle-ltspice   (1350 405)            R180
+C103     4.7uF               C0201                            eagle-ltspice   (1251 1950)           R180
+C104     1uF                 C0201                            eagle-ltspice   (1396 482)            R0
+C105     1uF                 C0201                            eagle-ltspice   (1251 1892)           R180
+C106     0.1uF               C0201                            eagle-ltspice   (1251 1921)           R180
+C107     4.7uF               C0201                            eagle-ltspice   (1440 1865)           R270
+C108     0.1uF               C0201                            eagle-ltspice   (1445 550)            R0
+C109     0.1uF               C0201                            eagle-ltspice   (1212 1879)           R180
+C120     4.7uF               C0201                            eagle-ltspice   (1350 375)            R180
+D101     BAT60JFILM          SOD2512X117                      SLJ_Diodes      (1406.72441 334.93701) R90
+D103     BAT60JFILM          SOD2512X117                      SLJ_Diodes      (1518.01575 1694.85039) R180
+J101     uUSB-B              USB_473461001                    SLJ_Connectors  (1640 455)            R90
+J102     uUSB-B              USB_473461001                    SLJ_Connectors  (1640 1925)           R90
+J103     02X20               HDRV20W64P254_2X10_3276X876X838B SLJ_Connectors  (-675 2370)           R270
+J301     TSW-118-07-G-S      TSW-118-XX-G-S                   con-samtec      (-1750 1555)          R90
+J302     TSW-114-07-G-S      TSW-114-XX-G-S                   con-samtec      (-950 1355)           R90
+JP101                        JP1                              jumper          (1420.40157 914.18898) R270
+JP102                        JP1                              jumper          (1411.40157 1455.77953) R270
+MTH1     MTH_C450H305        C450H305                         SLJ_MECH        (-200 2705)           R0
+MTH2     MTH_C450H305        C450H305                         SLJ_MECH        (1100 2705)           R0
+MTH3     MTH_C450H305        C450H305                         SLJ_MECH        (-200 105)            R0
+MTH4     MTH_C450H305        C450H305                         SLJ_MECH        (1100 105)            R0
+PP201    POGOS13-503         C140H90                          SLJ_MECH        (180 420)             R0
+PP202    POGOS13-503         C140H90                          SLJ_MECH        (180 360)             R0
+PP203    POGOS13-503         C140H90                          SLJ_MECH        (180 480)             R0
+PP204    POGOS13-503         C140H90                          SLJ_MECH        (170 300)             R0
+PP205    POGOS13-503         C140H90                          SLJ_MECH        (560 590)             R0
+PP206    POGOS13-503         C140H90                          SLJ_MECH        (250 600)             R0
+PP207    POGOS13-503         C140H90                          SLJ_MECH        (300 550)             R0
+PP208    POGOS13-503         C140H90                          SLJ_MECH        (460 610)             R0
+PP301    POGOS19-501         C195H135                         SLJ_MECH        (50 2405)             R0
+PP302    POGOS19-501         C195H135                         SLJ_MECH        (50 2305)             R0
+PP303    POGOS19-501         C195H135                         SLJ_MECH        (50 2205)             R0
+PP304    POGOS19-501         C195H135                         SLJ_MECH        (50 2105)             R0
+PP305    POGOS19-501         C195H135                         SLJ_MECH        (50 2005)             R0
+PP306    POGOS19-501         C195H135                         SLJ_MECH        (50 1905)             R0
+PP307    POGOS19-501         C195H135                         SLJ_MECH        (50 1805)             R0
+PP308    POGOS19-501         C195H135                         SLJ_MECH        (50 1705)             R0
+PP309    POGOS19-501         C195H135                         SLJ_MECH        (50 1605)             R0
+PP310    POGOS19-501         C195H135                         SLJ_MECH        (50 1505)             R0
+PP311    POGOS19-501         C195H135                         SLJ_MECH        (50 1405)             R0
+PP312    POGOS19-501         C195H135                         SLJ_MECH        (50 1305)             R0
+PP313    POGOS19-501         C195H135                         SLJ_MECH        (50 1205)             R0
+PP314    POGOS19-501         C195H135                         SLJ_MECH        (50 1105)             R0
+PP315    POGOS19-501         C195H135                         SLJ_MECH        (50 1005)             R0
+PP316    POGOS19-501         C195H135                         SLJ_MECH        (50 905)              R0
+PP317    POGOS19-501         C195H135                         SLJ_MECH        (50 805)              R0
+PP318    POGOS19-501         C195H135                         SLJ_MECH        (50 705)              R0
+PP319    POGOS19-501         C195H135                         SLJ_MECH        (850 2005)            R0
+PP320    POGOS19-501         C195H135                         SLJ_MECH        (850 1905)            R0
+PP321    POGOS19-501         C195H135                         SLJ_MECH        (850 1805)            R0
+PP322    POGOS19-501         C195H135                         SLJ_MECH        (850 1705)            R0
+PP323    POGOS19-501         C195H135                         SLJ_MECH        (850 1605)            R0
+PP324    POGOS19-501         C195H135                         SLJ_MECH        (850 1505)            R0
+PP325    POGOS19-501         C195H135                         SLJ_MECH        (850 1405)            R0
+PP326    POGOS19-501         C195H135                         SLJ_MECH        (850 1305)            R0
+PP327    POGOS19-501         C195H135                         SLJ_MECH        (850 1205)            R0
+PP328    POGOS19-501         C195H135                         SLJ_MECH        (850 1105)            R0
+PP329    POGOS19-501         C195H135                         SLJ_MECH        (850 1005)            R0
+PP330    POGOS19-501         C195H135                         SLJ_MECH        (850 905)             R0
+PP331    POGOS19-501         C195H135                         SLJ_MECH        (850 805)             R0
+PP332    POGOS19-501         C195H135                         SLJ_MECH        (850 705)             R0
+PP401    POGOS13-503         C140H90                          SLJ_MECH        (260 1430)            R0
+PP402    POGOS13-503         C140H90                          SLJ_MECH        (300 1480)            R0
+Q101     MMSS8050-H-TP       SOT-23                           SLJ_TRANSISTORS (565.16535 714.75591) R0
+Q102     MMSS8050-H-TP       SOT-23                           SLJ_TRANSISTORS (455.16535 493.00787) R0
+R101     10k                 R0402                            rcl             (295 485)             R180
+R102     10k                 R0402                            rcl             (295 440)             R0
+R103     10k                 R0402                            rcl             (295 265)             R180
+R104     10k                 R0402                            rcl             (295 390)             R0
+R105     10k                 R0402                            rcl             (470 735)             R270
+R106     10k                 R0402                            rcl             (265 1335)            R90
+R107     10k                 R0402                            rcl             (410 1485)            R180
+R109     10k                 R0402                            rcl             (295 340)             R180
+R110     10k                 R0402                            rcl             (665 735)             R90
+R112     10k                 R0402                            rcl             (325 675)             R180
+R113     00                  R0402                            rcl             (1175 1505)           R0
+R114     10k                 R0402                            rcl             (1390 1025)           R180
+R115     10k                 R0402                            rcl             (1465 740)            R90
+R116     10k                 R0402                            rcl             (1400 815)            R90
+R117     22.1K               R0402                            rcl             (1510 659)            R90
+R118     47.5K               R0402                            rcl             (1510 740)            R90
+R119     10k                 R0402                            rcl             (1380 1355)           R180
+R120     10k                 R0402                            rcl             (1130 1930)           R90
+R121     10k                 R0402                            rcl             (1135 1660)           R270
+R122     22.1K               R0402                            rcl             (1174.37795 1929.6378) R90
+R123     47.5K               R0402                            rcl             (1175 2012)           R90
+R124     00                  R0402                            rcl             (1175 1405)           R0
+R125     00                  R0402                            rcl             (325 620)             R0
+U101     CP2102N-A01-GQFN28R QFN50P500X500X80-29T335          SLJ_IC          (1308.07087 643.94488) R90
+U102     CP2102N-A01-GQFN28R QFN50P500X500X80-29T335          SLJ_IC          (1302.92913 1751.6063) R270
+X101     75869-131LF         SSW-103-02-G-D                   con-samtec      (-625 180)            R90
+X102     75869-101LF         SSW-105-02-G-D                   con-samtec      (-625 830)            R90

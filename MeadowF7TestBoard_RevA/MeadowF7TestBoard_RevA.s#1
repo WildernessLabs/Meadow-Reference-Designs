@@ -7358,8 +7358,8 @@ Y is drill diameter</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="USB" width="0.1651" drill="0.1016">
-<clearance class="1" value="0.254"/>
+<class number="1" name="USB" width="0.2159" drill="0.1016">
+<clearance class="1" value="0.2286"/>
 </class>
 <class number="2" name="MEM_ADDR_CNT" width="0.1016" drill="0.1016">
 </class>
@@ -8405,17 +8405,6 @@ Y is drill diameter</description>
 <attribute name="MANUFACTURER" value="Stackpole"/>
 <attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
 </part>
-<part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0201" package3d_urn="urn:adsk.eagle:package:26117/1" value="20K">
-<spice>
-<pinmapping spiceprefix="R">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-<attribute name="FOOTPRINT" value="0201"/>
-<attribute name="MANUFACTURER" value="YAGEO"/>
-<attribute name="PART_NUMBER" value="RC0201FR-0720KL"/>
-</part>
 <part name="Q1" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
 <part name="Q2" library="SLJ_TRANSISTORS" deviceset="MMSS8050-H-TP" device="" package3d_urn="urn:adsk.eagle:package:30981/1"/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
@@ -8737,6 +8726,18 @@ Y is drill diameter</description>
 <attribute name="PART_NUMBER" value="GRM035R60J475ME15D"/>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
+<part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="10k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="DNI" value=""/>
+<attribute name="FOOTPRINT" value="0402"/>
+<attribute name="MANUFACTURER" value="Stackpole"/>
+<attribute name="PART_NUMBER" value="RMCF0402FT10K0"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -8836,13 +8837,6 @@ Y is drill diameter</description>
 <attribute name="NAME" x="349.25" y="186.2836" size="1.27" layer="95"/>
 <attribute name="VALUE" x="352.425" y="182.372" size="1.27" layer="96" rot="R180"/>
 <attribute name="DNI" x="340.36" y="187.96" size="1.778" layer="96"/>
-</instance>
-<instance part="R11" gate="G$1" x="314.96" y="233.68" smashed="yes" rot="R180">
-<attribute name="FOOTPRINT" x="320.04" y="233.68" size="1.27" layer="96"/>
-<attribute name="MANUFACTURER" x="314.96" y="233.68" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="PART_NUMBER" x="314.96" y="233.68" size="1.778" layer="96" rot="R180" display="off"/>
-<attribute name="NAME" x="321.31" y="232.1814" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="311.15" y="235.458" size="1.27" layer="96"/>
 </instance>
 <instance part="Q1" gate="G$1" x="332.74" y="259.08" smashed="yes">
 <attribute name="NAME" x="337.82" y="259.08" size="1.778" layer="95"/>
@@ -9205,6 +9199,14 @@ Y is drill diameter</description>
 <attribute name="FOOTPRINT" x="104.14" y="101.6" size="1.778" layer="96"/>
 <attribute name="NAME" x="113.284" y="101.981" size="1.778" layer="95"/>
 <attribute name="VALUE" x="113.284" y="96.901" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="314.96" y="233.68" smashed="yes">
+<attribute name="FOOTPRINT" x="317.5" y="234.315" size="1.27" layer="96"/>
+<attribute name="MANUFACTURER" x="314.96" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="PART_NUMBER" x="314.96" y="233.68" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="311.15" y="235.3564" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="307.975" y="231.648" size="1.27" layer="96"/>
+<attribute name="DNI" x="309.88" y="226.06" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -9657,7 +9659,6 @@ Y is drill diameter</description>
 <segment>
 <wire x1="241.3" y1="246.38" x2="279.4" y2="246.38" width="0.1524" layer="91"/>
 <label x="251.46" y="246.38" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="233.68" x2="302.26" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="233.68" x2="302.26" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="246.38" x2="297.18" y2="246.38" width="0.1524" layer="91"/>
@@ -9671,6 +9672,7 @@ Y is drill diameter</description>
 <pinref part="U1" gate="G$1" pin="RTS"/>
 <wire x1="241.3" y1="246.38" x2="187.96" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="246.38" x2="187.96" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9682,9 +9684,9 @@ Y is drill diameter</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="320.04" y1="233.68" x2="330.2" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="ESP32_GPIO0" class="0">
