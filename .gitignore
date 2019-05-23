@@ -28,3 +28,4 @@ sdkconfig.old
 *.db-shm
 *.db-wal
 
+.vscode/
