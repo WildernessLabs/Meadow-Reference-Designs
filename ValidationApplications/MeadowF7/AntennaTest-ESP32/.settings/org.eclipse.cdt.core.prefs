@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/BATCH_BUILD/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/BATCH_BUILD/operation=append
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/BATCH_BUILD/value=1
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PATH/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PATH/operation=replace
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PATH/value=/bin\:/usr/bin\:/usr/sbin\:/sbin\:${ESP32_EXECUTABLES}
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PYTHONPATH/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PYTHONPATH/operation=append
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/PYTHONPATH/value=/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.cross.base.462159690/appendContributed=true
