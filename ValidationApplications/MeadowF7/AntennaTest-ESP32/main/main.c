@@ -36,12 +36,12 @@ void app_main()
     gpio_set_direction(EXTERNAL_ANTENNA, GPIO_MODE_OUTPUT);
     gpio_set_level(EXTERNAL_ANTENNA, 0);
 
+    gpio_num_t currentAntenna = INTERNAL_ANTENNA;
 
-//    ESP_LOGI(__func__, "Using internal antenna");
-//    gpio_set_level(INTERNAL_ANTENNA, 1);
+    gpio_set_level(currentAntenna, 1);
 
-    ESP_LOGI(__func__, "Using external antenna");
-    gpio_set_level(EXTERNAL_ANTENNA, 1);
+//    ESP_LOGI(__func__, "Using external antenna");
+//    gpio_set_level(EXTERNAL_ANTENNA, 1);
 
     // initialize NVS
     ESP_ERROR_CHECK(nvs_flash_init());
@@ -72,9 +72,8 @@ void app_main()
 
     while (1)
     {
-        ESP_LOGI(__func__, "Start scanning...");
+        ESP_LOGI(__func__, "Scanning using the %s antenna", (currentAntenna == INTERNAL_ANTENNA) ? "internal" : "external");
         ESP_ERROR_CHECK(esp_wifi_scan_start(&scan_config, true));
-        ESP_LOGI(__func__, "Scan completed");
         ESP_LOGI(__func__, " ");
         ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&ap_num, ap_records));
 
