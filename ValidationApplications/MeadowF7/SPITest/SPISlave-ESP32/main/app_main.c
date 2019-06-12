@@ -150,11 +150,13 @@ void app_main()
 
     UARTInit();
     ESP_LOGI(__func__, "ESP32 SPI Test Application");
+    int counter = 100;
     while(1)
     {
         //Clear receive buffer, set send buffer to something sane
         memset(recvbuf, 0xAA, 129);
-        sprintf(sendbuf, "Slave device online.                  ");
+        sprintf(sendbuf, "Slave device online %d              ", counter);
+        counter++;
         ESP_LOGI(__func__, "Sending message: '%s'", sendbuf);
         ESP_LOG_BUFFER_HEXDUMP(__func__, sendbuf, strlen(sendbuf), ESP_LOG_INFO);
 
@@ -171,7 +173,9 @@ void app_main()
         */
 
         ret = spi_slave_transmit(VSPI_HOST, &t, portMAX_DELAY);
-        ESP_LOGI(__func__, "Received %d bytes from STM32", t.trans_len);
+        int lengthInBytes = t.trans_len / 8;
+        ESP_LOGI(__func__, "Received %d bytes from STM32", lengthInBytes);
+        recvbuf[lengthInBytes] = 0;
         ESP_LOGI(__func__, "Received: %s\n", recvbuf);
         ESP_LOG_BUFFER_HEXDUMP(__func__, recvbuf, 32, ESP_LOG_INFO);
 
