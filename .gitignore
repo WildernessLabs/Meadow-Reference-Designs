@@ -30,3 +30,5 @@ sdkconfig.old
 
 .vscode/
 .cproject
+ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.dll
+ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.pdb

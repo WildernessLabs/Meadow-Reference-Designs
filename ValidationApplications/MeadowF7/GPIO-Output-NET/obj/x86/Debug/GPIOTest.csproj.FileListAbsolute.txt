@@ -1,0 +1,7 @@
+/tmp/App.exe
+/tmp/App.pdb
+/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/GPIOTest/obj/x86/Debug/GPIOTest.csprojAssemblyReference.cache
+/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/GPIOTest/obj/x86/Debug/GPIOTest.csproj.CoreCompileInputs.cache
+/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/GPIOTest/obj/x86/Debug/GPIOTest.csproj.CopyComplete
+/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/GPIOTest/obj/x86/Debug/App.exe
+/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/GPIOTest/obj/x86/Debug/App.pdb
