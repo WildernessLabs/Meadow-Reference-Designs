@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{A1486D30-66C7-486A-8468-DE9D070254FB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Meadow.Core.Esp32/SpiTransportProvider.cs">
+    <Files>
+      <File FileName="Meadow.Core.Esp32/SpiTransportProvider.cs" Line="568" Column="13" />
+      <File FileName="BasicNetworkTestApplication.cs" Line="22" Column="10" />
+      <File FileName="Meadow.Core.Esp32/MessageDispatcher.cs" Line="1" Column="1" />
+      <File FileName="Meadow.Core.Esp32/Message.cs" Line="71" Column="37" />
+      <File FileName="Meadow.Core.Esp32/EventHandlers/TransportProviderDataReceivedEventHandler.cs" Line="1" Column="1" />
+      <File FileName="Meadow.Core.Esp32/EncodersBase.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BasicNetworkTest" expanded="True">
+            <Node name="BasicNetworkTest" expanded="True">
+              <Node name="Meadow.Core.Esp32" expanded="True">
+                <Node name="EventHandlers" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+                <Node name="SpiTransportProvider.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BasicNetworkTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

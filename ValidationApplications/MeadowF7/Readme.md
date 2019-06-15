@@ -22,7 +22,9 @@ Output a test signal on GPIO22.
 
 ## CANTest
 
-Two applications are provided to verify that the CAN bus is working as expected.
+Two applications are provided to verify that the CAN bus is working as expected.  The following circuit can be used to connect two CAN devices:
+
+![CAN Test Circuit](Images/CANBusTestCircuit.png)
 
 ### CANSender-ESP32
 

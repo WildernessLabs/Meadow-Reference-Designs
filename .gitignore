@@ -28,3 +28,7 @@ sdkconfig.old
 *.db-shm
 *.db-wal
 
+.vscode/
+.cproject
+ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.dll
+ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.pdb

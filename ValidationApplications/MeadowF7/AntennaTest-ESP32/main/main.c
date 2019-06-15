@@ -5,6 +5,7 @@
 #include "esp_wifi.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
+#include "driver/uart.h"
 
 #define MAX_APs 20
 
@@ -24,17 +25,10 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
     return ESP_OK;
 }
 
-// Empty infinite task
-void loop_task(void *pvParameter)
-{
-    while(1)
-    {
-        vTaskDelay(1000 / portTICK_RATE_MS);
-    }
-}
-
 void app_main()
 {
+    ESP_LOGI(__func__, "Meadow Antenna Test");
+
     gpio_pad_select_gpio(INTERNAL_ANTENNA);
     gpio_set_direction(INTERNAL_ANTENNA, GPIO_MODE_OUTPUT);
     gpio_set_level(INTERNAL_ANTENNA, 0);
@@ -42,8 +36,12 @@ void app_main()
     gpio_set_direction(EXTERNAL_ANTENNA, GPIO_MODE_OUTPUT);
     gpio_set_level(EXTERNAL_ANTENNA, 0);
 
+    gpio_num_t currentAntenna = INTERNAL_ANTENNA;
 
-    gpio_set_level(INTERNAL_ANTENNA, 1);
+    gpio_set_level(currentAntenna, 1);
+
+//    ESP_LOGI(__func__, "Using external antenna");
+//    gpio_set_level(EXTERNAL_ANTENNA, 1);
 
     // initialize NVS
     ESP_ERROR_CHECK(nvs_flash_init());
@@ -74,15 +72,14 @@ void app_main()
 
     while (1)
     {
-        printf("Start scanning...");
+        ESP_LOGI(__func__, "Scanning using the %s antenna", (currentAntenna == INTERNAL_ANTENNA) ? "internal" : "external");
         ESP_ERROR_CHECK(esp_wifi_scan_start(&scan_config, true));
-        ESP_LOGI(__func__, " completed!\n");
-        ESP_LOGI(__func__, "\n");
+        ESP_LOGI(__func__, " ");
         ESP_ERROR_CHECK(esp_wifi_scan_get_ap_records(&ap_num, ap_records));
 
         // print the list
-        ESP_LOGI(__func__, "Found %d access points:\n", ap_num);
-        ESP_LOGI(__func__, "\n");
+        ESP_LOGI(__func__, "Found %d access points:", ap_num);
+        ESP_LOGI(__func__, " ");
         ESP_LOGI(__func__, "               SSID              | Channel | RSSI |   Auth Mode ");
         ESP_LOGI(__func__, "----------------------------------------------------------------");
         for(int i = 0; i < ap_num; i++)
@@ -92,6 +89,4 @@ void app_main()
         ESP_LOGI(__func__, "----------------------------------------------------------------");
         vTaskDelay(pdMS_TO_TICKS(5000));
     }
-    // infinite loop
-    xTaskCreate(&loop_task, "loop_task", 2048, NULL, 5, NULL);
 }
