@@ -1,16 +1,35 @@
 EESchema Schematic File Version 4
+LIBS:F7MicroEmbed_RevA-cache
 EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 6750 4600 4750 2950
+U 5D09BE01
+F0 "STM32F7" 50
+F1 "STM32F7.sch" 50
+$EndSheet
+$Sheet
+S 13000 4500 1500 1500
+U 5D0A6362
+F0 "memory" 50
+F1 "Ram_Flash.sch" 50
+$EndSheet
+$Sheet
+S 2000 4500 1500 1500
+U 5D06E29D
+F0 "ESP32" 50
+F1 "ESP32.sch" 50
+$EndSheet
 $EndSCHEMATC

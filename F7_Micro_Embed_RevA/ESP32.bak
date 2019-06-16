@@ -1,0 +1,114 @@
+EESchema Schematic File Version 4
+LIBS:F7MicroEmbed_RevA-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SLJ_MCU:ESP32-PICO-D4 U?
+U 1 1 5D06E708
+P 5900 4100
+F 0 "U?" H 5900 5667 50  0000 C CNN
+F 1 "ESP32-PICO-D4" H 5900 5576 50  0000 C CNN
+F 2 "SLJ_QFN:PQFN50P700X700X104-49N" H 5900 4100 50  0001 L BNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 5900 4100 50  0001 L BNN
+F 4 "Espressif Systems" H 5900 4100 50  0001 L BNN "MF"
+F 5 "WIFi/Bluetooth SIP" H 5900 4100 50  0001 L BNN "Field5"
+F 6 "None" H 5900 4100 50  0001 L BNN "Field6"
+F 7 "SMD-48 Espressif Systems" H 5900 4100 50  0001 L BNN "Field7"
+F 8 "ESP32-PICO-D4" H 5900 4100 50  0001 L BNN "PN"
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR?
+U 1 1 5D071A9C
+P 7200 2600
+F 0 "#PWR?" H 7531 2524 50  0001 C CNN
+F 1 "+3V3" H 7215 2803 50  0000 C CNN
+F 2 "" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2800 7200 2800
+Wire Wire Line
+	7200 2800 7200 2600
+Wire Wire Line
+	6700 2900 7200 2900
+Wire Wire Line
+	7200 2900 7200 2800
+Connection ~ 7200 2800
+Wire Wire Line
+	6700 3000 7200 3000
+Wire Wire Line
+	7200 3000 7200 2900
+Connection ~ 7200 2900
+Wire Wire Line
+	6700 3200 7200 3200
+Wire Wire Line
+	7200 3200 7200 3000
+Connection ~ 7200 3000
+Wire Wire Line
+	6700 3400 7400 3400
+Wire Wire Line
+	6700 3500 7400 3500
+Text HLabel 7400 3500 2    50   Input ~ 0
+UART5_TX_ESP32_RX
+Text HLabel 7400 3400 2    50   Output ~ 0
+ESP32_TX_UART5_RX
+Wire Wire Line
+	6700 3600 8550 3600
+Text Label 7650 3600 2    50   ~ 0
+LNA_50OHM
+NoConn ~ 6700 3700
+NoConn ~ 6700 3800
+NoConn ~ 6700 3900
+NoConn ~ 6700 4000
+NoConn ~ 6700 4100
+NoConn ~ 6700 4200
+Text Label 7450 4300 2    50   ~ 0
+ESP32_BOOT_L
+$Comp
+L SLJ_Resistor_0201:R_20K_1%_0201 R?
+U 1 1 5D078330
+P 9050 4050
+F 0 "R?" H 9118 4141 50  0000 L CNN
+F 1 "R_20K_1%_0201" H 9035 3457 50  0001 C CNN
+F 2 "Resistors_SMD:R_0201" H 9118 4050 50  0000 L CNN
+F 3 "~" H 9050 4050 50  0001 C CNN
+F 4 "Yageo" H 9013 3389 50  0001 C CNN "MF"
+F 5 "RC0201FR-0720KL" H 9008 3526 50  0001 C CNN "PN"
+F 6 "20K" H 9118 3959 50  0000 L CNN "Res_value"
+	1    9050 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4300 9050 4200
+Wire Wire Line
+	6700 4300 9050 4300
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR?
+U 1 1 5D079442
+P 9050 3800
+F 0 "#PWR?" H 9381 3724 50  0001 C CNN
+F 1 "+3V3" H 9065 4003 50  0000 C CNN
+F 2 "" H 9050 3800 50  0001 C CNN
+F 3 "" H 9050 3800 50  0001 C CNN
+	1    9050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3800 9050 3900
+$EndSCHEMATC

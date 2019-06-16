@@ -4,10 +4,10 @@ EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 2 2
-Title ""
-Date ""
-Rev ""
+Sheet 2 4
+Title "F7 Micro Embed"
+Date "2019-06-15"
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -15,14 +15,209 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F7:STM32F777IIKx U?
+L MCU_ST_STM32F7:STM32F777IIKx U1
 U 1 1 5D09BECD
 P 8450 5400
-F 0 "U?" H 8400 9981 50  0000 C CNN
+F 0 "U1" H 8400 9981 50  0000 C CNN
 F 1 "STM32F777IIKx" H 8400 9890 50  0000 C CNN
 F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 6150 1100 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8450 5400 50  0001 C CNN
 	1    8450 5400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6750 10150 6850 10150
+Wire Wire Line
+	10350 10150 10350 9900
+Wire Wire Line
+	6750 9900 6750 10150
+Wire Wire Line
+	6850 9900 6850 10150
+Connection ~ 6850 10150
+Wire Wire Line
+	6850 10150 6950 10150
+Wire Wire Line
+	6950 9900 6950 10150
+Connection ~ 6950 10150
+Wire Wire Line
+	6950 10150 7050 10150
+Wire Wire Line
+	7050 9900 7050 10150
+Connection ~ 7050 10150
+Wire Wire Line
+	7050 10150 7150 10150
+Wire Wire Line
+	7150 9900 7150 10150
+Connection ~ 7150 10150
+Wire Wire Line
+	7150 10150 7250 10150
+Wire Wire Line
+	7250 9900 7250 10150
+Connection ~ 7250 10150
+Wire Wire Line
+	7250 10150 7350 10150
+Wire Wire Line
+	7350 9900 7350 10150
+Connection ~ 7350 10150
+Wire Wire Line
+	7350 10150 7450 10150
+Wire Wire Line
+	7450 9900 7450 10150
+Connection ~ 7450 10150
+Wire Wire Line
+	7450 10150 7550 10150
+Wire Wire Line
+	7550 9900 7550 10150
+Connection ~ 7550 10150
+Wire Wire Line
+	7550 10150 7650 10150
+Wire Wire Line
+	7650 10150 7650 9900
+Connection ~ 7650 10150
+Wire Wire Line
+	7650 10150 7750 10150
+Wire Wire Line
+	7750 9900 7750 10150
+Connection ~ 7750 10150
+Wire Wire Line
+	7750 10150 7850 10150
+Wire Wire Line
+	7850 9900 7850 10150
+Connection ~ 7850 10150
+Wire Wire Line
+	7850 10150 7950 10150
+Wire Wire Line
+	7950 9900 7950 10150
+Connection ~ 7950 10150
+Wire Wire Line
+	7950 10150 8050 10150
+Wire Wire Line
+	8050 9900 8050 10150
+Connection ~ 8050 10150
+Wire Wire Line
+	8050 10150 8150 10150
+Wire Wire Line
+	8150 9900 8150 10150
+Connection ~ 8150 10150
+Wire Wire Line
+	8150 10150 8250 10150
+Wire Wire Line
+	8250 9900 8250 10150
+Connection ~ 8250 10150
+Wire Wire Line
+	8250 10150 8350 10150
+Wire Wire Line
+	8350 9900 8350 10150
+Connection ~ 8350 10150
+Wire Wire Line
+	8350 10150 8450 10150
+Wire Wire Line
+	8450 9900 8450 10150
+Connection ~ 8450 10150
+Wire Wire Line
+	8450 10150 8550 10150
+Wire Wire Line
+	8550 9900 8550 10150
+Connection ~ 8550 10150
+Wire Wire Line
+	8550 10150 8650 10150
+Wire Wire Line
+	8650 9900 8650 10150
+Connection ~ 8650 10150
+Wire Wire Line
+	8650 10150 8750 10150
+Wire Wire Line
+	8750 9900 8750 10150
+Connection ~ 8750 10150
+Wire Wire Line
+	8750 10150 8850 10150
+Wire Wire Line
+	8850 9900 8850 10150
+Connection ~ 8850 10150
+Wire Wire Line
+	8850 10150 8950 10150
+Wire Wire Line
+	8950 9900 8950 10150
+Connection ~ 8950 10150
+Wire Wire Line
+	8950 10150 9050 10150
+Wire Wire Line
+	9050 9900 9050 10150
+Connection ~ 9050 10150
+Wire Wire Line
+	9050 10150 9150 10150
+Wire Wire Line
+	9150 9900 9150 10150
+Connection ~ 9150 10150
+Wire Wire Line
+	9150 10150 9250 10150
+Wire Wire Line
+	9250 9900 9250 10150
+Connection ~ 9250 10150
+Wire Wire Line
+	9250 10150 9350 10150
+Wire Wire Line
+	9350 9900 9350 10150
+Connection ~ 9350 10150
+Wire Wire Line
+	9350 10150 9450 10150
+Wire Wire Line
+	9450 9900 9450 10150
+Connection ~ 9450 10150
+Wire Wire Line
+	9450 10150 9550 10150
+Wire Wire Line
+	9550 9900 9550 10150
+Connection ~ 9550 10150
+Wire Wire Line
+	9550 10150 9650 10150
+Wire Wire Line
+	9650 9900 9650 10150
+Connection ~ 9650 10150
+Wire Wire Line
+	9650 10150 9750 10150
+Wire Wire Line
+	9750 9900 9750 10150
+Connection ~ 9750 10150
+Wire Wire Line
+	9750 10150 9850 10150
+Wire Wire Line
+	9850 9900 9850 10150
+Connection ~ 9850 10150
+Wire Wire Line
+	9850 10150 9950 10150
+Wire Wire Line
+	9950 9900 9950 10150
+Connection ~ 9950 10150
+Wire Wire Line
+	9950 10150 10050 10150
+Wire Wire Line
+	10050 9900 10050 10150
+Connection ~ 10050 10150
+Wire Wire Line
+	10050 10150 10150 10150
+Wire Wire Line
+	10150 9900 10150 10150
+Connection ~ 10150 10150
+Wire Wire Line
+	10150 10150 10250 10150
+Wire Wire Line
+	10250 9900 10250 10150
+Connection ~ 10250 10150
+Wire Wire Line
+	10250 10150 10350 10150
+$Comp
+L power:GND #PWR01
+U 1 1 5D093490
+P 10350 10300
+F 0 "#PWR01" H 10350 10050 50  0001 C CNN
+F 1 "GND" H 10355 10127 50  0000 C CNN
+F 2 "" H 10350 10300 50  0001 C CNN
+F 3 "" H 10350 10300 50  0001 C CNN
+	1    10350 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 10300 10350 10150
+Connection ~ 10350 10150
 $EndSCHEMATC

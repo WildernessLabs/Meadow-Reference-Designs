@@ -1,0 +1,28 @@
+EESchema Schematic File Version 4
+LIBS:F7MicroEmbed_RevA-cache
+EELAYER 29 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 2 4
+Title "F7 Micro Embed"
+Date "2019-06-15"
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F7:STM32F777IIKx U?
+U 1 1 5D09BECD
+P 8450 5400
+F 0 "U?" H 8400 9981 50  0000 C CNN
+F 1 "STM32F777IIKx" H 8400 9890 50  0000 C CNN
+F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 6150 1100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8450 5400 50  0001 C CNN
+	1    8450 5400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
