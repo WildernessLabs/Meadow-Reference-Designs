@@ -1,7 +1,0 @@
-/tmp/App.exe
-/tmp/App.pdb
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/GPIO-Output-NET.csproj.CoreCompileInputs.cache
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/GPIO-Output-NET.csproj.CopyComplete
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/App.exe
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/App.pdb

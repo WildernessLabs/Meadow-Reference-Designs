@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4300696c-3fd2-44e4-b09f-d2193f5a83df" name="Default Changelist" comment="" />
+    <list default="true" id="4300696c-3fd2-44e4-b09f-d2193f5a83df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GPIO-Output-NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GPIO-Output-NET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GPIO-Output-NET.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GPIO-Output-NET.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/App.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/App.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/App.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,25 +19,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="331">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
-                <marker date="1560501283409" expanded="false" signature="6:122" ph="..." />
-                <marker date="1560501283409" expanded="true" signature="142:4212" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="229:4210" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="244:321" ph="/// Number of pins on the board. ... " />
-                <marker date="1560501283409" expanded="true" signature="377:470" ph="/// All of the digital output pins on the board. ... " />
-                <marker date="1560501283409" expanded="true" signature="561:663" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="681:750" ph="/// Default constructor. ... " />
-                <marker date="1560501283409" expanded="true" signature="793:3690" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="892:962" ph="/* Analog pins are also digital pins. ... */" />
-                <marker date="1560501283409" expanded="true" signature="1491:1541" ph="/* SPI pins next. ... */" />
-                <marker date="1560501283409" expanded="true" signature="1814:1866" ph="/* Digital IO pins. ... */" />
-                <marker date="1560501283409" expanded="true" signature="3255:3311" ph="/* ESP32 specific pins. ... */" />
-                <marker date="1560501283409" expanded="true" signature="3708:3775" ph="/// Main program loop. ... " />
-                <marker date="1560501283409" expanded="true" signature="3801:4204" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="3867:4194" ph="{...}" />
-                <marker date="1560501283409" expanded="true" signature="4038:4113" ph="{...}" />
+                <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
+                <marker date="1560764590751" expanded="true" signature="142:4669" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="229:4667" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="244:337" ph="/// All of the digital output pins on the board. ... " />
+                <marker date="1560764590751" expanded="true" signature="428:530" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="548:617" ph="/// Default constructor. ... " />
+                <marker date="1560764590751" expanded="true" signature="660:3557" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="759:829" ph="/* Analog pins are also digital pins. ... */" />
+                <marker date="1560764590751" expanded="true" signature="1358:1408" ph="/* SPI pins next. ... */" />
+                <marker date="1560764590751" expanded="true" signature="1681:1733" ph="/* Digital IO pins. ... */" />
+                <marker date="1560764590751" expanded="true" signature="3122:3178" ph="/* ESP32 specific pins. ... */" />
+                <marker date="1560764590751" expanded="true" signature="3575:3642" ph="/// Main program loop. ... " />
+                <marker date="1560764590751" expanded="true" signature="3668:4661" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="3794:4117" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="4156:4651" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="4327:4402" ph="{...}" />
+                <marker date="1560764590751" expanded="true" signature="4479:4570" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,8 +97,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2471" />
-    <option name="y" value="48" />
+    <option name="x" value="2468" />
+    <option name="y" value="61" />
     <option name="width" value="1888" />
     <option name="height" value="1177" />
   </component>
@@ -103,26 +110,6 @@
     <panes>
       <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="GPIO-Output-NET" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="GPIO-Output-NET" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="GPIO-Output-NET" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="GPIO-Output-NET" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="GPIO-Output-NET" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="References" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="AssemblyExplorer" />
@@ -177,12 +164,14 @@
       <updated>1560496848548</updated>
       <workItem from="1560496851970" duration="2828000" />
       <workItem from="1560500365047" duration="2357000" />
-      <workItem from="1560613126293" duration="1171000" />
+      <workItem from="1560613126293" duration="1763000" />
+      <workItem from="1560706675989" duration="735000" />
+      <workItem from="1560763505578" duration="1041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6356000" />
+    <option name="totallyTimeSpent" value="8724000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -194,10 +183,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2471" y="48" width="1888" height="1177" extended-state="0" />
+    <frame x="2468" y="61" width="1888" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25785482" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26327193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -240,25 +229,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="331">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
-            <marker date="1560501283409" expanded="false" signature="6:122" ph="..." />
-            <marker date="1560501283409" expanded="true" signature="142:4212" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="229:4210" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="244:321" ph="/// Number of pins on the board. ... " />
-            <marker date="1560501283409" expanded="true" signature="377:470" ph="/// All of the digital output pins on the board. ... " />
-            <marker date="1560501283409" expanded="true" signature="561:663" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="681:750" ph="/// Default constructor. ... " />
-            <marker date="1560501283409" expanded="true" signature="793:3690" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="892:962" ph="/* Analog pins are also digital pins. ... */" />
-            <marker date="1560501283409" expanded="true" signature="1491:1541" ph="/* SPI pins next. ... */" />
-            <marker date="1560501283409" expanded="true" signature="1814:1866" ph="/* Digital IO pins. ... */" />
-            <marker date="1560501283409" expanded="true" signature="3255:3311" ph="/* ESP32 specific pins. ... */" />
-            <marker date="1560501283409" expanded="true" signature="3708:3775" ph="/// Main program loop. ... " />
-            <marker date="1560501283409" expanded="true" signature="3801:4204" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="3867:4194" ph="{...}" />
-            <marker date="1560501283409" expanded="true" signature="4038:4113" ph="{...}" />
+            <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
+            <marker date="1560764590751" expanded="true" signature="142:4669" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="229:4667" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="244:337" ph="/// All of the digital output pins on the board. ... " />
+            <marker date="1560764590751" expanded="true" signature="428:530" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="548:617" ph="/// Default constructor. ... " />
+            <marker date="1560764590751" expanded="true" signature="660:3557" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="759:829" ph="/* Analog pins are also digital pins. ... */" />
+            <marker date="1560764590751" expanded="true" signature="1358:1408" ph="/* SPI pins next. ... */" />
+            <marker date="1560764590751" expanded="true" signature="1681:1733" ph="/* Digital IO pins. ... */" />
+            <marker date="1560764590751" expanded="true" signature="3122:3178" ph="/* ESP32 specific pins. ... */" />
+            <marker date="1560764590751" expanded="true" signature="3575:3642" ph="/// Main program loop. ... " />
+            <marker date="1560764590751" expanded="true" signature="3668:4661" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="3794:4117" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="4156:4651" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="4327:4402" ph="{...}" />
+            <marker date="1560764590751" expanded="true" signature="4479:4570" ph="{...}" />
           </folding>
         </state>
       </provider>

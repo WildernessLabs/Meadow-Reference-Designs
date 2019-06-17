@@ -10,10 +10,6 @@ namespace GPIOTest
     public class GpioOutputTestApplication : App<F7Micro, GpioOutputTestApplication>
     {
         /// <summary>
-        /// Number of pins on the board.
-        /// </summary>
-        private const int NUMBER_OF_PINS = 29;
-        /// <summary>
         /// All of the digital output pins on the board.
         /// </summary>
         private readonly ArrayList _pins;
@@ -80,6 +76,15 @@ namespace GPIOTest
         public void Run()
         {
             bool state = true;
+            int currentLed = 0;
+
+            DigitalOutputPort[] leds =
+            {
+                (DigitalOutputPort) Device.CreateDigitalOutputPort(Device.Pins.OnboardLEDRed, false),
+                (DigitalOutputPort) Device.CreateDigitalOutputPort(Device.Pins.OnboardLEDGreen, false),
+                (DigitalOutputPort) Device.CreateDigitalOutputPort(Device.Pins.OnboardLEDBlue, false)
+            };
+            
             while (true)
             {
                 Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")}: Setting pins to {state}");
@@ -87,8 +92,14 @@ namespace GPIOTest
                 {
                     pin.State = state;
                 }
+
+                leds[currentLed].State = state;
+                if (!state)
+                {
+                    currentLed = (currentLed + 1) % 3;
+                }
                 state = !state;
-                Thread.Sleep(500);
+                Thread.Sleep(200);
             }
         }
     }

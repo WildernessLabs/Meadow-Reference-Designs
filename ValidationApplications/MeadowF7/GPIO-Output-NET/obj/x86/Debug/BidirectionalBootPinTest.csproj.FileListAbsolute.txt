@@ -1,7 +1,0 @@
-/tmp/App.exe
-/tmp/App.pdb
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/BidirectionalBootPinTest/obj/x86/Debug/BidirectionalBootPinTest.csprojAssemblyReference.cache
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/BidirectionalBootPinTest/obj/x86/Debug/BidirectionalBootPinTest.csproj.CoreCompileInputs.cache
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/BidirectionalBootPinTest/obj/x86/Debug/BidirectionalBootPinTest.csproj.CopyComplete
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/BidirectionalBootPinTest/obj/x86/Debug/App.exe
-/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow/Meadow-ESP32/Source/Tests/BidirectionalBootPinTest/obj/x86/Debug/App.pdb
