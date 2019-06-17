@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MinimumMeadow_RevD-rescue)(type Legacy)(uri ${KIPRJMOD}/MinimumMeadow_RevD-rescue.lib)(options "")(descr ""))
+  (lib (name Power-SchDoc-cache)(type Legacy)(uri ${KIPRJMOD}/Power-SchDoc-cache.lib)(options "")(descr ""))
+)
