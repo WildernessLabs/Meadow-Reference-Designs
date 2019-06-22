@@ -42,7 +42,7 @@ F 5 "S25FL256LAGBHV030" H 9850 5200 50  0001 C CNN "PN"
 	1    0    0    -1  
 $EndComp
 Text Label 8400 4700 0    50   ~ 0
-QUAD_SPI
+QUAD_SPI.IO[0..3]
 Entry Wire Line
 	8400 4800 8500 4900
 Entry Wire Line
@@ -75,27 +75,15 @@ F 3 "" H 10800 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8400 4600 0    50   BiDi ~ 0
-QUAD_SPI
-Wire Bus Line
-	8400 6100 12100 6100
-Entry Wire Line
-	12100 4900 12000 5000
-Entry Wire Line
-	12100 5000 12000 5100
-Entry Wire Line
-	12100 5200 12000 5300
+QUAD_SPI.IO[0..3]
 Wire Wire Line
 	10500 5000 12000 5000
 Wire Wire Line
 	12000 5100 10500 5100
-Wire Wire Line
-	12000 5300 10500 5300
 Text Label 11400 5000 2    50   ~ 0
 QUAD_SPI.SCK
 Text Label 11400 5100 2    50   ~ 0
 QUAD_SPI.CS_L
-Text Label 11400 5300 2    50   ~ 0
-QUAD_SPI.RESET_l
 Wire Wire Line
 	8500 5100 9300 5100
 Text Label 9200 5000 2    50   ~ 0
@@ -453,18 +441,21 @@ Text HLabel 4000 5700 0    50   Input ~ 0
 RAM.WE_L
 Text HLabel 4000 5800 0    50   Input ~ 0
 RAM.CS_L
-Wire Bus Line
-	12100 4900 12100 6100
-Wire Bus Line
-	8400 4600 8400 6100
-Wire Bus Line
-	3900 3000 3900 5100
-Wire Bus Line
-	6400 3000 6400 5200
 Text Label 6400 3500 1    50   ~ 0
 RAM.DQ[0..15]
 Text HLabel 6300 5400 2    50   Input ~ 0
 RAM.DQML
 Text HLabel 6300 5300 2    50   Input ~ 0
 RAM.DQMH
+Text HLabel 12000 5000 2    50   Input ~ 0
+QUAD_SPI.SCK
+Text HLabel 12000 5100 2    50   Input ~ 0
+QUAD_SPI.CS_L
+NoConn ~ 10500 5300
+Wire Bus Line
+	8400 4600 8400 5200
+Wire Bus Line
+	3900 3000 3900 5100
+Wire Bus Line
+	6400 3000 6400 5200
 $EndSCHEMATC

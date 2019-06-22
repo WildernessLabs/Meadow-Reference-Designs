@@ -350,8 +350,6 @@ Wire Wire Line
 	5700 5100 5100 5100
 Wire Wire Line
 	5700 5200 5100 5200
-Wire Bus Line
-	4400 6000 4400 9700
 Text Label 5300 5000 0    50   ~ 0
 SDNE0
 Text Label 5300 5100 0    50   ~ 0
@@ -362,4 +360,60 @@ Text HLabel 5100 5000 0    50   Output ~ 0
 RAM.CS_L
 Text HLabel 5100 5200 0    50   Output ~ 0
 RAM.WE_L
+Wire Bus Line
+	11600 8400 11800 8400
+Text HLabel 11800 8400 2    50   BiDi ~ 0
+QUAD_SPI.IO[0..3]
+Entry Wire Line
+	11600 7600 11500 7500
+Entry Wire Line
+	11500 7600 11600 7700
+Entry Wire Line
+	11500 7700 11600 7800
+Entry Wire Line
+	11500 8300 11600 8400
+Wire Wire Line
+	11500 7500 10600 7500
+Wire Wire Line
+	11500 7600 10600 7600
+Wire Wire Line
+	11500 7700 10600 7700
+Wire Wire Line
+	11500 8300 10600 8300
+Text Label 11300 7500 2    50   ~ 0
+QUAD_SPI.IO0
+Text Label 11300 7600 2    50   ~ 0
+QUAD_SPI.IO1
+Text Label 11300 8300 2    50   ~ 0
+QUAD_SPI.IO2
+Text Label 11300 7700 2    50   ~ 0
+QUAD_SPI.IO3
+Wire Wire Line
+	10600 4000 11900 4000
+Text Label 11300 4000 2    50   ~ 0
+QUAD_SPI.CS_L
+Wire Wire Line
+	10600 3200 11900 3200
+Text Label 11300 3200 2    50   ~ 0
+QUAD_SPI.SCK
+Text HLabel 11900 3200 2    50   Output ~ 0
+QUAD_SPI.SCK
+Text HLabel 11900 4000 2    50   Output ~ 0
+QUAD_SPI.CS_L
+Wire Wire Line
+	10600 8100 12000 8100
+Wire Wire Line
+	10600 8200 12000 8200
+Text HLabel 12000 8200 2    50   Output ~ 0
+RAM.DQMH
+Text HLabel 12000 8100 2    50   Output ~ 0
+RAM.DQML
+Wire Bus Line
+	11600 7300 11600 8400
+Wire Bus Line
+	4400 6000 4400 9700
+Text Label 11300 8100 2    50   ~ 0
+FMC_NBL0
+Text Label 11300 8200 2    50   ~ 0
+FMC_NBL1
 $EndSCHEMATC

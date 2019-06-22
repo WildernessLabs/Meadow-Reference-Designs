@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -42,7 +42,7 @@ F 5 "S25FL256LAGBHV030" H 9850 5200 50  0001 C CNN "PN"
 	1    0    0    -1  
 $EndComp
 Text Label 8400 4700 0    50   ~ 0
-QUAD_SPI
+QUAD_SPI.IO[0..3]
 Entry Wire Line
 	8400 4800 8500 4900
 Entry Wire Line
@@ -75,27 +75,15 @@ F 3 "" H 10800 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 8400 4600 0    50   BiDi ~ 0
-QUAD_SPI
-Wire Bus Line
-	8400 6100 12100 6100
-Entry Wire Line
-	12100 4900 12000 5000
-Entry Wire Line
-	12100 5000 12000 5100
-Entry Wire Line
-	12100 5200 12000 5300
+QUAD_SPI.IO[0..3]
 Wire Wire Line
 	10500 5000 12000 5000
 Wire Wire Line
 	12000 5100 10500 5100
-Wire Wire Line
-	12000 5300 10500 5300
 Text Label 11400 5000 2    50   ~ 0
 QUAD_SPI.SCK
 Text Label 11400 5100 2    50   ~ 0
 QUAD_SPI.CS_L
-Text Label 11400 5300 2    50   ~ 0
-QUAD_SPI.RESET_l
 Wire Wire Line
 	8500 5100 9300 5100
 Text Label 9200 5000 2    50   ~ 0
@@ -215,10 +203,6 @@ Text Label 6100 5000 2    50   ~ 0
 RAM.DQ14
 Text Label 6100 5100 2    50   ~ 0
 RAM.DQ15
-Entry Wire Line
-	6300 5300 6400 5400
-Entry Wire Line
-	6300 5400 6400 5500
 Wire Wire Line
 	5700 5300 6300 5300
 Wire Wire Line
@@ -259,16 +243,6 @@ Entry Wire Line
 	3900 4900 4000 5000
 Entry Wire Line
 	3900 5000 4000 5100
-Entry Wire Line
-	3900 5300 4000 5400
-Entry Wire Line
-	3900 5400 4000 5500
-Entry Wire Line
-	3900 5500 4000 5600
-Entry Wire Line
-	3900 5600 4000 5700
-Entry Wire Line
-	3900 5700 4000 5800
 Wire Wire Line
 	4000 3600 4700 3600
 Wire Wire Line
@@ -303,8 +277,6 @@ Wire Wire Line
 	4000 5100 4700 5100
 Wire Wire Line
 	4000 5300 4700 5300
-Wire Wire Line
-	4000 5400 4700 5400
 Wire Wire Line
 	4000 5500 4700 5500
 Wire Wire Line
@@ -449,26 +421,41 @@ F 3 "" H 6400 7000 50  0001 C CNN
 	1    6400 7000
 	1    0    0    -1  
 $EndComp
-Text HLabel 6500 5600 2    50   BiDi ~ 0
-RAM
-Text Label 5500 3000 0    50   ~ 0
-RAM
-Wire Bus Line
-	6400 5600 6500 5600
 Text Label 3900 3400 1    50   ~ 0
 RAM.A[0..15]
 Wire Bus Line
 	3900 5100 3300 5100
+Text HLabel 3300 5100 0    50   Input ~ 0
+RAM.A[0..15]
+Wire Wire Line
+	4000 5400 4700 5400
+Text HLabel 4000 5300 0    50   Input ~ 0
+RAM.CLK
+Text HLabel 4000 5400 0    50   Input ~ 0
+RAM.CKE
+Text HLabel 4000 5500 0    50   Input ~ 0
+RAM.CAS_L
+Text HLabel 4000 5600 0    50   Input ~ 0
+RAM.RAS_L
+Text HLabel 4000 5700 0    50   Input ~ 0
+RAM.WE_L
+Text HLabel 4000 5800 0    50   Input ~ 0
+RAM.CS_L
+Text Label 6400 3500 1    50   ~ 0
+RAM.DQ[0..15]
+Text HLabel 6300 5400 2    50   Input ~ 0
+RAM.DQML
+Text HLabel 6300 5300 2    50   Input ~ 0
+RAM.DQMH
+Text HLabel 12000 5000 2    50   Input ~ 0
+QUAD_SPI.SCK
+Text HLabel 12000 5100 2    50   Input ~ 0
+QUAD_SPI.CS_L
+NoConn ~ 10500 5300
 Wire Bus Line
-	12100 4900 12100 6100
-Wire Bus Line
-	8400 4600 8400 6100
+	8400 4600 8400 5200
 Wire Bus Line
 	3900 3000 3900 5100
 Wire Bus Line
-	6400 3000 6400 5600
-Entry Wire Line
-	3900 5200 4000 5300
-Text HLabel 3300 5100 0    50   Input ~ 0
-RAM.A[0..15]
+	6400 3000 6400 5200
 $EndSCHEMATC
