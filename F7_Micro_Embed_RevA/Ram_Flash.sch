@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -109,10 +109,10 @@ Wire Wire Line
 Wire Wire Line
 	10800 5400 10800 5600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5D09B286
 P 10800 5600
-F 0 "#PWR?" H 10800 5350 50  0001 C CNN
+F 0 "#PWR0101" H 10800 5350 50  0001 C CNN
 F 1 "GND" H 10805 5427 50  0000 C CNN
 F 2 "" H 10800 5600 50  0001 C CNN
 F 3 "" H 10800 5600 50  0001 C CNN
@@ -215,10 +215,6 @@ Text Label 6100 5000 2    50   ~ 0
 RAM.DQ14
 Text Label 6100 5100 2    50   ~ 0
 RAM.DQ15
-Entry Wire Line
-	6300 5300 6400 5400
-Entry Wire Line
-	6300 5400 6400 5500
 Wire Wire Line
 	5700 5300 6300 5300
 Wire Wire Line
@@ -227,8 +223,6 @@ Text Label 6100 5300 2    50   ~ 0
 RAM.DQMH
 Text Label 6100 5400 2    50   ~ 0
 RAM.DQML
-Wire Bus Line
-	6400 3000 3900 3000
 Entry Wire Line
 	3900 3500 4000 3600
 Entry Wire Line
@@ -261,18 +255,6 @@ Entry Wire Line
 	3900 4900 4000 5000
 Entry Wire Line
 	3900 5000 4000 5100
-Entry Wire Line
-	3900 5200 4000 5300
-Entry Wire Line
-	3900 5300 4000 5400
-Entry Wire Line
-	3900 5400 4000 5500
-Entry Wire Line
-	3900 5500 4000 5600
-Entry Wire Line
-	3900 5600 4000 5700
-Entry Wire Line
-	3900 5700 4000 5800
 Wire Wire Line
 	4000 3600 4700 3600
 Wire Wire Line
@@ -307,8 +289,6 @@ Wire Wire Line
 	4000 5100 4700 5100
 Wire Wire Line
 	4000 5300 4700 5300
-Wire Wire Line
-	4000 5400 4700 5400
 Wire Wire Line
 	4000 5500 4700 5500
 Wire Wire Line
@@ -395,10 +375,10 @@ Wire Wire Line
 	3300 6000 3300 5700
 Connection ~ 3800 6000
 $Comp
-L SLJ_Pwr_symbols:+3V3 #PWR?
+L SLJ_Pwr_symbols:+3V3 #PWR0102
 U 1 1 5D0C02DE
 P 3300 5700
-F 0 "#PWR?" H 3631 5624 50  0001 C CNN
+F 0 "#PWR0102" H 3631 5624 50  0001 C CNN
 F 1 "+3V3" H 3315 5903 50  0000 C CNN
 F 2 "" H 3300 5700 50  0001 C CNN
 F 3 "" H 3300 5700 50  0001 C CNN
@@ -439,26 +419,52 @@ Wire Wire Line
 	6400 6500 6400 6600
 Wire Wire Line
 	5700 6600 6400 6600
-Wire Bus Line
-	12100 4900 12100 6100
-Wire Bus Line
-	8400 4600 8400 6100
-Wire Bus Line
-	3900 3000 3900 5900
-Wire Bus Line
-	6400 3000 6400 5600
 Connection ~ 6400 6600
 Wire Wire Line
 	6400 6600 6400 7000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5D0D820B
 P 6400 7000
-F 0 "#PWR?" H 6400 6750 50  0001 C CNN
+F 0 "#PWR0103" H 6400 6750 50  0001 C CNN
 F 1 "GND" H 6405 6827 50  0000 C CNN
 F 2 "" H 6400 7000 50  0001 C CNN
 F 3 "" H 6400 7000 50  0001 C CNN
 	1    6400 7000
 	1    0    0    -1  
 $EndComp
+Text Label 3900 3400 1    50   ~ 0
+RAM.A[0..15]
+Wire Bus Line
+	3900 5100 3300 5100
+Text HLabel 3300 5100 0    50   Input ~ 0
+RAM.A[0..15]
+Wire Wire Line
+	4000 5400 4700 5400
+Text HLabel 4000 5300 0    50   Input ~ 0
+RAM.CLK
+Text HLabel 4000 5400 0    50   Input ~ 0
+RAM.CKE
+Text HLabel 4000 5500 0    50   Input ~ 0
+RAM.CAS_L
+Text HLabel 4000 5600 0    50   Input ~ 0
+RAM.RAS_L
+Text HLabel 4000 5700 0    50   Input ~ 0
+RAM.WE_L
+Text HLabel 4000 5800 0    50   Input ~ 0
+RAM.CS_L
+Wire Bus Line
+	12100 4900 12100 6100
+Wire Bus Line
+	8400 4600 8400 6100
+Wire Bus Line
+	3900 3000 3900 5100
+Wire Bus Line
+	6400 3000 6400 5200
+Text Label 6400 3500 1    50   ~ 0
+RAM.DQ[0..15]
+Text HLabel 6300 5400 2    50   Input ~ 0
+RAM.DQML
+Text HLabel 6300 5300 2    50   Input ~ 0
+RAM.DQMH
 $EndSCHEMATC
