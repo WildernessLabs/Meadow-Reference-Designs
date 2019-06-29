@@ -458,4 +458,6 @@ Wire Bus Line
 	3900 3000 3900 5100
 Wire Bus Line
 	6400 3000 6400 5200
+Text HLabel 6400 3000 2    50   BiDi ~ 0
+RAM_DQ[0..15]
 $EndSCHEMATC
