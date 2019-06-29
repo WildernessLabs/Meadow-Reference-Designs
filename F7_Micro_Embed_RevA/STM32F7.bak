@@ -1734,4 +1734,6 @@ Wire Bus Line
 	4400 6150 4400 9700
 Text Label 2900 2650 0    50   ~ 0
 VBAT
+Text HLabel 3900 1400 0    50   Input ~ 0
+RESET_L
 $EndSCHEMATC
