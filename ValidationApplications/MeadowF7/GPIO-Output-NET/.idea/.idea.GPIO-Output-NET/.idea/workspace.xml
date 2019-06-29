@@ -19,7 +19,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="557">
               <caret line="86" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
@@ -166,12 +166,12 @@
       <workItem from="1560500365047" duration="2357000" />
       <workItem from="1560613126293" duration="1763000" />
       <workItem from="1560706675989" duration="735000" />
-      <workItem from="1560763505578" duration="1041000" />
+      <workItem from="1560763505578" duration="1541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8724000" />
+    <option name="totallyTimeSpent" value="9224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -184,9 +184,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2468" y="61" width="1888" height="1177" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26327193" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26327193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,12 +198,12 @@
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3299539" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" visible="true" weight="0.3299539" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.3299539" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -229,7 +228,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="557">
           <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
             <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
