@@ -32,3 +32,6 @@ sdkconfig.old
 .cproject
 ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.dll
 ValidationApplications/MeadowF7/GPIO-Output-NET/Libraries/Meadow.Core.pdb
+ValidationApplications/MeadowF7/DeepSleepTest/ESP32/.vscode/browse.vc.db
+ValidationApplications/MeadowF7/DeepSleepTest/STM32/.vscode/browse.vc.db
+ValidationApplications/MeadowF7/DeepSleepTest/ESP32/sdkconfig.old
