@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32F7:STM32F777IIKx U1
-U 1 1 5D09BECD
-P 8200 5400
-F 0 "U1" H 6000 9800 50  0000 C CNN
-F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
-F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
-	1    8200 5400
-	1    0    0    -1  
-$EndComp
 Text Label 5500 6400 2    50   ~ 0
 RAM.A10
 Text Label 5500 6500 2    50   ~ 0
@@ -59,7 +48,7 @@ Wire Wire Line
 	4500 6900 5700 6900
 Wire Wire Line
 	5100 7200 5700 7200
-Text HLabel 4100 6000 0    50   BiDi ~ 0
+Text HLabel 4100 6150 0    50   BiDi ~ 0
 RAM.A[0..15]
 Wire Wire Line
 	10100 9900 10100 10300
@@ -261,8 +250,8 @@ Connection ~ 6500 10100
 Wire Wire Line
 	6500 10100 6500 9900
 Wire Bus Line
-	4100 6000 4400 6000
-Text Label 4200 6000 0    50   ~ 0
+	4100 6150 4400 6150
+Text Label 4200 6150 0    50   ~ 0
 RAM.A[0..15]
 Wire Wire Line
 	5700 8100 4500 8100
@@ -382,12 +371,8 @@ Text Label 11300 8300 2    50   ~ 0
 QUAD_SPI.IO2
 Text Label 11300 7700 2    50   ~ 0
 QUAD_SPI.IO3
-Wire Wire Line
-	10600 4000 11900 4000
 Text Label 11300 4000 2    50   ~ 0
 QUAD_SPI.CS_L
-Wire Wire Line
-	10600 3200 11900 3200
 Text Label 11300 3200 2    50   ~ 0
 QUAD_SPI.SCK
 Text HLabel 11900 3200 2    50   Output ~ 0
@@ -407,17 +392,7 @@ FMC_NBL0
 Text Label 11300 8200 2    50   ~ 0
 FMC_NBL1
 Wire Wire Line
-	10600 7200 11400 7200
-Wire Wire Line
-	10600 7300 11400 7300
-Wire Wire Line
 	10600 7900 11400 7900
-Wire Wire Line
-	10600 6400 11400 6400
-Wire Wire Line
-	10600 6500 11400 6500
-Wire Wire Line
-	10600 8800 11400 8800
 Wire Wire Line
 	12400 7700 10600 7700
 Entry Wire Line
@@ -425,19 +400,9 @@ Entry Wire Line
 Text Label 12500 8100 0    50   ~ 0
 QUAD_SPI.IO[0..3]
 Wire Wire Line
-	10600 8900 11400 8900
-Wire Wire Line
 	10600 9000 11400 9000
 Wire Wire Line
-	10600 9100 11400 9100
-Wire Wire Line
 	10600 9200 11400 9200
-Wire Wire Line
-	10600 9300 11400 9300
-Wire Wire Line
-	10600 9400 11400 9400
-Wire Wire Line
-	10600 9500 11400 9500
 Wire Wire Line
 	10600 9600 11400 9600
 Text Label 11300 8800 2    50   ~ 0
@@ -458,8 +423,6 @@ Text Label 11300 9500 2    50   ~ 0
 RAM.DQ11
 Text Label 11300 9600 2    50   ~ 0
 RAM.DQ12
-Wire Wire Line
-	10600 7800 11400 7800
 Text Label 11300 7800 2    50   ~ 0
 RAM.DQ0
 Text Label 11300 7900 2    50   ~ 0
@@ -468,18 +431,12 @@ Text Label 11300 6400 2    50   ~ 0
 RAM.DQ2
 Text Label 11300 6500 2    50   ~ 0
 RAM.DQ3
-Wire Wire Line
-	10600 7400 11400 7400
 Text Label 11300 7200 2    50   ~ 0
 RAM.DQ13
 Text Label 11300 7300 2    50   ~ 0
 RAM.DQ14
 Text Label 11300 7400 2    50   ~ 0
 RAM.DQ15
-Entry Wire Line
-	11400 6400 11500 6500
-Entry Wire Line
-	11400 6500 11500 6600
 Entry Wire Line
 	11400 7200 11500 7300
 Entry Wire Line
@@ -514,18 +471,6 @@ Text HLabel 11400 9900 0    50   BiDi ~ 0
 RAM.DQ[0..15]
 Text Label 11500 9900 0    50   ~ 0
 RAM.DQ[0..15]
-Wire Wire Line
-	10600 1300 11300 1300
-Wire Wire Line
-	10600 1400 11300 1400
-Wire Wire Line
-	10600 1500 11300 1500
-Wire Wire Line
-	10600 1600 11300 1600
-Wire Wire Line
-	10600 1700 11300 1700
-Wire Wire Line
-	10600 1800 11300 1800
 Text Label 11000 1300 2    50   ~ 0
 BLINKY_B
 Text Label 11000 1400 2    50   ~ 0
@@ -540,22 +485,8 @@ Text Label 11000 1800 2    50   ~ 0
 DAC_OUT2
 NoConn ~ 10600 1900
 NoConn ~ 10600 2100
-Wire Wire Line
-	10600 2000 11300 2000
 Text Label 11000 2000 2    50   ~ 0
 ADC1_IN7
-Wire Wire Line
-	10600 2200 11300 2200
-Wire Wire Line
-	10600 2300 11300 2300
-Wire Wire Line
-	10600 2400 11300 2400
-Wire Wire Line
-	10600 2500 11300 2500
-Wire Wire Line
-	10600 2600 11300 2600
-Wire Wire Line
-	10600 2700 11300 2700
 Wire Wire Line
 	10600 2800 11300 2800
 Text Label 11300 2200 2    50   ~ 0
@@ -573,79 +504,47 @@ SWCLK
 Text Label 11300 2800 2    50   ~ 0
 JTDI
 NoConn ~ 11300 2800
-Wire Wire Line
-	10600 3300 11300 3300
 Text Label 11300 3300 2    50   ~ 0
 JTDO
 NoConn ~ 11300 3300
 Wire Wire Line
-	7600 1000 7600 800 
-Wire Wire Line
 	7600 800  7700 800 
-Wire Wire Line
-	9000 800  9000 1000
-Wire Wire Line
-	8900 1000 8900 800 
 Connection ~ 8900 800 
 Wire Wire Line
 	8900 800  9000 800 
-Wire Wire Line
-	8800 1000 8800 800 
 Connection ~ 8800 800 
 Wire Wire Line
 	8800 800  8900 800 
-Wire Wire Line
-	8700 1000 8700 800 
 Connection ~ 8700 800 
 Wire Wire Line
 	8700 800  8800 800 
-Wire Wire Line
-	8600 1000 8600 800 
 Connection ~ 8600 800 
 Wire Wire Line
 	8600 800  8700 800 
-Wire Wire Line
-	8500 1000 8500 800 
 Connection ~ 8500 800 
 Wire Wire Line
 	8500 800  8600 800 
-Wire Wire Line
-	8400 1000 8400 800 
 Connection ~ 8400 800 
 Wire Wire Line
 	8400 800  8500 800 
-Wire Wire Line
-	8300 1000 8300 800 
 Connection ~ 8300 800 
 Wire Wire Line
 	8300 800  8400 800 
-Wire Wire Line
-	8200 1000 8200 800 
 Connection ~ 8200 800 
 Wire Wire Line
 	8200 800  8300 800 
-Wire Wire Line
-	8100 1000 8100 800 
 Connection ~ 8100 800 
 Wire Wire Line
 	8100 800  8200 800 
-Wire Wire Line
-	8000 1000 8000 800 
 Connection ~ 8000 800 
 Wire Wire Line
 	8000 800  8100 800 
-Wire Wire Line
-	7900 1000 7900 800 
 Connection ~ 7900 800 
 Wire Wire Line
 	7900 800  8000 800 
-Wire Wire Line
-	7800 1000 7800 800 
 Connection ~ 7800 800 
 Wire Wire Line
 	7800 800  7900 800 
-Wire Wire Line
-	7700 1000 7700 800 
 Connection ~ 7700 800 
 Wire Wire Line
 	7700 800  7800 800 
@@ -706,9 +605,7 @@ $EndComp
 Wire Wire Line
 	4000 1200 4000 1300
 Wire Wire Line
-	4000 1300 5700 1300
-Wire Wire Line
-	3500 1200 3500 1400
+	3500 1200 3500 1250
 Wire Wire Line
 	3500 1400 5700 1400
 Wire Wire Line
@@ -1237,8 +1134,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 4450 2700 4700
 Wire Wire Line
-	2700 4700 5700 4700
-Wire Wire Line
 	2550 4900 2800 4900
 Wire Wire Line
 	2800 4900 2800 4800
@@ -1295,8 +1190,6 @@ Wire Wire Line
 	2900 5000 2900 4800
 Connection ~ 2900 4800
 Wire Wire Line
-	2900 4800 3950 4800
-Wire Wire Line
 	1750 5300 1750 5400
 Wire Wire Line
 	1750 5400 2400 5400
@@ -1326,26 +1219,6 @@ F 7 "" H 4050 4800 50  0000 C CNN "DNI"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10600 3000 11300 3000
-Wire Wire Line
-	10600 3100 11300 3100
-Wire Wire Line
-	10600 3500 11300 3500
-Wire Wire Line
-	10600 3600 11300 3600
-Wire Wire Line
-	10600 3700 11300 3700
-Wire Wire Line
-	10600 3800 11300 3800
-Wire Wire Line
-	10600 3900 11300 3900
-Wire Wire Line
-	10600 4100 11300 4100
-Wire Wire Line
-	10600 4300 11300 4300
-Wire Wire Line
-	10600 4400 11300 4400
-Wire Wire Line
 	10600 4500 11300 4500
 Text Label 11100 3000 2    50   ~ 0
 PB0_TIM3CH3
@@ -1373,14 +1246,6 @@ USART1_TX
 Text HLabel 11300 4500 2    50   Input ~ 0
 USART1_RX
 NoConn ~ 10600 4200
-Wire Wire Line
-	10600 7500 12400 7500
-Wire Bus Line
-	12500 7500 12500 8400
-Wire Bus Line
-	11500 6500 11500 9900
-Wire Bus Line
-	4400 6000 4400 9700
 Text Label 11100 3600 2    50   ~ 0
 I2C1_SCL
 Text Label 11100 3700 2    50   ~ 0
@@ -1397,4 +1262,478 @@ Text Label 11100 4400 2    50   ~ 0
 USART1_TX
 Text Label 11100 4500 2    50   ~ 0
 USART1_RX
+Text HLabel 11300 3000 2    50   BiDi ~ 0
+PB0_TIM3CH3
+Text HLabel 11300 3100 2    50   BiDi ~ 0
+PB1_TIM3CH3
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C4B41
+P 11300 2600
+F 0 "TP?" V 11300 2800 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2788 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2600 50  0001 C CNN
+F 3 "~" H 11500 2600 50  0001 C CNN
+F 4 "DNI" V 11300 2950 50  0000 L CNN "DNI"
+	1    11300 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C64D7
+P 11300 2700
+F 0 "TP?" V 11300 2900 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2888 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2700 50  0001 C CNN
+F 3 "~" H 11500 2700 50  0001 C CNN
+F 4 "DNI" V 11300 3050 50  0000 L CNN "DNI"
+	1    11300 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C6812
+P 11300 1300
+F 0 "TP?" V 11300 1500 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 1488 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 1300 50  0001 C CNN
+F 3 "~" H 11500 1300 50  0001 C CNN
+F 4 "DNI" V 11300 1650 50  0000 L CNN "DNI"
+	1    11300 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C6DE1
+P 11300 1400
+F 0 "TP?" V 11300 1600 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 1588 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 1400 50  0001 C CNN
+F 3 "~" H 11500 1400 50  0001 C CNN
+F 4 "DNI" V 11300 1750 50  0000 L CNN "DNI"
+	1    11300 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C6FDC
+P 11300 1500
+F 0 "TP?" V 11300 1700 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 1688 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 1500 50  0001 C CNN
+F 3 "~" H 11500 1500 50  0001 C CNN
+F 4 "DNI" V 11300 1850 50  0000 L CNN "DNI"
+	1    11300 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C715F
+P 11300 2400
+F 0 "TP?" V 11300 2600 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2588 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2400 50  0001 C CNN
+F 3 "~" H 11500 2400 50  0001 C CNN
+F 4 "DNI" V 11300 2750 50  0000 L CNN "DNI"
+	1    11300 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C7630
+P 11300 2500
+F 0 "TP?" V 11300 2700 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2688 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2500 50  0001 C CNN
+F 3 "~" H 11500 2500 50  0001 C CNN
+F 4 "DNI" V 11300 2850 50  0000 L CNN "DNI"
+	1    11300 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C7846
+P 11300 2200
+F 0 "TP?" V 11300 2400 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2388 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2200 50  0001 C CNN
+F 3 "~" H 11500 2200 50  0001 C CNN
+F 4 "DNI" V 11300 2550 50  0000 L CNN "DNI"
+	1    11300 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C7C5D
+P 11300 2300
+F 0 "TP?" V 11300 2500 50  0000 L CNN
+F 1 "0.6X0.8MM" V 11300 2488 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2300 50  0001 C CNN
+F 3 "~" H 11500 2300 50  0001 C CNN
+F 4 "DNI" V 11300 2650 50  0000 L CNN "DNI"
+	1    11300 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6C864B
+P 3500 1250
+F 0 "TP?" V 3500 1450 50  0000 L CNN
+F 1 "0.6X0.8MM" V 3500 1438 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 3700 1250 50  0001 C CNN
+F 3 "~" H 3700 1250 50  0001 C CNN
+F 4 "DNI" V 3600 1450 50  0000 L CNN "DNI"
+	1    3500 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3500 1250
+Wire Wire Line
+	3500 1250 3500 1400
+Wire Wire Line
+	4000 1300 5700 1300
+$Comp
+L SLJ_Mechanical:0.6X0.8MM TP?
+U 1 1 5D6CA115
+P 3800 1700
+F 0 "TP?" V 3750 2050 50  0000 L CNN
+F 1 "0.6X0.8MM" V 3800 1888 50  0001 L CNN
+F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 4000 1700 50  0001 C CNN
+F 3 "~" H 4000 1700 50  0001 C CNN
+F 4 "DNI" V 3900 1700 50  0000 L CNN "DNI"
+	1    3800 1700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3800 1700
+Wire Wire Line
+	5700 3400 4800 3400
+Wire Wire Line
+	5700 3600 4800 3600
+Wire Wire Line
+	5700 3700 4800 3700
+NoConn ~ 5700 3500
+Text Label 5450 3400 2    50   ~ 0
+SPI2_CS
+Text Label 5450 3600 2    50   ~ 0
+SPI2_MISO
+Text Label 5450 3700 2    50   ~ 0
+SPI2_MOSI
+NoConn ~ 5700 3800
+NoConn ~ 5700 3900
+NoConn ~ 5700 4000
+NoConn ~ 5700 4100
+NoConn ~ 5700 4200
+NoConn ~ 5700 4500
+Wire Wire Line
+	5700 4300 4800 4300
+Wire Wire Line
+	5700 4400 4800 4400
+Text Label 5450 4300 2    50   ~ 0
+UART4_RX
+Text Label 5450 4400 2    50   ~ 0
+PI10
+Text HLabel 4800 3400 0    50   BiDi ~ 0
+SPI2_CS
+Text HLabel 4800 3600 0    50   Input ~ 0
+SPI2_MISO
+Text HLabel 4800 3700 0    50   Output ~ 0
+SPI2_MOSI
+Text HLabel 4800 4300 0    50   Input ~ 0
+UART4_RX
+Text HLabel 4800 4400 0    50   BiDi ~ 0
+PI10
+NoConn ~ 5700 5300
+NoConn ~ 5700 5400
+NoConn ~ 5700 5500
+NoConn ~ 5700 5600
+NoConn ~ 5700 6200
+NoConn ~ 5700 6100
+NoConn ~ 5700 5800
+Wire Wire Line
+	5700 5700 5100 5700
+Wire Wire Line
+	5700 5900 5100 5900
+Wire Wire Line
+	5700 6000 5100 6000
+Text HLabel 5100 5700 0    50   BiDi ~ 0
+PH10_TIM5CH1
+Text HLabel 5100 5900 0    50   Output ~ 0
+OTG_FS_PWRON
+Text HLabel 5100 6000 0    50   Output ~ 0
+UART4_TX
+NoConn ~ 5700 7000
+NoConn ~ 5700 7100
+NoConn ~ 5700 7300
+NoConn ~ 5700 7800
+NoConn ~ 5700 7400
+NoConn ~ 5700 7500
+NoConn ~ 5700 7600
+NoConn ~ 5700 7700
+Wire Wire Line
+	5700 6700 5100 6700
+Text HLabel 5100 6700 0    50   BiDi ~ 0
+PG3
+NoConn ~ 5700 8700
+NoConn ~ 5700 8900
+NoConn ~ 5700 9000
+NoConn ~ 5700 9100
+Wire Wire Line
+	5700 8800 5200 8800
+Text HLabel 5200 8800 0    50   BiDi ~ 0
+PF7
+NoConn ~ 10600 5000
+Wire Wire Line
+	7800 1000 7800 800 
+Wire Wire Line
+	7900 1000 7900 800 
+Wire Wire Line
+	8000 1000 8000 800 
+Wire Wire Line
+	8100 1000 8100 800 
+Wire Wire Line
+	7600 1000 7600 800 
+Wire Wire Line
+	7700 1000 7700 800 
+Wire Wire Line
+	8400 1000 8400 800 
+Wire Wire Line
+	8500 1000 8500 800 
+Wire Wire Line
+	8600 1000 8600 800 
+Wire Wire Line
+	8700 1000 8700 800 
+Wire Wire Line
+	8800 1000 8800 800 
+Wire Wire Line
+	8200 1000 8200 800 
+Wire Wire Line
+	8300 1000 8300 800 
+Wire Wire Line
+	8900 1000 8900 800 
+Wire Wire Line
+	9000 800  9000 1000
+Wire Wire Line
+	10600 8800 11400 8800
+Wire Wire Line
+	10600 8900 11400 8900
+Wire Wire Line
+	10600 6500 11400 6500
+Wire Wire Line
+	10600 7200 11400 7200
+Wire Wire Line
+	10600 6400 11400 6400
+Wire Wire Line
+	10600 7300 11400 7300
+Wire Wire Line
+	10600 7400 11400 7400
+Wire Wire Line
+	10600 5300 11300 5300
+Wire Wire Line
+	10600 5400 11300 5400
+Wire Wire Line
+	10600 5500 11300 5500
+Wire Wire Line
+	10600 5600 11300 5600
+Wire Wire Line
+	10600 5700 11300 5700
+Wire Wire Line
+	10600 5800 11300 5800
+Wire Wire Line
+	10600 4700 11300 4700
+Wire Wire Line
+	10600 4800 11300 4800
+Wire Wire Line
+	10600 4900 11300 4900
+Wire Wire Line
+	10600 3500 11300 3500
+Wire Wire Line
+	10600 3600 11300 3600
+Wire Wire Line
+	10600 3700 11300 3700
+Wire Wire Line
+	10600 3800 11300 3800
+Wire Wire Line
+	10600 3900 11300 3900
+Wire Wire Line
+	10600 4000 11900 4000
+Wire Wire Line
+	10600 4100 11300 4100
+Wire Wire Line
+	10600 3000 11300 3000
+Wire Wire Line
+	10600 3100 11300 3100
+Wire Wire Line
+	10600 3200 11900 3200
+Wire Wire Line
+	10600 3300 11300 3300
+Wire Wire Line
+	10600 4300 11300 4300
+Wire Wire Line
+	10600 4400 11300 4400
+Wire Wire Line
+	10600 1800 11300 1800
+Wire Wire Line
+	10600 2000 11300 2000
+Wire Wire Line
+	10600 2200 11300 2200
+Wire Wire Line
+	10600 2300 11300 2300
+Wire Wire Line
+	10600 2400 11300 2400
+Wire Wire Line
+	10600 2500 11300 2500
+Wire Wire Line
+	10600 1300 11300 1300
+Wire Wire Line
+	10600 1400 11300 1400
+Wire Wire Line
+	10600 1500 11300 1500
+Wire Wire Line
+	10600 1600 11300 1600
+Wire Wire Line
+	10600 1700 11300 1700
+Wire Wire Line
+	10600 2600 11300 2600
+Wire Wire Line
+	10600 2700 11300 2700
+Wire Wire Line
+	10600 9500 11400 9500
+Wire Wire Line
+	10600 9400 11400 9400
+Wire Wire Line
+	10600 9300 11400 9300
+Wire Wire Line
+	10600 9100 11400 9100
+Wire Wire Line
+	2900 4800 3950 4800
+Wire Wire Line
+	2700 4700 5700 4700
+Wire Wire Line
+	10600 7800 11400 7800
+$Comp
+L MCU_ST_STM32F7:STM32F777IIKx U1
+U 1 1 5D09BECD
+P 8200 5400
+F 0 "U1" H 6000 9800 50  0000 C CNN
+F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
+F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10600 5100
+NoConn ~ 10600 5200
+NoConn ~ 10600 5900
+NoConn ~ 10600 6000
+NoConn ~ 10600 6100
+NoConn ~ 10600 6200
+Text HLabel 11300 4700 2    50   Input ~ 0
+PC0_ADC1_IN10
+Text HLabel 11300 4800 2    50   Input ~ 0
+PC1_ADC1_IN11
+Text HLabel 11300 4900 2    50   Input ~ 0
+OTG_FS_OC
+Text HLabel 11300 5300 2    50   Input ~ 0
+PC6_TIM3CH1
+Text HLabel 11300 5400 2    50   BiDi ~ 0
+PC7_TIM3CH2
+Text HLabel 11300 5500 2    50   BiDi ~ 0
+PC8_TIM8CH1
+Text HLabel 11300 5600 2    50   BiDi ~ 0
+PC9_TIM8CH4
+Text HLabel 11300 5700 2    50   BiDi ~ 0
+PC10_SPI3_SCK
+Text HLabel 11300 5800 2    50   BiDi ~ 0
+PC11_SPI3_MISO
+Entry Wire Line
+	11400 6400 11500 6300
+Entry Wire Line
+	11500 6400 11400 6500
+Wire Wire Line
+	10600 6600 11550 6600
+Wire Wire Line
+	10600 6700 11550 6700
+Wire Wire Line
+	10600 6900 11550 6900
+Text HLabel 11550 6600 2    50   Input ~ 0
+PD2_UART5_RX
+Text HLabel 11550 6700 2    50   Output ~ 0
+PD3_SPI2_SCK
+Text HLabel 11550 6900 2    50   BiDi ~ 0
+PD5
+NoConn ~ 10600 6800
+NoConn ~ 10600 7000
+NoConn ~ 10600 7100
+Text HLabel 11300 1600 2    50   Input ~ 0
+PA3_ADC1_IN3
+Text HLabel 11300 1700 2    50   Output ~ 0
+PA4_DAC_OUT1
+Text HLabel 11300 1800 2    50   Output ~ 0
+PA5_DAC_OUT2
+Text HLabel 11300 2000 2    50   Input ~ 0
+PA7_ADC1_IN7
+Wire Wire Line
+	10600 8400 11700 8400
+Text HLabel 11700 8400 2    50   BiDi ~ 0
+PE3
+NoConn ~ 10600 8500
+NoConn ~ 10600 8600
+NoConn ~ 10600 8700
+Wire Wire Line
+	7500 1000 7500 800 
+Wire Wire Line
+	7500 800  6850 800 
+Text HLabel 6850 800  0    50   UnSpc ~ 0
+VBAT
+Text Notes 6050 700  0    50   ~ 0
+Connect VBAT to 3V3 if you are not using a battery\n
+Text Label 7050 800  0    50   ~ 0
+VBAT
+$Comp
+L SLJ_Capacitor_0201:C_0201_0.47UF_6.3V_X5R C?
+U 1 1 5DB8B138
+P 3150 3000
+F 0 "C?" H 3265 3137 50  0000 L CNN
+F 1 "C_0201_0.47UF_6.3V_X5R" H 3550 2500 50  0001 L CNN
+F 2 "Capacitors_SMD:C_0201" H 3188 2850 50  0001 C CNN
+F 3 "~" H 3150 3000 50  0001 C CNN
+F 4 "Murata Electronics North America" H 4050 2300 50  0001 C CNN "MF"
+F 5 "GRM033R60J474KE90D" H 3950 2400 50  0001 C CNN "PN"
+F 6 "Samsung Electro-Mechanics" H 3950 2200 50  0001 C CNN "MF2"
+F 7 "CL03A474KQ3NNNH" H 3750 2100 50  0001 C CNN "PN2"
+F 8 "6.3V" H 3265 3046 50  0000 L CNN "Voltage"
+F 9 "10%" H 3450 2700 50  0001 C CNN "Tolerance"
+F 10 "0.47uF" H 3265 2955 50  0000 L CNN "Cap_value"
+F 11 "0201" H 3265 2864 50  0000 L CNN "Size"
+	1    3150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB8B84F
+P 3150 3250
+F 0 "#PWR?" H 3150 3000 50  0001 C CNN
+F 1 "GND" H 3155 3077 50  0000 C CNN
+F 2 "" H 3150 3250 50  0001 C CNN
+F 3 "" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3250 3150 3100
+Wire Wire Line
+	3150 2800 3150 2650
+Wire Wire Line
+	3150 2650 2900 2650
+Wire Wire Line
+	10600 7500 12400 7500
+Wire Bus Line
+	12500 7500 12500 8400
+Wire Bus Line
+	11500 6300 11500 9900
+Wire Bus Line
+	4400 6150 4400 9700
+Text Label 2900 2650 0    50   ~ 0
+VBAT
+Text HLabel 3900 1400 0    50   Input ~ 0
+RESET_L
 $EndSCHEMATC
