@@ -132,20 +132,27 @@ int main(void)
   GPIO_PinState redLedState;
   while (1)
   {
-
-    GPIO_PinState wakeupPin = HAL_GPIO_ReadPin(WakeUpButton_GPIO_Port, WakeUpButton_Pin);
-    HAL_GPIO_WritePin(ESP32Boot_GPIO_Port, ESP32Boot_Pin, wakeupPin);
-    if (wakeupPin == GPIO_PIN_RESET)
-    {
-      redLedState = GPIO_PIN_SET;
-    }
-    else
-    {
-      redLedState = GPIO_PIN_RESET;
-    }
-    
-    HAL_GPIO_WritePin(RedLED_GPIO_Port, RedLED_Pin, redLedState);
+    //
+    //  Force a reset.
+    //
+    HAL_GPIO_WritePin(ESP32Reset_GPIO_Port, ESP32Reset_Pin, GPIO_PIN_RESET);
     HAL_Delay(100);
+    HAL_GPIO_WritePin(ESP32Reset_GPIO_Port, ESP32Reset_Pin, GPIO_PIN_SET);
+
+    HAL_Delay(15000);
+
+    //
+    //  Wakeup due to boot pin (EXT1) going low.
+    //
+    HAL_GPIO_WritePin(ESP32Boot_GPIO_Port, ESP32Boot_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(ESP32Boot_GPIO_Port, ESP32Boot_Pin, GPIO_PIN_SET);
+
+    //
+    //  Allow a reset due to timeout on the ESP32.
+    //
+    HAL_Delay(25000);
+
+    HAL_GPIO_TogglePin(BlueLED_GPIO_Port, BlueLED_Pin);
 
     /* USER CODE END WHILE */
 

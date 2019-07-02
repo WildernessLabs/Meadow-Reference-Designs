@@ -29,7 +29,7 @@ static RTC_DATA_ATTR struct timeval sleep_enter_time;
 /*
     *      UART Tx pin for the logging output.
     */
-static const int LOGGING_TX_PIN = GPIO_NUM_22;
+static const int LOGGING_TX_PIN = GPIO_NUM_1;
 
 /*
     *      UART Rx pin for the logging output.
@@ -50,23 +50,35 @@ static const int RX_BUFFER_SIZE = 1024;
     */
 static const int TX_BUFFER_SIZE = 1024;
 
+void Sleep(uint32_t seconds)
+{
+    if (seconds != 0)
+    {
+        ESP_LOGI(__func__, "Waiting for %d seconds", seconds);
+        while (seconds > 0)
+        {
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
+            seconds--;
+        }
+    }
+}
+
 void app_main()
 {
-    // const uart_config_t loggingUARTConfig =
-    // {
-    //     .baud_rate = 115200,
-    //     .data_bits = UART_DATA_8_BITS,
-    //     .parity = UART_PARITY_DISABLE,
-    //     .stop_bits = UART_STOP_BITS_1,
-    //     .flow_ctrl = UART_HW_FLOWCTRL_DISABLE
-    // };
-    // uart_param_config(LOGGING_UART_PORT_NUMBER, &loggingUARTConfig);
-    // uart_set_pin(LOGGING_UART_PORT_NUMBER, LOGGING_TX_PIN, LOGGING_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
-    //
-    //  We won't use a buffer for sending data.
-    //
-    // uart_driver_install(LOGGING_UART_PORT_NUMBER, RX_BUFFER_SIZE * 2, 0, 0, NULL, 0);
+//     const uart_config_t loggingUARTConfig =
+//     {
+//         .baud_rate = 115200,
+//         .data_bits = UART_DATA_8_BITS,
+//         .parity = UART_PARITY_DISABLE,
+//         .stop_bits = UART_STOP_BITS_1,
+//         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE
+//     };
+//     uart_param_config(LOGGING_UART_PORT_NUMBER, &loggingUARTConfig);
+//     uart_set_pin(LOGGING_UART_PORT_NUMBER, LOGGING_TX_PIN, LOGGING_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+//     uart_driver_install(LOGGING_UART_PORT_NUMBER, RX_BUFFER_SIZE * 2, 0, 0, NULL, 0);
 
+
+    ESP_LOGI(__func__, "Deep sleep test.");
 
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -80,54 +92,52 @@ void app_main()
             if (wakeup_pin_mask != 0)
             {
                 int pin = __builtin_ffsll(wakeup_pin_mask) - 1;
-                ESP_LOGI(__func__, "Wake up from GPIO %d\n", pin);
+                ESP_LOGI(__func__, "Wake up from GPIO %d", pin);
             }
             else
             {
-                ESP_LOGI(__func__, "Wake up from GPIO\n");
+                ESP_LOGI(__func__, "Wake up from GPIO");
             }
             break;
         }
         case ESP_SLEEP_WAKEUP_TIMER:
-            ESP_LOGI(__func__, "Wake up from timer. Time spent in deep sleep: %dms\n", sleep_time_ms);
+            ESP_LOGI(__func__, "Wake up from timer. Time spent in deep sleep: %dms", sleep_time_ms);
             break;
         case ESP_SLEEP_WAKEUP_UNDEFINED:
         default:
-            ESP_LOGI(__func__, "Not a deep sleep reset\n");
+            ESP_LOGI(__func__, "Not a deep sleep reset");
             break;
     }
-
-    vTaskDelay(1000 / portTICK_PERIOD_MS);
-
+    Sleep(10);
 
     const int wakeup_time_sec = 20;
-    ESP_LOGI(__func__, "Enabling timer wakeup, %ds\n", wakeup_time_sec);
+    ESP_LOGI(__func__, "Enabling timer wakeup, %ds", wakeup_time_sec);
     esp_sleep_enable_timer_wakeup(wakeup_time_sec * 1000000);
-    //
-    //  Choose GPIO 0 for Meadow Rev B board
-    //
-    // const int ext_wakeup_pin_1 = 0;
-    //
-    //  Choose GPIO 25 for the suggested changes to Rev B.
-    //
-    const int ext_wakeup_pin_1 = 25;
+//    //
+//    //  Choose GPIO 0 for Meadow Rev B board
+//    //
+    const int ext_wakeup_pin_1 = 0;
+//    //
+//    //  Choose GPIO 25 for the suggested changes to Rev B.
+//    //
+//    const int ext_wakeup_pin_1 = 25;
     const uint64_t ext_wakeup_pin_1_mask = 1ULL << ext_wakeup_pin_1;
-    ESP_LOGI(__func__, "Enabling EXT1 wakeup on pins GPIO%d\n", ext_wakeup_pin_1);
-    //
-    //  Choose ESP_EXT1_WAKEUP_ALL_LOW for Meadow Rev B board with GPIO0
-    //
-    // esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ALL_LOW);
-    //
-    //  Choose ESP_EXT1_WAKEUP_ANY_HIGH for suggested changes to Rev B.
-    //
-    esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ANY_HIGH);
+    ESP_LOGI(__func__, "Enabling EXT1 wakeup on pins GPIO%d", ext_wakeup_pin_1);
+//    //
+//    //  Choose ESP_EXT1_WAKEUP_ALL_LOW for Meadow Rev B board with GPIO0
+//    //
+     esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ALL_LOW);
+//    //
+//    //  Choose ESP_EXT1_WAKEUP_ANY_HIGH for suggested changes to Rev B.
+//    //
+//    esp_sleep_enable_ext1_wakeup(ext_wakeup_pin_1_mask, ESP_EXT1_WAKEUP_ANY_HIGH);
 //
 //    // Isolate GPIO12 pin from external circuits. This is needed for modules
 //    // which have an external pull-up resistor on GPIO12 (such as ESP32-WROVER)
 //    // to minimize current consumption.
-//    rtc_gpio_isolate(GPIO_NUM_12);
+    rtc_gpio_isolate(GPIO_NUM_12);
 
-    ESP_LOGI(__func__, "Entering deep sleep\n");
+    ESP_LOGI(__func__, "Entering deep sleep");
     gettimeofday(&sleep_enter_time, NULL);
 
     esp_deep_sleep_start();
