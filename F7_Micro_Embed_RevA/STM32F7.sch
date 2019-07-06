@@ -529,7 +529,7 @@ Wire Wire Line
 	8400 800  8500 800 
 Connection ~ 8300 800 
 Wire Wire Line
-	8300 800  8400 800 
+	8300 800  8350 800 
 Connection ~ 8200 800 
 Wire Wire Line
 	8200 800  8300 800 
@@ -549,10 +549,10 @@ Connection ~ 7700 800
 Wire Wire Line
 	7700 800  7800 800 
 $Comp
-L SLJ_Pwr_symbols:+3V3 #PWR0105
+L SLJ_Pwr_symbols:+3V3 #PWR06
 U 1 1 5D2A74F5
 P 9000 800
-F 0 "#PWR0105" H 9331 724 50  0001 C CNN
+F 0 "#PWR06" H 9331 724 50  0001 C CNN
 F 1 "+3V3" H 9015 1003 50  0000 C CNN
 F 2 "" H 9000 800 50  0001 C CNN
 F 3 "" H 9000 800 50  0001 C CNN
@@ -1085,8 +1085,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 2800 1800 2700
 Connection ~ 1800 2700
-Wire Wire Line
-	1800 2700 2200 2700
 $Comp
 L SLJ_OSC_CRYSTAL:ABM12W-25.0000MHZ-6-B1U-T3 Y1
 U 1 1 5D49F0B5
@@ -1724,6 +1722,24 @@ Wire Wire Line
 	3150 2800 3150 2650
 Wire Wire Line
 	3150 2650 2900 2650
+Text Label 2900 2650 0    50   ~ 0
+VBAT
+Text HLabel 3900 1400 0    50   Input ~ 0
+RESET_L
+$Comp
+L SLJ_Pwr_symbols:+3V3 #PWR01
+U 1 1 5DCE9531
+P 8350 800
+F 0 "#PWR01" H 8681 724 50  0001 C CNN
+F 1 "+3V3" H 8365 1003 50  0000 C CNN
+F 2 "" H 8350 800 50  0001 C CNN
+F 3 "" H 8350 800 50  0001 C CNN
+	1    8350 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 8350 800 
+Wire Wire Line
+	8350 800  8400 800 
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1732,8 +1748,6 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Text Label 2900 2650 0    50   ~ 0
-VBAT
-Text HLabel 3900 1400 0    50   Input ~ 0
-RESET_L
+Wire Wire Line
+	1800 2700 2200 2700
 $EndSCHEMATC
