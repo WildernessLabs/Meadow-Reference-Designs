@@ -1,0 +1,737 @@
+Pinlist
+
+Exported from MeadowF7Micro_REVC.brd at 7/11/19 5:01 PM
+
+EAGLE Version 9.3.2 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Part     Pad      Net
+
+ANT201   1        ESP32:N$8
+         2        GND
+         3        GND
+
+ANT202   GND      GND
+         SIG      ESP32:EXTANT_50OHM
+         GND1     GND
+         GND2     GND
+
+C101     1        +3V3
+         2        GND
+
+C102     1        +3V3
+         2        GND
+
+C103     1        +VBUS
+         2        GND
+
+C104     1        +VBAT
+         2        GND
+
+C105     1        POWER1:N$4
+         2        GND
+
+C201     1        +3V3
+         2        GND
+
+C202     1        ESP32:N$4
+         2        ESP32:N$5
+
+C203     1        ESP32:N$7
+         2        ESP32:N$3
+
+C205     1        ESP32:CHIP_ANT_50OHM
+         2        GND
+
+C206     1        ESP32:N$8
+         2        GND
+
+C207     1        +3V3
+         2        GND
+
+C214     1        +3V3
+         2        GND
+
+C218     1        ESP32_RESET_L
+         2        GND
+
+C219     1        ESP32:EXTANT_50OHM
+         2        ESP32:N$14
+
+C220     1        ESP32:CHIP_ANT_50OHM
+         2        ESP32:N$13
+
+C221     1        ESP32:N$15
+         2        ESP32:LNA_50OHM
+
+C222     1        VBAT_MEAS
+         2        GND
+
+C401     1        STM32_MCU1:N$1
+         2        GND
+
+C402     1        STM32_MCU1:N$2
+         2        GND
+
+C403     1        +3V3
+         2        GND
+
+C404     1        +3V3
+         2        GND
+
+C405     1        +3V3
+         2        GND
+
+C406     1        +3V3
+         2        GND
+
+C407     1        +3V3
+         2        GND
+
+C408     1        +3V3
+         2        GND
+
+C409     1        +3V3
+         2        GND
+
+C410     1        +3V3
+         2        GND
+
+C411     1        +3V3
+         2        GND
+
+C412     1        +3V3
+         2        GND
+
+C413     1        +3V3
+         2        GND
+
+C414     1        +3V3
+         2        GND
+
+C415     1        +3V3
+         2        GND
+
+C416     1        +3V3
+         2        GND
+
+C417     1        +3V3
+         2        GND
+
+C418     1        +3V3
+         2        GND
+
+C419     1        +3V3
+         2        GND
+
+C420     1        +3V3
+         2        GND
+
+C421     1        +3V3
+         2        GND
+
+C422     1        +3V3
+         2        GND
+
+C423     1        +VREF
+         2        GND
+
+C424     1        STM32_MCU1:OSC_IN_PH0
+         2        GND
+
+C425     1        STM32_MCU1:N$14
+         2        GND
+
+C501     1        +3V3
+         2        GND
+
+C502     1        +3V3
+         2        GND
+
+C503     1        +3V3
+         2        GND
+
+C504     1        +3V3
+         2        GND
+
+C505     1        +3V3
+         2        GND
+
+C506     1        +3V3
+         2        GND
+
+C507     1        +3V3
+         2        GND
+
+C508     1        +3V3
+         2        GND
+
+C601     1        +5V
+         2        GND
+
+C620     1        +VBUS
+         2        GND
+
+D101     1        POWER1:N$2
+         2        POWER1:N$3
+
+D601     1        +5V
+         2        +VBUS
+
+DRILEGEND
+J301     1        RESET_L
+         2        +3V3
+         3        +VREF
+         4        GND
+         5        DAC_OUT1
+         6        DAC_OUT2
+         7        ADC1_IN3
+         8        ADC1_IN7
+         9        ADC1_IN10
+         10       ADC1_IN11
+         11       SPI3_CLK
+         12       SPI3_MOSI
+         13       SPI3_MISO
+         14       UART4_RX
+         15       UART4_TX
+         16       PC6
+         17       CAN1_RX
+         18       CAN1_TX
+
+J302     1        +VBAT
+         2        EN_3V3
+         3        +5V
+         4        PE3
+         5        PG3
+         6        USART1_RX
+         7        USART1_TX
+         8        PC9
+         9        PH10
+         10       PB1
+         11       I2C1_SCL
+         12       I2C1_SDA
+         13       PB0
+         14       PC7
+
+J601     1        +VBUS
+         2        USB_OTG1:USB_N
+         3        USB_OTG1:USB_P
+         4        USB_OTG1:USB_ID
+         5        GND
+         SHD1              *** unconnected ***
+         SHD2              *** unconnected ***
+         SHD3              *** unconnected ***
+         SHD4              *** unconnected ***
+         SHD5              *** unconnected ***
+         SHD6              *** unconnected ***
+
+L201     1        ESP32:N$8
+         2        ESP32:CHIP_ANT_50OHM
+
+LED401   1        STM32_MCU1:N$7
+         2        STM32_MCU1:N$9
+         3        STM32_MCU1:N$11
+         4        +3V3
+
+MTH1     1                 *** unconnected ***
+
+MTH2     1        GND
+
+MTH3     1                 *** unconnected ***
+
+MTH4     1                 *** unconnected ***
+
+P101     1        +VBAT
+         2        GND
+         P1                *** unconnected ***
+         P2                *** unconnected ***
+
+Q101     1        +VBUS
+         2        +5V
+         3        +VBAT
+
+Q102     1        EN_3V3_L
+         2        +5V
+         3        POWER1:N$4
+
+Q103     1        EN_3V3
+         2        GND
+         3        EN_3V3_L
+
+Q604     1        EN_3V3_L
+         2        +VBUS
+         3        VBUS_MCU
+
+R101     1        +5V
+         2        EN_3V3_L
+
+R102     1        GND
+         2        +VBUS
+
+R103     1        +VBUS
+         2        POWER1:N$3
+
+R104     1        VBAT_MEAS
+         2        +VBAT
+
+R105     1        GND
+         2        VBAT_MEAS
+
+R106     1        +5V
+         2        EN_3V3
+
+R108     1        POWER1:N$1
+         2        GND
+
+R202     1        +3V3
+         2        ESP32:FLASH_VDD
+
+R203     1        ESP32:N$10
+         2        ESP32_UART5
+
+R204     1        +3V3
+         2        ESP32_BOOT_L
+
+R205     1        ESP32_RESET_L
+         2        +3V3
+
+R206     1        ESP32:GPIO2
+         2        GND
+
+R304     1        +VREF
+         2        +3V3
+
+R401     1        RESET_L
+         2        +3V3
+
+R402     1        STM32_MCU1:N$8
+         2        +3V3
+
+R403     1        GND
+         2        STM32_MCU1:BOOT
+
+R405     1        STM32_MCU1:BLINKY_R
+         2        STM32_MCU1:N$7
+
+R406     1        STM32_MCU1:BLINKY_G
+         2        STM32_MCU1:N$9
+
+R407     1        STM32_MCU1:BLINKY_B
+         2        STM32_MCU1:N$11
+
+R408     1        STM32_MCU1:N$14
+         2        STM32_MCU1:OSC_OUT_PH1
+
+R601     1        USB_P
+         2        USB_OTG1:USB_P
+
+R602     1        USB_N
+         2        USB_OTG1:USB_N
+
+R603     1        GND
+         2        USB_PWR_ON
+
+R606     1        USB_OC
+         2        +3V3
+
+R607     1        USB_ID
+         2        USB_OTG1:USB_ID
+
+S401     1        STM32_MCU1:BOOT
+         2        STM32_MCU1:BOOT
+         3        +3V3
+         4        +3V3
+
+S402     1        RESET_L
+         2        RESET_L
+         3        GND
+         4        GND
+
+TP201    1        ESP32:MTCK
+
+TP202    1        ESP32_BOOT_L
+
+TP203    1        ESP32:MTDI
+
+TP204    1        ESP32:MTDO
+
+TP205    1        ESP32:MTMS
+
+TP206    1        ESP32_RESET_L
+
+TP207    1        UART5_ESP32
+
+TP208    1        ESP32_UART5
+
+TP401    1        STM32_MCU1:SWCLK/JTCK
+
+TP402    1        STM32_MCU1:SWDIO/JTMS
+
+U101     1        GND
+         2        +3V3
+         3        POWER1:N$4
+         4        +3V3
+
+U102     1        POWER1:N$2
+         2        GND
+         3        +VBAT
+         4        +VBUS
+         5        POWER1:N$1
+
+U202     1        ESP32:N$14
+         2        GND
+         3        ESP32:N$13
+         4        ESP32:GPIO27
+         5        ESP32:N$15
+         6        ESP32:GPIO26
+
+U203     1        +3V3
+         2        ESP32:LNA_50OHM
+         3        +3V3
+         4        +3V3
+         5        ESP32:N$4
+         6        ESP32:N$5
+         7        ESP32:N$7
+         8        ESP32:N$3
+         9        ESP32_RESET_L
+         10                *** unconnected ***
+         11       VBAT_MEAS
+         12                *** unconnected ***
+         13                *** unconnected ***
+         14                *** unconnected ***
+         15       ESP32:GPIO26
+         16       ESP32:GPIO27
+         17       ESP32:MTMS
+         18       ESP32:MTDI
+         19       +3V3
+         20       ESP32:MTCK
+         21       ESP32:MTDO
+         22       ESP32:GPIO2
+         23       ESP32_BOOT_L
+         24                *** unconnected ***
+         25                *** unconnected ***
+         26       ESP32:FLASH_VDD
+         27                *** unconnected ***
+         28                *** unconnected ***
+         29                *** unconnected ***
+         30                *** unconnected ***
+         31                *** unconnected ***
+         32                *** unconnected ***
+         33                *** unconnected ***
+         34       SPI2_CS_L
+         35       SPI2_SCK
+         36       SPI2_MOSI
+         37       +3V3
+         38       SPI2_MISO
+         39       ESP32:ESP32_IO22
+         40       UART5_ESP32
+         41       ESP32:N$10
+         42                *** unconnected ***
+         43       +3V3
+         44                *** unconnected ***
+         45                *** unconnected ***
+         46       +3V3
+         47                *** unconnected ***
+         48                *** unconnected ***
+         49       GND
+
+U401     A1       PE3
+         A2       QUAD_SPI_IO2
+         A3       FMC_DQMH
+         A4       FMC_DQML
+         A5       CAN1_RX
+         A6       SPI3_MOSI
+         A7                *** unconnected ***
+         A8                *** unconnected ***
+         A9                *** unconnected ***
+         B1                *** unconnected ***
+         B2                *** unconnected ***
+         B3                *** unconnected ***
+         B4       CAN1_TX
+         B5       I2C1_SDA
+         B6       I2C1_SCL
+         B7       FMC_CAS_L
+         B8                *** unconnected ***
+         B9                *** unconnected ***
+         C1       +3V3
+         C2                *** unconnected ***
+         C3                *** unconnected ***
+         C4                *** unconnected ***
+         C5       +3V3
+         C6       STM32_MCU1:N$8
+         C7       +3V3
+         C8       +3V3
+         C9       +3V3
+         D1                *** unconnected ***
+         D2                *** unconnected ***
+         D3       UART4_RX
+         D4                *** unconnected ***
+         D5       GND
+         D6       STM32_MCU1:BOOT
+         D7       GND
+         D8       GND
+         D9       GND
+         E1                *** unconnected ***
+         E2       FMC_A0
+         E3       ESP32_BOOT_L
+         E4                *** unconnected ***
+         F1                *** unconnected ***
+         F2       GND
+         F3       +3V3
+         F4       FMC_CKE_L
+         F6       GND
+         F7       GND
+         F8       GND
+         F9       GND
+         G1       STM32_MCU1:OSC_IN_PH0
+         G2       GND
+         G3       +3V3
+         G4       FMC_CS_L
+         G6       GND
+         G7       GND
+         G8       GND
+         G9       GND
+         H1       STM32_MCU1:OSC_OUT_PH1
+         H2       FMC_A2
+         H3       FMC_A1
+         H4       STM32_MCU1:I2C2_SCL
+         H6       GND
+         H7       GND
+         H8       GND
+         H9       GND
+         J1       RESET_L
+         J2       FMC_A3
+         J3       FMC_A4
+         J4       FMC_WE
+         J6       GND
+         J7       GND
+         J8       GND
+         J9       GND
+         K1       ESP32_RESET_L
+         K2                *** unconnected ***
+         K3       FMC_A5
+         K4       +3V3
+         K6       GND
+         K7       GND
+         K8       GND
+         K9       GND
+         L1                *** unconnected ***
+         L2                *** unconnected ***
+         L3                *** unconnected ***
+         L4       GND
+         M1       GND
+         M2       ADC1_IN10
+         M3       ADC1_IN11
+         M4       USB_OC
+         M5                *** unconnected ***
+         M6       FLASH_CLK
+         M7       FMC_A11
+         M8       GND
+         M9       GND
+         N1       GND
+         N2       STM32_MCU1:BLINKY_G
+         N3       STM32_MCU1:BLINKY_B
+         N4       DAC_OUT1
+         N5                *** unconnected ***
+         N6       FMC_A7
+         N7       FMC_A10
+         N8       +3V3
+         N9       +3V3
+         P1       +VREF
+         P2       STM32_MCU1:BLINKY_R
+         P3                *** unconnected ***
+         P4       DAC_OUT2
+         P5                *** unconnected ***
+         P6       FMC_A6
+         P7       FMC_A9
+         P8       FMC_D5
+         P9       FMC_D6
+         R1       +3V3
+         R2       ADC1_IN3
+         R3       ADC1_IN7
+         R4       PB1
+         R5       PB0
+         R6       FMC_RAS_L
+         R7       FMC_A8
+         R8       FMC_D4
+         R9       FMC_D7
+         A10      STM32_MCU1:JTDO
+         A11               *** unconnected ***
+         A12               *** unconnected ***
+         A13      STM32_MCU1:JTDI
+         A14      STM32_MCU1:SWCLK/JTCK
+         A15      STM32_MCU1:SWDIO/JTMS
+         B10               *** unconnected ***
+         B11               *** unconnected ***
+         B12      FMC_D2
+         B13      SPI3_MISO
+         B14      SPI3_CLK
+         B15      USB_P
+         C10               *** unconnected ***
+         C11      STM32_MCU1:PD5_BUT
+         C12      FMC_D3
+         C13      SPI2_MOSI
+         C14      SPI2_MISO
+         C15      USB_N
+         D10               *** unconnected ***
+         D11      SPI2_SCK
+         D12      ESP32_UART5
+         D13               *** unconnected ***
+         D14               *** unconnected ***
+         D15      USB_ID
+         E12      UART4_TX
+         E13               *** unconnected ***
+         E14      SPI2_CS_L
+         E15      VBUS_MCU
+         F10      GND
+         F12      GND
+         F13      STM32_MCU1:N$2
+         F14      PC9
+         F15               *** unconnected ***
+         G10      GND
+         G12      GND
+         G13      +3V3
+         G14      STM32_MCU1:PC8_TIM8CH1
+         G15      PC7
+         H10      GND
+         H12      GND
+         H13      +3V3
+         H14      FMC_CLK
+         H15      PC6
+         J10      GND
+         J12      +3V3
+         J13      +3V3
+         J14               *** unconnected ***
+         J15               *** unconnected ***
+         K10      GND
+         K12      USB_PWR_ON
+         K13      FMC_A15
+         K14      FMC_A14
+         K15      PG3
+         L12               *** unconnected ***
+         L13      PH10
+         L14      FMC_D1
+         L15      FMC_A12
+         M10      STM32_MCU1:N$1
+         M11               *** unconnected ***
+         M12               *** unconnected ***
+         M13               *** unconnected ***
+         M14      FMC_D0
+         M15      QUAD_SPI_IO3
+         N10      +3V3
+         N11      FMC_D10
+         N12               *** unconnected ***
+         N13      QUAD_SPI_IO1
+         N14      QUAD_SPI_IO0
+         N15      FMC_D15
+         P10      FMC_D8
+         P11      FMC_D11
+         P12               *** unconnected ***
+         P13      UART5_ESP32
+         P14      FMC_D14
+         P15      FMC_D13
+         R10      FMC_D9
+         R11      FMC_D12
+         R12      FLASH_CS_L
+         R13      STM32_MCU1:I2C2_SDA
+         R14      USART1_TX
+         R15      USART1_RX
+
+U501     A1                *** unconnected ***
+         A2                *** unconnected ***
+         A3                *** unconnected ***
+         A4                *** unconnected ***
+         A5                *** unconnected ***
+         B1                *** unconnected ***
+         B2       FLASH_CLK
+         B3       GND
+         B4       +3V3
+         B5                *** unconnected ***
+         C1                *** unconnected ***
+         C2       FLASH_CS_L
+         C3                *** unconnected ***
+         C4       QUAD_SPI_IO2
+         C5                *** unconnected ***
+         D1                *** unconnected ***
+         D2       QUAD_SPI_IO1
+         D3       QUAD_SPI_IO0
+         D4       QUAD_SPI_IO3
+         D5                *** unconnected ***
+         E1                *** unconnected ***
+         E2                *** unconnected ***
+         E3                *** unconnected ***
+         E4                *** unconnected ***
+         E5                *** unconnected ***
+         P$1               *** unconnected ***
+         P$2               *** unconnected ***
+         P$3               *** unconnected ***
+         P$4               *** unconnected ***
+         P$5               *** unconnected ***
+
+U502     A1       GND
+         A2       FMC_D15
+         A3       GND
+         A7       +3V3
+         A8       FMC_D0
+         A9       +3V3
+         B1       FMC_D14
+         B2       FMC_D13
+         B3       +3V3
+         B7       GND
+         B8       FMC_D2
+         B9       FMC_D1
+         C1       FMC_D12
+         C2       FMC_D11
+         C3       GND
+         C7       +3V3
+         C8       FMC_D4
+         C9       FMC_D3
+         D1       FMC_D10
+         D2       FMC_D9
+         D3       +3V3
+         D7       GND
+         D8       FMC_D6
+         D9       FMC_D5
+         E1       FMC_D8
+         E2       FMC_A13
+         E3       GND
+         E7       +3V3
+         E8       FMC_DQML
+         E9       FMC_D7
+         F1       FMC_DQMH
+         F2       FMC_CLK
+         F3       FMC_CKE_L
+         F7       FMC_CAS_L
+         F8       FMC_RAS_L
+         F9       FMC_WE
+         G1       FMC_A12
+         G2       FMC_A11
+         G3       FMC_A9
+         G7       FMC_A14
+         G8       FMC_A15
+         G9       FMC_CS_L
+         H1       FMC_A8
+         H2       FMC_A7
+         H3       FMC_A6
+         H7       FMC_A0
+         H8       FMC_A1
+         H9       FMC_A10
+         J1       GND
+         J2       FMC_A5
+         J3       FMC_A4
+         J7       FMC_A3
+         J8       FMC_A2
+         J9       +3V3
+
+U601     1        GND
+         2        +5V
+         3        USB_PWR_ON
+         4        USB_OC
+         5        +VBUS
+         6        +VBUS
+         TAB      GND
+
+X401     1        STM32_MCU1:OSC_IN_PH0
+         2        GND
+         3        STM32_MCU1:N$14
+         4        GND
+
