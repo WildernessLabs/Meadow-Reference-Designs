@@ -1,4 +1,5 @@
 OPEN '/Users/sheldon/Meadow-Reference-Designs/MeadowF7Micro-RevC/drilegend.lbr';
+Rename drilegend.pac dl63333447.pac
 Edit drilegend.pac
 LAYER 144 DrillLegend;
 Display none;
