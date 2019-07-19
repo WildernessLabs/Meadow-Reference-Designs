@@ -80,22 +80,12 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define A4_Pin GPIO_PIN_0
 #define A4_GPIO_Port GPIOC
-#define A5_Pin GPIO_PIN_1
-#define A5_GPIO_Port GPIOC
 #define GreenLED_Pin GPIO_PIN_1
 #define GreenLED_GPIO_Port GPIOA
 #define BlueLED_Pin GPIO_PIN_0
 #define BlueLED_GPIO_Port GPIOA
-#define A0_Pin GPIO_PIN_4
-#define A0_GPIO_Port GPIOA
 #define RedLED_Pin GPIO_PIN_2
 #define RedLED_GPIO_Port GPIOA
-#define A1_Pin GPIO_PIN_5
-#define A1_GPIO_Port GPIOA
-#define A2_Pin GPIO_PIN_3
-#define A2_GPIO_Port GPIOA
-#define A3_Pin GPIO_PIN_7
-#define A3_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

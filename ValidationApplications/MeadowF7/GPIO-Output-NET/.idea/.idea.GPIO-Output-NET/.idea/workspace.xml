@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4300696c-3fd2-44e4-b09f-d2193f5a83df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GPIO-Output-NET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GPIO-Output-NET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GPIO-Output-NET.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GPIO-Output-NET.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/App.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/App.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeGPIOTest-STM32/NativeGPIOTest.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeGPIOTest-STM32/NativeGPIOTest.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeGPIOTest-STM32/Src/main.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="-23">
+              <caret line="66" column="80" lean-forward="true" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
               <folding>
                 <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
                 <marker date="1560764590751" expanded="true" signature="142:4669" ph="{...}" />
@@ -47,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="144">
               <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <marker date="1560497755203" expanded="false" signature="6:27" ph="..." />
@@ -167,11 +167,12 @@
       <workItem from="1560613126293" duration="1763000" />
       <workItem from="1560706675989" duration="735000" />
       <workItem from="1560763505578" duration="1541000" />
+      <workItem from="1562061729520" duration="614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9224000" />
+    <option name="totallyTimeSpent" value="9838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -184,8 +185,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2468" y="61" width="1888" height="1177" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26327193" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -198,12 +200,12 @@
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.3299539" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299539" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.3299539" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" visible="true" weight="0.3299539" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -228,8 +230,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GPIO-Output-NET.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="-23">
+          <caret line="66" column="80" lean-forward="true" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
           <folding>
             <marker date="1560764590751" expanded="false" signature="6:122" ph="..." />
             <marker date="1560764590751" expanded="true" signature="142:4669" ph="{...}" />
@@ -254,7 +256,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="144">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <marker date="1560497755203" expanded="false" signature="6:27" ph="..." />

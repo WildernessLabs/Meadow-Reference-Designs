@@ -175,18 +175,30 @@ int main(void)
     snprintf(buffer, 256, "Loop counter %d\n", counter++);
     HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
 
+    ChangePinToOutput(D04_GPIO_Port, D04_Pin);
     ChangePinToOutput(Boot_GPIO_Port, Boot_Pin);
 
+    HAL_GPIO_WritePin(D04_GPIO_Port, D04_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_RESET);
+    HAL_Delay(200);
+    HAL_GPIO_WritePin(D04_GPIO_Port, D04_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_SET);
 
-    HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_RESET);
-    HAL_Delay(100);
-    HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
-
+    ChangePinToInput(D04_GPIO_Port, D04_Pin);
     ChangePinToInput(Boot_GPIO_Port, Boot_Pin);
 
+    // ChangePinToOutput(D03_GPIO_Port, D03_Pin);
+    // HAL_GPIO_WritePin(D03_GPIO_Port, D03_Pin, GPIO_PIN_SET);
+
+    // HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_RESET);
+    // HAL_Delay(100);
+    // HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
+
+    // ChangePinToInput(Boot_GPIO_Port, Boot_Pin);
+    // ChangePinToInput(D03_GPIO_Port, D03_Pin);
+
     HAL_GPIO_TogglePin(GreenLED_GPIO_Port, GreenLED_Pin);
-    HAL_Delay(2000);
+    HAL_Delay(500);
 
     /* USER CODE END WHILE */
 

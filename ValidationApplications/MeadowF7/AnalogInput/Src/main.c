@@ -47,6 +47,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include <stdio.h>
 #include <string.h>
 
 /* USER CODE END Includes */
@@ -91,7 +92,12 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
+  // ADC_HandleTypeDef       adcHandle;
+  // ADC_ChannelConfTypeDef  sConfig;
+  __IO uint16_t uhADCxConvertedValue = 0;
+
   /* USER CODE END 1 */
+  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -115,28 +121,105 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
+  // adcHandle.Instance          = ADC1;
+  
+  // if (HAL_ADC_DeInit(&adcHandle) != HAL_OK)
+  // {
+  //   /* ADC de-initialization Error */
+  //   Error_Handler();
+  // }
+
+  // adcHandle.Init.ClockPrescaler        = ADC_CLOCKPRESCALER_PCLK_DIV2;
+  // adcHandle.Init.Resolution            = ADC_RESOLUTION_12B;
+  // adcHandle.Init.ScanConvMode          = DISABLE;                       /* Sequencer disabled (ADC conversion on only 1 channel: channel set on rank 1) */
+  // adcHandle.Init.ContinuousConvMode    = DISABLE;                       /* Continuous mode disabled to have only 1 conversion at each conversion trig */
+  // adcHandle.Init.DiscontinuousConvMode = DISABLE;                       /* Parameter discarded because sequencer is disabled */
+  // adcHandle.Init.NbrOfDiscConversion   = 0;
+  // adcHandle.Init.ExternalTrigConvEdge  = ADC_EXTERNALTRIGCONVEDGE_NONE;        /* Conversion start trigged at each external event */
+  // adcHandle.Init.ExternalTrigConv      = ADC_EXTERNALTRIGCONV_T1_CC1;
+  // adcHandle.Init.DataAlign             = ADC_DATAALIGN_RIGHT;
+  // adcHandle.Init.NbrOfConversion       = 1;
+  // adcHandle.Init.DMAContinuousRequests = DISABLE;
+  // adcHandle.Init.EOCSelection          = DISABLE;
+
+  // if (HAL_ADC_Init(&adcHandle) != HAL_OK)
+  // {
+  //   /* ADC initialization Error */
+  //   Error_Handler();
+  // }
+
+
+  // /*##-2- Configure ADC regular channel ######################################*/
+
+  // sConfig.Channel      = ADC_CHANNEL_4;                /* Sampled channel number */
+  // sConfig.Rank         = 1;          /* Rank of sampled channel number ADCx_CHANNEL */
+  // sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;    /* Sampling time (number of clock cycles unit) */
+  // sConfig.Offset = 0;                                 /* Parameter discarded because offset correction is disabled */
+
+  // if (HAL_ADC_ConfigChannel(&adcHandle, &sConfig) != HAL_OK)
+  // {
+  //   /* Channel Configuration Error */
+  //   Error_Handler();
+  // }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
+    HAL_ADC_MspInit(&hadc1);
+
     HAL_GPIO_WritePin(RedLED_GPIO_Port, RedLED_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(GreenLED_GPIO_Port, GreenLED_Pin, GPIO_PIN_SET);
     HAL_GPIO_WritePin(BlueLED_GPIO_Port, BlueLED_Pin, GPIO_PIN_SET);
 
-    HAL_ADC_Start(&hadc1);
+    int counter = 0;
+    char buffer[256];
+
+    snprintf(buffer, sizeof(buffer), "\n\nMeadow ADC Test Application\n\n");
+    HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
 
     while (1)
     {
-        char buffer[256];
-
-        if (HAL_ADC_PollForConversion(&hadc1, 100000) == HAL_OK)
+        /*##-3- Start the conversion process #######################################*/
+        if (HAL_ADC_Start(&hadc1) != HAL_OK)
         {
-            uint16_t adcValue = HAL_ADC_GetValue(&hadc1);
-            snprintf(buffer, sizeof(buffer), "ADC value: %d\n", adcValue);
-            HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
-            HAL_Delay(500);
+          /* Start Conversation Error */
+          Error_Handler();
         }
+
+        /*##-4- Wait for the end of conversion #####################################*/
+        /*  For simplicity reasons, this example is just waiting till the end of the
+            conversion, but application may perform other tasks while conversion
+            operation is ongoing. */
+        if (HAL_ADC_PollForConversion(&hadc1, 10000000) != HAL_OK)
+        {
+          /* End Of Conversion flag not set on time */
+          Error_Handler();
+        }
+        else
+        {
+          /* ADC conversion completed */
+          /*##-5- Get the converted value of regular channel  ########################*/
+          uhADCxConvertedValue = HAL_ADC_GetValue(&hadc1);
+        }
+
+        double reading = (((float) uhADCxConvertedValue) / 4095) * 3.3;
+        //
+        //  Work around the fact that snprintf does not like the %f format specifier.
+        //
+        uint8_t integer, exponent;
+        integer = (int) reading;
+        exponent = (reading - integer) * 100;
+        snprintf(buffer, sizeof(buffer), "%04d: ADC Reading %d.%02d\n", counter, integer, exponent);
+        HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
+        counter++;
+
+        HAL_GPIO_TogglePin(BlueLED_GPIO_Port, BlueLED_Pin);
+
+        HAL_ADC_Stop(&hadc1);
+
+        HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 
@@ -155,29 +238,34 @@ void SystemClock_Config(void)
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
   RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
-  /**Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage 
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 15;
+  RCC_OscInitStruct.PLL.PLLN = 192;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
   }
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
