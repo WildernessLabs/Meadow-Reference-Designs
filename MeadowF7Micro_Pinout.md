@@ -6,7 +6,7 @@ Reserved Features:
 |----------|--------------|-------|
 | **SPI2** | ESP32 SPI    |       |
 | **UART5**| ESP32 UART   |       |
-| **T5**   | Onboard LEDs | T2 option. |
+| **T2**   | Onboard LEDs | T5 option. |
 
 ## External Pins
 
