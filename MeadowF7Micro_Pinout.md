@@ -17,7 +17,7 @@ Reserved Features:
 | `AREF`    |         |            |      |      |      |     |      |      |      |      |      |      |      |      |      |    |    |    |    |    |    |    |    |    |    |    |    |    |     |        |        |        |       |      |      |      |      |      |      |
 | `GROUND`  |         |            |      |      |      |     |      |      |      |      |      |      |      |      |      |    |    |    |    |    |    |    |    |    |    |    |    |    |     |        |        |        |       |      |      |      |      |      |      |
 | `A0`      | `PA4`   | **DAC1**   | **4**| 4    | 4    | **OUT1**|  |      |      |      | NSS  | WS   |      |      | NSS  |    |    |    |    |    |    |    |    |    |    |    |    |    |     |        | CLK    |        |       | WS   |      | WS   |      |      |      |
-| `A1`      | `PA5`   | **DAC2/T2:1**| 5  | **5**| 5    | **OUT2**|  |      |      |      | CLK  |      |      |      | CLK  |    | **1** | |    |    |    |    | 1  |    |    |    |    |    |     |        |        |        |       | CLK  |      |      |      |      |      |
+| `A1`      | `PA5`   | **DAC2**   | 5    | **5**| 5    | **OUT2**|  |      |      |      | CLK  |      |      |      | CLK  |    | **1** | |    |    |    |    | 1  |    |    |    |    |    |     |        |        |        |       | CLK  |      |      |      |      |      |
 | `A2`      | `PA3`   | **A2/T9:2**| 3    | **3**| 3    |     |      |      |      |      |      |      |      |      |      |    | 4  |    |    | 4  |    |    |    | **2**|  |    |    |    |     |        | RX     |        |       |      |      |      |      |      |      |
 | `A3`      | `PA7`   | **A1/T14:1**|**7**| 7    |      |     |      |      |      |      | MOSI |      |      |      | MOSI | 1N |    | 2  |    |    |    |    | 1N |    |    |    |    |    | **1**|       |        |        |       | SD   |      |      |      |      |      |
 | `A4`      | `PC0`   | **A3**     | 10   | 10   | **10**|    |      |      |      |      |      |      |      |      |      |    |    |    |    |    |    |    |    |    |    |    |    |    |     |        |        |        |       |      | SD   |      |      |      | RTC, WKUP3 |
@@ -48,16 +48,16 @@ Reserved Features:
 
 [**TODO: Add JTAG Pins** |
 
-| Board Pin     | MCU Pin |
-|---------------|---------|
-| `ESP_MOSI`    | `PI3`   |
-| `ESP_MISO`    | `PI2`   |
-| `ESP_CLK`     | `PD3`   |
-| `ESP_CS`      | `PD3`   |
-| `ESP_BOOT`    | `PI10`  |
-| `ESP_RST`     | `PF7`   |
-| `ESP_UART_RX` | `PD2`   |
-| `ESP_UART_TX` | `PB13`  |
-| `OnbrdLedRed` | `PA2`   |
-| `OnbrdLedGrn` | `PA1`   |
-| `OnbrdLedBlu` | `PA0`   |
+| Board Pin     | MCU Pin | Reserved |
+|---------------|---------|----------|
+| `ESP_MOSI`    | `PI3`   |          |
+| `ESP_MISO`    | `PI2`   |          |
+| `ESP_CLK`     | `PD3`   |          |
+| `ESP_CS`      | `PD3`   |          |
+| `ESP_BOOT`    | `PI10`  |          |
+| `ESP_RST`     | `PF7`   |          |
+| `ESP_UART_RX` | `PD2`   |          |
+| `ESP_UART_TX` | `PB13`  |          |
+| `OnbrdLedRed` | `PA2`   | **T2:1** |
+| `OnbrdLedGrn` | `PA1`   | **T2:2** |
+| `OnbrdLedBlu` | `PA0`   | **T2:3** |
