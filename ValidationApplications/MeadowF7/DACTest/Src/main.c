@@ -117,6 +117,11 @@ int main(void)
 		/* Start Error */
 		Error_Handler();
 	}
+	if (HAL_DAC_Start(&hdac, DAC_CHANNEL_2) != HAL_OK)
+	{
+		/* Start Error */
+		Error_Handler();
+	}
 
   /* USER CODE END 2 */
 
