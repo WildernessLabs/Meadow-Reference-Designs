@@ -1,0 +1,7 @@
+12:30:56 **** Clean-only build of configuration Debug for project SPITest ****
+make -j7 clean 
+rm -rf *
+ 
+
+12:30:56 Build Finished. 0 errors, 0 warnings. (took 75ms)
+

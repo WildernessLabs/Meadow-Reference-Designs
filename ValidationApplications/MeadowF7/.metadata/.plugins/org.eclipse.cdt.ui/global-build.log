@@ -1,0 +1,4 @@
+12:31:51 **** Clean-only build of configuration Debug for project UARTTest-STM32 ****
+make -j7 clean 
+rm -rf *
+ 
