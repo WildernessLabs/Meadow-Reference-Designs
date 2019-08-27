@@ -1,0 +1,91 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.h
+  * @brief          : Header for main.c file.
+  *                   This file contains the common defines of the application.
+  ******************************************************************************
+  * @attention
+  *
+  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * All rights reserved.</center></h2>
+  *
+  * This software component is licensed by ST under BSD 3-Clause license,
+  * the "License"; You may not use this file except in compliance with the
+  * License. You may obtain a copy of the License at:
+  *                        opensource.org/licenses/BSD-3-Clause
+  *
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __MAIN_H
+#define __MAIN_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32f7xx_hal.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+
+/* USER CODE END Includes */
+
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
+
+/* USER CODE END ET */
+
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
+
+/* USER CODE END EC */
+
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
+
+/* USER CODE END EM */
+
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
+
+/* USER CODE BEGIN EFP */
+
+/* USER CODE END EFP */
+
+/* Private defines -----------------------------------------------------------*/
+#define SPI3MOSI_Pin GPIO_PIN_5
+#define SPI3MOSI_GPIO_Port GPIOB
+#define SPI3ChipSelect_Pin GPIO_PIN_9
+#define SPI3ChipSelect_GPIO_Port GPIOB
+#define SPI3MISO_Pin GPIO_PIN_11
+#define SPI3MISO_GPIO_Port GPIOC
+#define SPI3Clock_Pin GPIO_PIN_10
+#define SPI3Clock_GPIO_Port GPIOC
+#define ESP32Boot_Pin GPIO_PIN_10
+#define ESP32Boot_GPIO_Port GPIOI
+#define SPIChipSelect_Pin GPIO_PIN_0
+#define SPIChipSelect_GPIO_Port GPIOI
+#define ESP32Reset_Pin GPIO_PIN_7
+#define ESP32Reset_GPIO_Port GPIOF
+#define GreenLED_Pin GPIO_PIN_1
+#define GreenLED_GPIO_Port GPIOA
+#define BlueLED_Pin GPIO_PIN_0
+#define BlueLED_GPIO_Port GPIOA
+#define RedLED_Pin GPIO_PIN_2
+#define RedLED_GPIO_Port GPIOA
+/* USER CODE BEGIN Private defines */
+
+/* USER CODE END Private defines */
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __MAIN_H */
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
