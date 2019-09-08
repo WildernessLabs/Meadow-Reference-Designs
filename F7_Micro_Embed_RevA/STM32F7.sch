@@ -1134,13 +1134,9 @@ Wire Wire Line
 Wire Wire Line
 	2550 4900 2800 4900
 Wire Wire Line
-	2800 4900 2800 4800
-Wire Wire Line
 	2800 4800 2900 4800
 Text Label 5000 4700 2    50   ~ 0
 OSC_IN_PH0
-Wire Wire Line
-	5700 4800 4250 4800
 Text Label 5000 4800 2    50   ~ 0
 OSC_OUT_PH1
 $Comp
@@ -1186,7 +1182,6 @@ Wire Wire Line
 Connection ~ 1750 4900
 Wire Wire Line
 	2900 5000 2900 4800
-Connection ~ 2900 4800
 Wire Wire Line
 	1750 5300 1750 5400
 Wire Wire Line
@@ -1201,21 +1196,6 @@ Wire Wire Line
 Connection ~ 2400 5350
 Wire Wire Line
 	2400 5350 2400 5200
-$Comp
-L SLJ_Resistor_0201:R_0_1%_0201 R6
-U 1 1 5D5AFBBE
-P 4050 4800
-F 0 "R6" V 4150 4600 50  0000 C CNN
-F 1 "R_0_1%_0201" H 4035 4207 50  0001 C CNN
-F 2 "Resistors_SMD:R_0201" H 4024 4367 50  0001 C CNN
-F 3 "~" H 4050 4850 50  0001 C CNN
-F 4 "Yageo" H 4013 4139 50  0001 C CNN "MF"
-F 5 "RC0201JR-070RL" H 4008 4276 50  0001 C CNN "PN"
-F 6 "0" V 4150 4850 50  0000 C CNN "Res_value"
-F 7 "" H 4050 4800 50  0000 C CNN "DNI"
-	1    4050 4800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10600 4500 11300 4500
 Text Label 11100 3000 2    50   ~ 0
@@ -1602,8 +1582,6 @@ Wire Wire Line
 Wire Wire Line
 	10600 9100 11400 9100
 Wire Wire Line
-	2900 4800 3950 4800
-Wire Wire Line
 	2700 4700 5700 4700
 Wire Wire Line
 	10600 7800 11400 7800
@@ -1741,6 +1719,13 @@ Connection ~ 8350 800
 Wire Wire Line
 	8350 800  8400 800 
 Wire Wire Line
+	1800 2700 2200 2700
+Connection ~ 2900 4800
+Wire Wire Line
+	2800 4900 2800 4800
+Wire Wire Line
+	2900 4800 5700 4800
+Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
 	12500 7500 12500 8400
@@ -1748,6 +1733,4 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Wire Wire Line
-	1800 2700 2200 2700
 $EndSCHEMATC
