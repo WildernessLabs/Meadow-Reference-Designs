@@ -53,7 +53,7 @@ static esp_adc_cal_characteristics_t *adc_chars;
 static const adc_channel_t channel = ADC_CHANNEL_7;
 static const adc_atten_t atten = ADC_ATTEN_DB_11;
 static const adc_unit_t unit = ADC_UNIT_1;
-bool displayADCValues = false;
+bool displayADCValues = true;
 
 static void check_efuse()
 {

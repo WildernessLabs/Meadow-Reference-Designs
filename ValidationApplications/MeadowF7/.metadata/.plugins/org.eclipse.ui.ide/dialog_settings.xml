@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/NativeGPIOTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/EnableTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/COMPortTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/UARTTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/SPITest/SPIMasterInternal-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/SPITest/SPIMaster-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/RGB-LED"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/PWMTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/I2CTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/FlashingTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/DeepSleepTest/STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/DACTest"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/CANTest/MeadowCANTest-STM32"/>
+			<item value="/Users/markstevens/SoftwareDevelopment/WildernessLabs/Meadow-Reference-Designs/ValidationApplications/MeadowF7/AnalogInput"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

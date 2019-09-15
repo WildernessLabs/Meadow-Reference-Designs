@@ -1,46 +1,45 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  ** This notice applies to any and all portions of this file
-  * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether 
-  * inserted by the user or by software development tools
-  * are owned by their respective copyright owners.
-  *
-  * COPYRIGHT(c) 2019 STMicroelectronics
-  *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ ** This notice applies to any and all portions of this file
+ * that are not between comment pairs USER CODE BEGIN and
+ * USER CODE END. Other portions of this file, whether
+ * inserted by the user or by software development tools
+ * are owned by their respective copyright owners.
+ *
+ * COPYRIGHT(c) 2019 STMicroelectronics
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *   1. Redistributions of source code must retain the above copyright notice,
+ *      this list of conditions and the following disclaimer.
+ *   2. Redistributions in binary form must reproduce the above copyright notice,
+ *      this list of conditions and the following disclaimer in the documentation
+ *      and/or other materials provided with the distribution.
+ *   3. Neither the name of STMicroelectronics nor the names of its contributors
+ *      may be used to endorse or promote products derived from this software
+ *      without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -53,6 +52,17 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+
+struct GpioPin
+{
+	GPIO_TypeDef *port;
+	uint16_t pin;
+};
+
+struct GpioPin pins[] = { { A0_GPIO_Port, A0_Pin }, { A1_GPIO_Port, A1_Pin }, { A2_GPIO_Port, A2_Pin }, { A3_GPIO_Port, A3_Pin }, { A4_GPIO_Port, A4_Pin }, { A5_GPIO_Port, A5_Pin }, {
+SCK_GPIO_Port, SCK_Pin }, { MOSI_GPIO_Port, MOSI_Pin }, { MISO_GPIO_Port, MISO_Pin }, { D00_GPIO_Port, D00_Pin }, { D01_GPIO_Port, D01_Pin }, { D02_GPIO_Port, D02_Pin }, { D03_GPIO_Port,
+D03_Pin }, { D04_GPIO_Port, D04_Pin }, { D05_GPIO_Port, D05_Pin }, { D06_GPIO_Port, D06_Pin }, { D07_GPIO_Port, D07_Pin }, { D08_GPIO_Port, D08_Pin }, { D09_GPIO_Port, D09_Pin }, { D10_GPIO_Port,
+D10_Pin }, { D11_GPIO_Port, D11_Pin }, { D12_GPIO_Port, D12_Pin }, { D13_GPIO_Port, D13_Pin }, { D14_GPIO_Port, D14_Pin }, { D15_GPIO_Port, D15_Pin } };
 
 /* USER CODE END PTD */
 
@@ -81,43 +91,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void ChangePinToInput(GPIO_TypeDef* port, uint16_t pin)
-{
-    char buffer[256];
-    memset(buffer, 0, 256);
-    snprintf(buffer, 256, "Changing pin to Input mode.\n");
-    HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
-
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
-
-    GPIO_InitStruct.Pin = pin;
-
-    HAL_GPIO_DeInit(port, pin);
-
-    GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(port, &GPIO_InitStruct);
-}
-
-void ChangePinToOutput(GPIO_TypeDef* port, uint16_t pin)
-{
-    char buffer[256];
-    memset(buffer, 0, 256);
-    snprintf(buffer, 256, "Changing pin to Output mode.\n");
-    HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
-
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
-
-    GPIO_InitStruct.Pin = pin;
-
-    HAL_GPIO_DeInit(port, pin);
-
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-    HAL_GPIO_Init(port, &GPIO_InitStruct);
-}
-
 /* USER CODE END 0 */
 
 /**
@@ -129,6 +102,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
+  
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -148,50 +122,80 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  //
-  //  Turn all of the LEDs off (note that reset = on, set = off).
-  //
-  HAL_GPIO_WritePin(RedLED_GPIO_Port, RedLED_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(BlueLED_GPIO_Port, BlueLED_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(GreenLED_GPIO_Port, GreenLED_Pin, GPIO_PIN_SET);
+//
+//  Turn all of the LEDs off (note that reset = on, set = off).
+//
+	HAL_GPIO_WritePin(RedLED_GPIO_Port, RedLED_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(BlueLED_GPIO_Port, BlueLED_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GreenLED_GPIO_Port, GreenLED_Pin, GPIO_PIN_SET);
 
-  HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
+
+	int numberOfPins = sizeof(pins) / sizeof(struct GpioPin);
+
+	for (int index = 0; index < numberOfPins; index++)
+	{
+		HAL_GPIO_WritePin(pins[index].port, pins[index].pin, GPIO_PIN_RESET);
+	}
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int counter = 0;
+	int counter = 0;
 
-  while (1)
-  {
-    char buffer[256];
-    memset(buffer, 0, 256);
+	while (1)
+	{
+//		char buffer[256];
+//		memset(buffer, 0, 256);
+//
+//		snprintf(buffer, 256, "Loop counter %d\n", counter++);
+//		HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
+//
+//		ChangePinToOutput(D04_GPIO_Port, D04_Pin);
+//		ChangePinToOutput(Boot_GPIO_Port, Boot_Pin);
+//
+//		HAL_GPIO_WritePin(D04_GPIO_Port, D04_Pin, GPIO_PIN_RESET);
+//		HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_RESET);
+//		HAL_Delay(200);
+//		HAL_GPIO_WritePin(D04_GPIO_Port, D04_Pin, GPIO_PIN_SET);
+//		HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_SET);
+//
+//		ChangePinToInput(D04_GPIO_Port, D04_Pin);
+//		ChangePinToInput(Boot_GPIO_Port, Boot_Pin);
 
-    snprintf(buffer, 256, "Loop counter %d\n", counter++);
-    HAL_UART_Transmit(&huart1, (uint8_t *) buffer, strlen(buffer), HAL_MAX_DELAY);
+// ChangePinToOutput(D03_GPIO_Port, D03_Pin);
+// HAL_GPIO_WritePin(D03_GPIO_Port, D03_Pin, GPIO_PIN_SET);
 
-    ChangePinToOutput(Boot_GPIO_Port, Boot_Pin);
+// HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_RESET);
+// HAL_Delay(100);
+// HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
 
-    HAL_GPIO_WritePin(Boot_GPIO_Port, Boot_Pin, GPIO_PIN_SET);
+// ChangePinToInput(Boot_GPIO_Port, Boot_Pin);
+// ChangePinToInput(D03_GPIO_Port, D03_Pin);
 
-    HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_RESET);
-    HAL_Delay(100);
-    HAL_GPIO_WritePin(Reset_GPIO_Port, Reset_Pin, GPIO_PIN_SET);
+		for (int index = 0; index < numberOfPins; index++)
+		{
+			HAL_GPIO_WritePin(pins[index].port, pins[index].pin, GPIO_PIN_RESET);
+		}
 
-    ChangePinToInput(Boot_GPIO_Port, Boot_Pin);
+		if (counter == numberOfPins)
+		{
+			counter = 0;
+		}
 
-    HAL_GPIO_TogglePin(GreenLED_GPIO_Port, GreenLED_Pin);
-    HAL_Delay(2000);
+		HAL_GPIO_TogglePin(pins[counter].port, pins[counter].pin);
+		counter++;
+		HAL_GPIO_TogglePin(GreenLED_GPIO_Port, GreenLED_Pin);
+		HAL_Delay(500);
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -203,13 +207,12 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
 
-  /**Configure the main internal regulator output voltage 
+  /** Configure the main internal regulator output voltage 
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
@@ -219,7 +222,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  /**Initializes the CPU, AHB and APB busses clocks 
+  /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -229,12 +232,6 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USART1;
-  PeriphClkInitStruct.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK2;
-  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
     Error_Handler();
   }
@@ -251,7 +248,7 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+	/* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
 }

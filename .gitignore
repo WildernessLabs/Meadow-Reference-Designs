@@ -37,3 +37,9 @@ ValidationApplications/MeadowF7/DeepSleepTest/STM32/.vscode/browse.vc.db
 ValidationApplications/MeadowF7/DeepSleepTest/ESP32/sdkconfig.old
 ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/GPIO-Output-NET.csproj.CoreCompileInputs.cache
 ValidationApplications/MeadowF7/GPIO-Output-NET/obj/x86/Debug/GPIO-Output-NET.csprojAssemblyReference.cache
+.project
+.mxproject
+.idea/
+.settings/
+Debug/
+
