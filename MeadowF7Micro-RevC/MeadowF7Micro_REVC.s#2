@@ -108,7 +108,7 @@
 <text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
 <text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 <text x="5.08" y="25.4" size="6.4516" layer="94">WILDERNESS LABS</text>
-<text x="33.02" y="7.62" size="3.81" layer="94">uMeadow</text>
+<text x="33.02" y="7.62" size="3.81" layer="94">&gt;PART_NAME</text>
 <text x="91.44" y="7.62" size="2.54" layer="94">&gt;REV</text>
 </symbol>
 <symbol name="FRAME_B_L" urn="urn:adsk.eagle:symbol:13883/1">
@@ -125,7 +125,9 @@
 <devices>
 <device name="">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PART_NUMBER" value="NA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -17070,7 +17072,7 @@ Source: Samtec SSW.pdf</description>
 <instance part="Q1" gate="G$1" x="76.2" y="180.34" smashed="yes" rot="R90">
 <attribute name="VALUE" x="76.2" y="182.88" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="73.66" y="182.88" size="1.778" layer="95" rot="R90"/>
-<attribute name="PART_NUMBER" x="78.74" y="182.88" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PART_NUMBER" x="78.74" y="182.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="78.74" y="167.64" smashed="yes" rot="R90">
 <attribute name="FOOTPRINT" x="86.36" y="165.1" size="1.778" layer="96" rot="R180"/>
