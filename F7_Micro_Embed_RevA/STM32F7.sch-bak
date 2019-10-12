@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:F7MicroEmbed_RevA-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
@@ -9,7 +9,7 @@ Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
 Comp ""
-Comment1 ""
+Comment1 "S.JOHNSON"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1252,7 +1252,7 @@ F 0 "TP10" V 11300 2800 50  0000 L CNN
 F 1 "0.6X0.8MM" V 11300 2788 50  0001 L CNN
 F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2600 50  0001 C CNN
 F 3 "~" H 11500 2600 50  0001 C CNN
-F 4 "DNI" V 11300 2950 50  0000 L CNN "DNI"
+F 4 "DNI" V 11300 3000 50  0000 L CNN "DNI"
 	1    11300 2600
 	0    1    1    0   
 $EndComp
@@ -1264,7 +1264,7 @@ F 0 "TP11" V 11300 2900 50  0000 L CNN
 F 1 "0.6X0.8MM" V 11300 2888 50  0001 L CNN
 F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 11500 2700 50  0001 C CNN
 F 3 "~" H 11500 2700 50  0001 C CNN
-F 4 "DNI" V 11300 3050 50  0000 L CNN "DNI"
+F 4 "DNI" V 11300 3100 50  0000 L CNN "DNI"
 	1    11300 2700
 	0    1    1    0   
 $EndComp
@@ -1425,7 +1425,6 @@ NoConn ~ 5700 5500
 NoConn ~ 5700 5600
 NoConn ~ 5700 6200
 NoConn ~ 5700 6100
-NoConn ~ 5700 5800
 Wire Wire Line
 	5700 5700 5100 5700
 Wire Wire Line
@@ -1441,11 +1440,8 @@ UART4_TX
 NoConn ~ 5700 7000
 NoConn ~ 5700 7100
 NoConn ~ 5700 7300
-NoConn ~ 5700 7800
 NoConn ~ 5700 7400
-NoConn ~ 5700 7500
 NoConn ~ 5700 7600
-NoConn ~ 5700 7700
 Wire Wire Line
 	5700 6700 5100 6700
 Text HLabel 5100 6700 0    50   BiDi ~ 0
@@ -1585,19 +1581,6 @@ Wire Wire Line
 	2700 4700 5700 4700
 Wire Wire Line
 	10600 7800 11400 7800
-$Comp
-L MCU_ST_STM32F7:STM32F777IIKx U1
-U 1 1 5D09BECD
-P 8200 5400
-F 0 "U1" H 6000 9800 50  0000 C CNN
-F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
-F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
-	1    8200 5400
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10600 5100
-NoConn ~ 10600 5200
 NoConn ~ 10600 5900
 NoConn ~ 10600 6000
 NoConn ~ 10600 6100
@@ -1725,6 +1708,46 @@ Wire Wire Line
 	2800 4900 2800 4800
 Wire Wire Line
 	2900 4800 5700 4800
+Wire Wire Line
+	5700 7800 5250 7800
+Wire Wire Line
+	5700 7700 5250 7700
+Text Label 5300 7700 0    50   ~ 0
+ETH_TXD0
+Text Label 5300 7800 0    50   ~ 0
+ETH_TXD1
+$Comp
+L MCU_ST_STM32F7:STM32F777IIKx U1
+U 1 1 5D09BECD
+P 8200 5400
+F 0 "U1" H 6000 9800 50  0000 C CNN
+F 1 "STM32F777IIKx" H 6200 9700 50  0000 C CNN
+F 2 "Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm" H 5900 1100 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 5800
+Wire Wire Line
+	5700 7500 5250 7500
+Text Label 5300 7500 0    50   ~ 0
+ETH_TX_EN
+Text Notes 10750 4800 0    50   ~ 0
+ETH_MDC
+Text Notes 11850 1400 0    50   ~ 0
+ETH_REF_CLK
+Text Notes 11850 1500 0    50   ~ 0
+ETH_MDIO
+Text Notes 11950 2000 0    50   ~ 0
+ETH_CRS_DV
+Wire Wire Line
+	10600 5100 11300 5100
+Wire Wire Line
+	10600 5200 11300 5200
+Text Label 10700 5100 0    50   ~ 0
+ETH_RXD0
+Text Label 10700 5200 0    50   ~ 0
+ETH_RXD1
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line

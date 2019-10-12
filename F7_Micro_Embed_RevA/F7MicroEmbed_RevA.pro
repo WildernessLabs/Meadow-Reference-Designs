@@ -1,4 +1,4 @@
-update=Sunday, September 15, 2019 at 10:16:21 AM
+update=Saturday, October 12, 2019 at 01:10:43 PM
 version=1
 last_client=kicad
 [general]
@@ -30,7 +30,7 @@ CopperLayerCount=8
 BoardThickness=1.60655
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=0
+RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.1016
 MinViaDiameter=0.4064
@@ -40,10 +40,13 @@ MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.1143
 TrackWidth2=0.1143
+TrackWidth3=0.2032
 ViaDiameter1=0.4064
 ViaDrill1=0.2032
 ViaDiameter2=0.4064
 ViaDrill2=0.2032
+ViaDiameter3=0.508
+ViaDrill3=0.254
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -243,7 +246,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.127
+Clearance=0.1016
 TrackWidth=0.1143
 ViaDiameter=0.4064
 ViaDrill=0.2032
@@ -254,7 +257,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Ethernet
-Clearance=0.127
+Clearance=0.1016
 TrackWidth=0.1143
 ViaDiameter=0.4064
 ViaDrill=0.2032
@@ -265,7 +268,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Power
-Clearance=0.127
+Clearance=0.1016
 TrackWidth=0.254
 ViaDiameter=0.508
 ViaDrill=0.254
@@ -276,7 +279,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=USB
-Clearance=0.2032
+Clearance=0.1016
 TrackWidth=0.127
 ViaDiameter=0.4064
 ViaDrill=0.2032

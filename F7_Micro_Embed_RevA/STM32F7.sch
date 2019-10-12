@@ -9,7 +9,7 @@ Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
 Comp ""
-Comment1 ""
+Comment1 "S.Johnson"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -660,7 +660,7 @@ U 1 1 5D306E87
 P 1000 1500
 F 0 "C1" H 1115 1637 50  0000 L CNN
 F 1 "C_0201_0.47UF_6.3V_X5R" H 1400 1000 50  0001 L CNN
-F 2 "Capacitors_SMD:C_0201" H 1038 1350 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201_0603Metric" H 1038 1350 50  0001 C CNN
 F 3 "~" H 1000 1500 50  0001 C CNN
 F 4 "Murata Electronics North America" H 1900 800 50  0001 C CNN "MF"
 F 5 "GRM033R60J474KE90D" H 1800 900 50  0001 C CNN "PN"
