@@ -560,7 +560,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B823)
-    (at 211.1502 230.4796)
+    (at 211.0994 238.7092)
     (path /5DC044F2)
     (fp_text reference TP49 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -573,7 +573,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B81E)
-    (at 213.3473 265.9761)
+    (at 213.7283 262.382)
     (path /5DC044EA)
     (fp_text reference TP48 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -586,7 +586,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B819)
-    (at 230.7082 246.0117)
+    (at 222.2881 246.3927)
     (path /5DC044E2)
     (fp_text reference TP47 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -599,7 +599,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B814)
-    (at 206.5909 266.0777)
+    (at 206.9719 262.4836)
     (path /5DC044DA)
     (fp_text reference TP46 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -612,7 +612,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B80F)
-    (at 209.042 230.7463)
+    (at 208.9912 238.9759)
     (path /5DC017CC)
     (fp_text reference TP45 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -625,7 +625,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B80A)
-    (at 210.2358 230.7717)
+    (at 210.185 239.0013)
     (path /5DC017C4)
     (fp_text reference TP44 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -638,7 +638,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B805)
-    (at 210.7438 227.8634)
+    (at 210.693 236.093)
     (path /5DC017BC)
     (fp_text reference TP43 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -651,7 +651,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B800)
-    (at 230.7209 243.7003)
+    (at 222.3008 244.0813)
     (path /5DC017B4)
     (fp_text reference TP42 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -664,7 +664,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7FB)
-    (at 211.1248 265.3919)
+    (at 211.5058 261.7978)
     (path /5DBFF0F2)
     (fp_text reference TP41 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -677,7 +677,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7F6)
-    (at 209.0674 266.0396)
+    (at 209.4484 262.4455)
     (path /5DBFF0EA)
     (fp_text reference TP40 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -690,7 +690,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7F1)
-    (at 213.9696 230.4542)
+    (at 213.9188 238.6838)
     (path /5DBFF0E2)
     (fp_text reference TP39 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -703,7 +703,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7EC)
-    (at 227.2792 231.2543)
+    (at 216.6493 236.2327)
     (path /5DBFF0DA)
     (fp_text reference TP38 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -716,7 +716,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7E7)
-    (at 230.1113 235.7882)
+    (at 221.6912 236.1692)
     (path /5DBFCD28)
     (fp_text reference TP37 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -729,7 +729,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7E2)
-    (at 230.6701 238.5949)
+    (at 222.25 238.9759)
     (path /5DBFCD20)
     (fp_text reference TP36 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -742,7 +742,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7DD)
-    (at 230.7717 240.2205)
+    (at 222.3516 240.6015)
     (path /5DBFCD18)
     (fp_text reference TP35 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -755,7 +755,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7D8)
-    (at 234.3785 240.6269)
+    (at 225.9584 241.0079)
     (path /5DBFCD10)
     (fp_text reference TP34 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -768,7 +768,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7D3)
-    (at 235.9279 241.1222)
+    (at 227.5078 241.5032)
     (path /5DBFA630)
     (fp_text reference TP33 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -781,7 +781,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7CE)
-    (at 205.9178 264.8458)
+    (at 206.2988 261.2517)
     (path /5DBF91AD)
     (fp_text reference TP32 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -794,7 +794,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7C9)
-    (at 197.7136 249.682)
+    (at 202.819 250.8631)
     (path /5DBF7B24)
     (fp_text reference TP31 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -807,7 +807,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7C4)
-    (at 198.0184 250.4567)
+    (at 203.1238 251.6378)
     (path /5DBECDDD)
     (fp_text reference TP30 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -820,7 +820,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7BF)
-    (at 199.5043 245.7577)
+    (at 204.6097 246.9388)
     (path /5DAAABF1)
     (fp_text reference TP29 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -833,7 +833,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7BA)
-    (at 230.5939 241.6429)
+    (at 222.1738 242.0239)
     (path /5DAA99D8)
     (fp_text reference TP28 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -846,7 +846,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7B5)
-    (at 230.7971 247.7262)
+    (at 222.377 248.1072)
     (path /5DAA86D2)
     (fp_text reference TP27 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -859,7 +859,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7B0)
-    (at 207.2386 264.7823)
+    (at 207.6196 261.1882)
     (path /5DAA75A6)
     (fp_text reference TP26 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -872,7 +872,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7AB)
-    (at 198.12 258.953)
+    (at 203.2254 260.1341)
     (path /5DAA657F)
     (fp_text reference TP25 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -885,7 +885,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7A6)
-    (at 232.9561 242.824)
+    (at 224.536 243.205)
     (path /5DAA54CB)
     (fp_text reference TP24 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -898,7 +898,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B7A1)
-    (at 233.045 244.5512)
+    (at 224.6249 244.9322)
     (path /5DAA4594)
     (fp_text reference TP23 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -911,7 +911,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B79C)
-    (at 207.5942 230.7082)
+    (at 207.5434 238.9378)
     (path /5DAA35A0)
     (fp_text reference TP22 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -924,7 +924,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B797)
-    (at 206.0829 228.9429)
+    (at 206.0321 237.1725)
     (path /5DAA25BE)
     (fp_text reference TP21 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -937,7 +937,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B792)
-    (at 205.1812 228.9683)
+    (at 205.1304 237.1979)
     (path /5DAA1765)
     (fp_text reference TP20 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -950,7 +950,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B78D)
-    (at 206.2099 230.6828)
+    (at 206.1591 238.9124)
     (path /5DAA0A92)
     (fp_text reference TP19 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -963,7 +963,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B788)
-    (at 201.676 234.3658)
+    (at 202.2094 237.4646)
     (path /5DA9FCB7)
     (fp_text reference TP18 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -976,7 +976,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B783)
-    (at 230.7082 244.9322)
+    (at 222.2881 245.3132)
     (path /5DA9F0DA)
     (fp_text reference TP17 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -989,7 +989,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B77E)
-    (at 229.8446 260.7818)
+    (at 225.9711 258.2799)
     (path /5DA9E443)
     (fp_text reference TP16 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1002,7 +1002,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B779)
-    (at 230.6066 252.0061)
+    (at 222.1865 252.3871)
     (path /5DA9D82A)
     (fp_text reference TP15 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1015,7 +1015,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B774)
-    (at 232.9053 240.9063)
+    (at 224.4852 241.2873)
     (path /5DA9CB7B)
     (fp_text reference TP14 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1028,7 +1028,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B76F)
-    (at 196.4436 241.554)
+    (at 201.549 242.7351)
     (path /5DA9C190)
     (fp_text reference TP13 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1041,7 +1041,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B76A)
-    (at 212.7504 230.378)
+    (at 212.6996 238.6076)
     (path /5DA9B4E7)
     (fp_text reference TP12 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1054,7 +1054,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B765)
-    (at 208.4578 227.5459)
+    (at 208.407 235.7755)
     (path /5DA9AB8F)
     (fp_text reference TP11 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1067,7 +1067,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B760)
-    (at 230.5558 237.0963)
+    (at 222.1357 237.4773)
     (path /5DA9A2A6)
     (fp_text reference TP10 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1080,7 +1080,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B75B)
-    (at 197.9422 252.8189)
+    (at 203.0476 254)
     (path /5DA98D88)
     (fp_text reference TP9 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1093,7 +1093,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B756)
-    (at 198.0692 256.5146)
+    (at 203.1746 257.6957)
     (path /5DA9848D)
     (fp_text reference TP8 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1106,7 +1106,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B751)
-    (at 206.629 264.795)
+    (at 207.01 261.2009)
     (path /5DA97E1A)
     (fp_text reference TP7 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1119,7 +1119,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B74C)
-    (at 203.454 265.43)
+    (at 203.835 261.8359)
     (path /5DA976F9)
     (fp_text reference TP6 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1132,7 +1132,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B747)
-    (at 207.7085 266.0904)
+    (at 208.0895 262.4963)
     (path /5DA96FCF)
     (fp_text reference TP5 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1145,7 +1145,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B742)
-    (at 197.9676 257.7719)
+    (at 203.073 258.953)
     (path /5DA96806)
     (fp_text reference TP4 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1158,7 +1158,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B73D)
-    (at 197.7009 248.412)
+    (at 202.8063 249.5931)
     (path /5DA9599C)
     (fp_text reference TP3 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1171,7 +1171,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B730)
-    (at 199.8345 235.9279 90)
+    (at 204.9399 237.109 90)
     (path /5DA94357)
     (fp_text reference TP1 (at 0 -0.5 90) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))

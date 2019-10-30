@@ -963,7 +963,7 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B788)
-    (at 204.597 230.7844)
+    (at 201.676 234.3658)
     (path /5DA9FCB7)
     (fp_text reference TP18 (at 0 -0.5) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -1171,15 +1171,15 @@
   )
 
   (module SLJ_Mechanical:PAD_SQ_0.6X0.8MM (layer GND8.Cu) (tedit 5D11A97F) (tstamp 5DA3B730)
-    (at 197.4469 239.8014)
+    (at 199.8345 235.9279 90)
     (path /5DA94357)
-    (fp_text reference TP1 (at 0 -0.5) (layer B.SilkS)
+    (fp_text reference TP1 (at 0 -0.5 90) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.6X0.8MM (at 0 0.5) (layer B.Fab)
+    (fp_text value 0.6X0.8MM (at 0 0.5 90) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (pad 1 smd rect (at 0 0) (size 0.6 0.8) (layers GND8.Cu B.Paste B.Mask)
+    (pad 1 smd rect (at 0 0 90) (size 0.6 0.8) (layers GND8.Cu B.Paste B.Mask)
       (net 145 /STM32F7/VBAT))
   )
 
