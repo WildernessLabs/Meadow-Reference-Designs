@@ -123,8 +123,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-    char sendBuffer[129];
-    char receiveBuffer[129];
+    int bufferLength = 48;
+    char sendBuffer[bufferLength];
+    char receiveBuffer[bufferLength];
     int counter = 0;
 
     HAL_GPIO_WritePin(RedLED_GPIO_Port, RedLED_Pin, GPIO_PIN_SET);
@@ -139,19 +140,15 @@ int main(void)
 
     while (1)
     {
-      memset(sendBuffer, ' ', sizeof(sendBuffer));
-      snprintf(sendBuffer, sizeof(sendBuffer), "Hello, world %d", counter);
-      counter++;
-      int length = strlen(sendBuffer);
-      int transmitLength = length + (4 - (length % 4));
-      sendBuffer[length] = ' ';
-      if (transmitLength < 32) transmitLength = 32;
+      memset(sendBuffer, 0x00, sizeof(sendBuffer));
+      memset(receiveBuffer, 0x00, bufferLength);
+      snprintf(sendBuffer, bufferLength, "Hello, world %d", counter++);
+
       HAL_GPIO_WritePin(SPIChipSelect_GPIO_Port, SPIChipSelect_Pin, GPIO_PIN_RESET);
-      memset(receiveBuffer, 0, sizeof(receiveBuffer));
-      HAL_SPI_TransmitReceive(&hspi2, (uint8_t *) sendBuffer, (uint8_t *) receiveBuffer, transmitLength, HAL_MAX_DELAY);
+      HAL_SPI_TransmitReceive(&hspi2, (uint8_t *) sendBuffer, (uint8_t *) receiveBuffer, bufferLength, HAL_MAX_DELAY);
       HAL_GPIO_WritePin(SPIChipSelect_GPIO_Port, SPIChipSelect_Pin, GPIO_PIN_SET);
+
       strcat(receiveBuffer, "\n\x00");
-      
       HAL_UART_Transmit(&huart1, (uint8_t *) receiveBuffer, strlen(receiveBuffer), HAL_MAX_DELAY);
       HAL_GPIO_TogglePin(BlueLED_GPIO_Port, BlueLED_Pin);
       HAL_Delay(500);
