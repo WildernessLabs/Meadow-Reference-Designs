@@ -145,7 +145,9 @@ int main(void)
       snprintf(sendBuffer, bufferLength, "Hello, world %d", counter++);
 
       HAL_GPIO_WritePin(SPIChipSelect_GPIO_Port, SPIChipSelect_Pin, GPIO_PIN_RESET);
+      HAL_Delay(6);
       HAL_SPI_TransmitReceive(&hspi2, (uint8_t *) sendBuffer, (uint8_t *) receiveBuffer, bufferLength, HAL_MAX_DELAY);
+      HAL_Delay(20);
       HAL_GPIO_WritePin(SPIChipSelect_GPIO_Port, SPIChipSelect_Pin, GPIO_PIN_SET);
 
       strcat(receiveBuffer, "\n\x00");
