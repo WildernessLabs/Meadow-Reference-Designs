@@ -494,3 +494,10 @@
 2019-08-27 12:48:22,960 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
 2019-08-27 12:48:32,012 [ERROR] ApiDbMcu:1398 - Can't use Application install path:
 2019-08-27 12:48:32,016 [WARN] RulesReader:54 - Compatibility file://mcu/compatibility.xml not found
+2019-10-31 13:26:38,373 [INFO] Activator:176 - 
+
+
+2019-10-31 13:26:38,375 [INFO] Activator:177 - !SESSION log4j initialized
+2019-10-31 13:26:40,587 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2019-10-31 13:31:26,542 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread
+2019-10-31 13:31:26,543 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] ***WARNING: Display must be created on main thread due to Cocoa restrictions. Use vmarg -XstartOnFirstThread
