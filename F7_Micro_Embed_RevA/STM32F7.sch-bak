@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -319,8 +319,6 @@ Wire Wire Line
 	5700 9200 5100 9200
 Text Label 5200 9200 0    50   ~ 0
 RAM.RAS_L
-Text HLabel 5100 9200 0    50   Output ~ 0
-RAM.RAS_L
 Wire Wire Line
 	5700 4900 5100 4900
 Text HLabel 5100 4900 0    50   Output ~ 0
@@ -494,9 +492,9 @@ USB_OTG_FS_VBUS
 Text Label 11300 2300 2    50   ~ 0
 USB_OTG_ID
 Text Label 11300 2400 2    50   ~ 0
-USB_OTG_FS_DN
+USB_OTG_FS_D_N
 Text Label 11300 2500 2    50   ~ 0
-USB_OTG_FS_DP
+USB_OTG_FS_D_P
 Text Label 11300 2600 2    50   ~ 0
 SWDIO
 Text Label 11300 2700 2    50   ~ 0
@@ -1633,9 +1631,9 @@ PA9
 Text HLabel 11300 2300 2    50   BiDi ~ 0
 PA10
 Text HLabel 11300 2400 2    50   BiDi ~ 0
-PA11_USB_DN
+USB_D_N
 Text HLabel 11300 2500 2    50   BiDi ~ 0
-PA12_USB_DP
+USB_D_P
 Text HLabel 11300 2600 2    50   BiDi ~ 0
 PA13_SWDIO
 Text HLabel 11300 2700 2    50   BiDi ~ 0
@@ -1662,4 +1660,6 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
+Text HLabel 5100 9200 0    50   Output ~ 0
+RAM.RAS_L
 $EndSCHEMATC
