@@ -1662,4 +1662,36 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
+Text Notes 11900 5500 0    50   ~ 0
+SDMMC1_D0\n
+Text Notes 10650 6000 0    50   ~ 0
+SDMMC1_CK\n\n
+Text Notes 12250 6700 0    50   ~ 0
+SDMMC1_CMD\n\n
+Text Notes 11900 5600 0    50   ~ 0
+SDMMC1_D1\n
+Text Notes 12000 5900 0    50   ~ 0
+SDMMC1_D3\n\n
+Text Notes 12000 5700 0    50   ~ 0
+SDMMC1_D2\n
+Text Notes 10650 7000 0    50   ~ 0
+SDMMC2_CK\n
+Text Notes 10650 7100 0    50   ~ 0
+SDMMC2_CMD\n
+Text Notes 5050 7300 0    50   ~ 0
+SDMMC2_D0\n
+Text Notes 11900 4400 0    50   ~ 0
+SDMMC2_D0\n
+Text Notes 11900 4500 0    50   ~ 0
+SDMMC2_D1\n
+Text Notes 5050 7400 0    50   ~ 0
+SDMMC2_D1\n
+Text Notes 4450 7550 0    50   ~ 0
+SDMMC2_D2\n
+Text Notes 11400 3300 0    50   ~ 0
+SDMMC2_D2\n
+Text Notes 10650 3400 0    50   ~ 0
+SDMMC2_D3\n
+Text Notes 5200 7600 0    50   ~ 0
+SDMMC2_D3\n
 $EndSCHEMATC
