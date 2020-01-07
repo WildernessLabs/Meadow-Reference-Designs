@@ -613,12 +613,12 @@ Wire Wire Line
 	10800 5450 10800 5600
 Wire Wire Line
 	4700 5500 4000 5500
+Text HLabel 4000 5500 0    50   Input ~ 0
+RAM.CAS_L
 Wire Bus Line
 	8400 4600 8400 5200
 Wire Bus Line
 	3900 3000 3900 5100
 Wire Bus Line
 	6400 3000 6400 5200
-Text HLabel 4000 5500 0    50   Input ~ 0
-RAM.CAS_L
 $EndSCHEMATC

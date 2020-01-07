@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -1652,6 +1652,8 @@ Text HLabel 5250 7700 0    50   BiDi ~ 0
 PG13
 Text HLabel 5250 7800 0    50   BiDi ~ 0
 PG14
+Text HLabel 5100 9200 0    50   Output ~ 0
+RAM.RAS_L
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1660,6 +1662,4 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Text HLabel 5100 9200 0    50   Output ~ 0
-RAM.RAS_L
 $EndSCHEMATC

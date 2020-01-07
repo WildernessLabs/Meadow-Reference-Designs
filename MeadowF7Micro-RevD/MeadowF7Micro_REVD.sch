@@ -12429,8 +12429,8 @@ Source: Samtec SSW.pdf</description>
 </libraries>
 <attributes>
 <attribute name="MANUFACTURER" value=""/>
-<attribute name="PART_NUMBER" value="Meadow F7 Micro"/>
-<attribute name="REV" value="C"/>
+<attribute name="PART_NAME" value="Meadow F7 Micro"/>
+<attribute name="REV" value="D"/>
 </attributes>
 <variantdefs>
 </variantdefs>
