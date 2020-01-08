@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -499,9 +499,8 @@ Text Label 11300 2600 2    50   ~ 0
 SWDIO
 Text Label 11300 2700 2    50   ~ 0
 SWCLK
-Text Label 11300 3300 2    50   ~ 0
-JTDO
-NoConn ~ 11300 3300
+Text Label 11250 3300 2    50   ~ 0
+SDMMC2_D2
 Wire Wire Line
 	7600 800  7700 800 
 Connection ~ 8900 800 
@@ -1195,7 +1194,6 @@ Text Label 11100 3000 2    50   ~ 0
 PB0_TIM3CH3
 Text Label 11100 3100 2    50   ~ 0
 PB1_TIM3CH4
-NoConn ~ 10600 3400
 Text Label 11100 3500 2    50   ~ 0
 SPI3_MOSI
 Text HLabel 11300 3500 2    50   BiDi ~ 0
@@ -1309,8 +1307,6 @@ Text HLabel 5100 6000 0    50   Output ~ 0
 UART4_TX
 NoConn ~ 5700 7000
 NoConn ~ 5700 7100
-NoConn ~ 5700 7300
-NoConn ~ 5700 7400
 NoConn ~ 5700 7600
 Wire Wire Line
 	5700 6700 5100 6700
@@ -1490,8 +1486,6 @@ PD3_SPI2_SCK
 Text HLabel 11550 6900 2    50   BiDi ~ 0
 PD5
 NoConn ~ 10600 6800
-NoConn ~ 10600 7000
-NoConn ~ 10600 7100
 Text HLabel 11300 1600 2    50   Input ~ 0
 PA3_ADC1_IN3
 Text HLabel 11300 1700 2    50   Output ~ 0
@@ -1599,8 +1593,8 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 NoConn ~ 5700 5800
 Wire Wire Line
-	5700 7500 5250 7500
-Text Label 5300 7500 0    50   ~ 0
+	5700 7500 5100 7500
+Text Label 5200 7500 0    50   ~ 0
 ETH_TX_EN
 Text Notes 10750 4800 0    50   ~ 0
 ETH_MDC
@@ -1646,7 +1640,7 @@ Text HLabel 11300 5100 2    50   BiDi ~ 0
 PC4
 Text HLabel 11300 5200 2    50   BiDi ~ 0
 PC5
-Text HLabel 5250 7500 0    50   BiDi ~ 0
+Text HLabel 5100 7500 0    50   BiDi ~ 0
 PG11
 Text HLabel 5250 7700 0    50   BiDi ~ 0
 PG13
@@ -1654,6 +1648,42 @@ Text HLabel 5250 7800 0    50   BiDi ~ 0
 PG14
 Text HLabel 5100 9200 0    50   Output ~ 0
 RAM.RAS_L
+Text Notes 10650 4200 0    50   ~ 0
+ETH_RMII_TX_D0
+Text HLabel 11300 3300 2    50   BiDi ~ 0
+PB3
+Wire Wire Line
+	10600 3400 11300 3400
+Text Label 11250 3400 2    50   ~ 0
+SDMMC2_D3
+Text HLabel 11300 3400 2    50   BiDi ~ 0
+PB4
+Wire Wire Line
+	5700 7300 5100 7300
+Wire Wire Line
+	5700 7400 5100 7400
+Text Label 5200 7300 0    50   ~ 0
+SDMMC2_D0
+Text Label 5200 7400 0    50   ~ 0
+SDMMC2_D1
+Text HLabel 5100 7400 0    50   BiDi ~ 0
+PG10
+Text HLabel 5100 7300 0    50   BiDi ~ 0
+PG9
+Text Label 10900 8400 0    50   ~ 0
+HEADER_D15
+Text Label 5200 6700 0    50   ~ 0
+D14
+Wire Wire Line
+	10600 7000 11550 7000
+Wire Wire Line
+	10600 7100 11550 7100
+Text Label 10650 7000 0    50   ~ 0
+SDMMC2_CK
+Text Label 10650 7100 0    50   ~ 0
+SDMMC2_CMD
+Text HLabel 11550 7000 2    50   Output ~ 0
+PD6
 Wire Wire Line
 	10600 7500 12400 7500
 Wire Bus Line
@@ -1662,36 +1692,6 @@ Wire Bus Line
 	11500 6300 11500 9900
 Wire Bus Line
 	4400 6150 4400 9700
-Text Notes 11900 5500 0    50   ~ 0
-SDMMC1_D0\n
-Text Notes 10650 6000 0    50   ~ 0
-SDMMC1_CK\n\n
-Text Notes 12250 6700 0    50   ~ 0
-SDMMC1_CMD\n\n
-Text Notes 11900 5600 0    50   ~ 0
-SDMMC1_D1\n
-Text Notes 12000 5900 0    50   ~ 0
-SDMMC1_D3\n\n
-Text Notes 12000 5700 0    50   ~ 0
-SDMMC1_D2\n
-Text Notes 10650 7000 0    50   ~ 0
-SDMMC2_CK\n
-Text Notes 10650 7100 0    50   ~ 0
-SDMMC2_CMD\n
-Text Notes 5050 7300 0    50   ~ 0
-SDMMC2_D0\n
-Text Notes 11900 4400 0    50   ~ 0
-SDMMC2_D0\n
-Text Notes 11900 4500 0    50   ~ 0
-SDMMC2_D1\n
-Text Notes 5050 7400 0    50   ~ 0
-SDMMC2_D1\n
-Text Notes 4450 7550 0    50   ~ 0
-SDMMC2_D2\n
-Text Notes 11400 3300 0    50   ~ 0
-SDMMC2_D2\n
-Text Notes 10650 3400 0    50   ~ 0
-SDMMC2_D3\n
-Text Notes 5200 7600 0    50   ~ 0
-SDMMC2_D3\n
+Text HLabel 11550 7100 2    50   Output ~ 0
+PD7
 $EndSCHEMATC
