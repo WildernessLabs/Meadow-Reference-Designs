@@ -1,4 +1,4 @@
-update=Sunday, November 10, 2019 at 10:25:46 AM
+update=Wednesday, January 08, 2020 at 08:43:25 PM
 version=1
 last_client=kicad
 [general]
@@ -281,6 +281,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
+Name=SDMMC
+Clearance=0.1016
+TrackWidth=0.1143
+ViaDiameter=0.4064
+ViaDrill=0.2032
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=USB
 Clearance=0.1016
 TrackWidth=0.127
