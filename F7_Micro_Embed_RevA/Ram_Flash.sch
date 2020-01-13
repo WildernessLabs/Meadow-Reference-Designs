@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"

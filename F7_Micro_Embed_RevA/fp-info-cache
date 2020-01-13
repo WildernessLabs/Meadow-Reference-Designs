@@ -1,4 +1,4 @@
-556500831989048
+558546535147048
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -40704,6 +40704,13 @@ BOT_SILK_V1.C
 0
 0
 0
+SLJ_Mechanical
+MeadowEmbeded_OnModule
+
+
+0
+78
+78
 SLJ_Mechanical
 PAD_SQ_0.6X0.8MM
 
