@@ -462,24 +462,6 @@ X EN 9 -800 300 200 R 40 40 0 0 I
 ENDDRAW
 ENDDEF
 #
-# SLJ_Mechanical_0.6X0.8MM
-#
-DEF SLJ_Mechanical_0.6X0.8MM TP 0 30 N N 1 F N
-F0 "TP" 0 270 50 H V C CNN
-F1 "SLJ_Mechanical_0.6X0.8MM" 0 200 50 H V C CNN
-F2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-F4 "DNI" 100 -100 50 H V C CNN "DNI"
-$FPLIST
- Pin*
- Test*
-$ENDFPLIST
-DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # SLJ_Mechanical_EmbedMeadow
 #
 DEF SLJ_Mechanical_EmbedMeadow J 0 40 Y Y 1 F N

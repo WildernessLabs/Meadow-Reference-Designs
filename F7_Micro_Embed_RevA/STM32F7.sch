@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "F7 Micro Embed"
 Date "2019-06-15"
 Rev "A"
@@ -1234,22 +1234,9 @@ USART1_RX
 Text HLabel 11300 3000 2    50   BiDi ~ 0
 PB0_TIM3CH3
 Text HLabel 11300 3100 2    50   BiDi ~ 0
-PB1_TIM3CH3
+PB1_TIM3CH4
 Wire Wire Line
 	4000 1300 5700 1300
-$Comp
-L SLJ_Mechanical:0.6X0.8MM TP2
-U 1 1 5D6CA115
-P 3800 1700
-F 0 "TP2" V 3750 2050 50  0000 L CNN
-F 1 "0.6X0.8MM" V 3800 1888 50  0001 L CNN
-F 2 "SLJ_Mechanical:PAD_SQ_0.6X0.8MM" H 4000 1700 50  0001 C CNN
-F 3 "~" H 4000 1700 50  0001 C CNN
-F 4 "DNI" V 3900 1700 50  0000 L CNN "DNI"
-	1    3800 1700
-	0    -1   -1   0   
-$EndComp
-Connection ~ 3800 1700
 Wire Wire Line
 	5700 3400 4800 3400
 Wire Wire Line
@@ -1694,4 +1681,6 @@ Wire Bus Line
 	4400 6150 4400 9700
 Text HLabel 11550 7100 2    50   Output ~ 0
 PD7
+Text HLabel 3800 1700 0    50   Input ~ 0
+BOOT0
 $EndSCHEMATC
