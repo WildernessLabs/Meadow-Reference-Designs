@@ -671,13 +671,13 @@ Text Label 4600 9250 1    50   ~ 0
 PB3
 Text Label 4700 9250 1    50   ~ 0
 PB4
-Text Label 4800 9250 1    50   ~ 0
-PG11
 Text Label 4900 9250 1    50   ~ 0
-PG13
+PG11
 Text Label 5000 9250 1    50   ~ 0
-PG14
+PG13
 Text Label 5100 9250 1    50   ~ 0
+PG14
+Text Label 4800 9250 1    50   ~ 0
 BOOT0
 Wire Wire Line
 	5800 5550 6000 5550
@@ -753,19 +753,19 @@ Text Label 6150 5850 0    50   ~ 0
 PB1_TIM3CH4
 Text Label 6150 5950 0    50   ~ 0
 PA5_DAC_OUT2
-Text Label 6150 6050 0    50   ~ 0
+Text Label 6150 6350 0    50   ~ 0
 PC4
 Text Label 6150 6150 0    50   ~ 0
 PA7_ADC1_IN7
 Text Label 6150 6250 0    50   ~ 0
 PA2
-Text Label 6150 6350 0    50   ~ 0
-PC2_OTG_FS_OC
-Text Label 6150 6650 0    50   ~ 0
-PA4_DAC_OUT1
-Text Label 6150 6750 0    50   ~ 0
-PA3_ADC1_IN3
 Text Label 6150 6850 0    50   ~ 0
+PC2_OTG_FS_OC
+Text Label 6150 6050 0    50   ~ 0
+PA4_DAC_OUT1
+Text Label 6150 6650 0    50   ~ 0
+PA3_ADC1_IN3
+Text Label 6150 6750 0    50   ~ 0
 PA0
 Text Label 6150 6950 0    50   ~ 0
 VREF
@@ -785,9 +785,9 @@ Text Label 6150 7750 0    50   ~ 0
 PE3
 Text Label 6150 7850 0    50   ~ 0
 PB9_CAN1_TX
-Text Label 6150 7950 0    50   ~ 0
-PB8_CAN1_RX
 Text Label 6150 8050 0    50   ~ 0
+PB8_CAN1_RX
+Text Label 6150 7950 0    50   ~ 0
 PB7_I2C1_SDA
 $Sheet
 S 5700 2400 1500 2000
