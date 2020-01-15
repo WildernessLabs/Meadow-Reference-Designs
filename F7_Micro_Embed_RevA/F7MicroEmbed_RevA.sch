@@ -460,15 +460,15 @@ Wire Wire Line
 	2700 7750 1650 7750
 Wire Wire Line
 	2700 7650 1650 7650
-Text Label 1750 8050 0    50   ~ 0
+Text Label 1800 7950 0    50   ~ 0
 PC9_TIM8CH4
-Text Label 1750 7950 0    50   ~ 0
+Text Label 1800 8050 0    50   ~ 0
 PA10
-Text Label 1800 7850 0    50   ~ 0
-PC8_TIM8CH1
 Text Label 1800 7750 0    50   ~ 0
-PH12_OTG_FS_PWRON
+PC8_TIM8CH1
 Text Label 1800 7650 0    50   ~ 0
+PH12_OTG_FS_PWRON
+Text Label 1800 7150 0    50   ~ 0
 PG3
 Wire Wire Line
 	2700 7550 1650 7550
@@ -513,11 +513,11 @@ Wire Wire Line
 	2700 6050 2300 6050
 Wire Wire Line
 	2700 6450 1650 6450
-Text Label 1800 7550 0    50   ~ 0
+Text Label 1800 7850 0    50   ~ 0
 PA9
-Text Label 1800 7450 0    50   ~ 0
+Text Label 1800 7550 0    50   ~ 0
 PC7_TIM3CH2
-Text Label 1800 7150 0    50   ~ 0
+Text Label 1800 7450 0    50   ~ 0
 PC6_TIM3CH1
 Text Label 1800 7050 0    50   ~ 0
 PH10_TIM5CH1
