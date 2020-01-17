@@ -311,8 +311,8 @@ $Comp
 L SLJ_Mechanical:EmbedMeadow J2
 U 1 1 5E2F554A
 P 4300 7050
-F 0 "J2" H 4250 8815 50  0000 C CNN
-F 1 "EmbedMeadow" H 4250 8724 50  0000 C CNN
+F 0 "J2" H 3600 8850 50  0000 C CNN
+F 1 "EmbedMeadow" H 3800 8750 50  0000 C CNN
 F 2 "SLJ_Mechanical:MeadowEmbeded_OnModule" H 3500 6850 50  0001 C CNN
 F 3 "" H 3400 6850 50  0001 C CNN
 	1    4300 7050
@@ -680,7 +680,7 @@ PG14
 Text Label 4800 9250 1    50   ~ 0
 BOOT0
 Wire Wire Line
-	5800 5550 6000 5550
+	5800 5550 5850 5550
 Wire Wire Line
 	6000 5550 6000 6450
 Wire Wire Line
@@ -828,4 +828,13 @@ Wire Wire Line
 	9750 6850 9000 6850
 Text Label 9400 6850 2    50   ~ 0
 BOOT0
+Wire Wire Line
+	4300 5200 4300 5250
+Wire Wire Line
+	4300 5200 5850 5200
+Wire Wire Line
+	5850 5200 5850 5550
+Connection ~ 5850 5550
+Wire Wire Line
+	5850 5550 6000 5550
 $EndSCHEMATC
