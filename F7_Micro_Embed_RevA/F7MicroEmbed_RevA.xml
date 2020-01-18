@@ -1,0 +1,2563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/sheldon/Meadow-Reference-Designs/F7_Micro_Embed_RevA/F7MicroEmbed_RevA.sch</source>
+    <date>Saturday, January 18, 2020 at 12:33:05 PM</date>
+    <tool>Eeschema (5.1.4-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>F7 Micro Embed</title>
+        <company/>
+        <rev>A</rev>
+        <date>2019-06-15</date>
+        <source>F7MicroEmbed_RevA.sch</source>
+        <comment number="1" value="S.Johnson"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/memory/" tstamps="/5D0A6362/">
+      <title_block>
+        <title>F7 Micro Embed</title>
+        <company/>
+        <rev>A</rev>
+        <date>2019-06-15</date>
+        <source>Ram_Flash.sch</source>
+        <comment number="1" value="S.Johnson"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/STM32F7/" tstamps="/5D09BE01/">
+      <title_block>
+        <title>F7 Micro Embed</title>
+        <company/>
+        <rev>A</rev>
+        <date>2019-06-15</date>
+        <source>STM32F7.sch</source>
+        <comment number="1" value="S.Johnson"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/ESP32/" tstamps="/5D06E29D/">
+      <title_block>
+        <title>F7 Micro Embed</title>
+        <company/>
+        <rev>A</rev>
+        <date>2019-06-15</date>
+        <source>ESP32.sch</source>
+        <comment number="1" value="S.Johnson"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>EmbedMeadow</value>
+      <footprint>SLJ_Mechanical:MeadowEmbeded_OnModule</footprint>
+      <libsource lib="SLJ_Mechanical" part="EmbedMeadow" description="Schmatic symbol for the pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E2F554A</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>IS42S16160J-7BLI</value>
+      <footprint>SLJ_BGA:TFBGA-54</footprint>
+      <datasheet>http://www.issi.com/WW/pdf/42-45S83200J-16160J.pdf</datasheet>
+      <fields>
+        <field name="MF">ISSI, Integrated Silicon Solution Inc</field>
+        <field name="Man">ISSI, Integrated Silicon Solution Inc</field>
+        <field name="PN">IS42S16160J-7BLI</field>
+      </fields>
+      <libsource lib="SLJ_Memory" part="IS42S16160J-7BLI" description="SDRAM Memory IC 256Mb (16M x 16) Parallel 143MHz 5.4ns 54-TFBGA (8x8)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5D05D92C</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>S25FL256LAG</value>
+      <footprint>SLJ_BGA:BGA24C100P6X4_800X600X120N</footprint>
+      <datasheet>https://www.cypress.com/file/316171/download</datasheet>
+      <fields>
+        <field name="MF">Cypress Semiconductor Corp</field>
+        <field name="PN">S25FL256LAGBHV030</field>
+      </fields>
+      <libsource lib="SLJ_Memory" part="S25FL256LAG" description="FLASH - NOR Memory IC 256Mb (32M x 8) SPI - Quad I/O, QPI 133MHz 24-BGA (6x8) DUAL FOOTPRINT SYMBOL"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5D06BD9A</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5DC190F0</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5DC1A8DB</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5DC1AD07</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5DC1BD8D</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/memory/" tstamps="/5D0A6362/"/>
+      <tstamp>5DC360B4</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>R_10K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_10K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D2B7C05</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>R_10K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_10K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D2B8A22</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>R_10K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_10K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D2B8F7B</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201_0603Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D306E87</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D30834D</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D308589</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D3089D4</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>C_0201_2.2UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">2.2uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A225KE47D</field>
+        <field name="PN2">CL03A225MP3CRNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_2.2UF_10V_X5R" description="2.2µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D373655</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>C_0201_2.2UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">2.2uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A225KE47D</field>
+        <field name="PN2">CL03A225MP3CRNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_2.2UF_10V_X5R" description="2.2µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D374DFD</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D3A630B</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D441FFB</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D45D4E0</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D47C5A3</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D47C5B1</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D47C5BF</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D47C5ED</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>ABM12W-25.0000MHZ-6-B1U-T3</value>
+      <footprint>SLJ_Crystals_Osc:XTAL_ABM12W-24.0000MHZ-6-B1U-T3</footprint>
+      <datasheet>https://abracon.com/Resonators/ABM12W.pdf</datasheet>
+      <fields>
+        <field name="Frequency">25MHz</field>
+        <field name="MF">Abracon LLC</field>
+        <field name="PN">ABM12W-25.0000MHZ-6-B1U-T3</field>
+      </fields>
+      <libsource lib="SLJ_OSC_CRYSTAL" part="ABM12W-25.0000MHZ-6-B1U-T3" description="25MHz ±10ppm Crystal 6pF 150 Ohms 4-SMD, No Lead"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D49F0B5</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C_0201_8pF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">8pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Yageo</field>
+        <field name="PN">GRM0335C1H8R0DA01J</field>
+        <field name="PN2">CC0201DRNPO9BN8R0</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">0.5pF</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_8pF_50V_C0G" description="8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D536031</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>C_0201_8pF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">8pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Yageo</field>
+        <field name="PN">GRM0335C1H8R0DA01J</field>
+        <field name="PN2">CC0201DRNPO9BN8R0</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">0.5pF</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_8pF_50V_C0G" description="8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D536CDF</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>C_0201_0.47UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.47uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R" description="0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5DB8B138</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>STM32F777IIKx</value>
+      <footprint>Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm</footprint>
+      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf</datasheet>
+      <libsource lib="MCU_ST_STM32F7" part="STM32F777IIKx" description="ARM Cortex-M7 MCU, 2048KB flash, 384KB RAM, 216MHz, 1.7-3.6V, 140 GPIO, UFBGA-176"/>
+      <sheetpath names="/STM32F7/" tstamps="/5D09BE01/"/>
+      <tstamp>5D09BECD</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>ESP32-PICO-D4</value>
+      <footprint>SLJ_QFN:PQFN50P700X700X104-49N</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="Field5">WIFi/Bluetooth SIP</field>
+        <field name="Field6">None</field>
+        <field name="Field7">SMD-48 Espressif Systems</field>
+        <field name="MF">Espressif Systems</field>
+        <field name="PN">ESP32-PICO-D4</field>
+      </fields>
+      <libsource lib="SLJ_MCU" part="ESP32-PICO-D4" description="Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 + EDR, Class 1, 2 and 3 Transceiver Module 2.4GHz ~ 2.5GHz  Surface Mount"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5D06E708</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>R_20K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0720KL</field>
+        <field name="Res_value">20K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_20K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5D078330</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>R_499_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Panasonic Electronic Components</field>
+        <field name="PN">ERJ-1GNF4990C</field>
+        <field name="Res_value">499</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_499_1%_0201" description="499 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Automotive AEC-Q200 Thick Film"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5D07BF00</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>C_0201_4.7UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">4.7uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM035R60J475ME15D</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">20%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_4.7UF_6.3V_X5R" description="4.7µF ±20% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBDF2FD</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>C_0201_4.7UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">4.7uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM035R60J475ME15D</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">20%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_4.7UF_6.3V_X5R" description="4.7µF ±20% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBE130D</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>C_0201_4.7UF_6.3V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">4.7uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM035R60J475ME15D</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">20%</field>
+        <field name="Voltage">6.3V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_4.7UF_6.3V_X5R" description="4.7µF ±20% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBE17F3</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>R_10K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_10K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBE594B</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>SKYA21001</value>
+      <footprint>SLJ_SMT:SOT-363_SC-70-6</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/472/SKYA21001_202936H-1524709.pdf</datasheet>
+      <fields>
+        <field name="MF">Skyworks Solutions Inc.</field>
+        <field name="PN">SKYA21001</field>
+      </fields>
+      <libsource lib="SLJ_RF" part="SKYA21001" description="RF Switch IC Bluetooth, WLAN SPDT 3GHz 50Ohm SC-70-6"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBE9187</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>C_0201_100PF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">100pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Vishay</field>
+        <field name="PN">GRM0335C1H101JA01D</field>
+        <field name="PN2">VJ0201A101JXACW1BC-ND</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">5%</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_100PF_50V_C0G" description="100pF ±5% 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBEF1D3</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>C_0201_100PF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">100pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Vishay</field>
+        <field name="PN">GRM0335C1H101JA01D</field>
+        <field name="PN2">VJ0201A101JXACW1BC-ND</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">5%</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_100PF_50V_C0G" description="100pF ±5% 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBF017A</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>C_0201_100PF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">100pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Vishay</field>
+        <field name="PN">GRM0335C1H101JA01D</field>
+        <field name="PN2">VJ0201A101JXACW1BC-ND</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">5%</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_100PF_50V_C0G" description="100pF ±5% 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBED20E</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>A-1JB</value>
+      <footprint>SLJ_Connectors:AMPHENOL_A-1JB</footprint>
+      <datasheet>https://www.amphenolrf.com/media/downloads/3960/CA-1JB.pdf</datasheet>
+      <fields>
+        <field name="Field8">Connector; RF; AMC; PCB Jack; Surface Mnt; 50 Ohm; Solder</field>
+        <field name="MF">Amphenol RF Division</field>
+        <field name="PN">A-1JB</field>
+      </fields>
+      <libsource lib="SLJ_RF" part="A-1JB" description="U.FL (UMCC), AMC Connector Jack, Male Pin 50Ohm Surface Mount Solder"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DBFCCD9</tstamp>
+    </comp>
+    <comp ref="ANT1">
+      <value>W3008</value>
+      <footprint>SLJ_SMT:ANTENNA_W3008</footprint>
+      <datasheet>https://source.z2data.com/2019/5/5/2/28/32/733/W3008.pdf</datasheet>
+      <fields>
+        <field name="Field5">553-1530-1-ND</field>
+        <field name="Field7">W3008</field>
+        <field name="Field8">https://www.digikey.com/product-detail/en/pulselarsen-antennas/W3008/553-1530-1-ND/2362934?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol</field>
+        <field name="MF">PulseLarsen Antennas</field>
+        <field name="PN">W3008</field>
+      </fields>
+      <libsource lib="SLJ_RF" part="W3008" description="2.4GHz Bluetooth Chip RF Antenna 2.4GHz ~ 2.483GHz 1.7dBi Solder Surface Mount"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC038DE</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>C_0201_1.8pF_50V_C0G</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">1.8pF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Yageo</field>
+        <field name="PN">GRM0335C1H1R8CA01D</field>
+        <field name="PN2">CC0201BRNPO9BN1R8</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">0.25pF</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_1.8pF_50V_C0G" description="1.8pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC095C9</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC4239E</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC481F8</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC489A7</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>R_10K_1%_0201</value>
+      <footprint>Resistors_SMD:R_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <libsource lib="SLJ_Resistor_0201" part="R_10K_1%_0201" description="20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC52E43</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>C_0201_0.1UF_10V_X5R</value>
+      <footprint>Capacitors_SMD:C_0201</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Cap_value">0.1uF</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Size">0201</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">10V</field>
+      </fields>
+      <libsource lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R" description="0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)"/>
+      <sheetpath names="/ESP32/" tstamps="/5D06E29D/"/>
+      <tstamp>5DC61D74</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MCU_ST_STM32F7" part="STM32F777IIKx">
+      <description>ARM Cortex-M7 MCU, 2048KB flash, 384KB RAM, 216MHz, 1.7-3.6V, 140 GPIO, UFBGA-176</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00225424.pdf</docs>
+      <footprints>
+        <fp>UFBGA*10x10mm*Layout15x15*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32F777IIKx</field>
+        <field name="Footprint">Package_BGA:UFBGA-201_10x10mm_Layout15x15_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="PE3" type="BiDi"/>
+        <pin num="A2" name="PE2" type="BiDi"/>
+        <pin num="A3" name="PE1" type="BiDi"/>
+        <pin num="A4" name="PE0" type="BiDi"/>
+        <pin num="A5" name="PB8" type="BiDi"/>
+        <pin num="A6" name="PB5" type="BiDi"/>
+        <pin num="A7" name="PG14" type="BiDi"/>
+        <pin num="A8" name="PG13" type="BiDi"/>
+        <pin num="A9" name="PB4" type="BiDi"/>
+        <pin num="A10" name="PB3" type="BiDi"/>
+        <pin num="A11" name="PD7" type="BiDi"/>
+        <pin num="A12" name="PC12" type="BiDi"/>
+        <pin num="A13" name="PA15" type="BiDi"/>
+        <pin num="A14" name="PA14" type="BiDi"/>
+        <pin num="A15" name="PA13" type="BiDi"/>
+        <pin num="B1" name="PE4" type="BiDi"/>
+        <pin num="B2" name="PE5" type="BiDi"/>
+        <pin num="B3" name="PE6" type="BiDi"/>
+        <pin num="B4" name="PB9" type="BiDi"/>
+        <pin num="B5" name="PB7" type="BiDi"/>
+        <pin num="B6" name="PB6" type="BiDi"/>
+        <pin num="B7" name="PG15" type="BiDi"/>
+        <pin num="B8" name="PG12" type="BiDi"/>
+        <pin num="B9" name="PG11" type="BiDi"/>
+        <pin num="B10" name="PG10" type="BiDi"/>
+        <pin num="B11" name="PD6" type="BiDi"/>
+        <pin num="B12" name="PD0" type="BiDi"/>
+        <pin num="B13" name="PC11" type="BiDi"/>
+        <pin num="B14" name="PC10" type="BiDi"/>
+        <pin num="B15" name="PA12" type="BiDi"/>
+        <pin num="C1" name="VBAT" type="power_in"/>
+        <pin num="C2" name="PI7" type="BiDi"/>
+        <pin num="C3" name="PI6" type="BiDi"/>
+        <pin num="C4" name="PI5" type="BiDi"/>
+        <pin num="C5" name="VDD" type="power_in"/>
+        <pin num="C6" name="PDR_ON" type="input"/>
+        <pin num="C7" name="VDD" type="power_in"/>
+        <pin num="C8" name="VDDSDMMC" type="power_in"/>
+        <pin num="C9" name="VDD" type="power_in"/>
+        <pin num="C10" name="PG9" type="BiDi"/>
+        <pin num="C11" name="PD5" type="BiDi"/>
+        <pin num="C12" name="PD1" type="BiDi"/>
+        <pin num="C13" name="PI3" type="BiDi"/>
+        <pin num="C14" name="PI2" type="BiDi"/>
+        <pin num="C15" name="PA11" type="BiDi"/>
+        <pin num="D1" name="PC13" type="BiDi"/>
+        <pin num="D2" name="PI8" type="BiDi"/>
+        <pin num="D3" name="PI9" type="BiDi"/>
+        <pin num="D4" name="PI4" type="BiDi"/>
+        <pin num="D5" name="VSS" type="power_in"/>
+        <pin num="D6" name="BOOT0" type="input"/>
+        <pin num="D7" name="VSS" type="power_in"/>
+        <pin num="D8" name="VSS" type="power_in"/>
+        <pin num="D9" name="VSS" type="power_in"/>
+        <pin num="D10" name="PD4" type="BiDi"/>
+        <pin num="D11" name="PD3" type="BiDi"/>
+        <pin num="D12" name="PD2" type="BiDi"/>
+        <pin num="D13" name="PH15" type="BiDi"/>
+        <pin num="D14" name="PI1" type="BiDi"/>
+        <pin num="D15" name="PA10" type="BiDi"/>
+        <pin num="E1" name="PC14" type="BiDi"/>
+        <pin num="E2" name="PF0" type="BiDi"/>
+        <pin num="E3" name="PI10" type="BiDi"/>
+        <pin num="E4" name="PI11" type="BiDi"/>
+        <pin num="E12" name="PH13" type="BiDi"/>
+        <pin num="E13" name="PH14" type="BiDi"/>
+        <pin num="E14" name="PI0" type="BiDi"/>
+        <pin num="E15" name="PA9" type="BiDi"/>
+        <pin num="F1" name="PC15" type="BiDi"/>
+        <pin num="F2" name="VSS" type="power_in"/>
+        <pin num="F3" name="VDD" type="power_in"/>
+        <pin num="F4" name="PH2" type="BiDi"/>
+        <pin num="F6" name="VSS" type="power_in"/>
+        <pin num="F7" name="VSS" type="power_in"/>
+        <pin num="F8" name="VSS" type="power_in"/>
+        <pin num="F9" name="VSS" type="power_in"/>
+        <pin num="F10" name="VSS" type="power_in"/>
+        <pin num="F12" name="VSS" type="power_in"/>
+        <pin num="F13" name="VCAP_2" type="power_in"/>
+        <pin num="F14" name="PC9" type="BiDi"/>
+        <pin num="F15" name="PA8" type="BiDi"/>
+        <pin num="G1" name="PH0" type="input"/>
+        <pin num="G2" name="VSS" type="power_in"/>
+        <pin num="G3" name="VDD" type="power_in"/>
+        <pin num="G4" name="PH3" type="BiDi"/>
+        <pin num="G6" name="VSS" type="power_in"/>
+        <pin num="G7" name="VSS" type="power_in"/>
+        <pin num="G8" name="VSS" type="power_in"/>
+        <pin num="G9" name="VSS" type="power_in"/>
+        <pin num="G10" name="VSS" type="power_in"/>
+        <pin num="G12" name="VSS" type="power_in"/>
+        <pin num="G13" name="VDD" type="power_in"/>
+        <pin num="G14" name="PC8" type="BiDi"/>
+        <pin num="G15" name="PC7" type="BiDi"/>
+        <pin num="H1" name="PH1" type="input"/>
+        <pin num="H2" name="PF2" type="BiDi"/>
+        <pin num="H3" name="PF1" type="BiDi"/>
+        <pin num="H4" name="PH4" type="BiDi"/>
+        <pin num="H6" name="VSS" type="power_in"/>
+        <pin num="H7" name="VSS" type="power_in"/>
+        <pin num="H8" name="VSS" type="power_in"/>
+        <pin num="H9" name="VSS" type="power_in"/>
+        <pin num="H10" name="VSS" type="power_in"/>
+        <pin num="H12" name="VSS" type="power_in"/>
+        <pin num="H13" name="VDDUSB" type="power_in"/>
+        <pin num="H14" name="PG8" type="BiDi"/>
+        <pin num="H15" name="PC6" type="BiDi"/>
+        <pin num="J1" name="NRST" type="input"/>
+        <pin num="J2" name="PF3" type="BiDi"/>
+        <pin num="J3" name="PF4" type="BiDi"/>
+        <pin num="J4" name="PH5" type="BiDi"/>
+        <pin num="J6" name="VSS" type="power_in"/>
+        <pin num="J7" name="VSS" type="power_in"/>
+        <pin num="J8" name="VSS" type="power_in"/>
+        <pin num="J9" name="VSS" type="power_in"/>
+        <pin num="J10" name="VSS" type="power_in"/>
+        <pin num="J12" name="VDD" type="power_in"/>
+        <pin num="J13" name="VDD" type="power_in"/>
+        <pin num="J14" name="PG7" type="BiDi"/>
+        <pin num="J15" name="PG6" type="BiDi"/>
+        <pin num="K1" name="PF7" type="BiDi"/>
+        <pin num="K2" name="PF6" type="BiDi"/>
+        <pin num="K3" name="PF5" type="BiDi"/>
+        <pin num="K4" name="VDD" type="power_in"/>
+        <pin num="K6" name="VSS" type="power_in"/>
+        <pin num="K7" name="VSS" type="power_in"/>
+        <pin num="K8" name="VSS" type="power_in"/>
+        <pin num="K9" name="VSS" type="power_in"/>
+        <pin num="K10" name="VSS" type="power_in"/>
+        <pin num="K12" name="PH12" type="BiDi"/>
+        <pin num="K13" name="PG5" type="BiDi"/>
+        <pin num="K14" name="PG4" type="BiDi"/>
+        <pin num="K15" name="PG3" type="BiDi"/>
+        <pin num="L1" name="PF10" type="BiDi"/>
+        <pin num="L2" name="PF9" type="BiDi"/>
+        <pin num="L3" name="PF8" type="BiDi"/>
+        <pin num="L4" name="BYPASS_REG" type="input"/>
+        <pin num="L12" name="PH11" type="BiDi"/>
+        <pin num="L13" name="PH10" type="BiDi"/>
+        <pin num="L14" name="PD15" type="BiDi"/>
+        <pin num="L15" name="PG2" type="BiDi"/>
+        <pin num="M1" name="VSSA" type="power_in"/>
+        <pin num="M2" name="PC0" type="BiDi"/>
+        <pin num="M3" name="PC1" type="BiDi"/>
+        <pin num="M4" name="PC2" type="BiDi"/>
+        <pin num="M5" name="PC3" type="BiDi"/>
+        <pin num="M6" name="PB2" type="BiDi"/>
+        <pin num="M7" name="PG1" type="BiDi"/>
+        <pin num="M8" name="VSS" type="power_in"/>
+        <pin num="M9" name="VSS" type="power_in"/>
+        <pin num="M10" name="VCAP_1" type="power_in"/>
+        <pin num="M11" name="PH6" type="BiDi"/>
+        <pin num="M12" name="PH8" type="BiDi"/>
+        <pin num="M13" name="PH9" type="BiDi"/>
+        <pin num="M14" name="PD14" type="BiDi"/>
+        <pin num="M15" name="PD13" type="BiDi"/>
+        <pin num="N1" name="VREF-" type="power_in"/>
+        <pin num="N2" name="PA1" type="BiDi"/>
+        <pin num="N3" name="PA0" type="BiDi"/>
+        <pin num="N4" name="PA4" type="BiDi"/>
+        <pin num="N5" name="PC4" type="BiDi"/>
+        <pin num="N6" name="PF13" type="BiDi"/>
+        <pin num="N7" name="PG0" type="BiDi"/>
+        <pin num="N8" name="VDD" type="power_in"/>
+        <pin num="N9" name="VDD" type="power_in"/>
+        <pin num="N10" name="VDD" type="power_in"/>
+        <pin num="N11" name="PE13" type="BiDi"/>
+        <pin num="N12" name="PH7" type="BiDi"/>
+        <pin num="N13" name="PD12" type="BiDi"/>
+        <pin num="N14" name="PD11" type="BiDi"/>
+        <pin num="N15" name="PD10" type="BiDi"/>
+        <pin num="P1" name="VREF+" type="power_in"/>
+        <pin num="P2" name="PA2" type="BiDi"/>
+        <pin num="P3" name="PA6" type="BiDi"/>
+        <pin num="P4" name="PA5" type="BiDi"/>
+        <pin num="P5" name="PC5" type="BiDi"/>
+        <pin num="P6" name="PF12" type="BiDi"/>
+        <pin num="P7" name="PF15" type="BiDi"/>
+        <pin num="P8" name="PE8" type="BiDi"/>
+        <pin num="P9" name="PE9" type="BiDi"/>
+        <pin num="P10" name="PE11" type="BiDi"/>
+        <pin num="P11" name="PE14" type="BiDi"/>
+        <pin num="P12" name="PB12" type="BiDi"/>
+        <pin num="P13" name="PB13" type="BiDi"/>
+        <pin num="P14" name="PD9" type="BiDi"/>
+        <pin num="P15" name="PD8" type="BiDi"/>
+        <pin num="R1" name="VDDA" type="power_in"/>
+        <pin num="R2" name="PA3" type="BiDi"/>
+        <pin num="R3" name="PA7" type="BiDi"/>
+        <pin num="R4" name="PB1" type="BiDi"/>
+        <pin num="R5" name="PB0" type="BiDi"/>
+        <pin num="R6" name="PF11" type="BiDi"/>
+        <pin num="R7" name="PF14" type="BiDi"/>
+        <pin num="R8" name="PE7" type="BiDi"/>
+        <pin num="R9" name="PE10" type="BiDi"/>
+        <pin num="R10" name="PE12" type="BiDi"/>
+        <pin num="R11" name="PE15" type="BiDi"/>
+        <pin num="R12" name="PB10" type="BiDi"/>
+        <pin num="R13" name="PB11" type="BiDi"/>
+        <pin num="R14" name="PB14" type="BiDi"/>
+        <pin num="R15" name="PB15" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_0.1UF_10V_X5R">
+      <description>0.1µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_0.1UF_10V_X5R</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM033R61A104KE15D</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN2">CL03A104KP3NNNC</field>
+        <field name="Voltage">10V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Cap_value">0.1uF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_0.47UF_6.3V_X5R">
+      <description>0.47µF ±10% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_0.47UF_6.3V_X5R</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM033R60J474KE90D</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN2">CL03A474KQ3NNNH</field>
+        <field name="Voltage">6.3V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Cap_value">0.47uF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_1.8pF_50V_C0G">
+      <description>1.8pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_1.8pF_50V_C0G</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM0335C1H1R8CA01D</field>
+        <field name="MF2">Yageo</field>
+        <field name="PN2">CC0201BRNPO9BN1R8</field>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">0.25pF</field>
+        <field name="Cap_value">1.8pF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_100PF_50V_C0G">
+      <description>100pF ±5% 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_100PF_50V_C0G</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM0335C1H101JA01D</field>
+        <field name="MF2">Vishay</field>
+        <field name="PN2">VJ0201A101JXACW1BC-ND</field>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">5%</field>
+        <field name="Cap_value">100pF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_2.2UF_10V_X5R">
+      <description>2.2µF ±10% 10V Ceramic Capacitor X5R 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_2.2UF_10V_X5R</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM033R61A225KE47D</field>
+        <field name="MF2">Samsung Electro-Mechanics</field>
+        <field name="PN2">CL03A225MP3CRNC</field>
+        <field name="Voltage">10V</field>
+        <field name="Tolerance">10%</field>
+        <field name="Cap_value">2.2uF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_4.7UF_6.3V_X5R">
+      <description>4.7µF ±20% 6.3V Ceramic Capacitor X5R 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_4.7UF_6.3V_X5R</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM035R60J475ME15D</field>
+        <field name="Voltage">6.3V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Cap_value">4.7uF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Capacitor_0201" part="C_0201_8pF_50V_C0G">
+      <description>8pF ±0.5pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_0201_8pF_50V_C0G</field>
+        <field name="Footprint">SLJ_SMT:C_0201</field>
+        <field name="MF">Murata Electronics North America</field>
+        <field name="PN">GRM0335C1H8R0DA01J</field>
+        <field name="MF2">Yageo</field>
+        <field name="PN2">CC0201DRNPO9BN8R0</field>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">0.5pF</field>
+        <field name="Cap_value">8pF</field>
+        <field name="Size">0201</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_MCU" part="ESP32-PICO-D4">
+      <description>Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 + EDR, Class 1, 2 and 3 Transceiver Module 2.4GHz ~ 2.5GHz  Surface Mount</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-PICO-D4</field>
+        <field name="Footprint">SLJ_QFN:PQFN50P700X700X104-49N</field>
+        <field name="MF">Espressif Systems</field>
+        <field name="Field5">WIFi/Bluetooth SIP</field>
+        <field name="Field6">None</field>
+        <field name="Field7">SMD-48 Espressif Systems</field>
+        <field name="PN">ESP32-PICO-D4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDDA" type="power_in"/>
+        <pin num="2" name="LNA_IN" type="BiDi"/>
+        <pin num="3" name="VDDA3P3" type="power_in"/>
+        <pin num="4" name="VDDA3P3" type="power_in"/>
+        <pin num="5" name="SENSOR_VP" type="input"/>
+        <pin num="6" name="SENSOR_CAPP" type="input"/>
+        <pin num="7" name="SENSOR_CAPN" type="input"/>
+        <pin num="8" name="SENSOR_VN" type="input"/>
+        <pin num="9" name="EN" type="input"/>
+        <pin num="10" name="IO34" type="input"/>
+        <pin num="11" name="IO35" type="input"/>
+        <pin num="12" name="IO32" type="BiDi"/>
+        <pin num="13" name="IO33" type="BiDi"/>
+        <pin num="14" name="IO25" type="BiDi"/>
+        <pin num="15" name="IO26" type="BiDi"/>
+        <pin num="16" name="IO27" type="BiDi"/>
+        <pin num="17" name="IO14" type="BiDi"/>
+        <pin num="18" name="IO12" type="BiDi"/>
+        <pin num="19" name="VDD3P3_RTC" type="power_in"/>
+        <pin num="20" name="IO13" type="BiDi"/>
+        <pin num="21" name="IO15" type="BiDi"/>
+        <pin num="22" name="IO2" type="BiDi"/>
+        <pin num="23" name="IO0" type="BiDi"/>
+        <pin num="24" name="IO4" type="BiDi"/>
+        <pin num="25" name="IO16" type="BiDi"/>
+        <pin num="26" name="VDD_SDIO" type="power_in"/>
+        <pin num="27" name="IO17" type="BiDi"/>
+        <pin num="28" name="SD2" type="BiDi"/>
+        <pin num="29" name="SD3" type="BiDi"/>
+        <pin num="30" name="CMD" type="BiDi"/>
+        <pin num="31" name="CLK" type="BiDi"/>
+        <pin num="32" name="SD0" type="BiDi"/>
+        <pin num="33" name="SD1" type="BiDi"/>
+        <pin num="34" name="IO5" type="BiDi"/>
+        <pin num="35" name="IO18" type="BiDi"/>
+        <pin num="36" name="IO23" type="BiDi"/>
+        <pin num="37" name="VDD3P3_CPU" type="power_in"/>
+        <pin num="38" name="IO19" type="BiDi"/>
+        <pin num="39" name="IO22" type="BiDi"/>
+        <pin num="40" name="U0RXD" type="BiDi"/>
+        <pin num="41" name="U0TXD" type="BiDi"/>
+        <pin num="42" name="IO21" type="BiDi"/>
+        <pin num="43" name="VDDA" type="power_in"/>
+        <pin num="46" name="VDDA" type="power_in"/>
+        <pin num="49" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Mechanical" part="EmbedMeadow">
+      <description>Schmatic symbol for the pins</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">EmbedMeadow</field>
+        <field name="Footprint">SLJ_Mechanical:MeadowEmbeded_OnModule</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="input"/>
+        <pin num="7" name="~" type="input"/>
+        <pin num="8" name="~" type="input"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="input"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="~" type="input"/>
+        <pin num="15" name="~" type="input"/>
+        <pin num="16" name="~" type="input"/>
+        <pin num="17" name="~" type="input"/>
+        <pin num="18" name="~" type="input"/>
+        <pin num="19" name="~" type="input"/>
+        <pin num="20" name="~" type="input"/>
+        <pin num="21" name="~" type="input"/>
+        <pin num="22" name="~" type="input"/>
+        <pin num="23" name="~" type="input"/>
+        <pin num="24" name="~" type="input"/>
+        <pin num="25" name="~" type="input"/>
+        <pin num="26" name="~" type="input"/>
+        <pin num="27" name="~" type="input"/>
+        <pin num="28" name="~" type="input"/>
+        <pin num="29" name="~" type="input"/>
+        <pin num="30" name="~" type="input"/>
+        <pin num="31" name="~" type="input"/>
+        <pin num="32" name="~" type="input"/>
+        <pin num="33" name="~" type="input"/>
+        <pin num="34" name="~" type="input"/>
+        <pin num="35" name="~" type="input"/>
+        <pin num="36" name="~" type="input"/>
+        <pin num="37" name="~" type="input"/>
+        <pin num="38" name="~" type="input"/>
+        <pin num="39" name="~" type="input"/>
+        <pin num="40" name="~" type="input"/>
+        <pin num="41" name="~" type="input"/>
+        <pin num="42" name="~" type="input"/>
+        <pin num="43" name="~" type="input"/>
+        <pin num="44" name="~" type="input"/>
+        <pin num="45" name="~" type="input"/>
+        <pin num="46" name="~" type="input"/>
+        <pin num="47" name="~" type="input"/>
+        <pin num="48" name="~" type="input"/>
+        <pin num="49" name="~" type="input"/>
+        <pin num="50" name="~" type="input"/>
+        <pin num="51" name="~" type="input"/>
+        <pin num="52" name="~" type="input"/>
+        <pin num="53" name="~" type="input"/>
+        <pin num="54" name="~" type="input"/>
+        <pin num="55" name="~" type="input"/>
+        <pin num="56" name="~" type="input"/>
+        <pin num="57" name="~" type="input"/>
+        <pin num="58" name="~" type="input"/>
+        <pin num="59" name="~" type="input"/>
+        <pin num="60" name="~" type="input"/>
+        <pin num="61" name="~" type="input"/>
+        <pin num="62" name="~" type="input"/>
+        <pin num="63" name="~" type="input"/>
+        <pin num="64" name="~" type="input"/>
+        <pin num="65" name="~" type="input"/>
+        <pin num="66" name="~" type="input"/>
+        <pin num="67" name="~" type="input"/>
+        <pin num="68" name="~" type="input"/>
+        <pin num="69" name="~" type="input"/>
+        <pin num="70" name="~" type="input"/>
+        <pin num="71" name="~" type="input"/>
+        <pin num="72" name="~" type="input"/>
+        <pin num="73" name="~" type="input"/>
+        <pin num="74" name="~" type="input"/>
+        <pin num="75" name="~" type="input"/>
+        <pin num="76" name="~" type="input"/>
+        <pin num="77" name="~" type="input"/>
+        <pin num="78" name="~" type="input"/>
+        <pin num="79" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Memory" part="IS42S16160J-7BLI">
+      <description>SDRAM Memory IC 256Mb (16M x 16) Parallel 143MHz 5.4ns 54-TFBGA (8x8)</description>
+      <docs>http://www.issi.com/WW/pdf/42-45S83200J-16160J.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS42S16160J-7BLI</field>
+        <field name="Footprint">SLJ_BGA:TFBGA-54</field>
+        <field name="MF">ISSI, Integrated Silicon Solution Inc</field>
+        <field name="PN">IS42S16160J-7BLI</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="VSS" type="power_in"/>
+        <pin num="A2" name="DQ15" type="BiDi"/>
+        <pin num="A3" name="VSSQ" type="power_in"/>
+        <pin num="A7" name="VDDQ" type="power_in"/>
+        <pin num="A8" name="DQ0" type="BiDi"/>
+        <pin num="A9" name="VDD" type="power_in"/>
+        <pin num="B1" name="DQ14" type="BiDi"/>
+        <pin num="B2" name="DQ13" type="BiDi"/>
+        <pin num="B3" name="VDDQ" type="power_in"/>
+        <pin num="B7" name="VSSQ" type="power_in"/>
+        <pin num="B8" name="DQ2" type="BiDi"/>
+        <pin num="B9" name="DQ1" type="BiDi"/>
+        <pin num="C1" name="DQ12" type="BiDi"/>
+        <pin num="C2" name="DQ11" type="BiDi"/>
+        <pin num="C3" name="VSSQ" type="power_in"/>
+        <pin num="C7" name="VDDQ" type="power_in"/>
+        <pin num="C8" name="DQ4" type="BiDi"/>
+        <pin num="C9" name="DQ3" type="BiDi"/>
+        <pin num="D1" name="DQ10" type="BiDi"/>
+        <pin num="D2" name="DQ9" type="BiDi"/>
+        <pin num="D3" name="VDDQ" type="power_in"/>
+        <pin num="D7" name="VSSQ" type="power_in"/>
+        <pin num="D8" name="DQ6" type="BiDi"/>
+        <pin num="D9" name="DQ5" type="BiDi"/>
+        <pin num="E1" name="DQ8" type="BiDi"/>
+        <pin num="E2" name="NC" type="NotConnected"/>
+        <pin num="E3" name="VSS" type="power_in"/>
+        <pin num="E7" name="VDD" type="power_in"/>
+        <pin num="E8" name="DQML" type="input"/>
+        <pin num="E9" name="DQ7" type="BiDi"/>
+        <pin num="F1" name="DQMH" type="input"/>
+        <pin num="F2" name="CLK" type="input"/>
+        <pin num="F3" name="CKE" type="input"/>
+        <pin num="F7" name="CAS_L" type="input"/>
+        <pin num="F8" name="RAS_L" type="input"/>
+        <pin num="F9" name="WE_L" type="input"/>
+        <pin num="G1" name="A12" type="input"/>
+        <pin num="G2" name="A11" type="input"/>
+        <pin num="G3" name="A9" type="input"/>
+        <pin num="G7" name="BA0" type="input"/>
+        <pin num="G8" name="BA1" type="input"/>
+        <pin num="G9" name="CS_L" type="input"/>
+        <pin num="H1" name="A8" type="input"/>
+        <pin num="H2" name="A7" type="input"/>
+        <pin num="H3" name="A6" type="input"/>
+        <pin num="H7" name="A0" type="input"/>
+        <pin num="H8" name="A1" type="input"/>
+        <pin num="H9" name="A10" type="input"/>
+        <pin num="J1" name="VSS" type="power_in"/>
+        <pin num="J2" name="A5" type="input"/>
+        <pin num="J3" name="A4" type="input"/>
+        <pin num="J7" name="A3" type="input"/>
+        <pin num="J8" name="A2" type="input"/>
+        <pin num="J9" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Memory" part="S25FL256LAG">
+      <description>FLASH - NOR Memory IC 256Mb (32M x 8) SPI - Quad I/O, QPI 133MHz 24-BGA (6x8) DUAL FOOTPRINT SYMBOL</description>
+      <docs>https://www.cypress.com/file/316171/download</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">S25FL256LAG</field>
+        <field name="Footprint">SLJ_BGA:BGA24C100P6X4_800X600X120N</field>
+        <field name="MF">Cypress Semiconductor Corp</field>
+        <field name="PN">S25FL256LAGBHV030</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="NC" type="NotConnected"/>
+        <pin num="A2" name="NC" type="NotConnected"/>
+        <pin num="A3" name="NC" type="NotConnected"/>
+        <pin num="A4" name="RESET_L" type="input"/>
+        <pin num="A5" name="NC" type="NotConnected"/>
+        <pin num="B1" name="NC" type="NotConnected"/>
+        <pin num="B2" name="SCK" type="input"/>
+        <pin num="B3" name="VSS" type="power_in"/>
+        <pin num="B4" name="VCC" type="power_in"/>
+        <pin num="B5" name="NC" type="NotConnected"/>
+        <pin num="C1" name="NC" type="NotConnected"/>
+        <pin num="C2" name="CS_L" type="input"/>
+        <pin num="C3" name="NC" type="NotConnected"/>
+        <pin num="C4" name="IO2/WP_L" type="input"/>
+        <pin num="C5" name="NC" type="NotConnected"/>
+        <pin num="D1" name="NC" type="NotConnected"/>
+        <pin num="D2" name="IO1/SO" type="input"/>
+        <pin num="D3" name="IO0/SI" type="input"/>
+        <pin num="D4" name="IO3/RESET_L" type="input"/>
+        <pin num="D5" name="NC" type="NotConnected"/>
+        <pin num="E1" name="NC" type="NotConnected"/>
+        <pin num="E2" name="NC" type="NotConnected"/>
+        <pin num="E3" name="NC" type="NotConnected"/>
+        <pin num="E4" name="NC" type="NotConnected"/>
+        <pin num="E5" name="NC" type="NotConnected"/>
+        <pin num="F1" name="NC" type="NotConnected"/>
+        <pin num="F2" name="NC" type="NotConnected"/>
+        <pin num="F3" name="NC" type="NotConnected"/>
+        <pin num="F4" name="NC" type="NotConnected"/>
+        <pin num="F5" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_OSC_CRYSTAL" part="ABM12W-25.0000MHZ-6-B1U-T3">
+      <description>25MHz ±10ppm Crystal 6pF 150 Ohms 4-SMD, No Lead</description>
+      <docs>https://abracon.com/Resonators/ABM12W.pdf</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">ABM12W-25.0000MHZ-6-B1U-T3</field>
+        <field name="Footprint">SLJ_Crystals_Osc:XTAL_ABM12W-24.0000MHZ-6-B1U-T3</field>
+        <field name="MF">Abracon LLC</field>
+        <field name="PN">ABM12W-25.0000MHZ-6-B1U-T3</field>
+        <field name="Frequency">25MHz</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_RF" part="A-1JB">
+      <description>U.FL (UMCC), AMC Connector Jack, Male Pin 50Ohm Surface Mount Solder</description>
+      <docs>https://www.amphenolrf.com/media/downloads/3960/CA-1JB.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">A-1JB</field>
+        <field name="Footprint">SLJ_Connectors:AMPHENOL_A-1JB</field>
+        <field name="MF">Amphenol RF Division</field>
+        <field name="PN">A-1JB</field>
+        <field name="Field8">Connector; RF; AMC; PCB Jack; Surface Mnt; 50 Ohm; Solder</field>
+      </fields>
+      <pins>
+        <pin num="GND1" name="GND" type="power_in"/>
+        <pin num="GND2" name="GND" type="power_out"/>
+        <pin num="OPTIONAL_GND" name="GND" type="power_in"/>
+        <pin num="SIGNAL" name="SIGNAL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_RF" part="SKYA21001">
+      <description>RF Switch IC Bluetooth, WLAN SPDT 3GHz 50Ohm SC-70-6</description>
+      <docs>https://www.mouser.com/datasheet/2/472/SKYA21001_202936H-1524709.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SKYA21001</field>
+        <field name="Footprint">SLJ_SMT:SOT-363_SC-70-6</field>
+        <field name="MF">Skyworks Solutions Inc.</field>
+        <field name="PN">SKYA21001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="J3" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="J2" type="passive"/>
+        <pin num="4" name="V1" type="passive"/>
+        <pin num="5" name="J1" type="passive"/>
+        <pin num="6" name="V2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_RF" part="W3008">
+      <description>2.4GHz Bluetooth Chip RF Antenna 2.4GHz ~ 2.483GHz 1.7dBi Solder Surface Mount</description>
+      <docs>https://source.z2data.com/2019/5/5/2/28/32/733/W3008.pdf</docs>
+      <fields>
+        <field name="Reference">ANT</field>
+        <field name="Value">W3008</field>
+        <field name="Footprint">SLJ_SMT:ANTENNA_W3008</field>
+        <field name="MF">PulseLarsen Antennas</field>
+        <field name="Field5">553-1530-1-ND</field>
+        <field name="PN">W3008</field>
+        <field name="Field7">W3008</field>
+        <field name="Field8">https://www.digikey.com/product-detail/en/pulselarsen-antennas/W3008/553-1530-1-ND/2362934?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol</field>
+      </fields>
+      <pins>
+        <pin num="FEED" name="FEED" type="passive"/>
+        <pin num="G1" name="GND" type="passive"/>
+        <pin num="G2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Resistor_0201" part="R_10K_1%_0201">
+      <aliases>
+        <alias>20K_copy1</alias>
+      </aliases>
+      <description>20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_10K_1%_0201</field>
+        <field name="Footprint">Resistors_SMD:R_0201</field>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0710KL</field>
+        <field name="Res_value">10K</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Resistor_0201" part="R_20K_1%_0201">
+      <aliases>
+        <alias>20K</alias>
+      </aliases>
+      <description>20 kOhms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Moisture Resistant Thick Film</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_20K_1%_0201</field>
+        <field name="Footprint">Resistors_SMD:R_0201</field>
+        <field name="MF">Yageo</field>
+        <field name="PN">RC0201FR-0720KL</field>
+        <field name="Res_value">20K</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SLJ_Resistor_0201" part="R_499_1%_0201">
+      <aliases>
+        <alias>20K_copy</alias>
+      </aliases>
+      <description>499 Ohms ±1% 0.05W, 1/20W Chip Resistor 0201 (0603 Metric) Automotive AEC-Q200 Thick Film</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_499_1%_0201</field>
+        <field name="Footprint">Resistors_SMD:R_0201</field>
+        <field name="MF">Panasonic Electronic Components</field>
+        <field name="PN">ERJ-1GNF4990C</field>
+        <field name="Res_value">499</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MCU_ST_STM32F7">
+      <uri>/Library/Application Support/kicad/library/MCU_ST_STM32F7.lib</uri>
+    </library>
+    <library logical="SLJ_Capacitor_0201">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_Capacitor_0201.lib</uri>
+    </library>
+    <library logical="SLJ_MCU">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_MCU.lib</uri>
+    </library>
+    <library logical="SLJ_Mechanical">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_Mechanical.lib</uri>
+    </library>
+    <library logical="SLJ_Memory">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_Memory.lib</uri>
+    </library>
+    <library logical="SLJ_OSC_CRYSTAL">
+      <uri>/Users/sheldon/SLJ_OSC_CRYSTAL.lib</uri>
+    </library>
+    <library logical="SLJ_RF">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_RF.lib</uri>
+    </library>
+    <library logical="SLJ_Resistor_0201">
+      <uri>/Users/sheldon/Libraries_Kicad/SLJ_Resistor_0201.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/RAM.CLK">
+      <node ref="U2" pin="F2"/>
+      <node ref="U1" pin="H14"/>
+    </net>
+    <net code="2" name="/RAM.CKE_L">
+      <node ref="U1" pin="F4"/>
+      <node ref="U2" pin="F3"/>
+    </net>
+    <net code="3" name="/RAM_CAS_L">
+      <node ref="U2" pin="F7"/>
+      <node ref="U1" pin="B7"/>
+    </net>
+    <net code="4" name="/RAM.CS_L">
+      <node ref="U2" pin="G9"/>
+      <node ref="U1" pin="G4"/>
+    </net>
+    <net code="5" name="/RAM.WE_L">
+      <node ref="U1" pin="J4"/>
+      <node ref="U2" pin="F9"/>
+    </net>
+    <net code="6" name="/QUAD_SPI.SCK">
+      <node ref="U3" pin="B2"/>
+      <node ref="U1" pin="M6"/>
+    </net>
+    <net code="7" name="/QUAD_SPI.CS_L">
+      <node ref="U3" pin="C2"/>
+      <node ref="U1" pin="R12"/>
+    </net>
+    <net code="8" name="/RAM.DQMH">
+      <node ref="U2" pin="F1"/>
+      <node ref="U1" pin="A3"/>
+    </net>
+    <net code="9" name="/RAM.DQML">
+      <node ref="U1" pin="A4"/>
+      <node ref="U2" pin="E8"/>
+    </net>
+    <net code="10" name="/ESP_32_SPI2_CLK">
+      <node ref="U1" pin="D11"/>
+      <node ref="U4" pin="35"/>
+    </net>
+    <net code="11" name="/ESP32_SPI2_MOSI">
+      <node ref="U1" pin="C13"/>
+      <node ref="U4" pin="36"/>
+    </net>
+    <net code="12" name="/ESP32_SPI2_MISO">
+      <node ref="U4" pin="38"/>
+      <node ref="U1" pin="C14"/>
+    </net>
+    <net code="13" name="/ESP32_SPI2_CS">
+      <node ref="U4" pin="34"/>
+      <node ref="U1" pin="E14"/>
+    </net>
+    <net code="14" name="/ESP32_RESET_L_PF7">
+      <node ref="R7" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U4" pin="9"/>
+      <node ref="U1" pin="K1"/>
+    </net>
+    <net code="15" name="/ESP32_BOOT_L_PI10">
+      <node ref="R2" pin="2"/>
+      <node ref="U4" pin="23"/>
+      <node ref="U1" pin="E3"/>
+    </net>
+    <net code="16" name="/ESP32_TX_UART5_RX">
+      <node ref="U1" pin="D12"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="17" name="/ESP32_RX_UART5_TX">
+      <node ref="U4" pin="40"/>
+      <node ref="U1" pin="P13"/>
+    </net>
+    <net code="18" name="/PB15_USART1_RX">
+      <node ref="U1" pin="R15"/>
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="19" name="/PB14_USART1_TX">
+      <node ref="U1" pin="R14"/>
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="20" name="/PG3">
+      <node ref="J2" pin="17"/>
+      <node ref="U1" pin="K15"/>
+    </net>
+    <net code="21" name="/PE3">
+      <node ref="J2" pin="56"/>
+      <node ref="U1" pin="A1"/>
+    </net>
+    <net code="22" name="/PB8_CAN1_RX">
+      <node ref="J2" pin="53"/>
+      <node ref="U1" pin="A5"/>
+    </net>
+    <net code="23" name="/PB9_CAN1_TX">
+      <node ref="U1" pin="B4"/>
+      <node ref="J2" pin="55"/>
+    </net>
+    <net code="24" name="/RAM.RAS_L">
+      <node ref="U1" pin="R6"/>
+      <node ref="U2" pin="F8"/>
+    </net>
+    <net code="25" name="GND">
+      <node ref="U1" pin="J7"/>
+      <node ref="U1" pin="J8"/>
+      <node ref="U1" pin="J9"/>
+      <node ref="U1" pin="K10"/>
+      <node ref="U1" pin="K6"/>
+      <node ref="U1" pin="K7"/>
+      <node ref="U1" pin="K8"/>
+      <node ref="U1" pin="K9"/>
+      <node ref="J2" pin="3"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="M8"/>
+      <node ref="J2" pin="32"/>
+      <node ref="U1" pin="M9"/>
+      <node ref="J2" pin="35"/>
+      <node ref="J2" pin="38"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="M1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U2" pin="B7"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U1" pin="J10"/>
+      <node ref="J2" pin="5"/>
+      <node ref="J2" pin="50"/>
+      <node ref="U2" pin="C3"/>
+      <node ref="U1" pin="H9"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="H7"/>
+      <node ref="U2" pin="D7"/>
+      <node ref="J2" pin="18"/>
+      <node ref="U1" pin="H6"/>
+      <node ref="U1" pin="H12"/>
+      <node ref="U1" pin="H10"/>
+      <node ref="J2" pin="6"/>
+      <node ref="U1" pin="G9"/>
+      <node ref="U1" pin="G8"/>
+      <node ref="J2" pin="62"/>
+      <node ref="U1" pin="G7"/>
+      <node ref="U1" pin="G6"/>
+      <node ref="U2" pin="E3"/>
+      <node ref="J2" pin="69"/>
+      <node ref="U1" pin="G2"/>
+      <node ref="U1" pin="G12"/>
+      <node ref="U1" pin="G10"/>
+      <node ref="U1" pin="F9"/>
+      <node ref="U1" pin="F8"/>
+      <node ref="J2" pin="78"/>
+      <node ref="J2" pin="79"/>
+      <node ref="J2" pin="8"/>
+      <node ref="U2" pin="J1"/>
+      <node ref="U1" pin="F7"/>
+      <node ref="U1" pin="F6"/>
+      <node ref="U1" pin="F2"/>
+      <node ref="U1" pin="F12"/>
+      <node ref="U1" pin="F10"/>
+      <node ref="U1" pin="D9"/>
+      <node ref="U1" pin="D8"/>
+      <node ref="U1" pin="D7"/>
+      <node ref="U1" pin="D5"/>
+      <node ref="U1" pin="N1"/>
+      <node ref="U1" pin="H8"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U2" pin="A3"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U1" pin="L4"/>
+      <node ref="U4" pin="49"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U2" pin="A1"/>
+      <node ref="U3" pin="B3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="Y1" pin="4"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="U1" pin="J6"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="ANT1" pin="G2"/>
+      <node ref="ANT1" pin="G1"/>
+      <node ref="J1" pin="OPTIONAL_GND"/>
+      <node ref="J1" pin="GND2"/>
+      <node ref="J1" pin="GND1"/>
+    </net>
+    <net code="26" name="/PC9_TIM8CH4">
+      <node ref="U1" pin="F14"/>
+      <node ref="J2" pin="25"/>
+    </net>
+    <net code="27" name="/VBAT">
+      <node ref="U1" pin="C1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="J2" pin="57"/>
+    </net>
+    <net code="28" name="/VREF">
+      <node ref="C15" pin="1"/>
+      <node ref="U1" pin="P1"/>
+      <node ref="J2" pin="64"/>
+    </net>
+    <net code="29" name="/PA4_DAC_OUT1">
+      <node ref="U1" pin="N4"/>
+      <node ref="J2" pin="73"/>
+    </net>
+    <net code="30" name="/PA5_DAC_OUT2">
+      <node ref="U1" pin="P4"/>
+      <node ref="J2" pin="74"/>
+    </net>
+    <net code="31" name="/PA3_ADC1_IN3">
+      <node ref="J2" pin="67"/>
+      <node ref="U1" pin="R2"/>
+    </net>
+    <net code="32" name="/PA7_ADC1_IN7">
+      <node ref="J2" pin="72"/>
+      <node ref="U1" pin="R3"/>
+    </net>
+    <net code="33" name="/PC0_ADC1_IN10">
+      <node ref="U1" pin="M2"/>
+      <node ref="J2" pin="61"/>
+    </net>
+    <net code="34" name="/PC1_ADC1_IN11">
+      <node ref="J2" pin="60"/>
+      <node ref="U1" pin="M3"/>
+    </net>
+    <net code="35" name="/PC10_SPI3_SCK">
+      <node ref="U1" pin="B14"/>
+      <node ref="J2" pin="28"/>
+    </net>
+    <net code="36" name="/PB5_SPI3_MOSI">
+      <node ref="U1" pin="A6"/>
+      <node ref="J2" pin="49"/>
+    </net>
+    <net code="37" name="/PC11_SPI3_MISO">
+      <node ref="U1" pin="B13"/>
+      <node ref="J2" pin="31"/>
+    </net>
+    <net code="38" name="/PI9_UART4_RX">
+      <node ref="U1" pin="D3"/>
+      <node ref="J2" pin="58"/>
+    </net>
+    <net code="39" name="/PH13_UART4_TX">
+      <node ref="U1" pin="E12"/>
+      <node ref="J2" pin="27"/>
+    </net>
+    <net code="40" name="/PC6_TIM3CH1">
+      <node ref="U1" pin="H15"/>
+      <node ref="J2" pin="20"/>
+    </net>
+    <net code="41" name="/PC7_TIM3CH2">
+      <node ref="J2" pin="21"/>
+      <node ref="U1" pin="G15"/>
+    </net>
+    <net code="42" name="/PB0_TIM3CH3">
+      <node ref="U1" pin="R5"/>
+      <node ref="J2" pin="77"/>
+    </net>
+    <net code="43" name="/PB1_TIM3CH4">
+      <node ref="U1" pin="R4"/>
+      <node ref="J2" pin="75"/>
+    </net>
+    <net code="44" name="/PH10_TIM5CH1">
+      <node ref="U1" pin="L13"/>
+      <node ref="J2" pin="16"/>
+    </net>
+    <net code="45" name="/RESET_L">
+      <node ref="J2" pin="59"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U1" pin="J1"/>
+    </net>
+    <net code="46" name="/PB6_I2C1_SCL">
+      <node ref="J2" pin="52"/>
+      <node ref="U1" pin="B6"/>
+    </net>
+    <net code="47" name="/PB7_I2C1_SDA">
+      <node ref="J2" pin="54"/>
+      <node ref="U1" pin="B5"/>
+    </net>
+    <net code="48" name="/PA0">
+      <node ref="U1" pin="N3"/>
+      <node ref="J2" pin="66"/>
+    </net>
+    <net code="49" name="/PA1">
+      <node ref="U1" pin="N2"/>
+      <node ref="J2" pin="63"/>
+    </net>
+    <net code="50" name="/PA2">
+      <node ref="U1" pin="P2"/>
+      <node ref="J2" pin="71"/>
+    </net>
+    <net code="51" name="/PA9">
+      <node ref="U1" pin="E15"/>
+      <node ref="J2" pin="24"/>
+    </net>
+    <net code="52" name="/PA10">
+      <node ref="J2" pin="26"/>
+      <node ref="U1" pin="D15"/>
+    </net>
+    <net code="53" name="/USB_D_N">
+      <node ref="J2" pin="33"/>
+      <node ref="U1" pin="C15"/>
+    </net>
+    <net code="54" name="/USB_D_P">
+      <node ref="J2" pin="34"/>
+      <node ref="U1" pin="B15"/>
+    </net>
+    <net code="55" name="/PA13_SWDIO">
+      <node ref="U1" pin="A15"/>
+      <node ref="J2" pin="29"/>
+    </net>
+    <net code="56" name="/PA14_SWCLK">
+      <node ref="U1" pin="A14"/>
+      <node ref="J2" pin="30"/>
+    </net>
+    <net code="57" name="/PA15">
+      <node ref="U1" pin="A13"/>
+      <node ref="J2" pin="36"/>
+    </net>
+    <net code="58" name="/PC4">
+      <node ref="U1" pin="N5"/>
+      <node ref="J2" pin="70"/>
+    </net>
+    <net code="59" name="/PC5">
+      <node ref="U1" pin="P5"/>
+      <node ref="J2" pin="76"/>
+    </net>
+    <net code="60" name="/PC8_TIM8CH1">
+      <node ref="J2" pin="23"/>
+      <node ref="U1" pin="G14"/>
+    </net>
+    <net code="61" name="/PG11">
+      <node ref="J2" pin="46"/>
+      <node ref="U1" pin="B9"/>
+    </net>
+    <net code="62" name="/PG13">
+      <node ref="J2" pin="47"/>
+      <node ref="U1" pin="A8"/>
+    </net>
+    <net code="63" name="/PG14">
+      <node ref="U1" pin="A7"/>
+      <node ref="J2" pin="48"/>
+    </net>
+    <net code="64" name="/PC2_OTG_FS_OC">
+      <node ref="U1" pin="M4"/>
+      <node ref="J2" pin="65"/>
+    </net>
+    <net code="65" name="/PH12_OTG_FS_PWRON">
+      <node ref="U1" pin="K12"/>
+      <node ref="J2" pin="22"/>
+    </net>
+    <net code="66" name="/PB11_I2C2_SDA">
+      <node ref="U1" pin="R13"/>
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="67" name="/PD5">
+      <node ref="U1" pin="C11"/>
+      <node ref="J2" pin="37"/>
+    </net>
+    <net code="68" name="/PB3">
+      <node ref="J2" pin="43"/>
+      <node ref="U1" pin="A10"/>
+    </net>
+    <net code="69" name="/PB4">
+      <node ref="J2" pin="44"/>
+      <node ref="U1" pin="A9"/>
+    </net>
+    <net code="70" name="/PG9">
+      <node ref="J2" pin="41"/>
+      <node ref="U1" pin="C10"/>
+    </net>
+    <net code="71" name="/PG10">
+      <node ref="U1" pin="B10"/>
+      <node ref="J2" pin="42"/>
+    </net>
+    <net code="72" name="/PD6">
+      <node ref="U1" pin="B11"/>
+      <node ref="J2" pin="39"/>
+    </net>
+    <net code="73" name="/PD7">
+      <node ref="U1" pin="A11"/>
+      <node ref="J2" pin="40"/>
+    </net>
+    <net code="74" name="/ESP32_MTDO">
+      <node ref="J2" pin="15"/>
+      <node ref="U4" pin="21"/>
+    </net>
+    <net code="75" name="/ESP32_MTCK">
+      <node ref="J2" pin="14"/>
+      <node ref="U4" pin="20"/>
+    </net>
+    <net code="76" name="/ESP32_MTDI">
+      <node ref="U4" pin="18"/>
+      <node ref="J2" pin="13"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="77" name="/ESP32_MTMS">
+      <node ref="U4" pin="17"/>
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="78" name="+3V3">
+      <node ref="U1" pin="F3"/>
+      <node ref="C12" pin="1"/>
+      <node ref="U2" pin="A7"/>
+      <node ref="U2" pin="A9"/>
+      <node ref="U2" pin="B3"/>
+      <node ref="J2" pin="51"/>
+      <node ref="U2" pin="C7"/>
+      <node ref="U2" pin="D3"/>
+      <node ref="J2" pin="19"/>
+      <node ref="J2" pin="68"/>
+      <node ref="U2" pin="E7"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="J2" pin="9"/>
+      <node ref="U2" pin="J9"/>
+      <node ref="U1" pin="G13"/>
+      <node ref="U1" pin="G3"/>
+      <node ref="U1" pin="J12"/>
+      <node ref="U1" pin="J13"/>
+      <node ref="U1" pin="K4"/>
+      <node ref="U1" pin="N10"/>
+      <node ref="C30" pin="1"/>
+      <node ref="U1" pin="N8"/>
+      <node ref="C31" pin="1"/>
+      <node ref="U1" pin="N9"/>
+      <node ref="C29" pin="1"/>
+      <node ref="U1" pin="R1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="U1" pin="C8"/>
+      <node ref="U1" pin="H13"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U1" pin="C9"/>
+      <node ref="U4" pin="19"/>
+      <node ref="U4" pin="3"/>
+      <node ref="U4" pin="37"/>
+      <node ref="U4" pin="4"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="U4" pin="43"/>
+      <node ref="U4" pin="46"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U1" pin="C7"/>
+      <node ref="U1" pin="C5"/>
+      <node ref="U3" pin="B4"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="C23" pin="1"/>
+    </net>
+    <net code="79" name="/BOOT0">
+      <node ref="J2" pin="45"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="D6"/>
+    </net>
+    <net code="80" name="/ESP32/ESP32_ADC1_CH7">
+      <node ref="U4" pin="11"/>
+      <node ref="C17" pin="2"/>
+    </net>
+    <net code="81" name="/ESP32/GPIO27">
+      <node ref="U5" pin="6"/>
+      <node ref="U4" pin="16"/>
+      <node ref="C19" pin="1"/>
+    </net>
+    <net code="82" name="/ESP32/GPIO26">
+      <node ref="U4" pin="15"/>
+      <node ref="U5" pin="4"/>
+      <node ref="C20" pin="1"/>
+    </net>
+    <net code="83" name="Net-(U4-Pad39)">
+      <node ref="U4" pin="39"/>
+    </net>
+    <net code="86" name="Net-(U4-Pad22)">
+      <node ref="U4" pin="22"/>
+    </net>
+    <net code="87" name="Net-(U4-Pad24)">
+      <node ref="U4" pin="24"/>
+    </net>
+    <net code="88" name="Net-(U4-Pad25)">
+      <node ref="U4" pin="25"/>
+    </net>
+    <net code="89" name="Net-(U4-Pad27)">
+      <node ref="U4" pin="27"/>
+    </net>
+    <net code="90" name="Net-(U4-Pad42)">
+      <node ref="U4" pin="42"/>
+    </net>
+    <net code="91" name="Net-(U4-Pad14)">
+      <node ref="U4" pin="14"/>
+    </net>
+    <net code="92" name="Net-(U4-Pad13)">
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="93" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+    </net>
+    <net code="94" name="Net-(U4-Pad10)">
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="95" name="Net-(ANT1-PadFEED)">
+      <node ref="ANT1" pin="FEED"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C26" pin="1"/>
+    </net>
+    <net code="96" name="Net-(C27-Pad2)">
+      <node ref="J1" pin="SIGNAL"/>
+      <node ref="C27" pin="2"/>
+    </net>
+    <net code="97" name="Net-(C26-Pad2)">
+      <node ref="C26" pin="2"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="98" name="Net-(C27-Pad1)">
+      <node ref="C27" pin="1"/>
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="99" name="Net-(C24-Pad1)">
+      <node ref="C24" pin="1"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="100" name="Net-(U4-Pad8)">
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="101" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="102" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="103" name="Net-(U4-Pad5)">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="104" name="Net-(U4-Pad26)">
+      <node ref="U4" pin="26"/>
+    </net>
+    <net code="105" name="Net-(R1-Pad2)">
+      <node ref="U4" pin="41"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="106" name="Net-(U4-Pad32)">
+      <node ref="U4" pin="32"/>
+    </net>
+    <net code="107" name="Net-(U4-Pad33)">
+      <node ref="U4" pin="33"/>
+    </net>
+    <net code="108" name="Net-(U4-Pad28)">
+      <node ref="U4" pin="28"/>
+    </net>
+    <net code="109" name="Net-(U4-Pad29)">
+      <node ref="U4" pin="29"/>
+    </net>
+    <net code="110" name="Net-(U4-Pad30)">
+      <node ref="U4" pin="30"/>
+    </net>
+    <net code="111" name="Net-(U4-Pad31)">
+      <node ref="U4" pin="31"/>
+    </net>
+    <net code="112" name="/ESP32/LNA_50OHM">
+      <node ref="U4" pin="2"/>
+      <node ref="C24" pin="2"/>
+    </net>
+    <net code="113" name="Net-(U1-PadL12)">
+      <node ref="U1" pin="L12"/>
+    </net>
+    <net code="114" name="/STM32F7/I2C2_SCL">
+      <node ref="U1" pin="H4"/>
+    </net>
+    <net code="115" name="Net-(U1-PadE13)">
+      <node ref="U1" pin="E13"/>
+    </net>
+    <net code="116" name="Net-(U1-PadP3)">
+      <node ref="U1" pin="P3"/>
+    </net>
+    <net code="117" name="Net-(U1-PadF15)">
+      <node ref="U1" pin="F15"/>
+    </net>
+    <net code="118" name="/STM32F7/PDR_ON">
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="C6"/>
+    </net>
+    <net code="119" name="Net-(C13-Pad1)">
+      <node ref="U1" pin="M10"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="120" name="Net-(C14-Pad1)">
+      <node ref="U1" pin="F13"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="121" name="/STM32F7/OSC_IN_PH0">
+      <node ref="U1" pin="G1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="Y1" pin="1"/>
+    </net>
+    <net code="122" name="/STM32F7/OSC_OUT_PH1">
+      <node ref="Y1" pin="3"/>
+      <node ref="U1" pin="H1"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="123" name="Net-(U1-PadP12)">
+      <node ref="U1" pin="P12"/>
+    </net>
+    <net code="124" name="Net-(U1-PadD14)">
+      <node ref="U1" pin="D14"/>
+    </net>
+    <net code="125" name="Net-(U1-PadD4)">
+      <node ref="U1" pin="D4"/>
+    </net>
+    <net code="126" name="Net-(U1-PadC4)">
+      <node ref="U1" pin="C4"/>
+    </net>
+    <net code="127" name="Net-(U1-PadC3)">
+      <node ref="U1" pin="C3"/>
+    </net>
+    <net code="128" name="Net-(U1-PadC2)">
+      <node ref="U1" pin="C2"/>
+    </net>
+    <net code="129" name="Net-(U1-PadD2)">
+      <node ref="U1" pin="D2"/>
+    </net>
+    <net code="130" name="Net-(U1-PadE4)">
+      <node ref="U1" pin="E4"/>
+    </net>
+    <net code="131" name="Net-(U1-PadM11)">
+      <node ref="U1" pin="M11"/>
+    </net>
+    <net code="132" name="Net-(U1-PadN12)">
+      <node ref="U1" pin="N12"/>
+    </net>
+    <net code="133" name="Net-(U1-PadM12)">
+      <node ref="U1" pin="M12"/>
+    </net>
+    <net code="134" name="Net-(U1-PadM13)">
+      <node ref="U1" pin="M13"/>
+    </net>
+    <net code="135" name="Net-(U1-PadD13)">
+      <node ref="U1" pin="D13"/>
+    </net>
+    <net code="136" name="Net-(U1-PadJ15)">
+      <node ref="U1" pin="J15"/>
+    </net>
+    <net code="137" name="Net-(U1-PadJ14)">
+      <node ref="U1" pin="J14"/>
+    </net>
+    <net code="138" name="Net-(U1-PadB8)">
+      <node ref="U1" pin="B8"/>
+    </net>
+    <net code="139" name="Net-(U1-PadK2)">
+      <node ref="U1" pin="K2"/>
+    </net>
+    <net code="140" name="Net-(U1-PadL3)">
+      <node ref="U1" pin="L3"/>
+    </net>
+    <net code="141" name="Net-(U1-PadL2)">
+      <node ref="U1" pin="L2"/>
+    </net>
+    <net code="142" name="Net-(U1-PadL1)">
+      <node ref="U1" pin="L1"/>
+    </net>
+    <net code="143" name="Net-(U1-PadM5)">
+      <node ref="U1" pin="M5"/>
+    </net>
+    <net code="144" name="Net-(U1-PadA12)">
+      <node ref="U1" pin="A12"/>
+    </net>
+    <net code="145" name="Net-(U1-PadD1)">
+      <node ref="U1" pin="D1"/>
+    </net>
+    <net code="146" name="Net-(U1-PadE1)">
+      <node ref="U1" pin="E1"/>
+    </net>
+    <net code="147" name="Net-(U1-PadF1)">
+      <node ref="U1" pin="F1"/>
+    </net>
+    <net code="148" name="Net-(U1-PadD10)">
+      <node ref="U1" pin="D10"/>
+    </net>
+    <net code="149" name="Net-(U1-PadB1)">
+      <node ref="U1" pin="B1"/>
+    </net>
+    <net code="150" name="Net-(U1-PadB2)">
+      <node ref="U1" pin="B2"/>
+    </net>
+    <net code="151" name="Net-(U1-PadB3)">
+      <node ref="U1" pin="B3"/>
+    </net>
+    <net code="152" name="Net-(U3-PadA4)">
+      <node ref="U3" pin="A4"/>
+    </net>
+    <net code="153" name="Net-(U3-PadF5)">
+      <node ref="U3" pin="F5"/>
+    </net>
+    <net code="154" name="Net-(U3-PadF4)">
+      <node ref="U3" pin="F4"/>
+    </net>
+    <net code="155" name="Net-(U3-PadF3)">
+      <node ref="U3" pin="F3"/>
+    </net>
+    <net code="156" name="Net-(U3-PadF2)">
+      <node ref="U3" pin="F2"/>
+    </net>
+    <net code="157" name="Net-(U3-PadF1)">
+      <node ref="U3" pin="F1"/>
+    </net>
+    <net code="158" name="Net-(U3-PadE5)">
+      <node ref="U3" pin="E5"/>
+    </net>
+    <net code="159" name="Net-(U3-PadE4)">
+      <node ref="U3" pin="E4"/>
+    </net>
+    <net code="160" name="Net-(U3-PadE3)">
+      <node ref="U3" pin="E3"/>
+    </net>
+    <net code="161" name="Net-(U3-PadE2)">
+      <node ref="U3" pin="E2"/>
+    </net>
+    <net code="162" name="Net-(U3-PadE1)">
+      <node ref="U3" pin="E1"/>
+    </net>
+    <net code="163" name="Net-(U3-PadD5)">
+      <node ref="U3" pin="D5"/>
+    </net>
+    <net code="164" name="Net-(U3-PadD1)">
+      <node ref="U3" pin="D1"/>
+    </net>
+    <net code="165" name="Net-(U3-PadC5)">
+      <node ref="U3" pin="C5"/>
+    </net>
+    <net code="166" name="Net-(U3-PadC3)">
+      <node ref="U3" pin="C3"/>
+    </net>
+    <net code="167" name="Net-(U3-PadC1)">
+      <node ref="U3" pin="C1"/>
+    </net>
+    <net code="168" name="Net-(U3-PadB5)">
+      <node ref="U3" pin="B5"/>
+    </net>
+    <net code="169" name="Net-(U3-PadB1)">
+      <node ref="U3" pin="B1"/>
+    </net>
+    <net code="170" name="Net-(U3-PadA5)">
+      <node ref="U3" pin="A5"/>
+    </net>
+    <net code="171" name="Net-(U3-PadA3)">
+      <node ref="U3" pin="A3"/>
+    </net>
+    <net code="172" name="Net-(U3-PadA2)">
+      <node ref="U3" pin="A2"/>
+    </net>
+    <net code="173" name="Net-(U3-PadA1)">
+      <node ref="U3" pin="A1"/>
+    </net>
+    <net code="174" name="/STM32F7/RAM.A0">
+      <node ref="U2" pin="H7"/>
+      <node ref="U1" pin="E2"/>
+    </net>
+    <net code="175" name="/STM32F7/RAM.A1">
+      <node ref="U2" pin="H8"/>
+      <node ref="U1" pin="H3"/>
+    </net>
+    <net code="176" name="/STM32F7/RAM.A2">
+      <node ref="U2" pin="J8"/>
+      <node ref="U1" pin="H2"/>
+    </net>
+    <net code="177" name="/STM32F7/RAM.A3">
+      <node ref="U2" pin="J7"/>
+      <node ref="U1" pin="J2"/>
+    </net>
+    <net code="178" name="/STM32F7/RAM.A4">
+      <node ref="U1" pin="J3"/>
+      <node ref="U2" pin="J3"/>
+    </net>
+    <net code="179" name="/STM32F7/RAM.A5">
+      <node ref="U2" pin="J2"/>
+      <node ref="U1" pin="K3"/>
+    </net>
+    <net code="180" name="/STM32F7/RAM.A6">
+      <node ref="U1" pin="P6"/>
+      <node ref="U2" pin="H3"/>
+    </net>
+    <net code="181" name="/STM32F7/RAM.A7">
+      <node ref="U2" pin="H2"/>
+      <node ref="U1" pin="N6"/>
+    </net>
+    <net code="182" name="/STM32F7/RAM.A8">
+      <node ref="U2" pin="H1"/>
+      <node ref="U1" pin="R7"/>
+    </net>
+    <net code="183" name="/STM32F7/RAM.A9">
+      <node ref="U2" pin="G3"/>
+      <node ref="U1" pin="P7"/>
+    </net>
+    <net code="184" name="/STM32F7/RAM.A10">
+      <node ref="U1" pin="N7"/>
+      <node ref="U2" pin="H9"/>
+    </net>
+    <net code="185" name="/STM32F7/RAM.A11">
+      <node ref="U1" pin="M7"/>
+      <node ref="U2" pin="G2"/>
+    </net>
+    <net code="186" name="/STM32F7/RAM.A12">
+      <node ref="U2" pin="G1"/>
+      <node ref="U1" pin="L15"/>
+    </net>
+    <net code="187" name="/memory/RAM.A13">
+      <node ref="U2" pin="E2"/>
+    </net>
+    <net code="188" name="/STM32F7/RAM.A14">
+      <node ref="U2" pin="G7"/>
+      <node ref="U1" pin="K14"/>
+    </net>
+    <net code="189" name="/STM32F7/RAM.A15">
+      <node ref="U2" pin="G8"/>
+      <node ref="U1" pin="K13"/>
+    </net>
+    <net code="190" name="/STM32F7/QUAD_SPI.IO0">
+      <node ref="U1" pin="N14"/>
+      <node ref="U3" pin="D3"/>
+    </net>
+    <net code="191" name="/STM32F7/QUAD_SPI.IO1">
+      <node ref="U1" pin="N13"/>
+      <node ref="U3" pin="D2"/>
+    </net>
+    <net code="192" name="/STM32F7/QUAD_SPI.IO2">
+      <node ref="U1" pin="A2"/>
+      <node ref="U3" pin="C4"/>
+    </net>
+    <net code="193" name="/STM32F7/QUAD_SPI.IO3">
+      <node ref="U1" pin="M15"/>
+      <node ref="U3" pin="D4"/>
+    </net>
+    <net code="194" name="/STM32F7/RAM.DQ0">
+      <node ref="U1" pin="M14"/>
+      <node ref="U2" pin="A8"/>
+    </net>
+    <net code="195" name="/STM32F7/RAM.DQ1">
+      <node ref="U1" pin="L14"/>
+      <node ref="U2" pin="B9"/>
+    </net>
+    <net code="196" name="/STM32F7/RAM.DQ2">
+      <node ref="U2" pin="B8"/>
+      <node ref="U1" pin="B12"/>
+    </net>
+    <net code="197" name="/STM32F7/RAM.DQ3">
+      <node ref="U1" pin="C12"/>
+      <node ref="U2" pin="C9"/>
+    </net>
+    <net code="198" name="/STM32F7/RAM.DQ4">
+      <node ref="U1" pin="R8"/>
+      <node ref="U2" pin="C8"/>
+    </net>
+    <net code="199" name="/STM32F7/RAM.DQ5">
+      <node ref="U2" pin="D9"/>
+      <node ref="U1" pin="P8"/>
+    </net>
+    <net code="200" name="/STM32F7/RAM.DQ6">
+      <node ref="U2" pin="D8"/>
+      <node ref="U1" pin="P9"/>
+    </net>
+    <net code="201" name="/STM32F7/RAM.DQ7">
+      <node ref="U1" pin="R9"/>
+      <node ref="U2" pin="E9"/>
+    </net>
+    <net code="202" name="/STM32F7/RAM.DQ8">
+      <node ref="U2" pin="E1"/>
+      <node ref="U1" pin="P10"/>
+    </net>
+    <net code="203" name="/STM32F7/RAM.DQ9">
+      <node ref="U2" pin="D2"/>
+      <node ref="U1" pin="R10"/>
+    </net>
+    <net code="204" name="/STM32F7/RAM.DQ10">
+      <node ref="U1" pin="N11"/>
+      <node ref="U2" pin="D1"/>
+    </net>
+    <net code="205" name="/STM32F7/RAM.DQ11">
+      <node ref="U1" pin="P11"/>
+      <node ref="U2" pin="C2"/>
+    </net>
+    <net code="206" name="/STM32F7/RAM.DQ12">
+      <node ref="U2" pin="C1"/>
+      <node ref="U1" pin="R11"/>
+    </net>
+    <net code="207" name="/STM32F7/RAM.DQ13">
+      <node ref="U1" pin="P15"/>
+      <node ref="U2" pin="B2"/>
+    </net>
+    <net code="208" name="/STM32F7/RAM.DQ14">
+      <node ref="U1" pin="P14"/>
+      <node ref="U2" pin="B1"/>
+    </net>
+    <net code="209" name="/STM32F7/RAM.DQ15">
+      <node ref="U2" pin="A2"/>
+      <node ref="U1" pin="N15"/>
+    </net>
+  </nets>
+</export>
