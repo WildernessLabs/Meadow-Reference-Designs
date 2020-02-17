@@ -3,14 +3,20 @@ EELAYER 30 0
 EELAYER END
 $Descr D 34000 22000
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "F7 Micro Embed Breakout"
 Date "2020-01-26"
 Rev "A"
-Comp "Wilderness Labs"
+Comp ""
 Comment1 "S. Johnson"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 3400 3500 3600 3000
+U 5E498E5A
+F0 "5V to 3V3 SWITCHER" 50
+F1 "5TO3V3BUCK.sch" 50
+$EndSheet
 $EndSCHEMATC
