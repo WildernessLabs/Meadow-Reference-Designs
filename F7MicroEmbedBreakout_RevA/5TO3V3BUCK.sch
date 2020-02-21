@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SLJ_POWER:NCP1597A U?
+L F7MicroEmbedBreakout_RevA-rescue:NCP1597A-SLJ_POWER U?
 U 1 1 5E499ED1
 P 7700 4850
 F 0 "U?" H 7700 5175 50  0000 C CNN
@@ -29,7 +29,7 @@ $EndComp
 Wire Wire Line
 	7200 4750 6900 4750
 $Comp
-L SLJ_INDUCTOR:L_3.3uH_2.4A_SMT_4x4 L?
+L F7MicroEmbedBreakout_RevA-rescue:L_3.3uH_2.4A_SMT_4x4-SLJ_INDUCTOR L?
 U 1 1 5E49FF50
 P 8950 4750
 F 0 "L?" V 8769 4750 50  0000 C CNN
@@ -74,7 +74,7 @@ Text HLabel 4900 4750 0    50   Input ~ 0
 Text HLabel 10700 4750 2    50   Output ~ 0
 3V3_OUT
 $Comp
-L SLJ_Resistor_0402:R_8K06_1%_0402 R?
+L F7MicroEmbedBreakout_RevA-rescue:R_8K06_1%_0402-SLJ_Resistor_0402 R?
 U 1 1 5E49E32A
 P 9500 5450
 F 0 "R?" H 9568 5546 50  0000 L CNN
@@ -90,7 +90,7 @@ F 8 "RMCF0402FT8K06" H 9500 5450 50  0001 C CNN "PN2"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SLJ_Resistor_0402:R_24K9_1%_0402 R?
+L F7MicroEmbedBreakout_RevA-rescue:R_24K9_1%_0402-SLJ_Resistor_0402 R?
 U 1 1 5E4A0422
 P 9500 5050
 F 0 "R?" H 9568 5146 50  0000 L CNN
@@ -151,7 +151,7 @@ Connection ~ 10550 4750
 Wire Wire Line
 	10550 4750 10700 4750
 $Comp
-L SLJ_Capacitors_0603:C_0603_22UF_10V_X5R C?
+L F7MicroEmbedBreakout_RevA-rescue:C_0603_22UF_10V_X5R-SLJ_Capacitors_0603 C?
 U 1 1 5E4A46C9
 P 6200 5350
 F 0 "C?" H 6315 5537 50  0000 L CNN
@@ -177,7 +177,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 4850 6650 4850
 $Comp
-L SLJ_Capacitors_0603:C_0603_22UF_10V_X5R C?
+L F7MicroEmbedBreakout_RevA-rescue:C_0603_22UF_10V_X5R-SLJ_Capacitors_0603 C?
 U 1 1 5E4A5587
 P 10100 5300
 F 0 "C?" H 10215 5487 50  0000 L CNN
@@ -196,7 +196,7 @@ F 11 "0603" H 10215 5214 50  0000 L CNN "Size"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SLJ_Capacitors_0603:C_0603_22UF_10V_X5R C?
+L F7MicroEmbedBreakout_RevA-rescue:C_0603_22UF_10V_X5R-SLJ_Capacitors_0603 C?
 U 1 1 5E4A601E
 P 10550 5300
 F 0 "C?" H 10665 5487 50  0000 L CNN
@@ -215,7 +215,7 @@ F 11 "0603" H 10665 5214 50  0000 L CNN "Size"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SLJ_Capacitors_0603:C_0603_22UF_10V_X5R C?
+L F7MicroEmbedBreakout_RevA-rescue:C_0603_22UF_10V_X5R-SLJ_Capacitors_0603 C?
 U 1 1 5E4A69EA
 P 5800 5350
 F 0 "C?" H 5915 5537 50  0000 L CNN
@@ -234,9 +234,11 @@ F 11 "0603" H 5915 5264 50  0000 L CNN "Size"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SLJ_Capacitor_0402:C_0402_0.1UF_10V_X5R C?
+L F7MicroEmbedBreakout_RevA-rescue:C_0402_0.1UF_10V_X5R-SLJ_Capacitor_0402 C?
 U 1 1 5E4A84E0
 P 6650 5350
+AR Path="/5E4A84E0" Ref="C?"  Part="1" 
+AR Path="/5E498E5A/5E4A84E0" Ref="C?"  Part="1" 
 F 0 "C?" H 6765 5537 50  0000 L CNN
 F 1 "C_0402_0.1UF_10V_X5R" H 7050 4900 50  0001 L CNN
 F 2 "Capacitors_SMD:C_0402_1005Metric" H 6688 5250 50  0001 C CNN
@@ -282,7 +284,7 @@ Connection ~ 6900 4750
 Wire Wire Line
 	6900 4750 5050 4750
 $Comp
-L SLJ_Resistor_0402:R_10K_1%_0402 R?
+L F7MicroEmbedBreakout_RevA-rescue:R_10K_1%_0402-SLJ_Resistor_0402 R?
 U 1 1 5E4AC103
 P 5350 4950
 F 0 "R?" V 5450 5000 50  0000 C CNN
