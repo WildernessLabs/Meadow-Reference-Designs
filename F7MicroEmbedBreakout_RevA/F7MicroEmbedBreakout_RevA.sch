@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr D 34000 22000
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "F7 Micro Embed Breakout"
 Date "2020-01-26"
 Rev "A"
@@ -143,4 +143,10 @@ F 5 "ARJM11A3-009-AB-ER2-T" H 23650 4200 50  0001 C CNN "PN"
 	1    23650 5200
 	-1   0    0    -1  
 $EndComp
+$Sheet
+S 16400 1900 5950 7350
+U 5E56E770
+F0 "ENET_SWITCH_PHY" 50
+F1 "LAN9355_PHY_SWITCH.sch" 50
+$EndSheet
 $EndSCHEMATC
