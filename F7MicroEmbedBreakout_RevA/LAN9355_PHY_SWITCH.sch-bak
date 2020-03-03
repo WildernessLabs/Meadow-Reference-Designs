@@ -886,4 +886,136 @@ Wire Wire Line
 	9900 6650 10850 6650
 Text HLabel 10850 6650 2    50   Output ~ 0
 ENET_IRQ
+Wire Wire Line
+	9900 4950 10750 4950
+Wire Wire Line
+	9900 5050 10750 5050
+Wire Wire Line
+	9900 5150 10750 5150
+Wire Wire Line
+	9900 5250 10750 5250
+Wire Wire Line
+	9900 5550 10750 5550
+Wire Wire Line
+	9900 5650 10750 5650
+Wire Wire Line
+	9900 5750 10750 5750
+Wire Wire Line
+	9900 5850 10750 5850
+Text HLabel 10750 4950 2    50   Output ~ 0
+TX_A_N
+Text HLabel 10750 5050 2    50   Output ~ 0
+TX_A_P
+Text HLabel 10750 5750 2    50   Output ~ 0
+TX_B_P
+Text HLabel 10750 5850 2    50   Output ~ 0
+TX_B_N
+Text HLabel 10750 5150 2    50   Input ~ 0
+RX_A_N
+Text HLabel 10750 5250 2    50   Input ~ 0
+RX_A_P
+Text HLabel 10750 5550 2    50   Input ~ 0
+RX_B_P
+Text HLabel 10750 5650 2    50   Input ~ 0
+RX_B_N
+Wire Wire Line
+	9900 6350 10100 6350
+Wire Wire Line
+	10100 6350 10100 7750
+Connection ~ 10100 7750
+Wire Wire Line
+	6700 2750 5700 2750
+Text HLabel 5700 2750 0    50   Output ~ 0
+LED0
+Wire Wire Line
+	6700 2950 5700 2950
+Text HLabel 5700 2950 0    50   Output ~ 0
+LED2
+Wire Wire Line
+	6700 3050 5700 3050
+Text HLabel 5700 3050 0    50   Output ~ 0
+LED3
+Wire Wire Line
+	6700 3250 5700 3250
+Text HLabel 5700 3250 0    50   Output ~ 0
+LED5
+Wire Wire Line
+	6700 2850 5700 2850
+Text Label 6000 2850 0    50   ~ 0
+P1_INTPHY
+Wire Wire Line
+	6700 4950 5750 4950
+Wire Wire Line
+	6700 5050 5750 5050
+Wire Wire Line
+	6700 5150 5750 5150
+NoConn ~ 6700 4650
+Text HLabel 5750 4950 0    50   Output ~ 0
+RMII_P0_OUTD0
+Text HLabel 5750 5050 0    50   Output ~ 0
+RMII_P0_OUTD1
+Text Label 6100 4950 0    50   ~ 0
+P0_MODE1
+Text Label 6100 5050 0    50   ~ 0
+P0_MODE2
+Text Label 6100 5150 0    50   ~ 0
+P0_MODE3
+NoConn ~ 6700 5250
+Wire Wire Line
+	6700 4850 5750 4850
+Text Label 6100 4850 0    50   ~ 0
+P0_MODE0
+Text HLabel 5750 4850 0    50   BiDi ~ 0
+RMII_P0_REFCLK
+NoConn ~ 6700 4150
+NoConn ~ 6700 4050
+NoConn ~ 6700 6050
+NoConn ~ 6700 6150
+NoConn ~ 6700 6250
+NoConn ~ 6700 6350
+NoConn ~ 6700 5950
+NoConn ~ 6700 5850
+Wire Wire Line
+	6700 3850 5750 3850
+Wire Wire Line
+	6700 3950 5750 3950
+Text Label 5950 3850 0    50   ~ 0
+P0_MDC
+Text Label 5950 3950 0    50   ~ 0
+P0_MDIO
+Text HLabel 5750 3850 0    50   Input ~ 0
+MDC
+Text HLabel 5750 3950 0    50   BiDi ~ 0
+MDIO
+NoConn ~ 6700 5350
+NoConn ~ 6700 3750
+Wire Wire Line
+	6700 5450 5750 5450
+Text HLabel 5750 5450 0    50   Output ~ 0
+P0_CRSDV
+NoConn ~ 6700 3650
+Wire Wire Line
+	6700 4750 5750 4750
+Text HLabel 5750 4750 0    50   Input ~ 0
+P0_TX_EN
+NoConn ~ 6700 4550
+NoConn ~ 6700 4450
+Wire Wire Line
+	6700 4250 5750 4250
+Wire Wire Line
+	6700 4350 5750 4350
+Text HLabel 5750 4250 0    50   Input ~ 0
+RMII_P0_IND0
+Text HLabel 5750 4350 0    50   Input ~ 0
+RMII_P0_IND1
+NoConn ~ 6700 3350
+NoConn ~ 6700 3450
+Wire Wire Line
+	11950 950  11950 800 
+Wire Wire Line
+	11950 800  11900 800 
+Text HLabel 11900 800  0    50   UnSpc ~ 0
++3v3_TXRX2
+Text HLabel 11300 950  0    50   UnSpc ~ 0
++3v3_TXRX1
 $EndSCHEMATC
