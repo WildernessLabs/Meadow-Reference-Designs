@@ -1,4 +1,4 @@
-6276889815572
+9444136437572
 SLJ_SMT
 ANTENNA_W3008
 
@@ -21,9 +21,23 @@ inductor abracon smd shielded
 2
 2
 SLJ_SMT
+SC-70FL
+<b>Small Outline Transistor</b>
+
+0
+3
+3
+SLJ_SMT
 SOT-363_SC-70-6
 SOT-363, SC-70-6
 SOT-363 SC-70-6
 0
 6
 6
+SLJ_SMT
+SOT50P160X90-3N
+
+
+0
+3
+3
