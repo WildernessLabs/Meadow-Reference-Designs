@@ -1,4 +1,4 @@
-update=Sunday, January 26, 2020 at 12:36:03 PM
+update=Sunday, March 15, 2020 at 08:13:12 PM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=/Users/sheldon/Meadow-Reference-Designs/KiCAd_Libs/WildernessLab_pagelayout.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

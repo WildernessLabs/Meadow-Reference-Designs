@@ -307,5 +307,14 @@ Wire Wire Line
 Wire Wire Line
 	5050 4750 5050 4950
 Wire Wire Line
-	5550 4950 7200 4950
+	5550 4950 5650 4950
+Text HLabel 4700 5350 0    50   Input ~ 0
+3V3_EN
+Wire Wire Line
+	4700 5350 5650 5350
+Wire Wire Line
+	5650 5350 5650 4950
+Connection ~ 5650 4950
+Wire Wire Line
+	5650 4950 7200 4950
 $EndSCHEMATC
