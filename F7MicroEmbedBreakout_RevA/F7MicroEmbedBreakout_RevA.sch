@@ -2086,4 +2086,6 @@ Text Label 25100 13950 2    50   ~ 0
 PE3
 Text Label 25050 10750 2    50   ~ 0
 RESET_L
+Text Notes 25650 10250 0    150  ~ 0
+Meadow Micro Headers
 $EndSCHEMATC
