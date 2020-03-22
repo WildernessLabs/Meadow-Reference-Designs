@@ -1,43 +1,36 @@
-9444136437572
-SLJ_SMT
-ANTENNA_W3008
+7862666995325
+SLJ_Mechanical
+BOT_SILK_V1.C
 
 
 0
-3
-3
-SLJ_SMT
-C_0201
+0
+0
+SLJ_Mechanical
+MeadowEmbeded_OnModule
 
 
 0
-2
-2
-SLJ_SMT
-Inductor_Abracon_ASPI-4030
-smd shielded power inductor http://www.abracon.com/Magnetics/power/ASPI-3012S.pdf
-inductor abracon smd shielded
-0
-2
-2
-SLJ_SMT
-SC-70FL
-<b>Small Outline Transistor</b>
-
-0
-3
-3
-SLJ_SMT
-SOT-363_SC-70-6
-SOT-363, SC-70-6
-SOT-363 SC-70-6
-0
-6
-6
-SLJ_SMT
-SOT50P160X90-3N
+79
+79
+SLJ_Mechanical
+MeadowF7Micro
 
 
 0
-3
-3
+32
+32
+SLJ_Mechanical
+PAD_SQ_0.6X0.8MM
+
+
+0
+1
+1
+SLJ_Mechanical
+SILK_TOP_V1.C
+
+
+0
+0
+0
