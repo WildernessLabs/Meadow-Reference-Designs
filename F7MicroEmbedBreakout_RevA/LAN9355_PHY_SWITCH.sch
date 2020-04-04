@@ -2310,4 +2310,14 @@ F 9 "1%" H 3150 1850 50  0001 C CNN "Tolerance"
 $EndComp
 Text Label 3600 2150 2    50   ~ 0
 E2PSIZE
+Text Notes 4600 1100 0    200  ~ 0
+Ethernet Switch/PHY
+Wire Notes Line style solid rgb(0, 194, 194)
+	4600 800  4600 1150
+Wire Notes Line style solid rgb(0, 194, 194)
+	4600 1150 7800 1150
+Wire Notes Line style solid rgb(0, 194, 194)
+	7800 1150 7800 800 
+Wire Notes Line style solid rgb(0, 194, 194)
+	7800 800  4600 800 
 $EndSCHEMATC

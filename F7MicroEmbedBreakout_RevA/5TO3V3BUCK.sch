@@ -317,4 +317,14 @@ Wire Wire Line
 Connection ~ 5650 4950
 Wire Wire Line
 	5650 4950 7200 4950
+Text Notes 6400 1350 0    200  ~ 0
+5V to 3.3V Switcher
+Wire Notes Line style solid rgb(0, 194, 194)
+	6400 1050 6400 1400
+Wire Notes Line style solid rgb(0, 194, 194)
+	6400 1400 9600 1400
+Wire Notes Line style solid rgb(0, 194, 194)
+	9600 1400 9600 1050
+Wire Notes Line style solid rgb(0, 194, 194)
+	9600 1050 6400 1050
 $EndSCHEMATC
