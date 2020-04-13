@@ -934,7 +934,7 @@ ENDDEF
 DEF SLJ_Mechanical_Meadow_Embedded_Module U 0 40 Y Y 1 F N
 F0 "U" 300 1700 50 H V C CNN
 F1 "SLJ_Mechanical_Meadow_Embedded_Module" -700 1700 50 H V C CNN
-F2 "SLJ_Mechanical:MeadowEmbeded_OnModule" -800 -200 50 H I C CNN
+F2 "SLJ_Mechanical:MeadowEmbeded" -800 -200 50 H I C CNN
 F3 "" -900 -200 50 H I C CNN
 F4 "Winderness Labs" 0 0 50 H V C CNN "MF"
 F5 "WL-F7EM-1A" 0 0 50 H V C CNN "PN"
@@ -1043,6 +1043,42 @@ X 4 4 -200 0 200 R 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
+# SLJ_Mechanical_TestPoint_SMT_25mil
+#
+DEF SLJ_Mechanical_TestPoint_SMT_25mil TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "SLJ_Mechanical_TestPoint_SMT_25mil" 0 200 50 H V C CNN
+F2 "SLJ_Mechanical:PAD_RD_0.63" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+F4 "DNI" 0 0 50 H V C CNN "DNI"
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SLJ_Mechanical_TestPoint_SMT_loop_1X1.8MM
+#
+DEF SLJ_Mechanical_TestPoint_SMT_loop_1X1.8MM TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "SLJ_Mechanical_TestPoint_SMT_loop_1X1.8MM" 0 200 50 H V C CNN
+F2 "SLJ_Mechanical:TP_S2761-46R" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+F4 "DNI" 0 0 50 H V C CNN "DNI"
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # SLJ_Memory_24FC512
 #
 DEF SLJ_Memory_24FC512 U 0 20 Y Y 1 F N
@@ -1116,32 +1152,17 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# SLJ_Pwr_symbols_+5V0
+# SLJ_Pwr_symbols_+5V
 #
-DEF SLJ_Pwr_symbols_+5V0 #PWR 0 0 Y Y 1 F P
+DEF SLJ_Pwr_symbols_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 331 -76 50 H I C CNN
-F1 "SLJ_Pwr_symbols_+5V0" 0 150 50 H V C CNN
+F1 "SLJ_Pwr_symbols_+5V" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 C 0 100 30 0 1 0 N
 P 2 0 1 0 0 0 0 100 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# SLJ_Pwr_symbols_Source_+5V0
-#
-DEF SLJ_Pwr_symbols_Source_+5V0 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 331 -76 50 H I C CNN
-F1 "SLJ_Pwr_symbols_Source_+5V0" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 -36 68 N
-P 2 1 1 0 0 100 36 68 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
+X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -1518,6 +1539,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

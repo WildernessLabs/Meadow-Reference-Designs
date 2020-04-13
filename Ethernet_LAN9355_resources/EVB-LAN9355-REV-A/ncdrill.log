@@ -1,0 +1,90 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : #Taaaaaa04156.tmp                             )
+(    Software Version : 16.3S032                                      )
+(    Date/Time        : Tue Jan 13 15:50:02 2015                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		5.5
+ MACHINE-OFFSET		x:0.000000	y:0.000000
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		ENGLISH
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		NO
+ SUPPRESS-LEAD-ZEROES	YES
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		YES
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	NO
+ SCALE			1.000000
+
+ WARNING: Design precision is greater than that of the drill output file data.
+          Data rounding errors are very possible.
+ WARNING: This design contains 3 slot holes that can NOT be drilled.
+          They can be processed by NC routing instead.
+
+ WARNING: Can't find tool file (nc_tools.txt)
+          ... will auto-generate tool file (nc_tools_auto.txt)
+
+
+     Auto-generating tool file nc_tools_auto.txt
+     -------------------------------------------
+
+           Size  Plating  Tool        + Tolerance  - Tolerance
+
+         10.000  P        T01            0.000000     0.000000
+         34.000  P        T02            3.000000     3.000000
+         36.000  P        T03            0.000000     0.000000
+         38.000  P        T04            3.000000     3.000000
+         40.000  P        T05            0.000000     0.000000
+         64.000  P        T06            3.000000     3.000000
+         79.000  P        T07            0.000000     0.000000
+        110.000  P        T08            0.000000     0.000000
+        125.000  P        T09            3.000000     3.000000
+        128.000  P        T10            3.000000     3.000000
+         62.000  N        T11            3.000000     3.000000
+        103.000  N        T12            0.000000     0.000000
+
+
+ Drill files being output to directory 'D:/Projects/JUTLAND/EVB/EVB-LAN9355/PCB' ...
+
+
+
+     'EVB-LAN9355-REV-A-1-4.drl' created for holes connecting TOP and BOTTOM
+     -----------------------------------------------------------------------
+
+     Tool  Num     Size      +/- Tolerance     Plating   Quantity
+
+     T01    1.  10.0000    0.0000/  0.0000      PLATED        357
+     T02    2.  34.0000    3.0000/  3.0000      PLATED         16
+     T03    3.  36.0000    0.0000/  0.0000      PLATED         55
+     T04    4.  38.0000    3.0000/  3.0000      PLATED         18
+     T05    5.  40.0000    0.0000/  0.0000      PLATED        276
+     T06    6.  64.0000    3.0000/  3.0000      PLATED          4
+     T07    7.  79.0000    0.0000/  0.0000      PLATED          3
+     T08    8. 110.0000    0.0000/  0.0000      PLATED          4
+     T09    9. 125.0000    3.0000/  3.0000      PLATED          4
+     T10   10. 128.0000    3.0000/  3.0000      PLATED          4
+     T11   11.  62.0000    3.0000/  3.0000  NON_PLATED          4
+     T12   12. 103.0000    0.0000/  0.0000  NON_PLATED          4
+
+     ---- Total holes:                                        749
+
+     ---- Total head travel:              29.58 feet (9.01 meters)
+
